@@ -1,0 +1,5 @@
+add_subdirectory(PENF)
+add_subdirectory(BeFoR64)
+add_subdirectory(FACE)
+add_subdirectory(StringiFor)
+add_subdirectory(FoXy)

@@ -1,0 +1,19 @@
+add_executable(vtk_fortran_use_module_basic vtk_fortran_use_module_basic.f90)
+add_executable(vtk_fortran_write_pvts vtk_fortran_write_pvts.f90)
+add_executable(vtk_fortran_write_volatile vtk_fortran_write_volatile.f90)
+add_executable(vtk_fortran_write_vtm vtk_fortran_write_vtm.f90)
+add_executable(vtk_fortran_write_vtr vtk_fortran_write_vtr.f90)
+add_executable(vtk_fortran_write_vts vtk_fortran_write_vts.f90)
+add_executable(vtk_fortran_write_vtu vtk_fortran_write_vtu.f90)
+add_executable(vtk_fortran_write_vtu_tensor vtk_fortran_write_vtu_tensor.f90)
+
+
+
+target_link_libraries(vtk_fortran_use_module_basic PRIVATE VTKFortran)
+target_link_libraries(vtk_fortran_write_pvts PRIVATE VTKFortran)
+target_link_libraries(vtk_fortran_write_volatile PRIVATE VTKFortran)
+target_link_libraries(vtk_fortran_write_vtm PRIVATE VTKFortran)
+target_link_libraries(vtk_fortran_write_vtr PRIVATE VTKFortran)
+target_link_libraries(vtk_fortran_write_vts PRIVATE VTKFortran)
+target_link_libraries(vtk_fortran_write_vtu PRIVATE VTKFortran)
+target_link_libraries(vtk_fortran_write_vtu_tensor PRIVATE VTKFortran)
