@@ -12,14 +12,29 @@
 
     <title>write_block_array &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -100,9 +115,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -165,7 +182,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~316"></span>
+              <span class="anchor" id="variable-self~258"></span>
               class(<a href='../type/vtm_file.html'>vtm_file</a>),
             </td>
 <td>intent(inout)</td>
@@ -180,7 +197,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-filenames~2"></span>
+              <span class="anchor" id="variable-filenames"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -195,7 +212,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-names~2"></span>
+              <span class="anchor" id="variable-names"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -210,7 +227,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~10"></span>
+              <span class="anchor" id="variable-name~3"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -228,7 +245,7 @@
 
       <h3>Return Value
         <small>
-          <span class="anchor" id="variable-error~162"></span>
+          <span class="anchor" id="variable-error~159"></span>
           integer(kind=I4P)
         </small>
       </h3>
@@ -691,18 +708,18 @@
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M958.12,-493.72C981.34,-466.24 1041.26,-399.04 1104,-359 1109.09,-355.75 1114.76,-352.85 1120.45,-350.32"/>
 <polygon fill="#000000" stroke="#000000" points="1122.01,-353.46 1129.92,-346.41 1119.34,-346.99 1122.01,-353.46"/>
 </g>
-<!-- proc~stringify -->
+<!-- proc~stringify~2 -->
 <g id="proc~~write_block_array~~CallsGraph_node32" class="node">
-<title>proc~stringify</title>
-<g id="a_proc~~write_block_array~~CallsGraph_node32"><a xlink:href="../proc/stringify.html" xlink:title="xml_tag%stringify">
+<title>proc~stringify~2</title>
+<g id="a_proc~~write_block_array~~CallsGraph_node32"><a xlink:href="../proc/stringify~2.html" xlink:title="xml_tag%stringify">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="1211,-111 1104,-111 1104,-87 1211,-87 1211,-111"/>
 <text text-anchor="middle" x="1157.5" y="-96.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">xml_tag%stringify</text>
 </a>
 </g>
 </g>
-<!-- proc~write_end_tag&#45;&gt;proc~stringify -->
+<!-- proc~write_end_tag&#45;&gt;proc~stringify~2 -->
 <g id="proc~~write_block_array~~CallsGraph_edge30" class="edge">
-<title>proc~write_end_tag&#45;&gt;proc~stringify</title>
+<title>proc~write_end_tag&#45;&gt;proc~stringify~2</title>
 <path fill="none" stroke="#000000" d="M1018.49,-72C1034.77,-74.87 1052,-77.97 1068,-81 1076.3,-82.57 1085.04,-84.28 1093.65,-86"/>
 <polygon fill="#000000" stroke="#000000" points="1093.17,-89.47 1103.67,-88.01 1094.55,-82.61 1093.17,-89.47"/>
 </g>
@@ -772,9 +789,9 @@
 <path fill="none" stroke="#000000" d="M768.8,-254.95C776.14,-252.44 783.27,-249.48 790,-246 810.66,-235.31 805.73,-219.42 826,-208 833.56,-203.74 841.74,-200.18 850.17,-197.21"/>
 <polygon fill="#000000" stroke="#000000" points="851.33,-200.51 859.76,-194.09 849.17,-193.85 851.33,-200.51"/>
 </g>
-<!-- proc~write_start_tag&#45;&gt;proc~stringify -->
+<!-- proc~write_start_tag&#45;&gt;proc~stringify~2 -->
 <g id="proc~~write_block_array~~CallsGraph_edge39" class="edge">
-<title>proc~write_start_tag&#45;&gt;proc~stringify</title>
+<title>proc~write_start_tag&#45;&gt;proc~stringify~2</title>
 <path fill="none" stroke="#000000" d="M1049.5,-100.54C1064.52,-100.32 1079.62,-100.11 1093.54,-99.91"/>
 <polygon fill="#000000" stroke="#000000" points="1093.99,-103.4 1103.94,-99.76 1093.89,-96.4 1093.99,-103.4"/>
 </g>
@@ -865,9 +882,9 @@
 <path fill="none" stroke="#000000" d="M1344.89,-684.07C1359.38,-691.83 1378.44,-702.24 1395,-712 1429.89,-732.56 1469.19,-757.74 1494.59,-774.29"/>
 <polygon fill="#000000" stroke="#000000" points="1493,-777.44 1503.29,-779.98 1496.83,-771.58 1493,-777.44"/>
 </g>
-<!-- proc~stringify&#45;&gt;proc~chars -->
+<!-- proc~stringify~2&#45;&gt;proc~chars -->
 <g id="proc~~write_block_array~~CallsGraph_edge50" class="edge">
-<title>proc~stringify&#45;&gt;proc~chars</title>
+<title>proc~stringify~2&#45;&gt;proc~chars</title>
 <path fill="none" stroke="#000000" d="M1182.91,-111.13C1191.98,-115.98 1202.2,-121.88 1211,-128 1228.33,-140.06 1228.42,-148.96 1247,-159 1254.18,-162.88 1262.15,-166.11 1270.11,-168.78"/>
 <polygon fill="#000000" stroke="#000000" points="1269.17,-172.15 1279.76,-171.76 1271.24,-165.46 1269.17,-172.15"/>
 </g>
@@ -880,9 +897,9 @@
 </a>
 </g>
 </g>
-<!-- proc~stringify&#45;&gt;proc~end_tag -->
+<!-- proc~stringify~2&#45;&gt;proc~end_tag -->
 <g id="proc~~write_block_array~~CallsGraph_edge51" class="edge">
-<title>proc~stringify&#45;&gt;proc~end_tag</title>
+<title>proc~stringify~2&#45;&gt;proc~end_tag</title>
 <path fill="none" stroke="#000000" d="M1171.58,-86.82C1188.01,-72.12 1217.64,-47.56 1247,-33 1251.03,-31 1255.28,-29.16 1259.62,-27.48"/>
 <polygon fill="#000000" stroke="#000000" points="1261,-30.7 1269.23,-24.03 1258.63,-24.11 1261,-30.7"/>
 </g>
@@ -895,9 +912,9 @@
 </a>
 </g>
 </g>
-<!-- proc~stringify&#45;&gt;proc~is_allocated -->
+<!-- proc~stringify~2&#45;&gt;proc~is_allocated -->
 <g id="proc~~write_block_array~~CallsGraph_edge52" class="edge">
-<title>proc~stringify&#45;&gt;proc~is_allocated</title>
+<title>proc~stringify~2&#45;&gt;proc~is_allocated</title>
 <path fill="none" stroke="#000000" d="M1208.27,-111.02C1224.7,-114.99 1243.14,-119.44 1260.23,-123.57"/>
 <polygon fill="#000000" stroke="#000000" points="1259.57,-127.01 1270.11,-125.95 1261.21,-120.2 1259.57,-127.01"/>
 </g>
@@ -910,9 +927,9 @@
 </a>
 </g>
 </g>
-<!-- proc~stringify&#45;&gt;proc~self_closing_tag -->
+<!-- proc~stringify~2&#45;&gt;proc~self_closing_tag -->
 <g id="proc~~write_block_array~~CallsGraph_edge53" class="edge">
-<title>proc~stringify&#45;&gt;proc~self_closing_tag</title>
+<title>proc~stringify~2&#45;&gt;proc~self_closing_tag</title>
 <path fill="none" stroke="#000000" d="M1211.38,-98.02C1219.51,-97.87 1228.08,-97.71 1236.68,-97.55"/>
 <polygon fill="#000000" stroke="#000000" points="1236.84,-101.05 1246.77,-97.36 1236.71,-94.05 1236.84,-101.05"/>
 </g>
@@ -925,15 +942,15 @@
 </a>
 </g>
 </g>
-<!-- proc~stringify&#45;&gt;proc~start_tag -->
+<!-- proc~stringify~2&#45;&gt;proc~start_tag -->
 <g id="proc~~write_block_array~~CallsGraph_edge54" class="edge">
-<title>proc~stringify&#45;&gt;proc~start_tag</title>
+<title>proc~stringify~2&#45;&gt;proc~start_tag</title>
 <path fill="none" stroke="#000000" d="M1201.78,-86.94C1221.86,-81.34 1245.92,-74.64 1267.08,-68.75"/>
 <polygon fill="#000000" stroke="#000000" points="1268.19,-72.07 1276.88,-66.01 1266.31,-65.33 1268.19,-72.07"/>
 </g>
-<!-- proc~write_self_closing_tag&#45;&gt;proc~stringify -->
+<!-- proc~write_self_closing_tag&#45;&gt;proc~stringify~2 -->
 <g id="proc~~write_block_array~~CallsGraph_edge55" class="edge">
-<title>proc~write_self_closing_tag&#45;&gt;proc~stringify</title>
+<title>proc~write_self_closing_tag&#45;&gt;proc~stringify~2</title>
 <path fill="none" stroke="#000000" d="M978.32,-169.93C1014.84,-155.39 1076.29,-130.93 1116.63,-114.87"/>
 <polygon fill="#000000" stroke="#000000" points="1118.15,-118.03 1126.15,-111.08 1115.56,-111.53 1118.15,-118.03"/>
 </g>
@@ -1140,33 +1157,33 @@ implementation in a submodule of an interface in a parent module.
 <path fill="none" stroke="#000000" d="M430.61,-19.34C445.19,-21.06 460.82,-22.89 475.74,-24.64"/>
 <polygon fill="#000000" stroke="#000000" points="475.6,-28.15 485.94,-25.84 476.41,-21.19 475.6,-28.15"/>
 </g>
-<!-- proc~finalize~5 -->
+<!-- proc~finalize~6 -->
 <g id="proc~~write_block_array~~CalledByGraph_node5" class="node">
-<title>proc~finalize~5</title>
-<g id="a_proc~~write_block_array~~CalledByGraph_node5"><a xlink:href="../proc/finalize~5.html" xlink:title="vtm_file%finalize">
+<title>proc~finalize~6</title>
+<g id="a_proc~~write_block_array~~CalledByGraph_node5"><a xlink:href="../proc/finalize~6.html" xlink:title="vtm_file%finalize">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="248,-66 145,-66 145,-42 248,-42 248,-66"/>
 <text text-anchor="middle" x="196.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vtm_file%finalize</text>
 </a>
 </g>
 </g>
-<!-- proc~finalize~5&#45;&gt;proc~parse_scratch_files -->
+<!-- proc~finalize~6&#45;&gt;proc~parse_scratch_files -->
 <g id="proc~~write_block_array~~CalledByGraph_edge4" class="edge">
-<title>proc~finalize~5&#45;&gt;proc~parse_scratch_files</title>
+<title>proc~finalize~6&#45;&gt;proc~parse_scratch_files</title>
 <path fill="none" stroke="#000000" d="M248.06,-54C256.3,-54 265.05,-54 273.92,-54"/>
 <polygon fill="#000000" stroke="#000000" points="273.97,-57.5 283.97,-54 273.97,-50.5 273.97,-57.5"/>
 </g>
-<!-- proc~initialize~4 -->
+<!-- proc~initialize~5 -->
 <g id="proc~~write_block_array~~CalledByGraph_node6" class="node">
-<title>proc~initialize~4</title>
-<g id="a_proc~~write_block_array~~CalledByGraph_node6"><a xlink:href="../proc/initialize~4.html" xlink:title="vtm_file%initialize">
+<title>proc~initialize~5</title>
+<g id="a_proc~~write_block_array~~CalledByGraph_node6"><a xlink:href="../proc/initialize~5.html" xlink:title="vtm_file%initialize">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="109,-66 0,-66 0,-42 109,-42 109,-66"/>
 <text text-anchor="middle" x="54.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vtm_file%initialize</text>
 </a>
 </g>
 </g>
-<!-- proc~initialize~4&#45;&gt;proc~finalize~5 -->
+<!-- proc~initialize~5&#45;&gt;proc~finalize~6 -->
 <g id="proc~~write_block_array~~CalledByGraph_edge5" class="edge">
-<title>proc~initialize~4&#45;&gt;proc~finalize~5</title>
+<title>proc~initialize~5&#45;&gt;proc~finalize~6</title>
 <path fill="none" stroke="#000000" d="M109.23,-54C117.56,-54 126.22,-54 134.69,-54"/>
 <polygon fill="#000000" stroke="#000000" points="134.91,-57.5 144.91,-54 134.91,-50.5 134.91,-57.5"/>
 </g>
@@ -1321,27 +1338,5 @@ implementation in a submodule of an interface in a parent module.
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

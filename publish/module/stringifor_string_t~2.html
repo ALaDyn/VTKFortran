@@ -12,14 +12,29 @@
 
     <title>stringifor_string_t &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -99,9 +114,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -119,8 +136,8 @@
       <div id="vars-0" class="collapse">
         <div class="list-group list-group-flush">
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#variable-ck~7">CK</a>
-            <a class="list-group-item" href="../module/stringifor_string_t~2.html#variable-upper_alphabet~4">UPPER_ALPHABET</a>
-            <a class="list-group-item" href="../module/stringifor_string_t~2.html#variable-lower_alphabet~4">LOWER_ALPHABET</a>
+            <a class="list-group-item" href="../module/stringifor_string_t~2.html#variable-upper_alphabet~3">UPPER_ALPHABET</a>
+            <a class="list-group-item" href="../module/stringifor_string_t~2.html#variable-lower_alphabet~3">LOWER_ALPHABET</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#variable-space~2">SPACE</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#variable-tab~2">TAB</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#variable-uix_dir_sep~2">UIX_DIR_SEP</a>
@@ -221,7 +238,7 @@
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-partition~2">partition</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-replace~2">replace</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-reverse~2">reverse</a>
-            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-search~3">search</a>
+            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-search~2">search</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-slice~2">slice</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-snakecase~2">snakecase</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-startcase~2">startcase</a>
@@ -237,7 +254,7 @@
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-to_real_r16p~2">to_real_R16P</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-unescape~2">unescape</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-unique~2">unique</a>
-            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-upper~4">upper</a>
+            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-upper~3">upper</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-end_with~2">end_with</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-is_allocated~2">is_allocated</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-is_digit~2">is_digit</a>
@@ -283,17 +300,17 @@
       </a>
       <div id="subs-0" class="collapse">
         <div class="list-group list-group-flush">
-            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-free~3">free</a>
+            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-free~2">free</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-glob_character~2">glob_character</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-glob_string~2">glob_string</a>
-            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-read_file~2">read_file</a>
+            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-read_file~4">read_file</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-read_line~2">read_line</a>
-            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-read_lines~2">read_lines</a>
+            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-read_lines~4">read_lines</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-split~2">split</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-split_chunked~2">split_chunked</a>
-            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-write_file~2">write_file</a>
+            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-write_file~4">write_file</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-write_line~2">write_line</a>
-            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-write_lines~2">write_lines</a>
+            <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-write_lines~4">write_lines</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-string_assign_string~2">string_assign_string</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-string_assign_character~2">string_assign_character</a>
             <a class="list-group-item" href="../module/stringifor_string_t~2.html#proc-string_assign_integer_i1p~2">string_assign_integer_I1P</a>
@@ -339,10 +356,10 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <ul class="list-inline">
-                  <li class="list-inline-item"><a href='penf~4.html'>penf</a></li>
-                  <li class="list-inline-item"><a href='befor64~4.html'>befor64</a></li>
-                  <li class="list-inline-item"><a href='face~4.html'>face</a></li>
+                  <li class="list-inline-item"><a href='face~3.html'>face</a></li>
                   <li class="list-inline-item"><a href='http://fortranwiki.org/fortran/show/iso_fortran_env'>iso_fortran_env</a></li>
+                  <li class="list-inline-item"><a href='befor64.html'>befor64</a></li>
+                  <li class="list-inline-item"><a href='penf~7.html'>penf</a></li>
               </ul>
             </li>
             <li class="list-group-item">
@@ -378,76 +395,76 @@
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M765.5,-52C710.02,-42.9 695.05,-47.65 639,-52"/>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M637,-52C581.17,-56.34 566.76,-46.87 511,-52"/>
 </g>
-<!-- module~befor64~4 -->
+<!-- module~befor64 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_node3" class="node">
-<title>module~befor64~4</title>
-<g id="a_module~~stringifor_string_t~2~~UsesGraph_node3"><a xlink:href="../module/befor64~4.html" xlink:title="befor64">
+<title>module~befor64</title>
+<g id="a_module~~stringifor_string_t~2~~UsesGraph_node3"><a xlink:href="../module/befor64.html" xlink:title="befor64">
 <polygon fill="#337ab7" stroke="#337ab7" points="794,-104 739,-104 739,-80 794,-80 794,-104"/>
 <text text-anchor="middle" x="766.5" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">befor64</text>
 </a>
 </g>
 </g>
-<!-- module~stringifor_string_t~2&#45;&gt;module~befor64~4 -->
+<!-- module~stringifor_string_t~2&#45;&gt;module~befor64 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge2" class="edge">
-<title>module~stringifor_string_t~2&#45;&gt;module~befor64~4</title>
+<title>module~stringifor_string_t~2&#45;&gt;module~befor64</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M829.84,-81.06C821.14,-82.59 812.27,-84.15 804.06,-85.59"/>
 <polygon fill="#000000" stroke="#000000" points="803.31,-82.16 794.07,-87.34 804.52,-89.06 803.31,-82.16"/>
 </g>
-<!-- module~face~4 -->
+<!-- module~face~3 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_node4" class="node">
-<title>module~face~4</title>
-<g id="a_module~~stringifor_string_t~2~~UsesGraph_node4"><a xlink:href="../module/face~4.html" xlink:title="face">
+<title>module~face~3</title>
+<g id="a_module~~stringifor_string_t~2~~UsesGraph_node4"><a xlink:href="../module/face~3.html" xlink:title="face">
 <polygon fill="#337ab7" stroke="#337ab7" points="665,-24 611,-24 611,0 665,0 665,-24"/>
 <text text-anchor="middle" x="638" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">face</text>
 </a>
 </g>
 </g>
-<!-- module~stringifor_string_t~2&#45;&gt;module~face~4 -->
+<!-- module~stringifor_string_t~2&#45;&gt;module~face~3 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge3" class="edge">
-<title>module~stringifor_string_t~2&#45;&gt;module~face~4</title>
+<title>module~stringifor_string_t~2&#45;&gt;module~face~3</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M829.9,-62.7C810.37,-59.24 787.92,-55.35 767.5,-52"/>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M765.5,-52C734,-46.83 699.52,-35.54 674.53,-26.26"/>
 <polygon fill="#000000" stroke="#000000" points="675.7,-22.96 665.11,-22.69 673.22,-29.51 675.7,-22.96"/>
 </g>
-<!-- module~penf~4 -->
+<!-- module~penf~7 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_node5" class="node">
-<title>module~penf~4</title>
-<g id="a_module~~stringifor_string_t~2~~UsesGraph_node5"><a xlink:href="../module/penf~4.html" xlink:title="penf">
+<title>module~penf~7</title>
+<g id="a_module~~stringifor_string_t~2~~UsesGraph_node5"><a xlink:href="../module/penf~7.html" xlink:title="penf">
 <polygon fill="#337ab7" stroke="#337ab7" points="537,-104 483,-104 483,-80 537,-80 537,-104"/>
 <text text-anchor="middle" x="510" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf</text>
 </a>
 </g>
 </g>
-<!-- module~stringifor_string_t~2&#45;&gt;module~penf~4 -->
+<!-- module~stringifor_string_t~2&#45;&gt;module~penf~7 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge4" class="edge">
-<title>module~stringifor_string_t~2&#45;&gt;module~penf~4</title>
+<title>module~stringifor_string_t~2&#45;&gt;module~penf~7</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M637,-52C605.29,-54.46 570.98,-65.98 546.18,-76.03"/>
 <polygon fill="#000000" stroke="#000000" points="544.72,-72.85 536.84,-79.93 547.42,-79.31 544.72,-72.85"/>
 </g>
-<!-- module~befor64~4&#45;&gt;module~penf~4 -->
+<!-- module~befor64&#45;&gt;module~penf~7 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge6" class="edge">
-<title>module~befor64~4&#45;&gt;module~penf~4</title>
+<title>module~befor64&#45;&gt;module~penf~7</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M738.91,-103.05C727.99,-107.03 715.09,-111.02 703,-113 645.98,-122.32 630.01,-122.39 573,-113 564.3,-111.57 555.17,-109.07 546.68,-106.29"/>
 <polygon fill="#000000" stroke="#000000" points="547.66,-102.93 537.06,-102.94 545.36,-109.54 547.66,-102.93"/>
 </g>
-<!-- module~befor64_pack_data_m~4 -->
+<!-- module~befor64_pack_data_m -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_node6" class="node">
-<title>module~befor64_pack_data_m~4</title>
-<g id="a_module~~stringifor_string_t~2~~UsesGraph_node6"><a xlink:href="../module/befor64_pack_data_m~4.html" xlink:title="befor64_pack_data_m">
+<title>module~befor64_pack_data_m</title>
+<g id="a_module~~stringifor_string_t~2~~UsesGraph_node6"><a xlink:href="../module/befor64_pack_data_m.html" xlink:title="befor64_pack_data_m">
 <polygon fill="#337ab7" stroke="#337ab7" points="703,-104 573,-104 573,-80 703,-80 703,-104"/>
 <text text-anchor="middle" x="638" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">befor64_pack_data_m</text>
 </a>
 </g>
 </g>
-<!-- module~befor64~4&#45;&gt;module~befor64_pack_data_m~4 -->
+<!-- module~befor64&#45;&gt;module~befor64_pack_data_m -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge5" class="edge">
-<title>module~befor64~4&#45;&gt;module~befor64_pack_data_m~4</title>
+<title>module~befor64&#45;&gt;module~befor64_pack_data_m</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M738.98,-92C731.21,-92 722.31,-92 713.1,-92"/>
 <polygon fill="#000000" stroke="#000000" points="713.01,-88.5 703.01,-92 713.01,-95.5 713.01,-88.5"/>
 </g>
-<!-- module~face~4&#45;&gt;iso_fortran_env -->
+<!-- module~face~3&#45;&gt;iso_fortran_env -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge7" class="edge">
-<title>module~face~4&#45;&gt;iso_fortran_env</title>
+<title>module~face~3&#45;&gt;iso_fortran_env</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M610.75,-21.9C579.92,-33.25 530.51,-50.49 511,-52"/>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M509,-52C450.22,-56.56 382.7,-55.84 336.29,-54.42"/>
 <polygon fill="#000000" stroke="#000000" points="336.25,-50.92 326.14,-54.09 336.02,-57.92 336.25,-50.92"/>
@@ -461,70 +478,70 @@
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_b_size~6 -->
+<!-- module~penf~7&#45;&gt;module~penf_b_size~6 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge8" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_b_size~6</title>
+<title>module~penf~7&#45;&gt;module~penf_b_size~6</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M499.47,-104.05C482.93,-123.75 446.7,-161.68 405.5,-172"/>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-172C386.73,-176.2 345.72,-161 315.53,-148.15"/>
 <polygon fill="#000000" stroke="#000000" points="316.72,-144.85 306.16,-144.09 313.94,-151.27 316.72,-144.85"/>
 </g>
-<!-- module~penf_global_parameters_variables~3 -->
+<!-- module~penf_global_parameters_variables~4 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_node8" class="node">
-<title>module~penf_global_parameters_variables~3</title>
-<g id="a_module~~stringifor_string_t~2~~UsesGraph_node8"><a xlink:href="../module/penf_global_parameters_variables~3.html" xlink:title="penf_global_parameters_variables">
+<title>module~penf_global_parameters_variables~4</title>
+<g id="a_module~~stringifor_string_t~2~~UsesGraph_node8"><a xlink:href="../module/penf_global_parameters_variables~4.html" xlink:title="penf_global_parameters_variables">
 <polygon fill="#337ab7" stroke="#337ab7" points="196,-144 0,-144 0,-120 196,-120 196,-144"/>
 <text text-anchor="middle" x="98" y="-129.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_global_parameters_variables</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf~7&#45;&gt;module~penf_global_parameters_variables~4 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge9" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_global_parameters_variables~3</title>
+<title>module~penf~7&#45;&gt;module~penf_global_parameters_variables~4</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-172C311.58,-195.02 200.54,-166.8 141.22,-147.39"/>
 <polygon fill="#000000" stroke="#000000" points="142.05,-143.98 131.46,-144.12 139.83,-150.62 142.05,-143.98"/>
 </g>
-<!-- module~penf_stringify~4 -->
+<!-- module~penf_stringify~2 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_node9" class="node">
-<title>module~penf_stringify~4</title>
-<g id="a_module~~stringifor_string_t~2~~UsesGraph_node9"><a xlink:href="../module/penf_stringify~4.html" xlink:title="penf_stringify">
+<title>module~penf_stringify~2</title>
+<g id="a_module~~stringifor_string_t~2~~UsesGraph_node9"><a xlink:href="../module/penf_stringify~2.html" xlink:title="penf_stringify">
 <polygon fill="#337ab7" stroke="#337ab7" points="447,-104 362,-104 362,-80 447,-80 447,-104"/>
 <text text-anchor="middle" x="404.5" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_stringify</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_stringify~4 -->
+<!-- module~penf~7&#45;&gt;module~penf_stringify~2 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge10" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_stringify~4</title>
+<title>module~penf~7&#45;&gt;module~penf_stringify~2</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M482.88,-92C475.13,-92 466.36,-92 457.58,-92"/>
 <polygon fill="#000000" stroke="#000000" points="457.32,-88.5 447.32,-92 457.32,-95.5 457.32,-88.5"/>
 </g>
-<!-- module~befor64_pack_data_m~4&#45;&gt;module~penf~4 -->
+<!-- module~befor64_pack_data_m&#45;&gt;module~penf~7 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge11" class="edge">
-<title>module~befor64_pack_data_m~4&#45;&gt;module~penf~4</title>
+<title>module~befor64_pack_data_m&#45;&gt;module~penf~7</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M572.89,-92C564.1,-92 555.34,-92 547.29,-92"/>
 <polygon fill="#000000" stroke="#000000" points="547.17,-88.5 537.17,-92 547.17,-95.5 547.17,-88.5"/>
 </g>
-<!-- module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~4 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge12" class="edge">
-<title>module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~3</title>
+<title>module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~4</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M241.78,-132C231.22,-132 219.1,-132 206.49,-132"/>
 <polygon fill="#000000" stroke="#000000" points="206.29,-128.5 196.29,-132 206.29,-135.5 206.29,-128.5"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;iso_fortran_env -->
+<!-- module~penf_stringify~2&#45;&gt;iso_fortran_env -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge13" class="edge">
-<title>module~penf_stringify~4&#45;&gt;iso_fortran_env</title>
+<title>module~penf_stringify~2&#45;&gt;iso_fortran_env</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M366.45,-80C354.1,-76 340.18,-71.49 327.18,-67.28"/>
 <polygon fill="#000000" stroke="#000000" points="328.05,-63.88 317.45,-64.13 325.89,-70.54 328.05,-63.88"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;module~penf_b_size~6 -->
+<!-- module~penf_stringify~2&#45;&gt;module~penf_b_size~6 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge14" class="edge">
-<title>module~penf_stringify~4&#45;&gt;module~penf_b_size~6</title>
+<title>module~penf_stringify~2&#45;&gt;module~penf_b_size~6</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M366.45,-104C353.64,-108.15 339.14,-112.85 325.72,-117.19"/>
 <polygon fill="#000000" stroke="#000000" points="324.61,-113.87 316.18,-120.28 326.77,-120.53 324.61,-113.87"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf_stringify~2&#45;&gt;module~penf_global_parameters_variables~4 -->
 <g id="module~~stringifor_string_t~2~~UsesGraph_edge15" class="edge">
-<title>module~penf_stringify~4&#45;&gt;module~penf_global_parameters_variables~3</title>
+<title>module~penf_stringify~2&#45;&gt;module~penf_global_parameters_variables~4</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M361.85,-96.07C327.08,-99.6 276.24,-105.06 232,-111 215.69,-113.19 198.3,-115.76 181.64,-118.34"/>
 <polygon fill="#000000" stroke="#000000" points="180.73,-114.94 171.39,-119.95 181.81,-121.86 180.73,-114.94"/>
 </g>
@@ -644,7 +661,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-upper_alphabet~4"></span>
+              <span class="anchor" id="variable-upper_alphabet~3"></span>
               character(kind=CK, len=26),
             </td>
               <td>private,</td>
@@ -661,7 +678,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-lower_alphabet~4"></span>
+              <span class="anchor" id="variable-lower_alphabet~3"></span>
               character(kind=CK, len=26),
             </td>
               <td>private,</td>
@@ -781,7 +798,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~216"></span>
+              <span class="anchor" id="variable-self~149"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -850,7 +867,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~217"></span>
+              <span class="anchor" id="variable-self~150"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -944,7 +961,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~48"></span>
+              <span class="anchor" id="variable-sep~41"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -1003,7 +1020,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~49"></span>
+              <span class="anchor" id="variable-sep~42"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -1077,7 +1094,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~50"></span>
+              <span class="anchor" id="variable-sep~43"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -1151,7 +1168,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~51"></span>
+              <span class="anchor" id="variable-sep~44"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -1235,7 +1252,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~17"></span>
+              <span class="anchor" id="variable-s~13"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -1289,7 +1306,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~18"></span>
+              <span class="anchor" id="variable-s~14"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -1343,7 +1360,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~19"></span>
+              <span class="anchor" id="variable-s~15"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1412,7 +1429,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~194"></span>
+              <span class="anchor" id="variable-self~127"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -1486,7 +1503,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~195"></span>
+              <span class="anchor" id="variable-self~128"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -1560,7 +1577,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~20"></span>
+              <span class="anchor" id="variable-s~16"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -1644,7 +1661,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~197"></span>
+              <span class="anchor" id="variable-self~130"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -1698,7 +1715,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~198"></span>
+              <span class="anchor" id="variable-self~131"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -1767,7 +1784,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~199"></span>
+              <span class="anchor" id="variable-self~132"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -1782,7 +1799,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~10"></span>
+              <span class="anchor" id="variable-set~9"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -1841,7 +1858,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~200"></span>
+              <span class="anchor" id="variable-self~133"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -1856,7 +1873,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~11"></span>
+              <span class="anchor" id="variable-set~10"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -1915,7 +1932,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~21"></span>
+              <span class="anchor" id="variable-s~17"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -1930,7 +1947,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~8"></span>
+              <span class="anchor" id="variable-set~7"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -1999,7 +2016,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~201"></span>
+              <span class="anchor" id="variable-self~134"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -2053,7 +2070,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~202"></span>
+              <span class="anchor" id="variable-self~135"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -2068,7 +2085,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~12"></span>
+              <span class="anchor" id="variable-set~11"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -2127,7 +2144,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~203"></span>
+              <span class="anchor" id="variable-self~136"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -2142,7 +2159,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~13"></span>
+              <span class="anchor" id="variable-set~12"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -2201,7 +2218,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~22"></span>
+              <span class="anchor" id="variable-s~18"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -2216,7 +2233,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~9"></span>
+              <span class="anchor" id="variable-set~8"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -2315,692 +2332,692 @@ parameter
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-adjustl~2'>adjustl</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/proc/sadjustl~2.html'>sadjustl</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-adjustr~2'>adjustr</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/proc/sadjustr~2.html'>sadjustr</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-count~3'>count</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/proc/scount~2.html'>scount</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-index~2'>index</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-sindex_string_string~2'>sindex_string_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-sindex_string_character~2'>sindex_string_character</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-len~2'>len</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/proc/slen~2.html'>slen</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-len_trim~2'>len_trim</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/proc/slen_trim~2.html'>slen_trim</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-repeat~2'>repeat</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-srepeat_string_string~2'>srepeat_string_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-srepeat_character_string~2'>srepeat_character_string</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-scan~2'>scan</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-sscan_string_string~2'>sscan_string_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-sscan_string_character~2'>sscan_string_character</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-trim~2'>trim</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/proc/strim~2.html'>strim</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-verify~2'>verify</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-sverify_string_string~2'>sverify_string_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-sverify_string_character~2'>sverify_string_character</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-basedir~3'>basedir</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-basename~3'>basename</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-camelcase~3'>camelcase</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-capitalize~2'>capitalize</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-chars~2'>chars</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-colorize~2'>colorize</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-colorize_str~2'>colorize_str</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-decode~2'>decode</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-encode~2'>encode</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-escape~2'>escape</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-extension~4'>extension</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-fill~2'>fill</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
-  <strong><a href='../type/string~2.html#boundprocedure-free~3'>free</a></strong></td>
-                <td></td>
+  <strong><a href='../type/string~2.html#boundprocedure-free~2'>free</a></strong></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-glob~2'>glob</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-glob_character~2'>glob_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-glob_string~2'>glob_string</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-insert~2'>insert</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-insert_string~2'>insert_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-insert_character~2'>insert_character</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-join~8'>join</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-join_strings~2'>join_strings</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-join_characters~2'>join_characters</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-strjoin~2'>strjoin</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-strjoin_strings~2'>strjoin_strings</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-strjoin_characters~2'>strjoin_characters</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-strjoin_strings_array~2'>strjoin_strings_array</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-strjoin_characters_array~2'>strjoin_characters_array</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-lower~3'>lower</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-partition~2'>partition</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-read_file~2'>read_file</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-read_line~2'>read_line</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-read_lines~2'>read_lines</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-replace~2'>replace</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-reverse~2'>reverse</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
-  <strong><a href='../type/string~2.html#boundprocedure-search~3'>search</a></strong></td>
-                <td></td>
+  <strong><a href='../type/string~2.html#boundprocedure-search~2'>search</a></strong></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-slice~4'>slice</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-snakecase~3'>snakecase</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-split~2'>split</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-split_chunked~2'>split_chunked</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-startcase~3'>startcase</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-strip~3'>strip</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-swapcase~3'>swapcase</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-tempname~4'>tempname</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-to_number~9'>to_number</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-to_integer_i1p~2'>to_integer_I1P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-to_integer_i2p~2'>to_integer_I2P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-to_integer_i4p~2'>to_integer_I4P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-to_integer_i8p~2'>to_integer_I8P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-to_real_r8p~2'>to_real_R8P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-to_real_r4p~2'>to_real_R4P</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-unescape~2'>unescape</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-unique~2'>unique</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
-  <strong><a href='../type/string~2.html#boundprocedure-upper~5'>upper</a></strong></td>
-                <td></td>
+  <strong><a href='../type/string~2.html#boundprocedure-upper~4'>upper</a></strong></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-write_file~2'>write_file</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-write_line~2'>write_line</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-write_lines~2'>write_lines</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-end_with~3'>end_with</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-is_allocated~3'>is_allocated</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-is_digit~3'>is_digit</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-is_integer~3'>is_integer</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-is_lower~3'>is_lower</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-is_number~3'>is_number</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-is_real~3'>is_real</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-is_upper~3'>is_upper</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-start_with~3'>start_with</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
-  <strong><a href='../type/string~2.html#boundprocedure-assignment%28%3D%29~3'>assignment(=)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_string~2'>string_assign_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_character~2'>string_assign_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i1p~2'>string_assign_integer_I1P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i2p~2'>string_assign_integer_I2P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i4p~2'>string_assign_integer_I4P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i8p~2'>string_assign_integer_I8P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_real_r8p~2'>string_assign_real_R8P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_real_r4p~2'>string_assign_real_R4P</a></td>
-                <td></td>
+  <strong><a href='../type/string~2.html#boundprocedure-assignment%28%3D%29~2'>assignment(=)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_string~2'>string_assign_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_character~2'>string_assign_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i1p~2'>string_assign_integer_I1P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i2p~2'>string_assign_integer_I2P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i4p~2'>string_assign_integer_I4P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i8p~2'>string_assign_integer_I8P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_real_r8p~2'>string_assign_real_R8P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_real_r4p~2'>string_assign_real_R4P</a></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-operator%28SLASHSLASH%29~2'>operator(//)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_concat_string~2'>string_concat_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_concat_character~2'>string_concat_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-character_concat_string~2'>character_concat_string</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-operator%28.cat.%29~2'>operator(.cat.)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_concat_string_string~2'>string_concat_string_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_concat_character_string~2'>string_concat_character_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-character_concat_string_string~2'>character_concat_string_string</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-operator%28%3D%3D%29~2'>operator(==)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_eq_string~2'>string_eq_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_eq_character~2'>string_eq_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-character_eq_string~2'>character_eq_string</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-operator%28SLASH%3D%29~2'>operator(/=)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_ne_string~2'>string_ne_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_ne_character~2'>string_ne_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-character_ne_string~2'>character_ne_string</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-operator%28lt%29~2'>operator(<)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_lt_string~2'>string_lt_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_lt_character~2'>string_lt_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-character_lt_string~2'>character_lt_string</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-operator%28lt%3D%29~2'>operator(<=)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_le_string~2'>string_le_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_le_character~2'>string_le_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-character_le_string~2'>character_le_string</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-operator%28gt%3D%29~2'>operator(>=)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_ge_string~2'>string_ge_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_ge_character~2'>string_ge_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-character_ge_string~2'>character_ge_string</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-operator%28gt%29~2'>operator(>)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_gt_string~2'>string_gt_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_gt_character~2'>string_gt_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-character_gt_string~2'>character_gt_string</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-read%28formatted%29~2'>read(formatted)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-read_formatted~2'>read_formatted</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-write%28formatted%29~2'>write(formatted)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-write_formatted~2'>write_formatted</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-read%28unformatted%29~2'>read(unformatted)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-read_unformatted~2'>read_unformatted</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/string~2.html#boundprocedure-write%28unformatted%29~2'>write(unformatted)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-write_unformatted~2'>write_unformatted</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-sindex_string_string~2'>sindex_string_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-sindex_string_character~2'>sindex_string_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-srepeat_string_string~2'>srepeat_string_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, nopass ::
   <strong><a href='../type/string~2.html#boundprocedure-srepeat_character_string~2'>srepeat_character_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-sscan_string_string~2'>sscan_string_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-sscan_string_character~2'>sscan_string_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-sverify_string_string~2'>sverify_string_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-sverify_string_character~2'>sverify_string_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-colorize_str~2'>colorize_str</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-glob_character~2'>glob_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-glob_string~2'>glob_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-insert_string~2'>insert_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-insert_character~2'>insert_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-join_strings~2'>join_strings</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-join_characters~2'>join_characters</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, nopass ::
   <strong><a href='../type/string~2.html#boundprocedure-strjoin_strings~2'>strjoin_strings</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, nopass ::
   <strong><a href='../type/string~2.html#boundprocedure-strjoin_characters~2'>strjoin_characters</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, nopass ::
   <strong><a href='../type/string~2.html#boundprocedure-strjoin_strings_array~2'>strjoin_strings_array</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, nopass ::
   <strong><a href='../type/string~2.html#boundprocedure-strjoin_characters_array~2'>strjoin_characters_array</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-to_integer_i1p~2'>to_integer_I1P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-to_integer_i2p~2'>to_integer_I2P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-to_integer_i4p~2'>to_integer_I4P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-to_integer_i8p~2'>to_integer_I8P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-to_real_r4p~2'>to_real_R4P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-to_real_r8p~2'>to_real_R8P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-to_real_r16p~2'>to_real_R16P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_assign_string~2'>string_assign_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_assign_character~2'>string_assign_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_assign_integer_i1p~2'>string_assign_integer_I1P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_assign_integer_i2p~2'>string_assign_integer_I2P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_assign_integer_i4p~2'>string_assign_integer_I4P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_assign_integer_i8p~2'>string_assign_integer_I8P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_assign_real_r4p~2'>string_assign_real_R4P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_assign_real_r8p~2'>string_assign_real_R8P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_assign_real_r16p~2'>string_assign_real_R16P</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_concat_string~2'>string_concat_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_concat_character~2'>string_concat_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(rhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-character_concat_string~2'>character_concat_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_concat_string_string~2'>string_concat_string_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_concat_character_string~2'>string_concat_character_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(rhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-character_concat_string_string~2'>character_concat_string_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_eq_string~2'>string_eq_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_eq_character~2'>string_eq_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(rhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-character_eq_string~2'>character_eq_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_ne_string~2'>string_ne_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_ne_character~2'>string_ne_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(rhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-character_ne_string~2'>character_ne_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_lt_string~2'>string_lt_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_lt_character~2'>string_lt_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(rhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-character_lt_string~2'>character_lt_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_le_string~2'>string_le_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_le_character~2'>string_le_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(rhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-character_le_string~2'>character_le_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_ge_string~2'>string_ge_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_ge_character~2'>string_ge_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(rhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-character_ge_string~2'>character_ge_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_gt_string~2'>string_gt_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-string_gt_character~2'>string_gt_character</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(rhs) ::
   <strong><a href='../type/string~2.html#boundprocedure-character_gt_string~2'>character_gt_string</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(dtv) ::
   <strong><a href='../type/string~2.html#boundprocedure-read_formatted~2'>read_formatted</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(dtv) ::
   <strong><a href='../type/string~2.html#boundprocedure-read_delimited~2'>read_delimited</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(dtv) ::
   <strong><a href='../type/string~2.html#boundprocedure-read_undelimited~2'>read_undelimited</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(dtv) ::
   <strong><a href='../type/string~2.html#boundprocedure-read_undelimited_listdirected~2'>read_undelimited_listdirected</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(dtv) ::
   <strong><a href='../type/string~2.html#boundprocedure-write_formatted~2'>write_formatted</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(dtv) ::
   <strong><a href='../type/string~2.html#boundprocedure-read_unformatted~2'>read_unformatted</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(dtv) ::
   <strong><a href='../type/string~2.html#boundprocedure-write_unformatted~2'>write_unformatted</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/string~2.html#boundprocedure-replace_one_occurrence~2'>replace_one_occurrence</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
           </tbody>
         </table>
@@ -3032,7 +3049,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-c~23"></span>
+              <span class="anchor" id="variable-c~20"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3077,7 +3094,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~17"></span>
+              <span class="anchor" id="variable-s~13"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3122,7 +3139,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~18"></span>
+              <span class="anchor" id="variable-s~14"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3167,7 +3184,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~19"></span>
+              <span class="anchor" id="variable-s~15"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3227,7 +3244,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~20"></span>
+              <span class="anchor" id="variable-s~16"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -3302,7 +3319,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~21"></span>
+              <span class="anchor" id="variable-s~17"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -3317,7 +3334,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~8"></span>
+              <span class="anchor" id="variable-set~7"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3377,7 +3394,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~22"></span>
+              <span class="anchor" id="variable-s~18"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -3392,7 +3409,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~9"></span>
+              <span class="anchor" id="variable-set~8"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3452,7 +3469,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~191"></span>
+              <span class="anchor" id="variable-self~124"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3497,7 +3514,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~192"></span>
+              <span class="anchor" id="variable-self~125"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3542,7 +3559,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~193"></span>
+              <span class="anchor" id="variable-self~126"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3617,7 +3634,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~194"></span>
+              <span class="anchor" id="variable-self~127"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3692,7 +3709,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~195"></span>
+              <span class="anchor" id="variable-self~128"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3767,7 +3784,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~196"></span>
+              <span class="anchor" id="variable-self~129"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3812,7 +3829,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~197"></span>
+              <span class="anchor" id="variable-self~130"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3857,7 +3874,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~198"></span>
+              <span class="anchor" id="variable-self~131"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3977,7 +3994,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~199"></span>
+              <span class="anchor" id="variable-self~132"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -3992,7 +4009,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~10"></span>
+              <span class="anchor" id="variable-set~9"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4052,7 +4069,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~200"></span>
+              <span class="anchor" id="variable-self~133"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4067,7 +4084,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~11"></span>
+              <span class="anchor" id="variable-set~10"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -4127,7 +4144,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~201"></span>
+              <span class="anchor" id="variable-self~134"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4172,7 +4189,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~202"></span>
+              <span class="anchor" id="variable-self~135"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4187,7 +4204,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~12"></span>
+              <span class="anchor" id="variable-set~11"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4247,7 +4264,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~203"></span>
+              <span class="anchor" id="variable-self~136"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4262,7 +4279,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-set~13"></span>
+              <span class="anchor" id="variable-set~12"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -4322,7 +4339,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~204"></span>
+              <span class="anchor" id="variable-self~137"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4337,7 +4354,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~43"></span>
+              <span class="anchor" id="variable-sep~36"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -4382,7 +4399,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~205"></span>
+              <span class="anchor" id="variable-self~138"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4397,7 +4414,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~44"></span>
+              <span class="anchor" id="variable-sep~37"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -4472,7 +4489,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~206"></span>
+              <span class="anchor" id="variable-self~139"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4487,7 +4504,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~45"></span>
+              <span class="anchor" id="variable-sep~38"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -4532,7 +4549,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~207"></span>
+              <span class="anchor" id="variable-self~140"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4577,7 +4594,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~208"></span>
+              <span class="anchor" id="variable-self~141"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4622,7 +4639,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~209"></span>
+              <span class="anchor" id="variable-self~142"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4637,7 +4654,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-color_fg~8"></span>
+              <span class="anchor" id="variable-color_fg~5"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -4652,7 +4669,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-color_bg~8"></span>
+              <span class="anchor" id="variable-color_bg~5"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -4667,7 +4684,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-style~10"></span>
+              <span class="anchor" id="variable-style~6"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -4712,7 +4729,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~210"></span>
+              <span class="anchor" id="variable-self~143"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4772,7 +4789,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~211"></span>
+              <span class="anchor" id="variable-self~144"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4832,7 +4849,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~212"></span>
+              <span class="anchor" id="variable-self~145"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4907,7 +4924,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~213"></span>
+              <span class="anchor" id="variable-self~146"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -4952,7 +4969,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~214"></span>
+              <span class="anchor" id="variable-self~147"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -5042,7 +5059,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~218"></span>
+              <span class="anchor" id="variable-self~151"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -5117,7 +5134,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~219"></span>
+              <span class="anchor" id="variable-self~152"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -5192,7 +5209,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~220"></span>
+              <span class="anchor" id="variable-self~153"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -5222,7 +5239,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~46"></span>
+              <span class="anchor" id="variable-sep~39"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -5267,7 +5284,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~221"></span>
+              <span class="anchor" id="variable-self~154"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -5297,7 +5314,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~47"></span>
+              <span class="anchor" id="variable-sep~40"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -5357,7 +5374,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~48"></span>
+              <span class="anchor" id="variable-sep~41"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -5417,7 +5434,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~49"></span>
+              <span class="anchor" id="variable-sep~42"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -5492,7 +5509,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~50"></span>
+              <span class="anchor" id="variable-sep~43"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -5567,7 +5584,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~51"></span>
+              <span class="anchor" id="variable-sep~44"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -5642,7 +5659,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~222"></span>
+              <span class="anchor" id="variable-self~155"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -5687,7 +5704,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~223"></span>
+              <span class="anchor" id="variable-self~156"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -5702,7 +5719,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~52"></span>
+              <span class="anchor" id="variable-sep~45"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -5747,7 +5764,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~227"></span>
+              <span class="anchor" id="variable-self~160"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -5837,7 +5854,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~228"></span>
+              <span class="anchor" id="variable-self~161"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -5863,7 +5880,7 @@ parameter
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-search~3"></span> <h3>private  function <a href='../proc/search~3.html'>search</a>(self, tag_start, tag_end, in_string, in_character, istart, iend) result(tag)  
+    <div class="card-header codesum"><span class="anchor" id="proc-search~2"></span> <h3>private  function <a href='../proc/search~2.html'>search</a>(self, tag_start, tag_end, in_string, in_character, istart, iend) result(tag)  
 </h3></div>
     <div class="card-body">
           
@@ -5882,7 +5899,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~229"></span>
+              <span class="anchor" id="variable-self~162"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6017,7 +6034,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~230"></span>
+              <span class="anchor" id="variable-self~163"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6092,7 +6109,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~231"></span>
+              <span class="anchor" id="variable-self~164"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6107,7 +6124,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~53"></span>
+              <span class="anchor" id="variable-sep~46"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -6152,7 +6169,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~234"></span>
+              <span class="anchor" id="variable-self~167"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6167,7 +6184,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~56"></span>
+              <span class="anchor" id="variable-sep~49"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -6212,7 +6229,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~235"></span>
+              <span class="anchor" id="variable-self~168"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6272,7 +6289,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~236"></span>
+              <span class="anchor" id="variable-self~169"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6317,7 +6334,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~237"></span>
+              <span class="anchor" id="variable-self~170"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6407,7 +6424,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~238"></span>
+              <span class="anchor" id="variable-self~171"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6467,7 +6484,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~239"></span>
+              <span class="anchor" id="variable-self~172"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6527,7 +6544,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~240"></span>
+              <span class="anchor" id="variable-self~173"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6587,7 +6604,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~241"></span>
+              <span class="anchor" id="variable-self~174"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6647,7 +6664,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~242"></span>
+              <span class="anchor" id="variable-self~175"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6707,7 +6724,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~243"></span>
+              <span class="anchor" id="variable-self~176"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6767,7 +6784,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~244"></span>
+              <span class="anchor" id="variable-self~177"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6827,7 +6844,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~245"></span>
+              <span class="anchor" id="variable-self~178"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6902,7 +6919,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~246"></span>
+              <span class="anchor" id="variable-self~179"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -6943,7 +6960,7 @@ parameter
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-upper~4"></span> <h3>private elemental function <a href='../proc/upper~4.html'>upper</a>(self)  
+    <div class="card-header codesum"><span class="anchor" id="proc-upper~3"></span> <h3>private elemental function <a href='../proc/upper~3.html'>upper</a>(self)  
 </h3></div>
     <div class="card-body">
           
@@ -6962,7 +6979,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~247"></span>
+              <span class="anchor" id="variable-self~180"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7007,7 +7024,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~251"></span>
+              <span class="anchor" id="variable-self~184"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7112,7 +7129,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~252"></span>
+              <span class="anchor" id="variable-self~185"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7157,7 +7174,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~253"></span>
+              <span class="anchor" id="variable-self~186"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7202,7 +7219,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~254"></span>
+              <span class="anchor" id="variable-self~187"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7262,7 +7279,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~255"></span>
+              <span class="anchor" id="variable-self~188"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7307,7 +7324,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~256"></span>
+              <span class="anchor" id="variable-self~189"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7367,7 +7384,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~257"></span>
+              <span class="anchor" id="variable-self~190"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7427,7 +7444,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~258"></span>
+              <span class="anchor" id="variable-self~191"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7472,7 +7489,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~259"></span>
+              <span class="anchor" id="variable-self~192"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7562,7 +7579,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~44"></span>
+              <span class="anchor" id="variable-lhs~43"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7577,7 +7594,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~44"></span>
+              <span class="anchor" id="variable-rhs~43"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7622,7 +7639,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~45"></span>
+              <span class="anchor" id="variable-lhs~44"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7637,7 +7654,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~45"></span>
+              <span class="anchor" id="variable-rhs~44"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -7682,7 +7699,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~46"></span>
+              <span class="anchor" id="variable-lhs~45"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -7697,7 +7714,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~46"></span>
+              <span class="anchor" id="variable-rhs~45"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7742,7 +7759,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~47"></span>
+              <span class="anchor" id="variable-lhs~46"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7757,7 +7774,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~47"></span>
+              <span class="anchor" id="variable-rhs~46"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7802,7 +7819,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~48"></span>
+              <span class="anchor" id="variable-lhs~47"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7817,7 +7834,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~48"></span>
+              <span class="anchor" id="variable-rhs~47"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -7862,7 +7879,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~49"></span>
+              <span class="anchor" id="variable-lhs~48"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -7877,7 +7894,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~49"></span>
+              <span class="anchor" id="variable-rhs~48"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7922,7 +7939,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~50"></span>
+              <span class="anchor" id="variable-lhs~49"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7937,7 +7954,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~50"></span>
+              <span class="anchor" id="variable-rhs~49"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7982,7 +7999,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~51"></span>
+              <span class="anchor" id="variable-lhs~50"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -7997,7 +8014,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~51"></span>
+              <span class="anchor" id="variable-rhs~50"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8042,7 +8059,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~52"></span>
+              <span class="anchor" id="variable-lhs~51"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8057,7 +8074,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~52"></span>
+              <span class="anchor" id="variable-rhs~51"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8102,7 +8119,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~53"></span>
+              <span class="anchor" id="variable-lhs~52"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8117,7 +8134,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~53"></span>
+              <span class="anchor" id="variable-rhs~52"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8162,7 +8179,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~54"></span>
+              <span class="anchor" id="variable-lhs~53"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8177,7 +8194,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~54"></span>
+              <span class="anchor" id="variable-rhs~53"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8222,7 +8239,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~55"></span>
+              <span class="anchor" id="variable-lhs~54"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8237,7 +8254,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~55"></span>
+              <span class="anchor" id="variable-rhs~54"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8282,7 +8299,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~56"></span>
+              <span class="anchor" id="variable-lhs~55"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8297,7 +8314,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~56"></span>
+              <span class="anchor" id="variable-rhs~55"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8342,7 +8359,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~57"></span>
+              <span class="anchor" id="variable-lhs~56"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8357,7 +8374,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~57"></span>
+              <span class="anchor" id="variable-rhs~56"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8402,7 +8419,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~58"></span>
+              <span class="anchor" id="variable-lhs~57"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8417,7 +8434,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~58"></span>
+              <span class="anchor" id="variable-rhs~57"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8462,7 +8479,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~59"></span>
+              <span class="anchor" id="variable-lhs~58"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8477,7 +8494,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~59"></span>
+              <span class="anchor" id="variable-rhs~58"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8522,7 +8539,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~60"></span>
+              <span class="anchor" id="variable-lhs~59"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8537,7 +8554,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~60"></span>
+              <span class="anchor" id="variable-rhs~59"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8582,7 +8599,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~61"></span>
+              <span class="anchor" id="variable-lhs~60"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8597,7 +8614,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~61"></span>
+              <span class="anchor" id="variable-rhs~60"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8642,7 +8659,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~62"></span>
+              <span class="anchor" id="variable-lhs~61"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8657,7 +8674,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~62"></span>
+              <span class="anchor" id="variable-rhs~61"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8702,7 +8719,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~63"></span>
+              <span class="anchor" id="variable-lhs~62"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8717,7 +8734,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~63"></span>
+              <span class="anchor" id="variable-rhs~62"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8762,7 +8779,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~64"></span>
+              <span class="anchor" id="variable-lhs~63"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8777,7 +8794,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~64"></span>
+              <span class="anchor" id="variable-rhs~63"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8822,7 +8839,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~65"></span>
+              <span class="anchor" id="variable-lhs~64"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8837,7 +8854,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~65"></span>
+              <span class="anchor" id="variable-rhs~64"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8882,7 +8899,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~66"></span>
+              <span class="anchor" id="variable-lhs~65"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -8897,7 +8914,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~66"></span>
+              <span class="anchor" id="variable-rhs~65"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8942,7 +8959,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~67"></span>
+              <span class="anchor" id="variable-lhs~66"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -8957,7 +8974,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~67"></span>
+              <span class="anchor" id="variable-rhs~66"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -9002,7 +9019,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~260"></span>
+              <span class="anchor" id="variable-self~193"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -9063,7 +9080,7 @@ parameter
         <section>
           <h2>Subroutines</h2>
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-free~3"></span> <h3>private elemental subroutine <a href='../proc/free~3.html'>free</a>(self)  
+    <div class="card-header codesum"><span class="anchor" id="proc-free~2"></span> <h3>private elemental subroutine <a href='../proc/free~2.html'>free</a>(self)  
 </h3></div>
     <div class="card-body">
           
@@ -9082,7 +9099,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~215"></span>
+              <span class="anchor" id="variable-self~148"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -9122,7 +9139,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~216"></span>
+              <span class="anchor" id="variable-self~149"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -9192,7 +9209,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~217"></span>
+              <span class="anchor" id="variable-self~150"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -9243,7 +9260,7 @@ parameter
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-read_file~2"></span> <h3>private  subroutine <a href='../proc/read_file~2.html'>read_file</a>(self, file, is_fast, form, iostat, iomsg)  
+    <div class="card-header codesum"><span class="anchor" id="proc-read_file~4"></span> <h3>private  subroutine <a href='../proc/read_file~4.html'>read_file</a>(self, file, is_fast, form, iostat, iomsg)  
 </h3></div>
     <div class="card-body">
           
@@ -9262,7 +9279,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~224"></span>
+              <span class="anchor" id="variable-self~157"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -9277,7 +9294,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-file~3"></span>
+              <span class="anchor" id="variable-file~7"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -9307,207 +9324,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-form~8"></span>
-              character(len=*),
-            </td>
-<td>intent(in),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>form</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iostat~29"></span>
-              integer,
-            </td>
-<td>intent(out),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iostat</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iomsg~29"></span>
-              character(len=*),
-            </td>
-<td>intent(inout),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iomsg</strong></td>
-            <td>
-
-            </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-    </div>
-  </div>
-
-              <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-read_line~2"></span> <h3>private  subroutine <a href='../proc/read_line~2.html'>read_line</a>(self, unit, form, iostat, iomsg)  
-</h3></div>
-    <div class="card-body">
-          
-  
-
-  <h4>Arguments</h4>
-      <table class="table table-striped varlist">
-    <thead>
-      <tr>
-        <th scope="col">Type</th>
-<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
-        <th scope="col"></th>
-        <th scope="col">Name</th>
-        <th scope="col"></th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-self~225"></span>
-              class(<a href='../type/string~2.html'>string</a>),
-            </td>
-<td>intent(inout)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>self</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-unit~25"></span>
-              integer,
-            </td>
-<td>intent(in)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>unit</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-form~9"></span>
-              character(len=*),
-            </td>
-<td>intent(in),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>form</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iostat~30"></span>
-              integer,
-            </td>
-<td>intent(out),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iostat</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iomsg~30"></span>
-              character(len=*),
-            </td>
-<td>intent(inout),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iomsg</strong></td>
-            <td>
-
-            </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-    </div>
-  </div>
-
-              <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-read_lines~2"></span> <h3>private  subroutine <a href='../proc/read_lines~2.html'>read_lines</a>(self, unit, form, iostat, iomsg)  
-</h3></div>
-    <div class="card-body">
-          
-  
-
-  <h4>Arguments</h4>
-      <table class="table table-striped varlist">
-    <thead>
-      <tr>
-        <th scope="col">Type</th>
-<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
-        <th scope="col"></th>
-        <th scope="col">Name</th>
-        <th scope="col"></th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-self~226"></span>
-              class(<a href='../type/string~2.html'>string</a>),
-            </td>
-<td>intent(inout)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>self</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-unit~26"></span>
-              integer,
-            </td>
-<td>intent(in)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>unit</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-form~10"></span>
+              <span class="anchor" id="variable-form~15"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -9558,6 +9375,206 @@ parameter
   </div>
 
               <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-read_line~2"></span> <h3>private  subroutine <a href='../proc/read_line~2.html'>read_line</a>(self, unit, form, iostat, iomsg)  
+</h3></div>
+    <div class="card-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-self~158"></span>
+              class(<a href='../type/string~2.html'>string</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-unit~29"></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>unit</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-form~16"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>form</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iostat~32"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iostat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iomsg~32"></span>
+              character(len=*),
+            </td>
+<td>intent(inout),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iomsg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-read_lines~4"></span> <h3>private  subroutine <a href='../proc/read_lines~4.html'>read_lines</a>(self, unit, form, iostat, iomsg)  
+</h3></div>
+    <div class="card-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-self~159"></span>
+              class(<a href='../type/string~2.html'>string</a>),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-unit~30"></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>unit</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-form~17"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>form</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iostat~33"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iostat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iomsg~33"></span>
+              character(len=*),
+            </td>
+<td>intent(inout),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iomsg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
     <div class="card-header codesum"><span class="anchor" id="proc-split~2"></span> <h3>private pure subroutine <a href='../proc/split~2.html'>split</a>(self, tokens, sep, max_tokens)  
 </h3></div>
     <div class="card-body">
@@ -9577,7 +9594,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~232"></span>
+              <span class="anchor" id="variable-self~165"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -9592,7 +9609,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-tokens~10"></span>
+              <span class="anchor" id="variable-tokens~9"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(out),</td>
@@ -9607,7 +9624,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~54"></span>
+              <span class="anchor" id="variable-sep~47"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -9662,7 +9679,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~233"></span>
+              <span class="anchor" id="variable-self~166"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -9677,7 +9694,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-tokens~11"></span>
+              <span class="anchor" id="variable-tokens~10"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(out),</td>
@@ -9707,7 +9724,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-sep~55"></span>
+              <span class="anchor" id="variable-sep~48"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in),</td>
@@ -9728,7 +9745,7 @@ parameter
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-write_file~2"></span> <h3>private  subroutine <a href='../proc/write_file~2.html'>write_file</a>(self, file, form, iostat, iomsg)  
+    <div class="card-header codesum"><span class="anchor" id="proc-write_file~4"></span> <h3>private  subroutine <a href='../proc/write_file~4.html'>write_file</a>(self, file, form, iostat, iomsg)  
 </h3></div>
     <div class="card-body">
           
@@ -9747,7 +9764,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~248"></span>
+              <span class="anchor" id="variable-self~181"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -9762,7 +9779,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-file~4"></span>
+              <span class="anchor" id="variable-file~8"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -9777,207 +9794,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-form~11"></span>
-              character(len=*),
-            </td>
-<td>intent(in),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>form</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iostat~32"></span>
-              integer,
-            </td>
-<td>intent(out),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iostat</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iomsg~32"></span>
-              character(len=*),
-            </td>
-<td>intent(inout),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iomsg</strong></td>
-            <td>
-
-            </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-    </div>
-  </div>
-
-              <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-write_line~2"></span> <h3>private  subroutine <a href='../proc/write_line~2.html'>write_line</a>(self, unit, form, iostat, iomsg)  
-</h3></div>
-    <div class="card-body">
-          
-  
-
-  <h4>Arguments</h4>
-      <table class="table table-striped varlist">
-    <thead>
-      <tr>
-        <th scope="col">Type</th>
-<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
-        <th scope="col"></th>
-        <th scope="col">Name</th>
-        <th scope="col"></th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-self~249"></span>
-              class(<a href='../type/string~2.html'>string</a>),
-            </td>
-<td>intent(in)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>self</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-unit~28"></span>
-              integer,
-            </td>
-<td>intent(in)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>unit</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-form~12"></span>
-              character(len=*),
-            </td>
-<td>intent(in),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>form</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iostat~33"></span>
-              integer,
-            </td>
-<td>intent(out),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iostat</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iomsg~33"></span>
-              character(len=*),
-            </td>
-<td>intent(inout),</td>
-              <td>optional</td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iomsg</strong></td>
-            <td>
-
-            </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-    </div>
-  </div>
-
-              <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-write_lines~2"></span> <h3>private  subroutine <a href='../proc/write_lines~2.html'>write_lines</a>(self, unit, form, iostat, iomsg)  
-</h3></div>
-    <div class="card-body">
-          
-  
-
-  <h4>Arguments</h4>
-      <table class="table table-striped varlist">
-    <thead>
-      <tr>
-        <th scope="col">Type</th>
-<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
-        <th scope="col"></th>
-        <th scope="col">Name</th>
-        <th scope="col"></th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-self~250"></span>
-              class(<a href='../type/string~2.html'>string</a>),
-            </td>
-<td>intent(in)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>self</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-unit~29"></span>
-              integer,
-            </td>
-<td>intent(in)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>unit</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-form~13"></span>
+              <span class="anchor" id="variable-form~18"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -10028,6 +9845,206 @@ parameter
   </div>
 
               <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-write_line~2"></span> <h3>private  subroutine <a href='../proc/write_line~2.html'>write_line</a>(self, unit, form, iostat, iomsg)  
+</h3></div>
+    <div class="card-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-self~182"></span>
+              class(<a href='../type/string~2.html'>string</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-unit~32"></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>unit</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-form~19"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>form</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iostat~35"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iostat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iomsg~35"></span>
+              character(len=*),
+            </td>
+<td>intent(inout),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iomsg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-write_lines~4"></span> <h3>private  subroutine <a href='../proc/write_lines~4.html'>write_lines</a>(self, unit, form, iostat, iomsg)  
+</h3></div>
+    <div class="card-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-self~183"></span>
+              class(<a href='../type/string~2.html'>string</a>),
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>self</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-unit~33"></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>unit</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-form~20"></span>
+              character(len=*),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>form</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iostat~36"></span>
+              integer,
+            </td>
+<td>intent(out),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iostat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iomsg~36"></span>
+              character(len=*),
+            </td>
+<td>intent(inout),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iomsg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
     <div class="card-header codesum"><span class="anchor" id="proc-string_assign_string~2"></span> <h3>private pure subroutine <a href='../proc/string_assign_string~2.html'>string_assign_string</a>(lhs, rhs)  
 </h3></div>
     <div class="card-body">
@@ -10047,7 +10064,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~35"></span>
+              <span class="anchor" id="variable-lhs~34"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -10062,7 +10079,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~35"></span>
+              <span class="anchor" id="variable-rhs~34"></span>
               type(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(in)</td>
@@ -10102,7 +10119,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~36"></span>
+              <span class="anchor" id="variable-lhs~35"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -10117,7 +10134,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~36"></span>
+              <span class="anchor" id="variable-rhs~35"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(in)</td>
@@ -10157,7 +10174,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~37"></span>
+              <span class="anchor" id="variable-lhs~36"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -10172,7 +10189,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~37"></span>
+              <span class="anchor" id="variable-rhs~36"></span>
               integer(kind=I1P),
             </td>
 <td>intent(in)</td>
@@ -10212,7 +10229,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~38"></span>
+              <span class="anchor" id="variable-lhs~37"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -10227,7 +10244,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~38"></span>
+              <span class="anchor" id="variable-rhs~37"></span>
               integer(kind=I2P),
             </td>
 <td>intent(in)</td>
@@ -10267,7 +10284,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~39"></span>
+              <span class="anchor" id="variable-lhs~38"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -10282,7 +10299,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~39"></span>
+              <span class="anchor" id="variable-rhs~38"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in)</td>
@@ -10322,7 +10339,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~40"></span>
+              <span class="anchor" id="variable-lhs~39"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -10337,7 +10354,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~40"></span>
+              <span class="anchor" id="variable-rhs~39"></span>
               integer(kind=I8P),
             </td>
 <td>intent(in)</td>
@@ -10377,7 +10394,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~41"></span>
+              <span class="anchor" id="variable-lhs~40"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -10392,7 +10409,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~41"></span>
+              <span class="anchor" id="variable-rhs~40"></span>
               real(kind=R4P),
             </td>
 <td>intent(in)</td>
@@ -10432,7 +10449,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~42"></span>
+              <span class="anchor" id="variable-lhs~41"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -10447,7 +10464,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~42"></span>
+              <span class="anchor" id="variable-rhs~41"></span>
               real(kind=R8P),
             </td>
 <td>intent(in)</td>
@@ -10487,7 +10504,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs~43"></span>
+              <span class="anchor" id="variable-lhs~42"></span>
               class(<a href='../type/string~2.html'>string</a>),
             </td>
 <td>intent(inout)</td>
@@ -10502,7 +10519,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs~43"></span>
+              <span class="anchor" id="variable-rhs~42"></span>
               real(kind=R16P),
             </td>
 <td>intent(in)</td>
@@ -10557,7 +10574,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-unit~30"></span>
+              <span class="anchor" id="variable-unit~34"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -10602,7 +10619,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iostat~35"></span>
+              <span class="anchor" id="variable-iostat~37"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -10617,7 +10634,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iomsg~35"></span>
+              <span class="anchor" id="variable-iomsg~37"></span>
               character(len=*),
             </td>
 <td>intent(inout)</td>
@@ -10672,7 +10689,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-unit~31"></span>
+              <span class="anchor" id="variable-unit~35"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -10702,7 +10719,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iostat~36"></span>
+              <span class="anchor" id="variable-iostat~38"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -10717,7 +10734,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iomsg~36"></span>
+              <span class="anchor" id="variable-iomsg~38"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(inout)</td>
@@ -10772,7 +10789,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-unit~32"></span>
+              <span class="anchor" id="variable-unit~36"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -10787,7 +10804,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iostat~37"></span>
+              <span class="anchor" id="variable-iostat~39"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -10802,7 +10819,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iomsg~37"></span>
+              <span class="anchor" id="variable-iomsg~39"></span>
               character(len=*),
             </td>
 <td>intent(inout)</td>
@@ -10857,7 +10874,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-unit~33"></span>
+              <span class="anchor" id="variable-unit~37"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -10887,7 +10904,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iostat~38"></span>
+              <span class="anchor" id="variable-iostat~40"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -10902,7 +10919,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iomsg~38"></span>
+              <span class="anchor" id="variable-iomsg~40"></span>
               character(len=*),
             </td>
 <td>intent(inout)</td>
@@ -10957,7 +10974,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-unit~34"></span>
+              <span class="anchor" id="variable-unit~38"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -11002,7 +11019,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iostat~39"></span>
+              <span class="anchor" id="variable-iostat~41"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -11017,7 +11034,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iomsg~39"></span>
+              <span class="anchor" id="variable-iomsg~41"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(inout)</td>
@@ -11072,7 +11089,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-unit~35"></span>
+              <span class="anchor" id="variable-unit~39"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -11087,7 +11104,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iostat~40"></span>
+              <span class="anchor" id="variable-iostat~42"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -11102,7 +11119,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iomsg~40"></span>
+              <span class="anchor" id="variable-iomsg~42"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(inout)</td>
@@ -11157,7 +11174,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-unit~36"></span>
+              <span class="anchor" id="variable-unit~40"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -11166,176 +11183,6 @@ parameter
             </td>
             <td>::</td>
             <td><strong>unit</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iostat~41"></span>
-              integer,
-            </td>
-<td>intent(out)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iostat</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iomsg~41"></span>
-              character(kind=CK, len=*),
-            </td>
-<td>intent(inout)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iomsg</strong></td>
-            <td>
-
-            </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-    </div>
-  </div>
-
-              <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-get_delimiter_mode~2"></span> <h3>private  subroutine <a href='../proc/get_delimiter_mode~2.html'>get_delimiter_mode</a>(unit, delim, iostat, iomsg)  
-</h3></div>
-    <div class="card-body">
-          
-  
-
-  <h4>Arguments</h4>
-      <table class="table table-striped varlist">
-    <thead>
-      <tr>
-        <th scope="col">Type</th>
-<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
-        <th scope="col"></th>
-        <th scope="col">Name</th>
-        <th scope="col"></th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-unit~37"></span>
-              integer,
-            </td>
-<td>intent(in)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>unit</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-delim~6"></span>
-              character(kind=CK, len=1),
-            </td>
-<td>intent(out)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>delim</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iostat~42"></span>
-              integer,
-            </td>
-<td>intent(out)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iostat</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-iomsg~42"></span>
-              character(len=*),
-            </td>
-<td>intent(inout)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>iomsg</strong></td>
-            <td>
-
-            </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-    </div>
-  </div>
-
-              <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-get_next_non_blank_character_this_record~2"></span> <h3>private  subroutine <a href='../proc/get_next_non_blank_character_this_record~2.html'>get_next_non_blank_character_this_record</a>(unit, ch, iostat, iomsg)  
-</h3></div>
-    <div class="card-body">
-          
-  
-
-  <h4>Arguments</h4>
-      <table class="table table-striped varlist">
-    <thead>
-      <tr>
-        <th scope="col">Type</th>
-<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
-        <th scope="col"></th>
-        <th scope="col">Name</th>
-        <th scope="col"></th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-unit~38"></span>
-              integer,
-            </td>
-<td>intent(in)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>unit</strong></td>
-            <td>
-
-            </td>
-        </tr>
-        <tr>
-            <td>
-              <span class="anchor" id="variable-ch~9"></span>
-              character(kind=CK, len=1),
-            </td>
-<td>intent(out)</td>
-              <td></td>            <td>
-              
-            </td>
-            <td>::</td>
-            <td><strong>ch</strong></td>
             <td>
 
             </td>
@@ -11378,7 +11225,7 @@ parameter
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-get_next_non_blank_character_any_record~2"></span> <h3>private  subroutine <a href='../proc/get_next_non_blank_character_any_record~2.html'>get_next_non_blank_character_any_record</a>(unit, ch, iostat, iomsg)  
+    <div class="card-header codesum"><span class="anchor" id="proc-get_delimiter_mode~2"></span> <h3>private  subroutine <a href='../proc/get_delimiter_mode~2.html'>get_delimiter_mode</a>(unit, delim, iostat, iomsg)  
 </h3></div>
     <div class="card-body">
           
@@ -11397,7 +11244,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-unit~39"></span>
+              <span class="anchor" id="variable-unit~41"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -11412,7 +11259,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-ch~10"></span>
+              <span class="anchor" id="variable-delim~6"></span>
               character(kind=CK, len=1),
             </td>
 <td>intent(out)</td>
@@ -11420,7 +11267,7 @@ parameter
               
             </td>
             <td>::</td>
-            <td><strong>ch</strong></td>
+            <td><strong>delim</strong></td>
             <td>
 
             </td>
@@ -11443,6 +11290,176 @@ parameter
         <tr>
             <td>
               <span class="anchor" id="variable-iomsg~44"></span>
+              character(len=*),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iomsg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-get_next_non_blank_character_this_record~2"></span> <h3>private  subroutine <a href='../proc/get_next_non_blank_character_this_record~2.html'>get_next_non_blank_character_this_record</a>(unit, ch, iostat, iomsg)  
+</h3></div>
+    <div class="card-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-unit~42"></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>unit</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ch~11"></span>
+              character(kind=CK, len=1),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ch</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iostat~45"></span>
+              integer,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iostat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iomsg~45"></span>
+              character(kind=CK, len=*),
+            </td>
+<td>intent(inout)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iomsg</strong></td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+    </div>
+  </div>
+
+              <div class="card">
+    <div class="card-header codesum"><span class="anchor" id="proc-get_next_non_blank_character_any_record~2"></span> <h3>private  subroutine <a href='../proc/get_next_non_blank_character_any_record~2.html'>get_next_non_blank_character_any_record</a>(unit, ch, iostat, iomsg)  
+</h3></div>
+    <div class="card-body">
+          
+  
+
+  <h4>Arguments</h4>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+<th scope="col">Intent</th><th scope="col">Optional</th>        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-unit~43"></span>
+              integer,
+            </td>
+<td>intent(in)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>unit</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-ch~12"></span>
+              character(kind=CK, len=1),
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>ch</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iostat~46"></span>
+              integer,
+            </td>
+<td>intent(out)</td>
+              <td></td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>iostat</strong></td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-iomsg~46"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(inout)</td>
@@ -11482,7 +11499,7 @@ parameter
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-unit~40"></span>
+              <span class="anchor" id="variable-unit~44"></span>
               integer,
             </td>
 <td>intent(in)</td>
@@ -11512,7 +11529,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iostat~45"></span>
+              <span class="anchor" id="variable-iostat~47"></span>
               integer,
             </td>
 <td>intent(out)</td>
@@ -11527,7 +11544,7 @@ parameter
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iomsg~45"></span>
+              <span class="anchor" id="variable-iomsg~47"></span>
               character(kind=CK, len=*),
             </td>
 <td>intent(inout)</td>
@@ -11576,27 +11593,5 @@ parameter
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

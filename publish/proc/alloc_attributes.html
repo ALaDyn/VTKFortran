@@ -12,14 +12,29 @@
 
     <title>alloc_attributes &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -100,9 +115,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -165,7 +182,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~17"></span>
+              <span class="anchor" id="variable-self~463"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -306,18 +323,18 @@
 <path fill="none" stroke="#000000" d="M698.54,-180C711.36,-180 724.57,-180 737.47,-180"/>
 <polygon fill="#000000" stroke="#000000" points="737.75,-183.5 747.75,-180 737.75,-176.5 737.75,-183.5"/>
 </g>
-<!-- proc~parse -->
+<!-- proc~parse~2 -->
 <g id="proc~~alloc_attributes~~CalledByGraph_node7" class="node">
-<title>proc~parse</title>
-<g id="a_proc~~alloc_attributes~~CalledByGraph_node7"><a xlink:href="../proc/parse.html" xlink:title="xml_tag%parse">
+<title>proc~parse~2</title>
+<g id="a_proc~~alloc_attributes~~CalledByGraph_node7"><a xlink:href="../proc/parse~2.html" xlink:title="xml_tag%parse">
 <polygon fill="#d9534f" stroke="#d9534f" points="654,-110 560,-110 560,-86 654,-86 654,-110"/>
 <text text-anchor="middle" x="607" y="-95.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">xml_tag%parse</text>
 </a>
 </g>
 </g>
-<!-- proc~parse&#45;&gt;proc~parse_attributes_names -->
+<!-- proc~parse~2&#45;&gt;proc~parse_attributes_names -->
 <g id="proc~~alloc_attributes~~CalledByGraph_edge7" class="edge">
-<title>proc~parse&#45;&gt;proc~parse_attributes_names</title>
+<title>proc~parse~2&#45;&gt;proc~parse_attributes_names</title>
 <path fill="none" stroke="#000000" d="M654.08,-102.3C675.41,-104.29 701.72,-106.75 727.53,-109.16"/>
 <polygon fill="#000000" stroke="#000000" points="727.49,-112.67 737.77,-110.11 728.14,-105.7 727.49,-112.67"/>
 </g>
@@ -387,24 +404,24 @@
 </a>
 </g>
 </g>
-<!-- proc~parse_from_string&#45;&gt;proc~parse -->
+<!-- proc~parse_from_string&#45;&gt;proc~parse~2 -->
 <g id="proc~~alloc_attributes~~CalledByGraph_edge13" class="edge">
-<title>proc~parse_from_string&#45;&gt;proc~parse</title>
+<title>proc~parse_from_string&#45;&gt;proc~parse~2</title>
 <path fill="none" stroke="#000000" d="M476.03,-96.75C500.55,-96.99 527.11,-97.24 549.78,-97.46"/>
 <polygon fill="#000000" stroke="#000000" points="549.87,-100.96 559.9,-97.56 549.94,-93.96 549.87,-100.96"/>
 </g>
-<!-- proc~search -->
+<!-- proc~search~3 -->
 <g id="proc~~alloc_attributes~~CalledByGraph_node12" class="node">
-<title>proc~search</title>
-<g id="a_proc~~alloc_attributes~~CalledByGraph_node12"><a xlink:href="../proc/search.html" xlink:title="xml_tag%search">
+<title>proc~search~3</title>
+<g id="a_proc~~alloc_attributes~~CalledByGraph_node12"><a xlink:href="../proc/search~3.html" xlink:title="xml_tag%search">
 <polygon fill="#d9534f" stroke="#d9534f" points="446.5,-55 346.5,-55 346.5,-31 446.5,-31 446.5,-55"/>
 <text text-anchor="middle" x="396.5" y="-40.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">xml_tag%search</text>
 </a>
 </g>
 </g>
-<!-- proc~search&#45;&gt;proc~parse -->
+<!-- proc~search~3&#45;&gt;proc~parse~2 -->
 <g id="proc~~alloc_attributes~~CalledByGraph_edge14" class="edge">
-<title>proc~search&#45;&gt;proc~parse</title>
+<title>proc~search~3&#45;&gt;proc~parse~2</title>
 <path fill="none" stroke="#000000" d="M443,-55C474.63,-63.34 516.96,-74.51 550.56,-83.38"/>
 <polygon fill="#000000" stroke="#000000" points="549.68,-86.76 560.24,-85.93 551.46,-79.99 549.68,-86.76"/>
 </g>
@@ -432,9 +449,9 @@
 </a>
 </g>
 </g>
-<!-- program~create_tag&#45;&gt;proc~parse -->
+<!-- program~create_tag&#45;&gt;proc~parse~2 -->
 <g id="proc~~alloc_attributes~~CalledByGraph_edge15" class="edge">
-<title>program~create_tag&#45;&gt;proc~parse</title>
+<title>program~create_tag&#45;&gt;proc~parse~2</title>
 <path fill="none" stroke="#000000" d="M252.31,-135.93C301.59,-132.76 396,-126.1 476,-117 500.17,-114.25 526.77,-110.49 549.58,-107.05"/>
 <polygon fill="#000000" stroke="#000000" points="550.41,-110.46 559.77,-105.49 549.35,-103.54 550.41,-110.46"/>
 </g>
@@ -474,24 +491,24 @@
 </a>
 </g>
 </g>
-<!-- proc~get_content&#45;&gt;proc~search -->
+<!-- proc~get_content&#45;&gt;proc~search~3 -->
 <g id="proc~~alloc_attributes~~CalledByGraph_edge22" class="edge">
-<title>proc~get_content&#45;&gt;proc~search</title>
+<title>proc~get_content&#45;&gt;proc~search~3</title>
 <path fill="none" stroke="#000000" d="M281.4,-29.46C299.26,-31.58 318.64,-33.88 336.27,-35.97"/>
 <polygon fill="#000000" stroke="#000000" points="336.09,-39.48 346.43,-37.18 336.91,-32.52 336.09,-39.48"/>
 </g>
-<!-- proc~parse~2 -->
+<!-- proc~parse -->
 <g id="proc~~alloc_attributes~~CalledByGraph_node17" class="node">
-<title>proc~parse~2</title>
-<g id="a_proc~~alloc_attributes~~CalledByGraph_node17"><a xlink:href="../proc/parse~2.html" xlink:title="xml_file%parse">
+<title>proc~parse</title>
+<g id="a_proc~~alloc_attributes~~CalledByGraph_node17"><a xlink:href="../proc/parse.html" xlink:title="xml_file%parse">
 <polygon fill="#d9534f" stroke="#d9534f" points="264.5,-108 170.5,-108 170.5,-84 264.5,-84 264.5,-108"/>
 <text text-anchor="middle" x="217.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">xml_file%parse</text>
 </a>
 </g>
 </g>
-<!-- proc~parse~2&#45;&gt;proc~parse_from_string -->
+<!-- proc~parse&#45;&gt;proc~parse_from_string -->
 <g id="proc~~alloc_attributes~~CalledByGraph_edge21" class="edge">
-<title>proc~parse~2&#45;&gt;proc~parse_from_string</title>
+<title>proc~parse&#45;&gt;proc~parse_from_string</title>
 <path fill="none" stroke="#000000" d="M264.54,-96C277.53,-96 292.11,-96 306.7,-96"/>
 <polygon fill="#000000" stroke="#000000" points="306.78,-99.5 316.78,-96 306.78,-92.5 306.78,-99.5"/>
 </g>
@@ -519,9 +536,9 @@
 </a>
 </g>
 </g>
-<!-- program~delete_tag&#45;&gt;proc~parse~2 -->
+<!-- program~delete_tag&#45;&gt;proc~parse -->
 <g id="proc~~alloc_attributes~~CalledByGraph_edge24" class="edge">
-<title>program~delete_tag&#45;&gt;proc~parse~2</title>
+<title>program~delete_tag&#45;&gt;proc~parse</title>
 <path fill="none" stroke="#000000" d="M93.65,-171.12C102.02,-168.04 110.69,-164.05 118,-159 138.22,-145.02 133.61,-130.74 154,-117 156.53,-115.3 159.21,-113.72 161.98,-112.26"/>
 <polygon fill="#000000" stroke="#000000" points="163.5,-115.41 171.07,-108 160.53,-109.07 163.5,-115.41"/>
 </g>
@@ -534,9 +551,9 @@
 </a>
 </g>
 </g>
-<!-- program~parse_file_simple&#45;&gt;proc~parse~2 -->
+<!-- program~parse_file_simple&#45;&gt;proc~parse -->
 <g id="proc~~alloc_attributes~~CalledByGraph_edge25" class="edge">
-<title>program~parse_file_simple&#45;&gt;proc~parse~2</title>
+<title>program~parse_file_simple&#45;&gt;proc~parse</title>
 <path fill="none" stroke="#000000" d="M104.85,-125.96C122.61,-121.2 143.2,-115.67 161.82,-110.67"/>
 <polygon fill="#000000" stroke="#000000" points="162.9,-114.01 171.65,-108.04 161.08,-107.25 162.9,-114.01"/>
 </g>
@@ -549,9 +566,9 @@
 </a>
 </g>
 </g>
-<!-- program~parse_string_simple&#45;&gt;proc~parse~2 -->
+<!-- program~parse_string_simple&#45;&gt;proc~parse -->
 <g id="proc~~alloc_attributes~~CalledByGraph_edge26" class="edge">
-<title>program~parse_string_simple&#45;&gt;proc~parse~2</title>
+<title>program~parse_string_simple&#45;&gt;proc~parse</title>
 <path fill="none" stroke="#000000" d="M118.27,-96C131.99,-96 146.58,-96 160.2,-96"/>
 <polygon fill="#000000" stroke="#000000" points="160.4,-99.5 170.4,-96 160.4,-92.5 160.4,-99.5"/>
 </g>
@@ -564,9 +581,9 @@
 </a>
 </g>
 </g>
-<!-- program~write_tag&#45;&gt;proc~parse~2 -->
+<!-- program~write_tag&#45;&gt;proc~parse -->
 <g id="proc~~alloc_attributes~~CalledByGraph_edge27" class="edge">
-<title>program~write_tag&#45;&gt;proc~parse~2</title>
+<title>program~write_tag&#45;&gt;proc~parse</title>
 <path fill="none" stroke="#000000" d="M89.8,-62C110.15,-67.46 137.7,-74.85 161.91,-81.35"/>
 <polygon fill="#000000" stroke="#000000" points="161.13,-84.76 171.7,-83.98 162.95,-78 161.13,-84.76"/>
 </g>
@@ -710,27 +727,5 @@ implementation in a submodule of an interface in a parent module.
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

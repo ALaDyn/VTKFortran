@@ -12,14 +12,29 @@
 
     <title>create_tag_nested &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -100,9 +115,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -163,7 +180,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~3"></span>
+              <span class="anchor" id="variable-name~15"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -178,7 +195,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-content~2"></span>
+              <span class="anchor" id="variable-content~5"></span>
               type(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -208,7 +225,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-attributes~3"></span>
+              <span class="anchor" id="variable-attributes~6"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -253,7 +270,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-indent~3"></span>
+              <span class="anchor" id="variable-indent~4"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in),</td>
@@ -286,7 +303,7 @@
 
       <h3>Return Value
         <small>
-          <span class="anchor" id="variable-tag~2"></span>
+          <span class="anchor" id="variable-tag~8"></span>
           type(<a href='../type/xml_tag.html'>xml_tag</a>)
         </small>
       </h3>
@@ -329,18 +346,18 @@
 <path fill="none" stroke="#000000" d="M76.72,-171.07C100.99,-185.21 141.39,-208.73 168.94,-224.78"/>
 <polygon fill="#000000" stroke="#000000" points="167.35,-227.91 177.75,-229.92 170.87,-221.86 167.35,-227.91"/>
 </g>
-<!-- proc~stringify -->
+<!-- proc~stringify~2 -->
 <g id="proc~~create_tag_nested~~CallsGraph_node3" class="node">
-<title>proc~stringify</title>
-<g id="a_proc~~create_tag_nested~~CallsGraph_node3"><a xlink:href="../proc/stringify.html" xlink:title="xml_tag%stringify">
+<title>proc~stringify~2</title>
+<g id="a_proc~~create_tag_nested~~CallsGraph_node3"><a xlink:href="../proc/stringify~2.html" xlink:title="xml_tag%stringify">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="253,-129 146,-129 146,-105 253,-105 253,-129"/>
 <text text-anchor="middle" x="199.5" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">xml_tag%stringify</text>
 </a>
 </g>
 </g>
-<!-- proc~create_tag_nested&#45;&gt;proc~stringify -->
+<!-- proc~create_tag_nested&#45;&gt;proc~stringify~2 -->
 <g id="proc~~create_tag_nested~~CallsGraph_edge2" class="edge">
-<title>proc~create_tag_nested&#45;&gt;proc~stringify</title>
+<title>proc~create_tag_nested&#45;&gt;proc~stringify~2</title>
 <path fill="none" stroke="#000000" d="M96.83,-146.96C112.78,-142.26 131.24,-136.82 148.01,-131.88"/>
 <polygon fill="#000000" stroke="#000000" points="149.06,-135.22 157.66,-129.04 147.08,-128.51 149.06,-135.22"/>
 </g>
@@ -398,9 +415,9 @@
 </a>
 </g>
 </g>
-<!-- proc~stringify&#45;&gt;proc~chars -->
+<!-- proc~stringify~2&#45;&gt;proc~chars -->
 <g id="proc~~create_tag_nested~~CallsGraph_edge6" class="edge">
-<title>proc~stringify&#45;&gt;proc~chars</title>
+<title>proc~stringify~2&#45;&gt;proc~chars</title>
 <path fill="none" stroke="#000000" d="M222.47,-129.12C240.04,-138.4 265.52,-150.92 289,-159 302.87,-163.77 318.27,-167.74 332.52,-170.89"/>
 <polygon fill="#000000" stroke="#000000" points="332.15,-174.39 342.66,-173.05 333.61,-167.55 332.15,-174.39"/>
 </g>
@@ -413,9 +430,9 @@
 </a>
 </g>
 </g>
-<!-- proc~stringify&#45;&gt;proc~end_tag -->
+<!-- proc~stringify~2&#45;&gt;proc~end_tag -->
 <g id="proc~~create_tag_nested~~CallsGraph_edge7" class="edge">
-<title>proc~stringify&#45;&gt;proc~end_tag</title>
+<title>proc~stringify~2&#45;&gt;proc~end_tag</title>
 <path fill="none" stroke="#000000" d="M253.29,-123.07C274.19,-125.48 298.39,-128.26 320.18,-130.77"/>
 <polygon fill="#000000" stroke="#000000" points="320,-134.27 330.33,-131.94 320.8,-127.32 320,-134.27"/>
 </g>
@@ -428,9 +445,9 @@
 </a>
 </g>
 </g>
-<!-- proc~stringify&#45;&gt;proc~is_allocated -->
+<!-- proc~stringify~2&#45;&gt;proc~is_allocated -->
 <g id="proc~~create_tag_nested~~CallsGraph_edge8" class="edge">
-<title>proc~stringify&#45;&gt;proc~is_allocated</title>
+<title>proc~stringify~2&#45;&gt;proc~is_allocated</title>
 <path fill="none" stroke="#000000" d="M253.29,-110.93C272.92,-108.67 295.46,-106.07 316.18,-103.69"/>
 <polygon fill="#000000" stroke="#000000" points="316.65,-107.16 326.19,-102.54 315.85,-100.2 316.65,-107.16"/>
 </g>
@@ -443,9 +460,9 @@
 </a>
 </g>
 </g>
-<!-- proc~stringify&#45;&gt;proc~self_closing_tag -->
+<!-- proc~stringify~2&#45;&gt;proc~self_closing_tag -->
 <g id="proc~~create_tag_nested~~CallsGraph_edge9" class="edge">
-<title>proc~stringify&#45;&gt;proc~self_closing_tag</title>
+<title>proc~stringify~2&#45;&gt;proc~self_closing_tag</title>
 <path fill="none" stroke="#000000" d="M222.47,-104.88C240.04,-95.6 265.52,-83.08 289,-75 295.79,-72.66 302.96,-70.52 310.17,-68.57"/>
 <polygon fill="#000000" stroke="#000000" points="311.2,-71.91 320.01,-66.03 309.45,-65.14 311.2,-71.91"/>
 </g>
@@ -458,9 +475,9 @@
 </a>
 </g>
 </g>
-<!-- proc~stringify&#45;&gt;proc~start_tag -->
+<!-- proc~stringify~2&#45;&gt;proc~start_tag -->
 <g id="proc~~create_tag_nested~~CallsGraph_edge10" class="edge">
-<title>proc~stringify&#45;&gt;proc~start_tag</title>
+<title>proc~stringify~2&#45;&gt;proc~start_tag</title>
 <path fill="none" stroke="#000000" d="M209.64,-104.85C224.26,-86.32 254.79,-51.23 289,-33 298.06,-28.17 308.18,-24.45 318.33,-21.59"/>
 <polygon fill="#000000" stroke="#000000" points="319.22,-24.97 328.03,-19.09 317.48,-18.19 319.22,-24.97"/>
 </g>
@@ -822,27 +839,5 @@ implementation in a submodule of an interface in a parent module.
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

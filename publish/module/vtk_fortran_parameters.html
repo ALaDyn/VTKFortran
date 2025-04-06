@@ -12,14 +12,29 @@
 
     <title>vtk_fortran_parameters &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -99,9 +114,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -157,7 +174,7 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <ul class="list-inline">
-                  <li class="list-inline-item"><a href='penf~4.html'>penf</a></li>
+                  <li class="list-inline-item"><a href='penf~7.html'>penf</a></li>
                   <li class="list-inline-item"><a href='http://fortranwiki.org/fortran/show/iso_fortran_env'>iso_fortran_env</a></li>
               </ul>
             </li>
@@ -194,18 +211,18 @@
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M572.67,-112.67C504.23,-116.46 400.12,-122.23 336.28,-125.77"/>
 <polygon fill="#000000" stroke="#000000" points="335.8,-122.29 326,-126.33 336.18,-129.28 335.8,-122.29"/>
 </g>
-<!-- module~penf~4 -->
+<!-- module~penf~7 -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_node3" class="node">
-<title>module~penf~4</title>
-<g id="a_module~~vtk_fortran_parameters~~UsesGraph_node3"><a xlink:href="../module/penf~4.html" xlink:title="penf">
+<title>module~penf~7</title>
+<g id="a_module~~vtk_fortran_parameters~~UsesGraph_node3"><a xlink:href="../module/penf~7.html" xlink:title="penf">
 <polygon fill="#337ab7" stroke="#337ab7" points="537,-100.88 483,-100.88 483,-76.88 537,-76.88 537,-100.88"/>
 <text text-anchor="middle" x="510" y="-86.48" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf</text>
 </a>
 </g>
 </g>
-<!-- module~vtk_fortran_parameters&#45;&gt;module~penf~4 -->
+<!-- module~vtk_fortran_parameters&#45;&gt;module~penf~7 -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_edge2" class="edge">
-<title>module~vtk_fortran_parameters&#45;&gt;module~penf~4</title>
+<title>module~vtk_fortran_parameters&#45;&gt;module~penf~7</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M572.95,-98.41C564.07,-97.05 555.26,-95.69 547.19,-94.45"/>
 <polygon fill="#000000" stroke="#000000" points="547.49,-90.96 537.07,-92.89 546.42,-97.87 547.49,-90.96"/>
 </g>
@@ -218,64 +235,64 @@
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_b_size~6 -->
+<!-- module~penf~7&#45;&gt;module~penf_b_size~6 -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_edge3" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_b_size~6</title>
+<title>module~penf~7&#45;&gt;module~penf_b_size~6</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-8.88C386.73,-4.68 345.72,-19.88 315.53,-32.73"/>
 <polygon fill="#000000" stroke="#000000" points="313.94,-29.61 306.16,-36.8 316.72,-36.03 313.94,-29.61"/>
 </g>
-<!-- module~penf_global_parameters_variables~3 -->
+<!-- module~penf_global_parameters_variables~4 -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_node5" class="node">
-<title>module~penf_global_parameters_variables~3</title>
-<g id="a_module~~vtk_fortran_parameters~~UsesGraph_node5"><a xlink:href="../module/penf_global_parameters_variables~3.html" xlink:title="penf_global_parameters_variables">
+<title>module~penf_global_parameters_variables~4</title>
+<g id="a_module~~vtk_fortran_parameters~~UsesGraph_node5"><a xlink:href="../module/penf_global_parameters_variables~4.html" xlink:title="penf_global_parameters_variables">
 <polygon fill="#337ab7" stroke="#337ab7" points="196,-60.88 0,-60.88 0,-36.88 196,-36.88 196,-60.88"/>
 <text text-anchor="middle" x="98" y="-46.48" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_global_parameters_variables</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf~7&#45;&gt;module~penf_global_parameters_variables~4 -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_edge4" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_global_parameters_variables~3</title>
+<title>module~penf~7&#45;&gt;module~penf_global_parameters_variables~4</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M499.47,-76.83C482.93,-57.13 446.7,-19.2 405.5,-8.88"/>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-8.88C311.58,14.14 200.54,-14.08 141.22,-33.49"/>
 <polygon fill="#000000" stroke="#000000" points="139.83,-30.27 131.46,-36.76 142.05,-36.91 139.83,-30.27"/>
 </g>
-<!-- module~penf_stringify~4 -->
+<!-- module~penf_stringify~2 -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_node6" class="node">
-<title>module~penf_stringify~4</title>
-<g id="a_module~~vtk_fortran_parameters~~UsesGraph_node6"><a xlink:href="../module/penf_stringify~4.html" xlink:title="penf_stringify">
+<title>module~penf_stringify~2</title>
+<g id="a_module~~vtk_fortran_parameters~~UsesGraph_node6"><a xlink:href="../module/penf_stringify~2.html" xlink:title="penf_stringify">
 <polygon fill="#337ab7" stroke="#337ab7" points="447,-100.88 362,-100.88 362,-76.88 447,-76.88 447,-100.88"/>
 <text text-anchor="middle" x="404.5" y="-86.48" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_stringify</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_stringify~4 -->
+<!-- module~penf~7&#45;&gt;module~penf_stringify~2 -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_edge5" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_stringify~4</title>
+<title>module~penf~7&#45;&gt;module~penf_stringify~2</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M482.88,-88.88C475.13,-88.88 466.36,-88.88 457.58,-88.88"/>
 <polygon fill="#000000" stroke="#000000" points="457.32,-85.38 447.32,-88.88 457.32,-92.38 457.32,-85.38"/>
 </g>
-<!-- module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~4 -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_edge6" class="edge">
-<title>module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~3</title>
+<title>module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~4</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M241.78,-48.88C231.22,-48.88 219.1,-48.88 206.49,-48.88"/>
 <polygon fill="#000000" stroke="#000000" points="206.29,-45.38 196.29,-48.88 206.29,-52.38 206.29,-45.38"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;iso_fortran_env -->
+<!-- module~penf_stringify~2&#45;&gt;iso_fortran_env -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_edge7" class="edge">
-<title>module~penf_stringify~4&#45;&gt;iso_fortran_env</title>
+<title>module~penf_stringify~2&#45;&gt;iso_fortran_env</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M366.45,-100.88C354.1,-104.88 340.18,-109.39 327.18,-113.6"/>
 <polygon fill="#000000" stroke="#000000" points="325.89,-110.34 317.45,-116.75 328.05,-117 325.89,-110.34"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;module~penf_b_size~6 -->
+<!-- module~penf_stringify~2&#45;&gt;module~penf_b_size~6 -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_edge8" class="edge">
-<title>module~penf_stringify~4&#45;&gt;module~penf_b_size~6</title>
+<title>module~penf_stringify~2&#45;&gt;module~penf_b_size~6</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M366.45,-76.88C353.64,-72.73 339.14,-68.04 325.72,-63.69"/>
 <polygon fill="#000000" stroke="#000000" points="326.77,-60.35 316.18,-60.6 324.61,-67.01 326.77,-60.35"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf_stringify~2&#45;&gt;module~penf_global_parameters_variables~4 -->
 <g id="module~~vtk_fortran_parameters~~UsesGraph_edge9" class="edge">
-<title>module~penf_stringify~4&#45;&gt;module~penf_global_parameters_variables~3</title>
+<title>module~penf_stringify~2&#45;&gt;module~penf_global_parameters_variables~4</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M361.85,-84.81C327.08,-81.29 276.24,-75.82 232,-69.88 215.69,-67.69 198.3,-65.12 181.64,-62.54"/>
 <polygon fill="#000000" stroke="#000000" points="181.81,-59.02 171.39,-60.94 180.73,-65.94 181.81,-59.02"/>
 </g>
@@ -855,27 +872,5 @@ parameter
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>
