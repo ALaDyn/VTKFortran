@@ -12,14 +12,29 @@
 
     <title>volatile_doctest &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -78,19 +93,19 @@
 
             <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
               <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-                 title=" 0.0% of total for programs.">5 statements</a>
+                 title=" 0.1% of total for programs.">11 statements</a>
             </li>
 
             <li class="list-inline-item" id="source-file">
               <i class="fa fa-code"></i>
-              <a href="../src/penf_b_size-doctest-5.f90"> Source File</a>
+              <a href="../src/stringifor_string_t-doctest-62.f90"> Source File</a>
             </li>
         </ul>
       </div>
       <div class="col">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-end mb-0">
-                <li class="breadcrumb-item"><a href='../sourcefile/penf_b_size-doctest-5.f90~6.html'>penf_b_size-doctest-5.f90</a></li>
+                <li class="breadcrumb-item"><a href='../sourcefile/stringifor_string_t-doctest-62.f90.html'>stringifor_string_t-doctest-62.f90</a></li>
             <li class="breadcrumb-item active" aria-current="page">volatile_doctest</li>
           </ol>
         </nav>
@@ -98,9 +113,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -110,7 +127,20 @@
       <div id="sidebar">
       <h3>Contents</h3>
   
-  
+      <div class="card mb-4">
+      <a data-bs-toggle="collapse" href="#vars-0"
+         aria-expanded="false" aria-controls="vars-0">
+         <h4 class="card-header bg-primary text-white">Variables</h4>
+      </a>
+      <div id="vars-0" class="collapse">
+        <div class="list-group list-group-flush">
+            <a class="list-group-item" href="../program/volatile_doctest~1022.html#variable-astring~97">astring</a>
+            <a class="list-group-item" href="../program/volatile_doctest~1022.html#variable-real_~5">real_</a>
+            <a class="list-group-item" href="../program/volatile_doctest~1022.html#variable-test_passed~97">test_passed</a>
+        </div>
+      </div>
+    </div>
+
   
   
   
@@ -148,8 +178,8 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <ul class="list-inline">
-                  <li class="list-inline-item"><a href='../module/penf~4.html'>penf</a></li>
-                  <li class="list-inline-item"><a href='../module/penf_b_size~6.html'>penf_b_size</a></li>
+                  <li class="list-inline-item"><a href='../module/stringifor_string_t.html'>stringifor_string_t</a></li>
+                  <li class="list-inline-item"><a href='../module/penf~6.html'>penf</a></li>
               </ul>
             </li>
             <li class="list-group-item">
@@ -159,115 +189,235 @@
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: program~~volatile_doctest~1022~~UsesGraph Pages: 1 -->
-<svg id="programvolatile_doctest1022UsesGraph" width="641pt" height="97pt"
- viewBox="0.00 0.00 641.00 97.27" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="program~~volatile_doctest~1022~~UsesGraph" class="graph" transform="scale(0.95 0.95) rotate(0) translate(4 98.74)">
+<svg id="programvolatile_doctest1022UsesGraph" width="641pt" height="114pt"
+ viewBox="0.00 0.00 641.00 113.57" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="program~~volatile_doctest~1022~~UsesGraph" class="graph" transform="scale(0.51 0.51) rotate(0) translate(4 219.59)">
 <title>program~~volatile_doctest~1022~~UsesGraph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-98.74 673,-98.74 673,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-219.59 1258,-219.59 1258,4 -4,4"/>
 <!-- program~volatile_doctest~1022 -->
 <g id="program~~volatile_doctest~1022~~UsesGraph_node1" class="node">
 <title>program~volatile_doctest~1022</title>
-<polygon fill="none" stroke="black" points="669,-46 573,-46 573,-22 669,-22 669,-46"/>
-<text text-anchor="middle" x="621" y="-31.6" font-family="Helvetica,sans-Serif" font-size="10.50">volatile_doctest</text>
+<polygon fill="none" stroke="black" points="1254,-126.11 1158,-126.11 1158,-102.11 1254,-102.11 1254,-126.11"/>
+<text text-anchor="middle" x="1206" y="-111.71" font-family="Helvetica,sans-Serif" font-size="10.50">volatile_doctest</text>
 </g>
-<!-- module~penf_b_size~6 -->
+<!-- module~penf~6 -->
 <g id="program~~volatile_doctest~1022~~UsesGraph_node2" class="node">
-<title>module~penf_b_size~6</title>
-<g id="a_program~~volatile_doctest~1022~~UsesGraph_node2"><a xlink:href="../module/penf_b_size~6.html" xlink:title="penf_b_size">
-<polygon fill="#337ab7" stroke="#337ab7" points="316,-24 242,-24 242,0 316,0 316,-24"/>
-<text text-anchor="middle" x="279" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_b_size</text>
+<title>module~penf~6</title>
+<g id="a_program~~volatile_doctest~1022~~UsesGraph_node2"><a xlink:href="../module/penf~6.html" xlink:title="penf">
+<polygon fill="#337ab7" stroke="#337ab7" points="724,-144.11 670,-144.11 670,-120.11 724,-120.11 724,-144.11"/>
+<text text-anchor="middle" x="697" y="-129.71" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf</text>
 </a>
 </g>
 </g>
-<!-- program~volatile_doctest~1022&#45;&gt;module~penf_b_size~6 -->
+<!-- program~volatile_doctest~1022&#45;&gt;module~penf~6 -->
 <g id="program~~volatile_doctest~1022~~UsesGraph_edge1" class="edge">
-<title>program~volatile_doctest~1022&#45;&gt;module~penf_b_size~6</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M572.69,-29.83C529.21,-25.93 462.99,-19.86 405.5,-14"/>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-14C378.14,-10.77 349.61,-10.12 326.36,-10.34"/>
-<polygon fill="#000000" stroke="#000000" points="326.03,-6.84 316.09,-10.5 326.14,-13.84 326.03,-6.84"/>
+<title>program~volatile_doctest~1022&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1157.89,-117.71C1107.54,-121.6 1025.35,-128.05 954.5,-134.11"/>
 </g>
-<!-- module~penf~4 -->
+<!-- module~stringifor_string_t -->
 <g id="program~~volatile_doctest~1022~~UsesGraph_node3" class="node">
-<title>module~penf~4</title>
-<g id="a_program~~volatile_doctest~1022~~UsesGraph_node3"><a xlink:href="../module/penf~4.html" xlink:title="penf">
-<polygon fill="#337ab7" stroke="#337ab7" points="537,-66 483,-66 483,-42 537,-42 537,-66"/>
-<text text-anchor="middle" x="510" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf</text>
+<title>module~stringifor_string_t</title>
+<g id="a_program~~volatile_doctest~1022~~UsesGraph_node3"><a xlink:href="../module/stringifor_string_t.html" xlink:title="stringifor_string_t">
+<polygon fill="#337ab7" stroke="#337ab7" points="1122,-106.11 1017,-106.11 1017,-82.11 1122,-82.11 1122,-106.11"/>
+<text text-anchor="middle" x="1069.5" y="-91.71" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">stringifor_string_t</text>
 </a>
 </g>
 </g>
-<!-- program~volatile_doctest~1022&#45;&gt;module~penf~4 -->
+<!-- program~volatile_doctest~1022&#45;&gt;module~stringifor_string_t -->
 <g id="program~~volatile_doctest~1022~~UsesGraph_edge2" class="edge">
-<title>program~volatile_doctest~1022&#45;&gt;module~penf~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M572.82,-42.66C564.25,-44.23 555.43,-45.85 547.23,-47.35"/>
-<polygon fill="#000000" stroke="#000000" points="546.44,-43.94 537.24,-49.19 547.71,-50.82 546.44,-43.94"/>
+<title>program~volatile_doctest~1022&#45;&gt;module~stringifor_string_t</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1157.96,-107.12C1149.68,-105.89 1140.96,-104.59 1132.35,-103.31"/>
+<polygon fill="#000000" stroke="#000000" points="1132.74,-99.83 1122.33,-101.82 1131.71,-106.75 1132.74,-99.83"/>
 </g>
-<!-- module~penf_global_parameters_variables~3 -->
-<g id="program~~volatile_doctest~1022~~UsesGraph_node4" class="node">
-<title>module~penf_global_parameters_variables~3</title>
-<g id="a_program~~volatile_doctest~1022~~UsesGraph_node4"><a xlink:href="../module/penf_global_parameters_variables~3.html" xlink:title="penf_global_parameters_variables">
-<polygon fill="#337ab7" stroke="#337ab7" points="196,-65 0,-65 0,-41 196,-41 196,-65"/>
-<text text-anchor="middle" x="98" y="-50.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_global_parameters_variables</text>
+<!-- module~penf_allocatable_memory~6 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_node7" class="node">
+<title>module~penf_allocatable_memory~6</title>
+<g id="a_program~~volatile_doctest~1022~~UsesGraph_node7"><a xlink:href="../module/penf_allocatable_memory~6.html" xlink:title="penf_allocatable_memory">
+<polygon fill="#337ab7" stroke="#337ab7" points="634,-142.11 483,-142.11 483,-118.11 634,-118.11 634,-142.11"/>
+<text text-anchor="middle" x="558.5" y="-127.71" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_allocatable_memory</text>
 </a>
 </g>
 </g>
-<!-- module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf~6&#45;&gt;module~penf_allocatable_memory~6 -->
 <g id="program~~volatile_doctest~1022~~UsesGraph_edge3" class="edge">
-<title>module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M241.78,-20.3C218.77,-25.57 188.37,-32.53 161.54,-38.67"/>
-<polygon fill="#000000" stroke="#000000" points="160.42,-35.34 151.46,-40.98 161.99,-42.16 160.42,-35.34"/>
+<title>module~penf~6&#45;&gt;module~penf_allocatable_memory~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M669.68,-131.73C662.06,-131.61 653.29,-131.49 644.11,-131.35"/>
+<polygon fill="#000000" stroke="#000000" points="644.07,-127.85 634.02,-131.2 643.96,-134.85 644.07,-127.85"/>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_b_size~6 -->
-<g id="program~~volatile_doctest~1022~~UsesGraph_edge4" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_b_size~6</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M487.65,-41.85C467.29,-31.24 435.4,-17.05 405.5,-14"/>
-</g>
-<!-- module~penf~4&#45;&gt;module~penf_global_parameters_variables~3 -->
-<g id="program~~volatile_doctest~1022~~UsesGraph_edge5" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_global_parameters_variables~3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M482.8,-64.26C471.88,-68.17 458.98,-72.32 447,-75 374.1,-91.3 354.66,-96.42 280,-94"/>
-</g>
-<!-- module~penf_stringify~4 -->
-<g id="program~~volatile_doctest~1022~~UsesGraph_node5" class="node">
-<title>module~penf_stringify~4</title>
-<g id="a_program~~volatile_doctest~1022~~UsesGraph_node5"><a xlink:href="../module/penf_stringify~4.html" xlink:title="penf_stringify">
-<polygon fill="#337ab7" stroke="#337ab7" points="447,-66 362,-66 362,-42 447,-42 447,-66"/>
-<text text-anchor="middle" x="404.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_stringify</text>
+<!-- module~penf_b_size~3 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_node8" class="node">
+<title>module~penf_b_size~3</title>
+<g id="a_program~~volatile_doctest~1022~~UsesGraph_node8"><a xlink:href="../module/penf_b_size~3.html" xlink:title="penf_b_size">
+<polygon fill="#337ab7" stroke="#337ab7" points="316,-182.11 242,-182.11 242,-158.11 316,-158.11 316,-182.11"/>
+<text text-anchor="middle" x="279" y="-167.71" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_b_size</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_stringify~4 -->
+<!-- module~penf~6&#45;&gt;module~penf_b_size~3 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge4" class="edge">
+<title>module~penf~6&#45;&gt;module~penf_b_size~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M557.5,-210.11C490.51,-218.83 472.84,-215.44 405.5,-210.11"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-210.11C372.5,-207.66 339.04,-196.23 314.77,-186.21"/>
+<polygon fill="#000000" stroke="#000000" points="315.87,-182.87 305.3,-182.18 313.13,-189.31 315.87,-182.87"/>
+</g>
+<!-- module~penf_global_parameters_variables -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_node9" class="node">
+<title>module~penf_global_parameters_variables</title>
+<g id="a_program~~volatile_doctest~1022~~UsesGraph_node9"><a xlink:href="../module/penf_global_parameters_variables.html" xlink:title="penf_global_parameters_variables">
+<polygon fill="#337ab7" stroke="#337ab7" points="196,-162.11 0,-162.11 0,-138.11 196,-138.11 196,-162.11"/>
+<text text-anchor="middle" x="98" y="-147.71" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_global_parameters_variables</text>
+</a>
+</g>
+</g>
+<!-- module~penf~6&#45;&gt;module~penf_global_parameters_variables -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge5" class="edge">
+<title>module~penf~6&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-210.11C327.05,-204.06 307.09,-206.7 232,-191.11 201.16,-184.71 167.25,-174.2 141.38,-165.42"/>
+<polygon fill="#000000" stroke="#000000" points="142.48,-162.1 131.89,-162.15 140.21,-168.72 142.48,-162.1"/>
+</g>
+<!-- module~penf_stringify~3 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_node10" class="node">
+<title>module~penf_stringify~3</title>
+<g id="a_program~~volatile_doctest~1022~~UsesGraph_node10"><a xlink:href="../module/penf_stringify~3.html" xlink:title="penf_stringify">
+<polygon fill="#337ab7" stroke="#337ab7" points="447,-142.11 362,-142.11 362,-118.11 447,-118.11 447,-142.11"/>
+<text text-anchor="middle" x="404.5" y="-127.71" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_stringify</text>
+</a>
+</g>
+</g>
+<!-- module~penf~6&#45;&gt;module~penf_stringify~3 -->
 <g id="program~~volatile_doctest~1022~~UsesGraph_edge6" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_stringify~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M482.88,-54C475.13,-54 466.36,-54 457.58,-54"/>
-<polygon fill="#000000" stroke="#000000" points="457.32,-50.5 447.32,-54 457.32,-57.5 457.32,-50.5"/>
+<title>module~penf~6&#45;&gt;module~penf_stringify~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M682.99,-144.3C660.15,-164.53 610.38,-203.49 559.5,-210.11"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M557.5,-210.11C504.75,-216.98 451.71,-175.43 424.39,-149.6"/>
+<polygon fill="#000000" stroke="#000000" points="426.69,-146.95 417.08,-142.48 421.8,-151.96 426.69,-146.95"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;module~penf_b_size~6 -->
-<g id="program~~volatile_doctest~1022~~UsesGraph_edge8" class="edge">
-<title>module~penf_stringify~4&#45;&gt;module~penf_b_size~6</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M368.11,-41.96C354.67,-37.4 339.19,-32.13 324.98,-27.3"/>
-<polygon fill="#000000" stroke="#000000" points="325.99,-23.94 315.4,-24.04 323.74,-30.57 325.99,-23.94"/>
-</g>
-<!-- module~penf_stringify~4&#45;&gt;module~penf_global_parameters_variables~3 -->
-<g id="program~~volatile_doctest~1022~~UsesGraph_edge9" class="edge">
-<title>module~penf_stringify~4&#45;&gt;module~penf_global_parameters_variables~3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M381.87,-66.03C357.73,-78.24 317.17,-95.2 280,-94"/>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M278,-94C231.11,-92.48 178.97,-79.16 143.12,-68.11"/>
-<polygon fill="#000000" stroke="#000000" points="144.05,-64.73 133.46,-65.06 141.95,-71.41 144.05,-64.73"/>
+<!-- module~stringifor_string_t&#45;&gt;module~penf~6 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge10" class="edge">
+<title>module~stringifor_string_t&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1045.26,-106.17C1022.75,-116.9 987.31,-131.3 954.5,-134.11"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M952.5,-134.11C896.48,-138.91 882.09,-130.21 826,-134.11"/>
 </g>
 <!-- iso_fortran_env -->
-<g id="program~~volatile_doctest~1022~~UsesGraph_node6" class="node">
+<g id="program~~volatile_doctest~1022~~UsesGraph_node4" class="node">
 <title>iso_fortran_env</title>
-<g id="a_program~~volatile_doctest~1022~~UsesGraph_node6"><a xlink:href="http://fortranwiki.org/fortran/show/iso_fortran_env" xlink:title="iso_fortran_env">
-<polygon fill="#337ab7" stroke="#337ab7" points="326,-66 232,-66 232,-42 326,-42 326,-66"/>
-<text text-anchor="middle" x="279" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_fortran_env</text>
+<g id="a_program~~volatile_doctest~1022~~UsesGraph_node4"><a xlink:href="http://fortranwiki.org/fortran/show/iso_fortran_env" xlink:title="iso_fortran_env">
+<polygon fill="#337ab7" stroke="#337ab7" points="326,-102.11 232,-102.11 232,-78.11 326,-78.11 326,-102.11"/>
+<text text-anchor="middle" x="279" y="-87.71" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_fortran_env</text>
 </a>
 </g>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;iso_fortran_env -->
+<!-- module~stringifor_string_t&#45;&gt;iso_fortran_env -->
 <g id="program~~volatile_doctest~1022~~UsesGraph_edge7" class="edge">
-<title>module~penf_stringify~4&#45;&gt;iso_fortran_env</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M361.69,-54C353.44,-54 344.66,-54 336.03,-54"/>
-<polygon fill="#000000" stroke="#000000" points="336.01,-50.5 326.01,-54 336.01,-57.5 336.01,-50.5"/>
+<title>module~stringifor_string_t&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1058.09,-82.04C1039.69,-61.9 999.12,-22.58 954.5,-12.11"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M952.5,-12.11C842.38,13.73 811.11,-12.11 698,-12.11 698,-12.11 698,-12.11 557.5,-12.11 467,-12.11 365.88,-51.04 314.31,-73.89"/>
+<polygon fill="#000000" stroke="#000000" points="312.65,-70.8 304.97,-78.1 315.52,-77.18 312.65,-70.8"/>
+</g>
+<!-- module~befor64~4 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_node5" class="node">
+<title>module~befor64~4</title>
+<g id="a_program~~volatile_doctest~1022~~UsesGraph_node5"><a xlink:href="../module/befor64~4.html" xlink:title="befor64">
+<polygon fill="#337ab7" stroke="#337ab7" points="981,-106.11 926,-106.11 926,-82.11 981,-82.11 981,-106.11"/>
+<text text-anchor="middle" x="953.5" y="-91.71" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">befor64</text>
+</a>
+</g>
+</g>
+<!-- module~stringifor_string_t&#45;&gt;module~befor64~4 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge8" class="edge">
+<title>module~stringifor_string_t&#45;&gt;module~befor64~4</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1016.84,-94.11C1008.23,-94.11 999.47,-94.11 991.33,-94.11"/>
+<polygon fill="#000000" stroke="#000000" points="991.07,-90.61 981.07,-94.11 991.07,-97.61 991.07,-90.61"/>
+</g>
+<!-- module~face~4 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_node6" class="node">
+<title>module~face~4</title>
+<g id="a_program~~volatile_doctest~1022~~UsesGraph_node6"><a xlink:href="../module/face~4.html" xlink:title="face">
+<polygon fill="#337ab7" stroke="#337ab7" points="852,-64.11 798,-64.11 798,-40.11 852,-40.11 852,-64.11"/>
+<text text-anchor="middle" x="825" y="-49.71" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">face</text>
+</a>
+</g>
+</g>
+<!-- module~stringifor_string_t&#45;&gt;module~face~4 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge9" class="edge">
+<title>module~stringifor_string_t&#45;&gt;module~face~4</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M952.5,-12.11C943.49,-10 895.98,-26.29 861.83,-38.72"/>
+<polygon fill="#000000" stroke="#000000" points="860.34,-35.53 852.16,-42.26 862.75,-42.11 860.34,-35.53"/>
+</g>
+<!-- module~befor64~4&#45;&gt;module~penf~6 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge12" class="edge">
+<title>module~befor64~4&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M926.56,-106.31C901.48,-117.13 862.08,-131.6 826,-134.11"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M824,-134.11C793.83,-136.21 759.5,-135.46 734.3,-134.32"/>
+<polygon fill="#000000" stroke="#000000" points="734.26,-130.82 724.1,-133.82 733.91,-137.81 734.26,-130.82"/>
+</g>
+<!-- module~befor64_pack_data_m~2 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_node11" class="node">
+<title>module~befor64_pack_data_m~2</title>
+<g id="a_program~~volatile_doctest~1022~~UsesGraph_node11"><a xlink:href="../module/befor64_pack_data_m~2.html" xlink:title="befor64_pack_data_m">
+<polygon fill="#337ab7" stroke="#337ab7" points="890,-106.11 760,-106.11 760,-82.11 890,-82.11 890,-106.11"/>
+<text text-anchor="middle" x="825" y="-91.71" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">befor64_pack_data_m</text>
+</a>
+</g>
+</g>
+<!-- module~befor64~4&#45;&gt;module~befor64_pack_data_m~2 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge11" class="edge">
+<title>module~befor64~4&#45;&gt;module~befor64_pack_data_m~2</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M925.98,-94.11C918.21,-94.11 909.31,-94.11 900.1,-94.11"/>
+<polygon fill="#000000" stroke="#000000" points="900.01,-90.61 890.01,-94.11 900.01,-97.61 900.01,-90.61"/>
+</g>
+<!-- module~face~4&#45;&gt;iso_fortran_env -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge13" class="edge">
+<title>module~face~4&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M797.6,-57.37C731.59,-69.88 554.02,-99.72 405.5,-90.11"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-90.11C381.52,-88.8 357.3,-88.54 336.18,-88.7"/>
+<polygon fill="#000000" stroke="#000000" points="336.04,-85.2 326.08,-88.81 336.11,-92.2 336.04,-85.2"/>
+</g>
+<!-- module~penf_allocatable_memory~6&#45;&gt;iso_fortran_env -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge14" class="edge">
+<title>module~penf_allocatable_memory~6&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M526.07,-118.03C495.74,-107.29 448.25,-92.88 405.5,-90.11"/>
+</g>
+<!-- module~penf_allocatable_memory~6&#45;&gt;module~penf_global_parameters_variables -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge15" class="edge">
+<title>module~penf_allocatable_memory~6&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M538.46,-117.88C517.13,-104.89 481.08,-85.04 447,-76.11 354.51,-51.89 324.05,-43.29 232,-69.11 188.92,-81.2 145.96,-111.51 120.97,-131.43"/>
+<polygon fill="#000000" stroke="#000000" points="118.45,-128.96 112.9,-137.99 122.87,-134.39 118.45,-128.96"/>
+</g>
+<!-- module~penf_allocatable_memory~6&#45;&gt;module~penf_stringify~3 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge16" class="edge">
+<title>module~penf_allocatable_memory~6&#45;&gt;module~penf_stringify~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M482.84,-130.11C474.18,-130.11 465.5,-130.11 457.24,-130.11"/>
+<polygon fill="#000000" stroke="#000000" points="457.05,-126.61 447.05,-130.11 457.05,-133.61 457.05,-126.61"/>
+</g>
+<!-- module~penf_b_size~3&#45;&gt;module~penf_global_parameters_variables -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge17" class="edge">
+<title>module~penf_b_size~3&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M241.78,-166.06C231.22,-164.88 219.1,-163.53 206.49,-162.12"/>
+<polygon fill="#000000" stroke="#000000" points="206.61,-158.61 196.29,-160.98 205.84,-165.57 206.61,-158.61"/>
+</g>
+<!-- module~penf_stringify~3&#45;&gt;iso_fortran_env -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge18" class="edge">
+<title>module~penf_stringify~3&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M366.45,-118.11C354.1,-114.11 340.18,-109.6 327.18,-105.39"/>
+<polygon fill="#000000" stroke="#000000" points="328.05,-101.99 317.45,-102.24 325.89,-108.65 328.05,-101.99"/>
+</g>
+<!-- module~penf_stringify~3&#45;&gt;module~penf_b_size~3 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge19" class="edge">
+<title>module~penf_stringify~3&#45;&gt;module~penf_b_size~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M366.45,-142.11C353.64,-146.26 339.14,-150.96 325.72,-155.3"/>
+<polygon fill="#000000" stroke="#000000" points="324.61,-151.98 316.18,-158.39 326.77,-158.64 324.61,-151.98"/>
+</g>
+<!-- module~penf_stringify~3&#45;&gt;module~penf_global_parameters_variables -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge20" class="edge">
+<title>module~penf_stringify~3&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M361.8,-132.85C321.94,-135.47 260.14,-139.53 206.49,-143.05"/>
+<polygon fill="#000000" stroke="#000000" points="205.97,-139.58 196.22,-143.73 206.43,-146.56 205.97,-139.58"/>
+</g>
+<!-- module~befor64_pack_data_m~2&#45;&gt;module~penf~6 -->
+<g id="program~~volatile_doctest~1022~~UsesGraph_edge21" class="edge">
+<title>module~befor64_pack_data_m~2&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M784.13,-106.14C768.05,-110.99 749.62,-116.54 733.95,-121.27"/>
+<polygon fill="#000000" stroke="#000000" points="732.67,-118 724.11,-124.24 734.69,-124.7 732.67,-118"/>
 </g>
 </g>
 </svg>
@@ -363,136 +513,175 @@ modules which it uses.
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: program~~volatile_doctest~1022~~CallsGraph Pages: 1 -->
-<svg id="programvolatile_doctest1022CallsGraph" width="324pt" height="284pt"
- viewBox="0.00 0.00 324.00 284.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="program~~volatile_doctest~1022~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 280)">
+<svg id="programvolatile_doctest1022CallsGraph" width="553pt" height="242pt"
+ viewBox="0.00 0.00 553.00 242.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="program~~volatile_doctest~1022~~CallsGraph" class="graph" transform="scale(1 1) rotate(0) translate(4 238)">
 <title>program~~volatile_doctest~1022~~CallsGraph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-280 320,-280 320,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-238 549,-238 549,4 -4,4"/>
 <!-- program~volatile_doctest~1022 -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_node1" class="node">
 <title>program~volatile_doctest~1022</title>
-<polygon fill="none" stroke="black" points="96,-150 0,-150 0,-126 96,-126 96,-150"/>
-<text text-anchor="middle" x="48" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50">volatile_doctest</text>
+<polygon fill="none" stroke="black" points="96,-129 0,-129 0,-105 96,-105 96,-129"/>
+<text text-anchor="middle" x="48" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50">volatile_doctest</text>
 </g>
-<!-- interface~byte_size -->
+<!-- none~to_number -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_node2" class="node">
-<title>interface~byte_size</title>
-<g id="a_program~~volatile_doctest~1022~~CallsGraph_node2"><a xlink:href="../interface/byte_size.html" xlink:title="byte_size">
-<polygon fill="#a7506f" stroke="#a7506f" points="193,-150 132,-150 132,-126 193,-126 193,-150"/>
-<text text-anchor="middle" x="162.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">byte_size</text>
+<title>none~to_number</title>
+<g id="a_program~~volatile_doctest~1022~~CallsGraph_node2"><a xlink:href="../type/string.html#boundprocedure-to_number" xlink:title="string%to_number">
+<polygon fill="#a7506f" stroke="#a7506f" points="242,-129 132,-129 132,-105 242,-105 242,-129"/>
+<text text-anchor="middle" x="187" y="-114.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%to_number</text>
 </a>
 </g>
 </g>
-<!-- program~volatile_doctest~1022&#45;&gt;interface~byte_size -->
+<!-- program~volatile_doctest~1022&#45;&gt;none~to_number -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_edge1" class="edge">
-<title>program~volatile_doctest~1022&#45;&gt;interface~byte_size</title>
-<path fill="none" stroke="#000000" d="M96.06,-138C104.61,-138 113.45,-138 121.77,-138"/>
-<polygon fill="#000000" stroke="#000000" points="121.96,-141.5 131.96,-138 121.96,-134.5 121.96,-141.5"/>
+<title>program~volatile_doctest~1022&#45;&gt;none~to_number</title>
+<path fill="none" stroke="#000000" d="M96.15,-117C104.38,-117 113.07,-117 121.67,-117"/>
+<polygon fill="#000000" stroke="#000000" points="121.7,-120.5 131.7,-117 121.7,-113.5 121.7,-120.5"/>
 </g>
-<!-- proc~byte_size_chr -->
+<!-- proc~to_integer_i1p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_node3" class="node">
-<title>proc~byte_size_chr</title>
-<g id="a_program~~volatile_doctest~1022~~CallsGraph_node3"><a xlink:href="../proc/byte_size_chr.html" xlink:title="byte_size_chr">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="314.5,-276 230.5,-276 230.5,-252 314.5,-252 314.5,-276"/>
-<text text-anchor="middle" x="272.5" y="-261.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">byte_size_chr</text>
+<title>proc~to_integer_i1p</title>
+<g id="a_program~~volatile_doctest~1022~~CallsGraph_node3"><a xlink:href="../proc/to_integer_i1p.html" xlink:title="string%to_integer_I1P">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="405,-234 278,-234 278,-210 405,-210 405,-234"/>
+<text text-anchor="middle" x="341.5" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%to_integer_I1P</text>
 </a>
 </g>
 </g>
-<!-- interface~byte_size&#45;&gt;proc~byte_size_chr -->
+<!-- none~to_number&#45;&gt;proc~to_integer_i1p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_edge2" class="edge">
-<title>interface~byte_size&#45;&gt;proc~byte_size_chr</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M168.43,-150.21C177.54,-171.5 198.9,-215.74 229,-243 230.26,-244.14 231.59,-245.23 232.97,-246.28"/>
-<polygon fill="#000000" stroke="#000000" points="231.06,-249.21 241.35,-251.75 234.89,-243.35 231.06,-249.21"/>
+<title>none~to_number&#45;&gt;proc~to_integer_i1p</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M197.84,-129.01C213.19,-147.03 244.59,-181.08 278,-201 280.99,-202.78 284.15,-204.44 287.41,-205.97"/>
+<polygon fill="#000000" stroke="#000000" points="286.17,-209.25 296.74,-209.98 288.93,-202.82 286.17,-209.25"/>
 </g>
-<!-- proc~byte_size_i1p -->
+<!-- proc~to_integer_i2p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_node4" class="node">
-<title>proc~byte_size_i1p</title>
-<g id="a_program~~volatile_doctest~1022~~CallsGraph_node4"><a xlink:href="../proc/byte_size_i1p.html" xlink:title="byte_size_I1P">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="313.5,-234 231.5,-234 231.5,-210 313.5,-210 313.5,-234"/>
-<text text-anchor="middle" x="272.5" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">byte_size_I1P</text>
+<title>proc~to_integer_i2p</title>
+<g id="a_program~~volatile_doctest~1022~~CallsGraph_node4"><a xlink:href="../proc/to_integer_i2p.html" xlink:title="string%to_integer_I2P">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="405,-192 278,-192 278,-168 405,-168 405,-192"/>
+<text text-anchor="middle" x="341.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%to_integer_I2P</text>
 </a>
 </g>
 </g>
-<!-- interface~byte_size&#45;&gt;proc~byte_size_i1p -->
+<!-- none~to_number&#45;&gt;proc~to_integer_i2p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_edge3" class="edge">
-<title>interface~byte_size&#45;&gt;proc~byte_size_i1p</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M174.15,-150.3C186.39,-163.92 207.57,-185.94 229,-201 230.86,-202.31 232.81,-203.58 234.82,-204.8"/>
-<polygon fill="#000000" stroke="#000000" points="233.38,-208.01 243.81,-209.86 236.81,-201.91 233.38,-208.01"/>
+<title>none~to_number&#45;&gt;proc~to_integer_i2p</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M212.12,-129.16C230.06,-137.98 255.27,-149.91 278,-159 282.73,-160.89 287.7,-162.76 292.69,-164.55"/>
+<polygon fill="#000000" stroke="#000000" points="291.65,-167.9 302.24,-167.91 293.96,-161.29 291.65,-167.9"/>
 </g>
-<!-- proc~byte_size_i2p -->
+<!-- proc~to_integer_i4p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_node5" class="node">
-<title>proc~byte_size_i2p</title>
-<g id="a_program~~volatile_doctest~1022~~CallsGraph_node5"><a xlink:href="../proc/byte_size_i2p.html" xlink:title="byte_size_I2P">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="313.5,-192 231.5,-192 231.5,-168 313.5,-168 313.5,-192"/>
-<text text-anchor="middle" x="272.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">byte_size_I2P</text>
+<title>proc~to_integer_i4p</title>
+<g id="a_program~~volatile_doctest~1022~~CallsGraph_node5"><a xlink:href="../proc/to_integer_i4p.html" xlink:title="string%to_integer_I4P">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="405,-150 278,-150 278,-126 405,-126 405,-150"/>
+<text text-anchor="middle" x="341.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%to_integer_I4P</text>
 </a>
 </g>
 </g>
-<!-- interface~byte_size&#45;&gt;proc~byte_size_i2p -->
+<!-- none~to_number&#45;&gt;proc~to_integer_i4p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_edge4" class="edge">
-<title>interface~byte_size&#45;&gt;proc~byte_size_i2p</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M193.01,-149.48C204.76,-154.04 218.46,-159.37 231.11,-164.29"/>
-<polygon fill="#000000" stroke="#000000" points="229.93,-167.59 240.52,-167.95 232.46,-161.06 229.93,-167.59"/>
+<title>none~to_number&#45;&gt;proc~to_integer_i4p</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M242.2,-124.46C250.5,-125.61 259.19,-126.8 267.82,-127.99"/>
+<polygon fill="#000000" stroke="#000000" points="267.51,-131.48 277.89,-129.38 268.46,-124.55 267.51,-131.48"/>
 </g>
-<!-- proc~byte_size_i4p -->
+<!-- proc~to_integer_i8p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_node6" class="node">
-<title>proc~byte_size_i4p</title>
-<g id="a_program~~volatile_doctest~1022~~CallsGraph_node6"><a xlink:href="../proc/byte_size_i4p.html" xlink:title="byte_size_I4P">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="313.5,-150 231.5,-150 231.5,-126 313.5,-126 313.5,-150"/>
-<text text-anchor="middle" x="272.5" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">byte_size_I4P</text>
+<title>proc~to_integer_i8p</title>
+<g id="a_program~~volatile_doctest~1022~~CallsGraph_node6"><a xlink:href="../proc/to_integer_i8p.html" xlink:title="string%to_integer_I8P">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="405,-108 278,-108 278,-84 405,-84 405,-108"/>
+<text text-anchor="middle" x="341.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%to_integer_I8P</text>
 </a>
 </g>
 </g>
-<!-- interface~byte_size&#45;&gt;proc~byte_size_i4p -->
+<!-- none~to_number&#45;&gt;proc~to_integer_i8p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_edge5" class="edge">
-<title>interface~byte_size&#45;&gt;proc~byte_size_i4p</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M193.01,-138C201.82,-138 211.73,-138 221.47,-138"/>
-<polygon fill="#000000" stroke="#000000" points="221.5,-141.5 231.5,-138 221.5,-134.5 221.5,-141.5"/>
+<title>none~to_number&#45;&gt;proc~to_integer_i8p</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M242.2,-109.54C250.5,-108.39 259.19,-107.2 267.82,-106.01"/>
+<polygon fill="#000000" stroke="#000000" points="268.46,-109.45 277.89,-104.62 267.51,-102.52 268.46,-109.45"/>
 </g>
-<!-- proc~byte_size_i8p -->
+<!-- proc~to_real_r4p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_node7" class="node">
-<title>proc~byte_size_i8p</title>
-<g id="a_program~~volatile_doctest~1022~~CallsGraph_node7"><a xlink:href="../proc/byte_size_i8p.html" xlink:title="byte_size_I8P">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="313.5,-108 231.5,-108 231.5,-84 313.5,-84 313.5,-108"/>
-<text text-anchor="middle" x="272.5" y="-93.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">byte_size_I8P</text>
+<title>proc~to_real_r4p</title>
+<g id="a_program~~volatile_doctest~1022~~CallsGraph_node7"><a xlink:href="../proc/to_real_r4p.html" xlink:title="string%to_real_R4P">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="398.5,-66 284.5,-66 284.5,-42 398.5,-42 398.5,-66"/>
+<text text-anchor="middle" x="341.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%to_real_R4P</text>
 </a>
 </g>
 </g>
-<!-- interface~byte_size&#45;&gt;proc~byte_size_i8p -->
+<!-- none~to_number&#45;&gt;proc~to_real_r4p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_edge6" class="edge">
-<title>interface~byte_size&#45;&gt;proc~byte_size_i8p</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M193.01,-126.52C204.76,-121.96 218.46,-116.63 231.11,-111.71"/>
-<polygon fill="#000000" stroke="#000000" points="232.46,-114.94 240.52,-108.05 229.93,-108.41 232.46,-114.94"/>
+<title>none~to_number&#45;&gt;proc~to_real_r4p</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M212.12,-104.84C230.06,-96.02 255.27,-84.09 278,-75 282.73,-73.11 287.7,-71.24 292.69,-69.45"/>
+<polygon fill="#000000" stroke="#000000" points="293.96,-72.71 302.24,-66.09 291.65,-66.1 293.96,-72.71"/>
 </g>
-<!-- proc~byte_size_r4p -->
+<!-- proc~to_real_r8p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_node8" class="node">
-<title>proc~byte_size_r4p</title>
-<g id="a_program~~volatile_doctest~1022~~CallsGraph_node8"><a xlink:href="../proc/byte_size_r4p.html" xlink:title="byte_size_R4P">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="316,-66 229,-66 229,-42 316,-42 316,-66"/>
-<text text-anchor="middle" x="272.5" y="-51.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">byte_size_R4P</text>
+<title>proc~to_real_r8p</title>
+<g id="a_program~~volatile_doctest~1022~~CallsGraph_node8"><a xlink:href="../proc/to_real_r8p.html" xlink:title="string%to_real_R8P">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="398.5,-24 284.5,-24 284.5,0 398.5,0 398.5,-24"/>
+<text text-anchor="middle" x="341.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%to_real_R8P</text>
 </a>
 </g>
 </g>
-<!-- interface~byte_size&#45;&gt;proc~byte_size_r4p -->
+<!-- none~to_number&#45;&gt;proc~to_real_r8p -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_edge7" class="edge">
-<title>interface~byte_size&#45;&gt;proc~byte_size_r4p</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M174.15,-125.7C186.39,-112.08 207.57,-90.06 229,-75 230.86,-73.69 232.81,-72.42 234.82,-71.2"/>
-<polygon fill="#000000" stroke="#000000" points="236.81,-74.09 243.81,-66.14 233.38,-67.99 236.81,-74.09"/>
+<title>none~to_number&#45;&gt;proc~to_real_r8p</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M197.84,-104.99C213.19,-86.97 244.59,-52.92 278,-33 280.99,-31.22 284.15,-29.56 287.41,-28.03"/>
+<polygon fill="#000000" stroke="#000000" points="288.93,-31.18 296.74,-24.02 286.17,-24.75 288.93,-31.18"/>
 </g>
-<!-- proc~byte_size_r8p -->
+<!-- proc~is_integer -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_node9" class="node">
-<title>proc~byte_size_r8p</title>
-<g id="a_program~~volatile_doctest~1022~~CallsGraph_node9"><a xlink:href="../proc/byte_size_r8p.html" xlink:title="byte_size_R8P">
-<polygon fill="#d94e8f" stroke="#d94e8f" points="316,-24 229,-24 229,0 316,0 316,-24"/>
-<text text-anchor="middle" x="272.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">byte_size_R8P</text>
+<title>proc~is_integer</title>
+<g id="a_program~~volatile_doctest~1022~~CallsGraph_node9"><a xlink:href="../proc/is_integer.html" xlink:title="string%is_integer">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="545,-171 441,-171 441,-147 545,-147 545,-171"/>
+<text text-anchor="middle" x="493" y="-156.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%is_integer</text>
 </a>
 </g>
 </g>
-<!-- interface~byte_size&#45;&gt;proc~byte_size_r8p -->
+<!-- proc~to_integer_i1p&#45;&gt;proc~is_integer -->
 <g id="program~~volatile_doctest~1022~~CallsGraph_edge8" class="edge">
-<title>interface~byte_size&#45;&gt;proc~byte_size_r8p</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M168.43,-125.79C177.54,-104.5 198.9,-60.26 229,-33 230.26,-31.86 231.59,-30.77 232.97,-29.72"/>
-<polygon fill="#000000" stroke="#000000" points="234.89,-32.65 241.35,-24.25 231.06,-26.79 234.89,-32.65"/>
+<title>proc~to_integer_i1p&#45;&gt;proc~is_integer</title>
+<path fill="none" stroke="#000000" d="M380.79,-209.98C388.85,-207.22 397.26,-204.15 405,-201 423.57,-193.43 443.76,-183.78 460.02,-175.63"/>
+<polygon fill="#000000" stroke="#000000" points="461.75,-178.68 469.09,-171.04 458.59,-172.43 461.75,-178.68"/>
+</g>
+<!-- proc~to_integer_i2p&#45;&gt;proc~is_integer -->
+<g id="program~~volatile_doctest~1022~~CallsGraph_edge9" class="edge">
+<title>proc~to_integer_i2p&#45;&gt;proc~is_integer</title>
+<path fill="none" stroke="#000000" d="M405.04,-171.22C413.45,-170.03 422.09,-168.82 430.49,-167.64"/>
+<polygon fill="#000000" stroke="#000000" points="431.17,-171.08 440.59,-166.22 430.2,-164.15 431.17,-171.08"/>
+</g>
+<!-- proc~to_integer_i4p&#45;&gt;proc~is_integer -->
+<g id="program~~volatile_doctest~1022~~CallsGraph_edge10" class="edge">
+<title>proc~to_integer_i4p&#45;&gt;proc~is_integer</title>
+<path fill="none" stroke="#000000" d="M405.04,-146.78C413.45,-147.97 422.09,-149.18 430.49,-150.36"/>
+<polygon fill="#000000" stroke="#000000" points="430.2,-153.85 440.59,-151.78 431.17,-146.92 430.2,-153.85"/>
+</g>
+<!-- proc~to_integer_i8p&#45;&gt;proc~is_integer -->
+<g id="program~~volatile_doctest~1022~~CallsGraph_edge11" class="edge">
+<title>proc~to_integer_i8p&#45;&gt;proc~is_integer</title>
+<path fill="none" stroke="#000000" d="M380.79,-108.02C388.85,-110.78 397.26,-113.85 405,-117 423.57,-124.57 443.76,-134.22 460.02,-142.37"/>
+<polygon fill="#000000" stroke="#000000" points="458.59,-145.57 469.09,-146.96 461.75,-139.32 458.59,-145.57"/>
+</g>
+<!-- proc~is_real -->
+<g id="program~~volatile_doctest~1022~~CallsGraph_node10" class="node">
+<title>proc~is_real</title>
+<g id="a_program~~volatile_doctest~1022~~CallsGraph_node10"><a xlink:href="../proc/is_real.html" xlink:title="string%is_real">
+<polygon fill="#d94e8f" stroke="#d94e8f" points="536,-45 450,-45 450,-21 536,-21 536,-45"/>
+<text text-anchor="middle" x="493" y="-30.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%is_real</text>
+</a>
+</g>
+</g>
+<!-- proc~to_real_r4p&#45;&gt;proc~is_real -->
+<g id="program~~volatile_doctest~1022~~CallsGraph_edge12" class="edge">
+<title>proc~to_real_r4p&#45;&gt;proc~is_real</title>
+<path fill="none" stroke="#000000" d="M398.59,-46.12C412.06,-44.23 426.39,-42.22 439.68,-40.35"/>
+<polygon fill="#000000" stroke="#000000" points="440.2,-43.81 449.61,-38.95 439.22,-36.88 440.2,-43.81"/>
+</g>
+<!-- proc~to_real_r8p&#45;&gt;proc~is_real -->
+<g id="program~~volatile_doctest~1022~~CallsGraph_edge13" class="edge">
+<title>proc~to_real_r8p&#45;&gt;proc~is_real</title>
+<path fill="none" stroke="#000000" d="M398.59,-19.88C412.06,-21.77 426.39,-23.78 439.68,-25.65"/>
+<polygon fill="#000000" stroke="#000000" points="439.22,-29.12 449.61,-27.05 440.2,-22.19 439.22,-29.12"/>
 </g>
 </g>
 </svg>
@@ -577,6 +766,71 @@ implementation in a submodule of an interface in a parent module.
     </div>
 <br>
 
+    <section>
+    <h2>Variables</h2>
+      <table class="table table-striped varlist">
+    <thead>
+      <tr>
+        <th scope="col">Type</th>
+        <th scope="col">Attributes</th>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+<th></th><th scope="col">Initial</th>        <th scope="col"></th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-astring~97"></span>
+              type(<a href='../type/string.html'>string</a>)
+            </td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>astring</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-real_~5"></span>
+              real(kind=R8P)
+            </td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>real_</strong></td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-test_passed~97"></span>
+              logical
+            </td>
+            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>test_passed</strong>(1)</td>
+                <td></td>
+                <td></td>
+            <td>
+                
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+    </section>
+    <br>
     
     
     
@@ -589,9 +843,15 @@ implementation in a submodule of an interface in a parent module.
     <section>
     <h2 id="src">Source Code</h2>
     <div class="hl codehilite"><pre><span></span><span class="k">program </span><span class="n">volatile_doctest</span>
-<span class="k">use </span><span class="n">penf_b_size</span>
+<span class="k">use </span><span class="n">stringifor_string_t</span>
 <span class="w"> </span><span class="k">use </span><span class="n">penf</span>
-<span class="w"> </span><span class="k">print </span><span class="n">FI1P</span><span class="p">,</span><span class="w"> </span><span class="n">byte_size</span><span class="p">(</span><span class="mf">1._R16P</span><span class="p">)</span>
+<span class="w"> </span><span class="k">type</span><span class="p">(</span><span class="n">string</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">astring</span>
+<span class="w"> </span><span class="kt">real</span><span class="p">(</span><span class="n">R8P</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">real_</span>
+<span class="w"> </span><span class="kt">logical</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">test_passed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="w"> </span><span class="n">astring</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;3.4e9&#39;</span>
+<span class="w"> </span><span class="n">real_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">astring</span><span class="p">%</span><span class="n">to_number</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="mf">1._R8P</span><span class="p">)</span>
+<span class="w"> </span><span class="n">test_passed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">real_</span><span class="o">==</span><span class="mf">3.4e9_R8P</span>
+<span class="w"> </span><span class="k">print</span><span class="w"> </span><span class="s1">&#39;(L1)&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">all</span><span class="p">(</span><span class="n">test_passed</span><span class="p">)</span>
 <span class="k">endprogram </span><span class="n">volatile_doctest</span>
 </pre></div>
 
@@ -621,27 +881,5 @@ implementation in a submodule of an interface in a parent module.
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

@@ -12,14 +12,29 @@
 
     <title>write_pvts &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -79,7 +94,7 @@
 
             <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
               <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-                 title=" 0.1% of total for procedures.">13 statements</a>
+                 title=" 0.0% of total for procedures.">13 statements</a>
             </li>
 
             <li class="list-inline-item" id="source-file">
@@ -100,9 +115,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -163,7 +180,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-filename~3"></span>
+              <span class="anchor" id="variable-filename~14"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -232,33 +249,33 @@
 <path fill="none" stroke="#000000" d="M66.04,-1343C73.77,-1343 82.47,-1343 91.67,-1343"/>
 <polygon fill="#000000" stroke="#000000" points="91.81,-1346.5 101.81,-1343 91.81,-1339.5 91.81,-1346.5"/>
 </g>
-<!-- proc~finalize~3 -->
+<!-- proc~finalize -->
 <g id="proc~~write_pvts~~CallsGraph_node3" class="node">
-<title>proc~finalize~3</title>
-<g id="a_proc~~write_pvts~~CallsGraph_node3"><a xlink:href="../proc/finalize~3.html" xlink:title="pvtk_file%finalize">
+<title>proc~finalize</title>
+<g id="a_proc~~write_pvts~~CallsGraph_node3"><a xlink:href="../proc/finalize.html" xlink:title="pvtk_file%finalize">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="260,-768 155,-768 155,-744 260,-744 260,-768"/>
 <text text-anchor="middle" x="207.5" y="-753.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pvtk_file%finalize</text>
 </a>
 </g>
 </g>
-<!-- proc~write_pvts&#45;&gt;proc~finalize~3 -->
+<!-- proc~write_pvts&#45;&gt;proc~finalize -->
 <g id="proc~~write_pvts~~CallsGraph_edge2" class="edge">
-<title>proc~write_pvts&#45;&gt;proc~finalize~3</title>
+<title>proc~write_pvts&#45;&gt;proc~finalize</title>
 <path fill="none" stroke="#000000" d="M37.6,-1330.74C59.22,-1257.18 171.72,-874.36 200.03,-778.02"/>
 <polygon fill="#000000" stroke="#000000" points="203.46,-778.77 202.92,-768.19 196.74,-776.8 203.46,-778.77"/>
 </g>
-<!-- proc~initialize~2 -->
+<!-- proc~initialize -->
 <g id="proc~~write_pvts~~CallsGraph_node4" class="node">
-<title>proc~initialize~2</title>
-<g id="a_proc~~write_pvts~~CallsGraph_node4"><a xlink:href="../proc/initialize~2.html" xlink:title="pvtk_file%initialize">
+<title>proc~initialize</title>
+<g id="a_proc~~write_pvts~~CallsGraph_node4"><a xlink:href="../proc/initialize.html" xlink:title="pvtk_file%initialize">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="263,-223 152,-223 152,-199 263,-199 263,-223"/>
 <text text-anchor="middle" x="207.5" y="-208.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">pvtk_file%initialize</text>
 </a>
 </g>
 </g>
-<!-- proc~write_pvts&#45;&gt;proc~initialize~2 -->
+<!-- proc~write_pvts&#45;&gt;proc~initialize -->
 <g id="proc~~write_pvts~~CallsGraph_edge3" class="edge">
-<title>proc~write_pvts&#45;&gt;proc~initialize~2</title>
+<title>proc~write_pvts&#45;&gt;proc~initialize</title>
 <path fill="none" stroke="#000000" d="M34.96,-1330.95C40.04,-1268.32 64.91,-973.77 102,-735 132.41,-539.23 184.81,-305.4 201.35,-233.27"/>
 <polygon fill="#000000" stroke="#000000" points="204.85,-233.65 203.68,-223.12 198.03,-232.08 204.85,-233.65"/>
 </g>
@@ -1033,9 +1050,9 @@
 <polygon fill="#777777" stroke="#777777" points="526,-305 472,-305 472,-281 526,-281 526,-305"/>
 <text text-anchor="middle" x="499" y="-290.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">finalize</text>
 </g>
-<!-- proc~finalize~3&#45;&gt;finalize -->
+<!-- proc~finalize&#45;&gt;finalize -->
 <g id="proc~~write_pvts~~CallsGraph_edge55" class="edge">
-<title>proc~finalize~3&#45;&gt;finalize</title>
+<title>proc~finalize&#45;&gt;finalize</title>
 <path fill="none" stroke="#000000" d="M208.1,-743.66C206.94,-684.88 210.3,-431.18 349,-314 380.06,-287.76 428.43,-285.66 461.58,-288.05"/>
 <polygon fill="#000000" stroke="#000000" points="461.5,-291.56 471.77,-288.96 462.12,-284.59 461.5,-291.56"/>
 </g>
@@ -1045,9 +1062,9 @@
 <polygon fill="#777777" stroke="#777777" points="527.5,-203 470.5,-203 470.5,-179 527.5,-179 527.5,-203"/>
 <text text-anchor="middle" x="499" y="-188.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">initialize</text>
 </g>
-<!-- proc~initialize~2&#45;&gt;initialize -->
+<!-- proc~initialize&#45;&gt;initialize -->
 <g id="proc~~write_pvts~~CallsGraph_edge56" class="edge">
-<title>proc~initialize~2&#45;&gt;initialize</title>
+<title>proc~initialize&#45;&gt;initialize</title>
 <path fill="none" stroke="#000000" d="M263.29,-207.21C320.84,-203.24 409.8,-197.09 460.05,-193.62"/>
 <polygon fill="#000000" stroke="#000000" points="460.43,-197.1 470.16,-192.92 459.95,-190.12 460.43,-197.1"/>
 </g>
@@ -1060,9 +1077,9 @@
 </a>
 </g>
 </g>
-<!-- proc~initialize~2&#45;&gt;proc~b64_init -->
+<!-- proc~initialize&#45;&gt;proc~b64_init -->
 <g id="proc~~write_pvts~~CallsGraph_edge57" class="edge">
-<title>proc~initialize~2&#45;&gt;proc~b64_init</title>
+<title>proc~initialize&#45;&gt;proc~b64_init</title>
 <path fill="none" stroke="#000000" d="M244.52,-198.93C272.69,-189.88 312.98,-177.75 349,-170 386.92,-161.84 430.98,-156.08 461.3,-152.68"/>
 <polygon fill="#000000" stroke="#000000" points="461.86,-156.14 471.42,-151.58 461.1,-149.18 461.86,-156.14"/>
 </g>
@@ -1075,9 +1092,9 @@
 </a>
 </g>
 </g>
-<!-- proc~initialize~2&#45;&gt;proc~penf_init -->
+<!-- proc~initialize&#45;&gt;proc~penf_init -->
 <g id="proc~~write_pvts~~CallsGraph_edge58" class="edge">
-<title>proc~initialize~2&#45;&gt;proc~penf_init</title>
+<title>proc~initialize&#45;&gt;proc~penf_init</title>
 <path fill="none" stroke="#000000" d="M263.27,-217.19C347.08,-225.29 511.88,-235.87 649,-212 700.02,-203.12 755.8,-180.74 790.47,-165.2"/>
 <polygon fill="#000000" stroke="#000000" points="792.02,-168.34 799.67,-161.01 789.12,-161.97 792.02,-168.34"/>
 </g>
@@ -2050,18 +2067,18 @@
 <path fill="none" stroke="#000000" d="M881.14,-2361.03C915.63,-2368.1 961.21,-2376.52 1002,-2381 1163.46,-2398.73 1356.18,-2400.63 1445.7,-2400.42"/>
 <polygon fill="#000000" stroke="#000000" points="1445.85,-2403.91 1455.84,-2400.38 1445.83,-2396.92 1445.85,-2403.91"/>
 </g>
-<!-- proc~upper~2 -->
+<!-- proc~upper~4 -->
 <g id="proc~~write_pvts~~CallsGraph_node85" class="node">
-<title>proc~upper~2</title>
-<g id="a_proc~~write_pvts~~CallsGraph_node85"><a xlink:href="../proc/upper~2.html" xlink:title="string%upper">
+<title>proc~upper~4</title>
+<g id="a_proc~~write_pvts~~CallsGraph_node85"><a xlink:href="../proc/upper~4.html" xlink:title="string%upper">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="1165,-2372 1081,-2372 1081,-2348 1165,-2348 1165,-2372"/>
 <text text-anchor="middle" x="1123" y="-2357.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%upper</text>
 </a>
 </g>
 </g>
-<!-- proc~write_dataarray_location_tag&#45;&gt;proc~upper~2 -->
+<!-- proc~write_dataarray_location_tag&#45;&gt;proc~upper~4 -->
 <g id="proc~~write_pvts~~CallsGraph_edge183" class="edge">
-<title>proc~write_dataarray_location_tag&#45;&gt;proc~upper~2</title>
+<title>proc~write_dataarray_location_tag&#45;&gt;proc~upper~4</title>
 <path fill="none" stroke="#000000" d="M966.03,-2354.19C1003.29,-2355.58 1041.26,-2356.99 1070.4,-2358.08"/>
 <polygon fill="#000000" stroke="#000000" points="1070.6,-2361.59 1080.72,-2358.46 1070.86,-2354.59 1070.6,-2361.59"/>
 </g>
@@ -2965,18 +2982,18 @@
 <path fill="none" stroke="#000000" d="M826.98,-1397.18C831.11,-1496.12 864.07,-2167.62 1002,-2301 1041.13,-2338.84 1190.61,-2328.37 1244,-2339 1314.56,-2353.06 1395.26,-2373.34 1445.92,-2386.6"/>
 <polygon fill="#000000" stroke="#000000" points="1445.07,-2389.99 1455.64,-2389.15 1446.85,-2383.22 1445.07,-2389.99"/>
 </g>
-<!-- proc~write_tag~2 -->
+<!-- proc~write_tag -->
 <g id="proc~~write_pvts~~CallsGraph_node142" class="node">
-<title>proc~write_tag~2</title>
-<g id="a_proc~~write_pvts~~CallsGraph_node142"><a xlink:href="../proc/write_tag~2.html" xlink:title="xml_writer_abstract%write_tag">
+<title>proc~write_tag</title>
+<g id="a_proc~~write_pvts~~CallsGraph_node142"><a xlink:href="../proc/write_tag.html" xlink:title="xml_writer_abstract%write_tag">
 <polygon fill="#d9534f" stroke="#d9534f" points="1210.5,-2208 1035.5,-2208 1035.5,-2184 1210.5,-2184 1210.5,-2208"/>
 <text text-anchor="middle" x="1123" y="-2193.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">xml_writer_abstract%write_tag</text>
 </a>
 </g>
 </g>
-<!-- proc~write_dataarray_tag&#45;&gt;proc~write_tag~2 -->
+<!-- proc~write_dataarray_tag&#45;&gt;proc~write_tag -->
 <g id="proc~~write_pvts~~CallsGraph_edge250" class="edge">
-<title>proc~write_dataarray_tag&#45;&gt;proc~write_tag~2</title>
+<title>proc~write_dataarray_tag&#45;&gt;proc~write_tag</title>
 <path fill="none" stroke="#000000" d="M827.4,-1397.19C834.33,-1488.15 882.4,-2060.7 1002,-2175 1008.85,-2181.55 1016.98,-2186.44 1025.72,-2190.07"/>
 <polygon fill="#000000" stroke="#000000" points="1024.83,-2193.47 1035.43,-2193.52 1027.18,-2186.87 1024.83,-2193.47"/>
 </g>
@@ -3559,9 +3576,9 @@
 <path fill="none" stroke="#000000" d="M1552.54,-2291.18C1567.48,-2289.32 1583.83,-2287.27 1599.36,-2285.33"/>
 <polygon fill="#000000" stroke="#000000" points="1599.93,-2288.79 1609.42,-2284.07 1599.06,-2281.84 1599.93,-2288.79"/>
 </g>
-<!-- proc~write_tag~2&#45;&gt;proc~stringify -->
+<!-- proc~write_tag&#45;&gt;proc~stringify -->
 <g id="proc~~write_pvts~~CallsGraph_edge343" class="edge">
-<title>proc~write_tag~2&#45;&gt;proc~stringify</title>
+<title>proc~write_tag&#45;&gt;proc~stringify</title>
 <path fill="none" stroke="#000000" d="M1210.55,-2206.36C1222.03,-2209.11 1233.46,-2212.6 1244,-2217 1269.57,-2227.69 1294.95,-2246.87 1311.93,-2261.26"/>
 <polygon fill="#000000" stroke="#000000" points="1309.71,-2263.97 1319.55,-2267.89 1314.3,-2258.69 1309.71,-2263.97"/>
 </g>
@@ -4711,27 +4728,5 @@ implementation in a submodule of an interface in a parent module.
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

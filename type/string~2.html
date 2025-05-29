@@ -12,14 +12,29 @@
 
     <title>string &ndash; Lib_VTK_IO </title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -100,9 +115,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -167,7 +184,7 @@
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-escape~2">escape</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-extension~4">extension</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-fill~2">fill</a>
-            <a class="list-group-item" href="../type/string~2.html#boundprocedure-free~3">free</a>
+            <a class="list-group-item" href="../type/string~2.html#boundprocedure-free~4">free</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-glob~2">glob</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-insert~2">insert</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-join~8">join</a>
@@ -179,7 +196,7 @@
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-read_lines~2">read_lines</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-replace~2">replace</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-reverse~2">reverse</a>
-            <a class="list-group-item" href="../type/string~2.html#boundprocedure-search~3">search</a>
+            <a class="list-group-item" href="../type/string~2.html#boundprocedure-search~2">search</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-slice~4">slice</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-snakecase~3">snakecase</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-split~2">split</a>
@@ -191,7 +208,7 @@
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-to_number~9">to_number</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-unescape~2">unescape</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-unique~2">unique</a>
-            <a class="list-group-item" href="../type/string~2.html#boundprocedure-upper~5">upper</a>
+            <a class="list-group-item" href="../type/string~2.html#boundprocedure-upper~6">upper</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-write_file~2">write_file</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-write_line~2">write_line</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-write_lines~2">write_lines</a>
@@ -204,7 +221,7 @@
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-is_real~3">is_real</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-is_upper~3">is_upper</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-start_with~3">start_with</a>
-            <a class="list-group-item" href="../type/string~2.html#boundprocedure-assignment%28%3D%29~3">assignment(=)</a>
+            <a class="list-group-item" href="../type/string~2.html#boundprocedure-assignment%28%3D%29~2">assignment(=)</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-operator%28SLASHSLASH%29~2">operator(//)</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-operator%28.cat.%29~2">operator(.cat.)</a>
             <a class="list-group-item" href="../type/string~2.html#boundprocedure-operator%28%3D%3D%29~2">operator(==)</a>
@@ -357,9 +374,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sadjustl~2.html'>sadjustl</a>(self) result(adjusted)  
 </h3>
     
@@ -401,8 +418,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -416,9 +433,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sadjustr~2.html'>sadjustr</a>(self) result(adjusted)  
 </h3>
     
@@ -460,8 +477,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -475,9 +492,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/scount~2.html'>scount</a>(self, substring, ignore_isolated) result(No)  
 </h3>
     
@@ -549,8 +566,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -564,9 +581,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sindex_string_string~2.html'>sindex_string_string</a>(self, substring, back) result(i)  
 </h3>
     
@@ -638,9 +655,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sindex_string_character~2.html'>sindex_string_character</a>(self, substring, back) result(i)  
 </h3>
     
@@ -712,8 +729,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -727,9 +744,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/slen~2.html'>slen</a>(self) result(l)  
 </h3>
     
@@ -771,8 +788,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -786,9 +803,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/slen_trim~2.html'>slen_trim</a>(self) result(l)  
 </h3>
     
@@ -830,8 +847,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -845,9 +862,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/srepeat_string_string~2.html'>srepeat_string_string</a>(self, ncopies) result(repeated)  
 </h3>
     
@@ -904,9 +921,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/srepeat_character_string~2.html'>srepeat_character_string</a>(rstring, ncopies) result(repeated)  
 </h3>
     
@@ -963,8 +980,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -978,9 +995,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sscan_string_string~2.html'>sscan_string_string</a>(self, set, back) result(i)  
 </h3>
     
@@ -1052,9 +1069,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sscan_string_character~2.html'>sscan_string_character</a>(self, set, back) result(i)  
 </h3>
     
@@ -1126,8 +1143,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1141,9 +1158,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/strim~2.html'>strim</a>(self) result(trimmed)  
 </h3>
     
@@ -1185,8 +1202,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1200,9 +1217,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sverify_string_string~2.html'>sverify_string_string</a>(self, set, back) result(i)  
 </h3>
     
@@ -1274,9 +1291,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sverify_string_character~2.html'>sverify_string_character</a>(self, set, back) result(i)  
 </h3>
     
@@ -1348,8 +1365,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1363,9 +1380,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/basedir~2.html'>basedir</a>(self, sep)  
 </h3>
     
@@ -1422,8 +1439,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1437,9 +1454,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/basename~2.html'>basename</a>(self, sep, extension, strip_last_extension)  
 </h3>
     
@@ -1526,8 +1543,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1541,9 +1558,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/camelcase~2.html'>camelcase</a>(self, sep)  
 </h3>
     
@@ -1600,8 +1617,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1615,9 +1632,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/capitalize~2.html'>capitalize</a>(self) result(capitalized)  
 </h3>
     
@@ -1659,8 +1676,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1674,9 +1691,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/chars~2.html'>chars</a>(self) result(raw)  
 </h3>
     
@@ -1718,8 +1735,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1733,9 +1750,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/colorize_str~2.html'>colorize_str</a>(self, color_fg, color_bg, style) result(colorized)  
 </h3>
     
@@ -1822,8 +1839,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1837,9 +1854,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/decode~2.html'>decode</a>(self, codec) result(decoded)  
 </h3>
     
@@ -1896,8 +1913,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1911,9 +1928,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/encode~2.html'>encode</a>(self, codec) result(encoded)  
 </h3>
     
@@ -1970,8 +1987,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1985,9 +2002,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/escape~2.html'>escape</a>(self, to_escape, esc) result(escaped)  
 </h3>
     
@@ -2059,8 +2076,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2074,9 +2091,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/extension~2.html'>extension</a>(self)  
 </h3>
     
@@ -2118,8 +2135,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2133,9 +2150,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/fill~2.html'>fill</a>(self, width, right, filling_char) result(filled)  
 </h3>
     
@@ -2222,25 +2239,25 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
           <div class="row">
               <div class="card mt-3">
     <div class="card-header codesum">
-      <span class="anchor" id="boundprocedure-free~3"></span>
+      <span class="anchor" id="boundprocedure-free~4"></span>
       <h3>
           procedure, public, pass(self) ::
   <strong>free</strong>
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
-    private elemental subroutine <a href='../proc/free~3.html'>free</a>(self)  
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    private elemental subroutine <a href='../proc/free~4.html'>free</a>(self)  
 </h3>
     
 
@@ -2276,8 +2293,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2291,9 +2308,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/glob_character~2.html'>glob_character</a>(self, pattern, list)  
 </h3>
     
@@ -2360,9 +2377,9 @@
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/glob_string~2.html'>glob_string</a>(self, pattern, list)  
 </h3>
     
@@ -2429,8 +2446,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2444,9 +2461,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/insert_string~2.html'>insert_string</a>(self, substring, pos) result(inserted)  
 </h3>
     
@@ -2518,9 +2535,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/insert_character~2.html'>insert_character</a>(self, substring, pos) result(inserted)  
 </h3>
     
@@ -2592,8 +2609,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2607,9 +2624,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/join_strings~2.html'>join_strings</a>(self, array, sep) result(join)  
 </h3>
     
@@ -2681,9 +2698,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/join_characters~2.html'>join_characters</a>(self, array, sep) result(join)  
 </h3>
     
@@ -2755,8 +2772,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2770,9 +2787,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_strings~2.html'>strjoin_strings</a>(array, sep) result(join)  
 </h3>
     
@@ -2829,9 +2846,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_characters~2.html'>strjoin_characters</a>(array, sep, is_trim) result(join)  
 </h3>
     
@@ -2903,9 +2920,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_strings_array~2.html'>strjoin_strings_array</a>(array, sep, is_col) result(join)  
 </h3>
     
@@ -2977,9 +2994,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_characters_array~2.html'>strjoin_characters_array</a>(array, sep, is_trim, is_col) result(join)  
 </h3>
     
@@ -3066,8 +3083,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3081,9 +3098,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/lower~2.html'>lower</a>(self)  
 </h3>
     
@@ -3125,8 +3142,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3140,9 +3157,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/partition~2.html'>partition</a>(self, sep) result(partitions)  
 </h3>
     
@@ -3199,8 +3216,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3214,9 +3231,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_file~2.html'>read_file</a>(self, file, is_fast, form, iostat, iomsg)  
 </h3>
     
@@ -3328,8 +3345,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3343,9 +3360,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_line~2.html'>read_line</a>(self, unit, form, iostat, iomsg)  
 </h3>
     
@@ -3442,8 +3459,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3457,9 +3474,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_lines~2.html'>read_lines</a>(self, unit, form, iostat, iomsg)  
 </h3>
     
@@ -3556,8 +3573,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3571,9 +3588,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/replace~2.html'>replace</a>(self, old, new, count) result(replaced)  
 </h3>
     
@@ -3660,8 +3677,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3675,9 +3692,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/reverse~2.html'>reverse</a>(self) result(reversed)  
 </h3>
     
@@ -3719,25 +3736,25 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
           <div class="row">
               <div class="card mt-3">
     <div class="card-header codesum">
-      <span class="anchor" id="boundprocedure-search~3"></span>
+      <span class="anchor" id="boundprocedure-search~2"></span>
       <h3>
           procedure, public, pass(self) ::
   <strong>search</strong>
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
-    private  function <a href='../proc/search~3.html'>search</a>(self, tag_start, tag_end, in_string, in_character, istart, iend) result(tag)  
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    private  function <a href='../proc/search~2.html'>search</a>(self, tag_start, tag_end, in_string, in_character, istart, iend) result(tag)  
 </h3>
     
 
@@ -3868,8 +3885,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3883,9 +3900,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/slice~2.html'>slice</a>(self, istart, iend) result(raw)  
 </h3>
     
@@ -3957,8 +3974,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3972,9 +3989,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/snakecase~2.html'>snakecase</a>(self, sep)  
 </h3>
     
@@ -4031,8 +4048,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4046,9 +4063,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/split~2.html'>split</a>(self, tokens, sep, max_tokens)  
 </h3>
     
@@ -4130,8 +4147,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4145,9 +4162,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/split_chunked~2.html'>split_chunked</a>(self, tokens, chunks, sep)  
 </h3>
     
@@ -4229,8 +4246,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4244,9 +4261,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/startcase~2.html'>startcase</a>(self, sep)  
 </h3>
     
@@ -4303,8 +4320,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4318,9 +4335,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/strip~2.html'>strip</a>(self, remove_nulls)  
 </h3>
     
@@ -4377,8 +4394,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4392,9 +4409,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/swapcase~2.html'>swapcase</a>(self)  
 </h3>
     
@@ -4436,8 +4453,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4451,9 +4468,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  function <a href='../proc/tempname~2.html'>tempname</a>(self, is_file, prefix, path)  
 </h3>
     
@@ -4540,8 +4557,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4555,9 +4572,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i1p~2.html'>to_integer_I1P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -4614,9 +4631,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i2p~2.html'>to_integer_I2P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -4673,9 +4690,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i4p~2.html'>to_integer_I4P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -4732,9 +4749,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i8p~2.html'>to_integer_I8P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -4791,9 +4808,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_real_r8p~2.html'>to_real_R8P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -4850,9 +4867,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_real_r4p~2.html'>to_real_R4P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -4909,8 +4926,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4924,9 +4941,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/unescape~2.html'>unescape</a>(self, to_unescape, unesc) result(unescaped)  
 </h3>
     
@@ -4998,8 +5015,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5013,9 +5030,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/unique~2.html'>unique</a>(self, substring) result(uniq)  
 </h3>
     
@@ -5072,25 +5089,25 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
           <div class="row">
               <div class="card mt-3">
     <div class="card-header codesum">
-      <span class="anchor" id="boundprocedure-upper~5"></span>
+      <span class="anchor" id="boundprocedure-upper~6"></span>
       <h3>
           procedure, public, pass(self) ::
   <strong>upper</strong>
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
-    private elemental function <a href='../proc/upper~4.html'>upper</a>(self)  
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    private elemental function <a href='../proc/upper~5.html'>upper</a>(self)  
 </h3>
     
 
@@ -5131,8 +5148,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5146,9 +5163,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_file~2.html'>write_file</a>(self, file, form, iostat, iomsg)  
 </h3>
     
@@ -5245,8 +5262,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5260,9 +5277,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_line~2.html'>write_line</a>(self, unit, form, iostat, iomsg)  
 </h3>
     
@@ -5359,8 +5376,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5374,9 +5391,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_lines~2.html'>write_lines</a>(self, unit, form, iostat, iomsg)  
 </h3>
     
@@ -5473,8 +5490,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5488,9 +5505,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/end_with~2.html'>end_with</a>(self, suffix, start, end, ignore_null_eof)  
 </h3>
     
@@ -5592,8 +5609,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5607,9 +5624,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_allocated~2.html'>is_allocated</a>(self)  
 </h3>
     
@@ -5651,8 +5668,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5666,9 +5683,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_digit~2.html'>is_digit</a>(self)  
 </h3>
     
@@ -5710,8 +5727,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5725,9 +5742,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_integer~2.html'>is_integer</a>(self, allow_spaces)  
 </h3>
     
@@ -5784,8 +5801,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5799,9 +5816,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_lower~2.html'>is_lower</a>(self)  
 </h3>
     
@@ -5843,8 +5860,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5858,9 +5875,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_number~2.html'>is_number</a>(self, allow_spaces)  
 </h3>
     
@@ -5917,8 +5934,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5932,9 +5949,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_real~2.html'>is_real</a>(self, allow_spaces)  
 </h3>
     
@@ -5991,8 +6008,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -6006,9 +6023,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_upper~2.html'>is_upper</a>(self)  
 </h3>
     
@@ -6050,8 +6067,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -6065,9 +6082,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/start_with~2.html'>start_with</a>(self, prefix, start, end)  
 </h3>
     
@@ -6154,24 +6171,24 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
           <div class="row">
               <div class="card mt-3">
     <div class="card-header codesum">
-      <span class="anchor" id="boundprocedure-assignment%28%3D%29~3"></span>
+      <span class="anchor" id="boundprocedure-assignment%28%3D%29~2"></span>
       <h3>
           generic, public ::
   <strong>assignment(=)</strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_string~2'>string_assign_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_character~2'>string_assign_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i1p~2'>string_assign_integer_I1P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i2p~2'>string_assign_integer_I2P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i4p~2'>string_assign_integer_I4P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_integer_i8p~2'>string_assign_integer_I8P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_real_r8p~2'>string_assign_real_R8P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string~2.html#boundprocedure-string_assign_real_r4p~2'>string_assign_real_R4P</a>
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_string~2.html'>string_assign_string</a>(lhs, rhs)  
 </h3>
     
@@ -6223,9 +6240,9 @@
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_character~2.html'>string_assign_character</a>(lhs, rhs)  
 </h3>
     
@@ -6277,9 +6294,9 @@
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i1p~2.html'>string_assign_integer_I1P</a>(lhs, rhs)  
 </h3>
     
@@ -6331,9 +6348,9 @@
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i2p~2.html'>string_assign_integer_I2P</a>(lhs, rhs)  
 </h3>
     
@@ -6385,9 +6402,9 @@
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i4p~2.html'>string_assign_integer_I4P</a>(lhs, rhs)  
 </h3>
     
@@ -6439,9 +6456,9 @@
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i8p~2.html'>string_assign_integer_I8P</a>(lhs, rhs)  
 </h3>
     
@@ -6493,9 +6510,9 @@
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_real_r8p~2.html'>string_assign_real_R8P</a>(lhs, rhs)  
 </h3>
     
@@ -6547,9 +6564,9 @@
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_real_r4p~2.html'>string_assign_real_R4P</a>(lhs, rhs)  
 </h3>
     
@@ -6601,8 +6618,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -6616,9 +6633,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/string_concat_string~2.html'>string_concat_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -6675,9 +6692,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/string_concat_character~2.html'>string_concat_character</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -6734,9 +6751,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/character_concat_string~2.html'>character_concat_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -6793,8 +6810,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -6808,9 +6825,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_concat_string_string~2.html'>string_concat_string_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -6867,9 +6884,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_concat_character_string~2.html'>string_concat_character_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -6926,9 +6943,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_concat_string_string~2.html'>character_concat_string_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -6985,8 +7002,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7000,9 +7017,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_eq_string~2.html'>string_eq_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7059,9 +7076,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_eq_character~2.html'>string_eq_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7118,9 +7135,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_eq_string~2.html'>character_eq_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7177,8 +7194,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7192,9 +7209,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ne_string~2.html'>string_ne_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7251,9 +7268,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ne_character~2.html'>string_ne_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7310,9 +7327,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_ne_string~2.html'>character_ne_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7369,8 +7386,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7384,9 +7401,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_lt_string~2.html'>string_lt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7443,9 +7460,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_lt_character~2.html'>string_lt_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7502,9 +7519,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_lt_string~2.html'>character_lt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7561,8 +7578,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7576,9 +7593,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_le_string~2.html'>string_le_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7635,9 +7652,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_le_character~2.html'>string_le_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7694,9 +7711,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_le_string~2.html'>character_le_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7753,8 +7770,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7768,9 +7785,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ge_string~2.html'>string_ge_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7827,9 +7844,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ge_character~2.html'>string_ge_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7886,9 +7903,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_ge_string~2.html'>character_ge_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7945,8 +7962,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7960,9 +7977,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_gt_string~2.html'>string_gt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -8019,9 +8036,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_gt_character~2.html'>string_gt_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -8078,9 +8095,9 @@
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_gt_string~2.html'>character_gt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -8137,8 +8154,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8152,9 +8169,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_formatted~2.html'>read_formatted</a>(dtv, unit, iotype, v_list, iostat, iomsg)  
 </h3>
     
@@ -8266,8 +8283,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8281,9 +8298,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_formatted~2.html'>write_formatted</a>(dtv, unit, iotype, v_list, iostat, iomsg)  
 </h3>
     
@@ -8395,8 +8412,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8410,9 +8427,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_unformatted~2.html'>read_unformatted</a>(dtv, unit, iostat, iomsg)  
 </h3>
     
@@ -8494,8 +8511,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8509,9 +8526,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_unformatted~2.html'>write_unformatted</a>(dtv, unit, iostat, iomsg)  
 </h3>
     
@@ -8593,8 +8610,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8608,9 +8625,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sindex_string_string~2.html'>sindex_string_string</a>(self, substring, back) result(i)  
 </h3>
     
@@ -8682,8 +8699,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8697,9 +8714,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sindex_string_character~2.html'>sindex_string_character</a>(self, substring, back) result(i)  
 </h3>
     
@@ -8771,8 +8788,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8786,9 +8803,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/srepeat_string_string~2.html'>srepeat_string_string</a>(self, ncopies) result(repeated)  
 </h3>
     
@@ -8845,8 +8862,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8860,9 +8877,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/srepeat_character_string~2.html'>srepeat_character_string</a>(rstring, ncopies) result(repeated)  
 </h3>
     
@@ -8919,8 +8936,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8934,9 +8951,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sscan_string_string~2.html'>sscan_string_string</a>(self, set, back) result(i)  
 </h3>
     
@@ -9008,8 +9025,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9023,9 +9040,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sscan_string_character~2.html'>sscan_string_character</a>(self, set, back) result(i)  
 </h3>
     
@@ -9097,8 +9114,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9112,9 +9129,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sverify_string_string~2.html'>sverify_string_string</a>(self, set, back) result(i)  
 </h3>
     
@@ -9186,8 +9203,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9201,9 +9218,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sverify_string_character~2.html'>sverify_string_character</a>(self, set, back) result(i)  
 </h3>
     
@@ -9275,8 +9292,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9290,9 +9307,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/colorize_str~2.html'>colorize_str</a>(self, color_fg, color_bg, style) result(colorized)  
 </h3>
     
@@ -9379,8 +9396,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9394,9 +9411,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/glob_character~2.html'>glob_character</a>(self, pattern, list)  
 </h3>
     
@@ -9463,8 +9480,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9478,9 +9495,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/glob_string~2.html'>glob_string</a>(self, pattern, list)  
 </h3>
     
@@ -9547,8 +9564,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9562,9 +9579,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/insert_string~2.html'>insert_string</a>(self, substring, pos) result(inserted)  
 </h3>
     
@@ -9636,8 +9653,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9651,9 +9668,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/insert_character~2.html'>insert_character</a>(self, substring, pos) result(inserted)  
 </h3>
     
@@ -9725,8 +9742,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9740,9 +9757,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/join_strings~2.html'>join_strings</a>(self, array, sep) result(join)  
 </h3>
     
@@ -9814,8 +9831,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9829,9 +9846,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/join_characters~2.html'>join_characters</a>(self, array, sep) result(join)  
 </h3>
     
@@ -9903,8 +9920,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9918,9 +9935,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_strings~2.html'>strjoin_strings</a>(array, sep) result(join)  
 </h3>
     
@@ -9977,8 +9994,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9992,9 +10009,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_characters~2.html'>strjoin_characters</a>(array, sep, is_trim) result(join)  
 </h3>
     
@@ -10066,8 +10083,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10081,9 +10098,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_strings_array~2.html'>strjoin_strings_array</a>(array, sep, is_col) result(join)  
 </h3>
     
@@ -10155,8 +10172,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10170,9 +10187,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_characters_array~2.html'>strjoin_characters_array</a>(array, sep, is_trim, is_col) result(join)  
 </h3>
     
@@ -10259,8 +10276,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10274,9 +10291,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i1p~2.html'>to_integer_I1P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10333,8 +10350,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10348,9 +10365,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i2p~2.html'>to_integer_I2P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10407,8 +10424,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10422,9 +10439,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i4p~2.html'>to_integer_I4P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10481,8 +10498,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10496,9 +10513,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i8p~2.html'>to_integer_I8P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10555,8 +10572,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10570,9 +10587,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_real_r4p~2.html'>to_real_R4P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10629,8 +10646,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10644,9 +10661,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_real_r8p~2.html'>to_real_R8P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10703,8 +10720,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10718,9 +10735,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_real_r16p~2.html'>to_real_R16P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10777,8 +10794,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10792,9 +10809,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_string~2.html'>string_assign_string</a>(lhs, rhs)  
 </h3>
     
@@ -10846,8 +10863,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10861,9 +10878,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_character~2.html'>string_assign_character</a>(lhs, rhs)  
 </h3>
     
@@ -10915,8 +10932,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10930,9 +10947,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i1p~2.html'>string_assign_integer_I1P</a>(lhs, rhs)  
 </h3>
     
@@ -10984,8 +11001,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10999,9 +11016,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i2p~2.html'>string_assign_integer_I2P</a>(lhs, rhs)  
 </h3>
     
@@ -11053,8 +11070,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11068,9 +11085,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i4p~2.html'>string_assign_integer_I4P</a>(lhs, rhs)  
 </h3>
     
@@ -11122,8 +11139,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11137,9 +11154,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i8p~2.html'>string_assign_integer_I8P</a>(lhs, rhs)  
 </h3>
     
@@ -11191,8 +11208,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11206,9 +11223,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_real_r4p~2.html'>string_assign_real_R4P</a>(lhs, rhs)  
 </h3>
     
@@ -11260,8 +11277,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11275,9 +11292,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_real_r8p~2.html'>string_assign_real_R8P</a>(lhs, rhs)  
 </h3>
     
@@ -11329,8 +11346,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11344,9 +11361,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_real_r16p~2.html'>string_assign_real_R16P</a>(lhs, rhs)  
 </h3>
     
@@ -11398,8 +11415,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11413,9 +11430,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/string_concat_string~2.html'>string_concat_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -11472,8 +11489,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11487,9 +11504,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/string_concat_character~2.html'>string_concat_character</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -11546,8 +11563,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11561,9 +11578,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/character_concat_string~2.html'>character_concat_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -11620,8 +11637,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11635,9 +11652,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_concat_string_string~2.html'>string_concat_string_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -11694,8 +11711,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11709,9 +11726,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_concat_character_string~2.html'>string_concat_character_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -11768,8 +11785,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11783,9 +11800,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_concat_string_string~2.html'>character_concat_string_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -11842,8 +11859,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11857,9 +11874,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_eq_string~2.html'>string_eq_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -11916,8 +11933,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11931,9 +11948,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_eq_character~2.html'>string_eq_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -11990,8 +12007,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12005,9 +12022,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_eq_string~2.html'>character_eq_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12064,8 +12081,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12079,9 +12096,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ne_string~2.html'>string_ne_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12138,8 +12155,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12153,9 +12170,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ne_character~2.html'>string_ne_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12212,8 +12229,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12227,9 +12244,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_ne_string~2.html'>character_ne_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12286,8 +12303,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12301,9 +12318,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_lt_string~2.html'>string_lt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12360,8 +12377,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12375,9 +12392,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_lt_character~2.html'>string_lt_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12434,8 +12451,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12449,9 +12466,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_lt_string~2.html'>character_lt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12508,8 +12525,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12523,9 +12540,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_le_string~2.html'>string_le_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12582,8 +12599,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12597,9 +12614,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_le_character~2.html'>string_le_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12656,8 +12673,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12671,9 +12688,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_le_string~2.html'>character_le_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12730,8 +12747,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12745,9 +12762,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ge_string~2.html'>string_ge_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12804,8 +12821,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12819,9 +12836,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ge_character~2.html'>string_ge_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12878,8 +12895,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12893,9 +12910,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_ge_string~2.html'>character_ge_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12952,8 +12969,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12967,9 +12984,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_gt_string~2.html'>string_gt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -13026,8 +13043,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13041,9 +13058,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_gt_character~2.html'>string_gt_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -13100,8 +13117,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13115,9 +13132,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_gt_string~2.html'>character_gt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -13174,8 +13191,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13189,9 +13206,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_formatted~2.html'>read_formatted</a>(dtv, unit, iotype, v_list, iostat, iomsg)  
 </h3>
     
@@ -13303,8 +13320,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13318,9 +13335,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_delimited~2.html'>read_delimited</a>(dtv, unit, delim, iostat, iomsg)  
 </h3>
     
@@ -13417,8 +13434,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13432,9 +13449,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_undelimited~2.html'>read_undelimited</a>(dtv, unit, terminators, iostat, iomsg)  
 </h3>
     
@@ -13531,8 +13548,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13546,9 +13563,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_undelimited_listdirected~2.html'>read_undelimited_listdirected</a>(dtv, unit, iostat, iomsg)  
 </h3>
     
@@ -13630,8 +13647,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13645,9 +13662,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_formatted~2.html'>write_formatted</a>(dtv, unit, iotype, v_list, iostat, iomsg)  
 </h3>
     
@@ -13759,8 +13776,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13774,9 +13791,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_unformatted~2.html'>read_unformatted</a>(dtv, unit, iostat, iomsg)  
 </h3>
     
@@ -13858,8 +13875,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13873,9 +13890,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_unformatted~2.html'>write_unformatted</a>(dtv, unit, iostat, iomsg)  
 </h3>
     
@@ -13957,8 +13974,8 @@
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13972,9 +13989,9 @@
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/replace_one_occurrence~2.html'>replace_one_occurrence</a>(self, old, new) result(replaced)  
 </h3>
     
@@ -14046,8 +14063,8 @@
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -14295,27 +14312,5 @@
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

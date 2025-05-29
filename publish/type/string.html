@@ -12,14 +12,29 @@
 
     <title>string &ndash; Lib_VTK_IO </title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -79,7 +94,7 @@
 
             <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
               <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-                 title="<p>20.7% of total for derived types.</p>Including implementation: 1939 statements, 19.6% of total for derived types.">142 statements</a>
+                 title="<p>20.7% of total for derived types.</p>Including implementation: 1940 statements, 19.6% of total for derived types.">142 statements</a>
             </li>
 
             <li class="list-inline-item" id="source-file">
@@ -100,9 +115,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -167,7 +184,7 @@
             <a class="list-group-item" href="../type/string.html#boundprocedure-escape">escape</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-extension">extension</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-fill">fill</a>
-            <a class="list-group-item" href="../type/string.html#boundprocedure-free~2">free</a>
+            <a class="list-group-item" href="../type/string.html#boundprocedure-free~3">free</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-glob">glob</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-insert">insert</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-join">join</a>
@@ -179,7 +196,7 @@
             <a class="list-group-item" href="../type/string.html#boundprocedure-read_lines">read_lines</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-replace">replace</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-reverse">reverse</a>
-            <a class="list-group-item" href="../type/string.html#boundprocedure-search~2">search</a>
+            <a class="list-group-item" href="../type/string.html#boundprocedure-search">search</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-slice">slice</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-snakecase">snakecase</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-split">split</a>
@@ -191,7 +208,7 @@
             <a class="list-group-item" href="../type/string.html#boundprocedure-to_number">to_number</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-unescape">unescape</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-unique">unique</a>
-            <a class="list-group-item" href="../type/string.html#boundprocedure-upper~2">upper</a>
+            <a class="list-group-item" href="../type/string.html#boundprocedure-upper~4">upper</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-write_file">write_file</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-write_line">write_line</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-write_lines">write_lines</a>
@@ -204,7 +221,7 @@
             <a class="list-group-item" href="../type/string.html#boundprocedure-is_real">is_real</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-is_upper">is_upper</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-start_with">start_with</a>
-            <a class="list-group-item" href="../type/string.html#boundprocedure-assignment%28%3D%29~2">assignment(=)</a>
+            <a class="list-group-item" href="../type/string.html#boundprocedure-assignment%28%3D%29">assignment(=)</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-operator%28SLASHSLASH%29">operator(//)</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-operator%28.cat.%29">operator(.cat.)</a>
             <a class="list-group-item" href="../type/string.html#boundprocedure-operator%28%3D%3D%29">operator(==)</a>
@@ -338,7 +355,7 @@
 </g>
 </g>
 <!-- type~xml_tag&#45;&gt;type~string -->
-<g id="type~~string~~InheritedByGraph_edge1" class="edge">
+<g id="type~~string~~InheritedByGraph_edge2" class="edge">
 <title>type~xml_tag&#45;&gt;type~string</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M301.38,-117.82C247.42,-125.55 125.15,-143.08 64.09,-151.83"/>
 <polygon fill="#000000" stroke="#000000" points="63.54,-148.37 54.13,-153.25 64.53,-155.3 63.54,-148.37"/>
@@ -354,7 +371,7 @@
 </g>
 </g>
 <!-- type~xml_writer_abstract&#45;&gt;type~string -->
-<g id="type~~string~~InheritedByGraph_edge2" class="edge">
+<g id="type~~string~~InheritedByGraph_edge1" class="edge">
 <title>type~xml_writer_abstract&#45;&gt;type~string</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M489.97,-149.76C388.48,-161.49 185.2,-184.12 152.5,-181"/>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M150.5,-181C121.11,-177.65 88.23,-171.05 63.94,-165.62"/>
@@ -384,7 +401,7 @@
 <text text-anchor="middle" x="449.5" y="-188.4" font-family="Helvetica,sans-Serif" font-size="9.50">encoding</text>
 </g>
 <!-- type~xml_writer_appended&#45;&gt;type~xml_writer_abstract -->
-<g id="type~~string~~InheritedByGraph_edge11" class="edge">
+<g id="type~~string~~InheritedByGraph_edge10" class="edge">
 <title>type~xml_writer_appended&#45;&gt;type~xml_writer_abstract</title>
 <path fill="none" stroke="#000000" d="M698.29,-210.28C682.79,-207.16 666.25,-203.63 651,-200"/>
 <path fill="none" stroke="#000000" d="M649,-200C620.28,-193.16 591.45,-175.12 572.27,-161.15"/>
@@ -464,7 +481,7 @@
 </g>
 </g>
 <!-- type~xml_writer_ascii_local&#45;&gt;type~xml_writer_abstract -->
-<g id="type~~string~~InheritedByGraph_edge10" class="edge">
+<g id="type~~string~~InheritedByGraph_edge9" class="edge">
 <title>type~xml_writer_ascii_local&#45;&gt;type~xml_writer_abstract</title>
 <path fill="none" stroke="#000000" d="M697.72,-44.5C681.83,-44.63 665.25,-47.07 651,-54"/>
 </g>
@@ -478,7 +495,7 @@
 </g>
 </g>
 <!-- type~xml_writer_binary_local&#45;&gt;type~xml_writer_abstract -->
-<g id="type~~string~~InheritedByGraph_edge9" class="edge">
+<g id="type~~string~~InheritedByGraph_edge11" class="edge">
 <title>type~xml_writer_binary_local&#45;&gt;type~xml_writer_abstract</title>
 <path fill="none" stroke="#000000" d="M718.18,-24.05C709.75,-26.75 701.03,-29.78 693,-33 673.63,-40.77 669.77,-44.87 651,-54"/>
 <path fill="none" stroke="#000000" d="M649,-54C617.05,-69.53 634.54,-99.56 607,-122 605.26,-123.42 603.42,-124.75 601.5,-125.99"/>
@@ -590,9 +607,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sadjustl.html'>sadjustl</a>(self) result(adjusted)  
 </h3>
     
@@ -634,8 +651,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -649,9 +666,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sadjustr.html'>sadjustr</a>(self) result(adjusted)  
 </h3>
     
@@ -693,8 +710,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -708,9 +725,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/scount.html'>scount</a>(self, substring, ignore_isolated) result(No)  
 </h3>
     
@@ -782,8 +799,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -797,9 +814,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sindex_string_string.html'>sindex_string_string</a>(self, substring, back) result(i)  
 </h3>
     
@@ -871,9 +888,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sindex_string_character.html'>sindex_string_character</a>(self, substring, back) result(i)  
 </h3>
     
@@ -945,8 +962,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -960,9 +977,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/slen.html'>slen</a>(self) result(l)  
 </h3>
     
@@ -1004,8 +1021,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1019,9 +1036,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/slen_trim.html'>slen_trim</a>(self) result(l)  
 </h3>
     
@@ -1063,8 +1080,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1078,9 +1095,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/srepeat_string_string.html'>srepeat_string_string</a>(self, ncopies) result(repeated)  
 </h3>
     
@@ -1137,9 +1154,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/srepeat_character_string.html'>srepeat_character_string</a>(rstring, ncopies) result(repeated)  
 </h3>
     
@@ -1196,8 +1213,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1211,9 +1228,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sscan_string_string.html'>sscan_string_string</a>(self, set, back) result(i)  
 </h3>
     
@@ -1285,9 +1302,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sscan_string_character.html'>sscan_string_character</a>(self, set, back) result(i)  
 </h3>
     
@@ -1359,8 +1376,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1374,9 +1391,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/strim.html'>strim</a>(self) result(trimmed)  
 </h3>
     
@@ -1418,8 +1435,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1433,9 +1450,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sverify_string_string.html'>sverify_string_string</a>(self, set, back) result(i)  
 </h3>
     
@@ -1507,9 +1524,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sverify_string_character.html'>sverify_string_character</a>(self, set, back) result(i)  
 </h3>
     
@@ -1581,8 +1598,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1596,9 +1613,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/basedir.html'>basedir</a>(self, sep)  
 </h3>
     
@@ -1655,8 +1672,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1670,9 +1687,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/basename.html'>basename</a>(self, sep, extension, strip_last_extension)  
 </h3>
     
@@ -1759,8 +1776,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1774,9 +1791,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/camelcase.html'>camelcase</a>(self, sep)  
 </h3>
     
@@ -1833,8 +1850,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1848,9 +1865,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/capitalize.html'>capitalize</a>(self) result(capitalized)  
 </h3>
     
@@ -1892,8 +1909,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1907,9 +1924,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/chars.html'>chars</a>(self) result(raw)  
 </h3>
     
@@ -1951,8 +1968,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -1966,9 +1983,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/colorize_str.html'>colorize_str</a>(self, color_fg, color_bg, style) result(colorized)  
 </h3>
     
@@ -2055,8 +2072,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2070,9 +2087,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/decode.html'>decode</a>(self, codec) result(decoded)  
 </h3>
     
@@ -2129,8 +2146,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2144,9 +2161,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/encode.html'>encode</a>(self, codec) result(encoded)  
 </h3>
     
@@ -2203,8 +2220,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2218,9 +2235,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/escape.html'>escape</a>(self, to_escape, esc) result(escaped)  
 </h3>
     
@@ -2292,8 +2309,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2307,9 +2324,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/extension.html'>extension</a>(self)  
 </h3>
     
@@ -2351,8 +2368,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2366,9 +2383,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/fill.html'>fill</a>(self, width, right, filling_char) result(filled)  
 </h3>
     
@@ -2455,25 +2472,25 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
           <div class="row">
               <div class="card mt-3">
     <div class="card-header codesum">
-      <span class="anchor" id="boundprocedure-free~2"></span>
+      <span class="anchor" id="boundprocedure-free~3"></span>
       <h3>
           procedure, public, pass(self) ::
   <strong>free</strong>
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
-    private elemental subroutine <a href='../proc/free~2.html'>free</a>(self)  
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    private elemental subroutine <a href='../proc/free~3.html'>free</a>(self)  
 </h3>
     
 
@@ -2509,8 +2526,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2524,9 +2541,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/glob_character.html'>glob_character</a>(self, pattern, list)  
 </h3>
     
@@ -2593,9 +2610,9 @@ said component(s).
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/glob_string.html'>glob_string</a>(self, pattern, list)  
 </h3>
     
@@ -2662,8 +2679,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2677,9 +2694,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/insert_string.html'>insert_string</a>(self, substring, pos) result(inserted)  
 </h3>
     
@@ -2751,9 +2768,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/insert_character.html'>insert_character</a>(self, substring, pos) result(inserted)  
 </h3>
     
@@ -2825,8 +2842,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -2840,9 +2857,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/join_strings.html'>join_strings</a>(self, array, sep) result(join)  
 </h3>
     
@@ -2914,9 +2931,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/join_characters.html'>join_characters</a>(self, array, sep) result(join)  
 </h3>
     
@@ -2988,8 +3005,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3003,9 +3020,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_strings.html'>strjoin_strings</a>(array, sep) result(join)  
 </h3>
     
@@ -3062,9 +3079,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_characters.html'>strjoin_characters</a>(array, sep, is_trim) result(join)  
 </h3>
     
@@ -3136,9 +3153,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_strings_array.html'>strjoin_strings_array</a>(array, sep, is_col) result(join)  
 </h3>
     
@@ -3210,9 +3227,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_characters_array.html'>strjoin_characters_array</a>(array, sep, is_trim, is_col) result(join)  
 </h3>
     
@@ -3299,8 +3316,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3314,9 +3331,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/lower.html'>lower</a>(self)  
 </h3>
     
@@ -3358,8 +3375,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3373,9 +3390,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/partition.html'>partition</a>(self, sep) result(partitions)  
 </h3>
     
@@ -3432,8 +3449,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3447,9 +3464,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_file.html'>read_file</a>(self, file, is_fast, form, iostat, iomsg)  
 </h3>
     
@@ -3561,8 +3578,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3576,9 +3593,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_line.html'>read_line</a>(self, unit, form, iostat, iomsg)  
 </h3>
     
@@ -3675,8 +3692,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3690,9 +3707,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_lines.html'>read_lines</a>(self, unit, form, iostat, iomsg)  
 </h3>
     
@@ -3789,8 +3806,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3804,9 +3821,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/replace.html'>replace</a>(self, old, new, count) result(replaced)  
 </h3>
     
@@ -3893,8 +3910,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -3908,9 +3925,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/reverse.html'>reverse</a>(self) result(reversed)  
 </h3>
     
@@ -3952,25 +3969,25 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
           <div class="row">
               <div class="card mt-3">
     <div class="card-header codesum">
-      <span class="anchor" id="boundprocedure-search~2"></span>
+      <span class="anchor" id="boundprocedure-search"></span>
       <h3>
           procedure, public, pass(self) ::
   <strong>search</strong>
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
-    private  function <a href='../proc/search~2.html'>search</a>(self, tag_start, tag_end, in_string, in_character, istart, iend) result(tag)  
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    private  function <a href='../proc/search.html'>search</a>(self, tag_start, tag_end, in_string, in_character, istart, iend) result(tag)  
 </h3>
     
 
@@ -4101,8 +4118,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4116,9 +4133,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/slice.html'>slice</a>(self, istart, iend) result(raw)  
 </h3>
     
@@ -4190,8 +4207,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4205,9 +4222,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/snakecase.html'>snakecase</a>(self, sep)  
 </h3>
     
@@ -4264,8 +4281,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4279,9 +4296,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/split.html'>split</a>(self, tokens, sep, max_tokens)  
 </h3>
     
@@ -4363,8 +4380,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4378,9 +4395,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/split_chunked.html'>split_chunked</a>(self, tokens, chunks, sep)  
 </h3>
     
@@ -4462,8 +4479,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4477,9 +4494,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/startcase.html'>startcase</a>(self, sep)  
 </h3>
     
@@ -4536,8 +4553,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4551,9 +4568,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/strip.html'>strip</a>(self, remove_nulls)  
 </h3>
     
@@ -4610,8 +4627,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4625,9 +4642,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/swapcase.html'>swapcase</a>(self)  
 </h3>
     
@@ -4669,8 +4686,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4684,9 +4701,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  function <a href='../proc/tempname.html'>tempname</a>(self, is_file, prefix, path)  
 </h3>
     
@@ -4773,8 +4790,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -4788,9 +4805,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i1p.html'>to_integer_I1P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -4847,9 +4864,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i2p.html'>to_integer_I2P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -4906,9 +4923,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i4p.html'>to_integer_I4P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -4965,9 +4982,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i8p.html'>to_integer_I8P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -5024,9 +5041,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_real_r8p.html'>to_real_R8P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -5083,9 +5100,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_real_r4p.html'>to_real_R4P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -5142,8 +5159,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5157,9 +5174,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/unescape.html'>unescape</a>(self, to_unescape, unesc) result(unescaped)  
 </h3>
     
@@ -5231,8 +5248,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5246,9 +5263,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/unique.html'>unique</a>(self, substring) result(uniq)  
 </h3>
     
@@ -5305,25 +5322,25 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
           <div class="row">
               <div class="card mt-3">
     <div class="card-header codesum">
-      <span class="anchor" id="boundprocedure-upper~2"></span>
+      <span class="anchor" id="boundprocedure-upper~4"></span>
       <h3>
           procedure, public, pass(self) ::
   <strong>upper</strong>
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
-    private elemental function <a href='../proc/upper~2.html'>upper</a>(self)  
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
+    private elemental function <a href='../proc/upper~4.html'>upper</a>(self)  
 </h3>
     
 
@@ -5364,8 +5381,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5379,9 +5396,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_file.html'>write_file</a>(self, file, form, iostat, iomsg)  
 </h3>
     
@@ -5478,8 +5495,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5493,9 +5510,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_line.html'>write_line</a>(self, unit, form, iostat, iomsg)  
 </h3>
     
@@ -5592,8 +5609,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5607,9 +5624,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_lines.html'>write_lines</a>(self, unit, form, iostat, iomsg)  
 </h3>
     
@@ -5706,8 +5723,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5721,9 +5738,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/end_with.html'>end_with</a>(self, suffix, start, end, ignore_null_eof)  
 </h3>
     
@@ -5825,8 +5842,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5840,9 +5857,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_allocated.html'>is_allocated</a>(self)  
 </h3>
     
@@ -5884,8 +5901,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5899,9 +5916,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_digit.html'>is_digit</a>(self)  
 </h3>
     
@@ -5943,8 +5960,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -5958,9 +5975,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_integer.html'>is_integer</a>(self, allow_spaces)  
 </h3>
     
@@ -6017,8 +6034,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -6032,9 +6049,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_lower.html'>is_lower</a>(self)  
 </h3>
     
@@ -6076,8 +6093,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -6091,9 +6108,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_number.html'>is_number</a>(self, allow_spaces)  
 </h3>
     
@@ -6150,8 +6167,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -6165,9 +6182,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_real.html'>is_real</a>(self, allow_spaces)  
 </h3>
     
@@ -6224,8 +6241,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -6239,9 +6256,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/is_upper.html'>is_upper</a>(self)  
 </h3>
     
@@ -6283,8 +6300,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -6298,9 +6315,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/start_with.html'>start_with</a>(self, prefix, start, end)  
 </h3>
     
@@ -6387,24 +6404,24 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
           <div class="row">
               <div class="card mt-3">
     <div class="card-header codesum">
-      <span class="anchor" id="boundprocedure-assignment%28%3D%29~2"></span>
+      <span class="anchor" id="boundprocedure-assignment%28%3D%29"></span>
       <h3>
           generic, public ::
   <strong>assignment(=)</strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string.html#boundprocedure-string_assign_string'>string_assign_string</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string.html#boundprocedure-string_assign_character'>string_assign_character</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string.html#boundprocedure-string_assign_integer_i1p'>string_assign_integer_I1P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string.html#boundprocedure-string_assign_integer_i2p'>string_assign_integer_I2P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string.html#boundprocedure-string_assign_integer_i4p'>string_assign_integer_I4P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string.html#boundprocedure-string_assign_integer_i8p'>string_assign_integer_I8P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string.html#boundprocedure-string_assign_real_r8p'>string_assign_real_R8P</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/string.html#boundprocedure-string_assign_real_r4p'>string_assign_real_R4P</a>
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_string.html'>string_assign_string</a>(lhs, rhs)  
 </h3>
     
@@ -6456,9 +6473,9 @@ said component(s).
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_character.html'>string_assign_character</a>(lhs, rhs)  
 </h3>
     
@@ -6510,9 +6527,9 @@ said component(s).
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i1p.html'>string_assign_integer_I1P</a>(lhs, rhs)  
 </h3>
     
@@ -6564,9 +6581,9 @@ said component(s).
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i2p.html'>string_assign_integer_I2P</a>(lhs, rhs)  
 </h3>
     
@@ -6618,9 +6635,9 @@ said component(s).
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i4p.html'>string_assign_integer_I4P</a>(lhs, rhs)  
 </h3>
     
@@ -6672,9 +6689,9 @@ said component(s).
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i8p.html'>string_assign_integer_I8P</a>(lhs, rhs)  
 </h3>
     
@@ -6726,9 +6743,9 @@ said component(s).
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_real_r8p.html'>string_assign_real_R8P</a>(lhs, rhs)  
 </h3>
     
@@ -6780,9 +6797,9 @@ said component(s).
   </table>
 
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_real_r4p.html'>string_assign_real_R4P</a>(lhs, rhs)  
 </h3>
     
@@ -6834,8 +6851,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -6849,9 +6866,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/string_concat_string.html'>string_concat_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -6908,9 +6925,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/string_concat_character.html'>string_concat_character</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -6967,9 +6984,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/character_concat_string.html'>character_concat_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -7026,8 +7043,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7041,9 +7058,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_concat_string_string.html'>string_concat_string_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -7100,9 +7117,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_concat_character_string.html'>string_concat_character_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -7159,9 +7176,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_concat_string_string.html'>character_concat_string_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -7218,8 +7235,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7233,9 +7250,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_eq_string.html'>string_eq_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7292,9 +7309,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_eq_character.html'>string_eq_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7351,9 +7368,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_eq_string.html'>character_eq_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7410,8 +7427,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7425,9 +7442,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ne_string.html'>string_ne_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7484,9 +7501,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ne_character.html'>string_ne_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7543,9 +7560,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_ne_string.html'>character_ne_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7602,8 +7619,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7617,9 +7634,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_lt_string.html'>string_lt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7676,9 +7693,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_lt_character.html'>string_lt_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7735,9 +7752,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_lt_string.html'>character_lt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7794,8 +7811,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -7809,9 +7826,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_le_string.html'>string_le_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7868,9 +7885,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_le_character.html'>string_le_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7927,9 +7944,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_le_string.html'>character_le_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -7986,8 +8003,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8001,9 +8018,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ge_string.html'>string_ge_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -8060,9 +8077,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ge_character.html'>string_ge_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -8119,9 +8136,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_ge_string.html'>character_ge_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -8178,8 +8195,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8193,9 +8210,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_gt_string.html'>string_gt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -8252,9 +8269,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_gt_character.html'>string_gt_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -8311,9 +8328,9 @@ said component(s).
     </h4>
     
 
-        </li>
-        <li class="list-group-item">
-                  <h3>
+          </li>
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_gt_string.html'>character_gt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -8370,8 +8387,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8385,9 +8402,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_formatted.html'>read_formatted</a>(dtv, unit, iotype, v_list, iostat, iomsg)  
 </h3>
     
@@ -8499,8 +8516,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8514,9 +8531,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_formatted.html'>write_formatted</a>(dtv, unit, iotype, v_list, iostat, iomsg)  
 </h3>
     
@@ -8628,8 +8645,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8643,9 +8660,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_unformatted.html'>read_unformatted</a>(dtv, unit, iostat, iomsg)  
 </h3>
     
@@ -8727,8 +8744,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8742,9 +8759,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_unformatted.html'>write_unformatted</a>(dtv, unit, iostat, iomsg)  
 </h3>
     
@@ -8826,8 +8843,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8841,9 +8858,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sindex_string_string.html'>sindex_string_string</a>(self, substring, back) result(i)  
 </h3>
     
@@ -8915,8 +8932,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -8930,9 +8947,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sindex_string_character.html'>sindex_string_character</a>(self, substring, back) result(i)  
 </h3>
     
@@ -9004,8 +9021,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9019,9 +9036,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/srepeat_string_string.html'>srepeat_string_string</a>(self, ncopies) result(repeated)  
 </h3>
     
@@ -9078,8 +9095,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9093,9 +9110,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/srepeat_character_string.html'>srepeat_character_string</a>(rstring, ncopies) result(repeated)  
 </h3>
     
@@ -9152,8 +9169,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9167,9 +9184,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sscan_string_string.html'>sscan_string_string</a>(self, set, back) result(i)  
 </h3>
     
@@ -9241,8 +9258,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9256,9 +9273,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sscan_string_character.html'>sscan_string_character</a>(self, set, back) result(i)  
 </h3>
     
@@ -9330,8 +9347,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9345,9 +9362,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sverify_string_string.html'>sverify_string_string</a>(self, set, back) result(i)  
 </h3>
     
@@ -9419,8 +9436,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9434,9 +9451,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/sverify_string_character.html'>sverify_string_character</a>(self, set, back) result(i)  
 </h3>
     
@@ -9508,8 +9525,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9523,9 +9540,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/colorize_str.html'>colorize_str</a>(self, color_fg, color_bg, style) result(colorized)  
 </h3>
     
@@ -9612,8 +9629,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9627,9 +9644,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/glob_character.html'>glob_character</a>(self, pattern, list)  
 </h3>
     
@@ -9696,8 +9713,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9711,9 +9728,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/glob_string.html'>glob_string</a>(self, pattern, list)  
 </h3>
     
@@ -9780,8 +9797,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9795,9 +9812,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/insert_string.html'>insert_string</a>(self, substring, pos) result(inserted)  
 </h3>
     
@@ -9869,8 +9886,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9884,9 +9901,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/insert_character.html'>insert_character</a>(self, substring, pos) result(inserted)  
 </h3>
     
@@ -9958,8 +9975,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -9973,9 +9990,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/join_strings.html'>join_strings</a>(self, array, sep) result(join)  
 </h3>
     
@@ -10047,8 +10064,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10062,9 +10079,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/join_characters.html'>join_characters</a>(self, array, sep) result(join)  
 </h3>
     
@@ -10136,8 +10153,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10151,9 +10168,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_strings.html'>strjoin_strings</a>(array, sep) result(join)  
 </h3>
     
@@ -10210,8 +10227,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10225,9 +10242,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_characters.html'>strjoin_characters</a>(array, sep, is_trim) result(join)  
 </h3>
     
@@ -10299,8 +10316,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10314,9 +10331,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_strings_array.html'>strjoin_strings_array</a>(array, sep, is_col) result(join)  
 </h3>
     
@@ -10388,8 +10405,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10403,9 +10420,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/strjoin_characters_array.html'>strjoin_characters_array</a>(array, sep, is_trim, is_col) result(join)  
 </h3>
     
@@ -10492,8 +10509,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10507,9 +10524,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i1p.html'>to_integer_I1P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10566,8 +10583,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10581,9 +10598,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i2p.html'>to_integer_I2P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10640,8 +10657,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10655,9 +10672,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i4p.html'>to_integer_I4P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10714,8 +10731,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10729,9 +10746,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_integer_i8p.html'>to_integer_I8P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10788,8 +10805,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10803,9 +10820,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_real_r4p.html'>to_real_R4P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10862,8 +10879,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10877,9 +10894,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_real_r8p.html'>to_real_R8P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -10936,8 +10953,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -10951,9 +10968,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/to_real_r16p.html'>to_real_R16P</a>(self, kind) result(to_number)  
 </h3>
     
@@ -11010,8 +11027,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11025,9 +11042,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_string.html'>string_assign_string</a>(lhs, rhs)  
 </h3>
     
@@ -11079,8 +11096,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11094,9 +11111,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_character.html'>string_assign_character</a>(lhs, rhs)  
 </h3>
     
@@ -11148,8 +11165,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11163,9 +11180,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i1p.html'>string_assign_integer_I1P</a>(lhs, rhs)  
 </h3>
     
@@ -11217,8 +11234,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11232,9 +11249,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i2p.html'>string_assign_integer_I2P</a>(lhs, rhs)  
 </h3>
     
@@ -11286,8 +11303,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11301,9 +11318,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i4p.html'>string_assign_integer_I4P</a>(lhs, rhs)  
 </h3>
     
@@ -11355,8 +11372,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11370,9 +11387,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_integer_i8p.html'>string_assign_integer_I8P</a>(lhs, rhs)  
 </h3>
     
@@ -11424,8 +11441,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11439,9 +11456,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_real_r4p.html'>string_assign_real_R4P</a>(lhs, rhs)  
 </h3>
     
@@ -11493,8 +11510,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11508,9 +11525,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_real_r8p.html'>string_assign_real_R8P</a>(lhs, rhs)  
 </h3>
     
@@ -11562,8 +11579,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11577,9 +11594,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure subroutine <a href='../proc/string_assign_real_r16p.html'>string_assign_real_R16P</a>(lhs, rhs)  
 </h3>
     
@@ -11631,8 +11648,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11646,9 +11663,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/string_concat_string.html'>string_concat_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -11705,8 +11722,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11720,9 +11737,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/string_concat_character.html'>string_concat_character</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -11779,8 +11796,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11794,9 +11811,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private pure function <a href='../proc/character_concat_string.html'>character_concat_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -11853,8 +11870,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11868,9 +11885,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_concat_string_string.html'>string_concat_string_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -11927,8 +11944,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -11942,9 +11959,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_concat_character_string.html'>string_concat_character_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -12001,8 +12018,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12016,9 +12033,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_concat_string_string.html'>character_concat_string_string</a>(lhs, rhs) result(concat)  
 </h3>
     
@@ -12075,8 +12092,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12090,9 +12107,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_eq_string.html'>string_eq_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12149,8 +12166,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12164,9 +12181,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_eq_character.html'>string_eq_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12223,8 +12240,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12238,9 +12255,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_eq_string.html'>character_eq_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12297,8 +12314,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12312,9 +12329,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ne_string.html'>string_ne_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12371,8 +12388,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12386,9 +12403,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ne_character.html'>string_ne_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12445,8 +12462,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12460,9 +12477,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_ne_string.html'>character_ne_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12519,8 +12536,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12534,9 +12551,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_lt_string.html'>string_lt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12593,8 +12610,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12608,9 +12625,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_lt_character.html'>string_lt_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12667,8 +12684,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12682,9 +12699,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_lt_string.html'>character_lt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12741,8 +12758,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12756,9 +12773,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_le_string.html'>string_le_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12815,8 +12832,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12830,9 +12847,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_le_character.html'>string_le_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12889,8 +12906,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12904,9 +12921,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_le_string.html'>character_le_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -12963,8 +12980,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -12978,9 +12995,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ge_string.html'>string_ge_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -13037,8 +13054,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13052,9 +13069,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_ge_character.html'>string_ge_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -13111,8 +13128,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13126,9 +13143,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_ge_string.html'>character_ge_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -13185,8 +13202,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13200,9 +13217,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_gt_string.html'>string_gt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -13259,8 +13276,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13274,9 +13291,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/string_gt_character.html'>string_gt_character</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -13333,8 +13350,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13348,9 +13365,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/character_gt_string.html'>character_gt_string</a>(lhs, rhs) result(is_it)  
 </h3>
     
@@ -13407,8 +13424,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13422,9 +13439,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_formatted.html'>read_formatted</a>(dtv, unit, iotype, v_list, iostat, iomsg)  
 </h3>
     
@@ -13536,8 +13553,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13551,9 +13568,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_delimited.html'>read_delimited</a>(dtv, unit, delim, iostat, iomsg)  
 </h3>
     
@@ -13650,8 +13667,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13665,9 +13682,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_undelimited.html'>read_undelimited</a>(dtv, unit, terminators, iostat, iomsg)  
 </h3>
     
@@ -13764,8 +13781,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13779,9 +13796,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_undelimited_listdirected.html'>read_undelimited_listdirected</a>(dtv, unit, iostat, iomsg)  
 </h3>
     
@@ -13863,8 +13880,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -13878,9 +13895,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_formatted.html'>write_formatted</a>(dtv, unit, iotype, v_list, iostat, iomsg)  
 </h3>
     
@@ -13992,8 +14009,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -14007,9 +14024,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/read_unformatted.html'>read_unformatted</a>(dtv, unit, iostat, iomsg)  
 </h3>
     
@@ -14091,8 +14108,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -14106,9 +14123,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private  subroutine <a href='../proc/write_unformatted.html'>write_unformatted</a>(dtv, unit, iostat, iomsg)  
 </h3>
     
@@ -14190,8 +14207,8 @@ said component(s).
   </table>
 
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -14205,9 +14222,9 @@ said component(s).
         
       </h3>
     </div>
-    <ul class="list-group">
-        <li class="list-group-item">
-                  <h3>
+      <ul class="list-group">
+          <li class="list-group-item">
+                    <h3>
     private elemental function <a href='../proc/replace_one_occurrence.html'>replace_one_occurrence</a>(self, old, new) result(replaced)  
 </h3>
     
@@ -14279,8 +14296,8 @@ said component(s).
     </h4>
     
 
-        </li>
-    </ul>
+          </li>
+      </ul>
   </div>
 
           </div>
@@ -14528,27 +14545,5 @@ said component(s).
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

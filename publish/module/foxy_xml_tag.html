@@ -12,14 +12,29 @@
 
     <title>foxy_xml_tag &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -79,7 +94,7 @@
 
             <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
               <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-                 title=" 2.7% of total for modules and submodules.">628 statements</a>
+                 title=" 1.7% of total for modules and submodules.">628 statements</a>
             </li>
 
             <li class="list-inline-item" id="source-file">
@@ -99,9 +114,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -172,10 +189,10 @@
       <div id="subs-0" class="collapse">
         <div class="list-group list-group-flush">
             <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-get_content">get_content</a>
-            <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-free">free</a>
+            <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-free~5">free</a>
             <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-parse">parse</a>
             <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-set">set</a>
-            <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-write_tag">write_tag</a>
+            <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-write_tag~2">write_tag</a>
             <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-add_single_attribute">add_single_attribute</a>
             <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-add_multiple_attributes">add_multiple_attributes</a>
             <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-add_stream_attributes">add_stream_attributes</a>
@@ -188,9 +205,9 @@
             <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-get_value">get_value</a>
             <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-parse_attributes_names">parse_attributes_names</a>
             <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-parse_tag_name">parse_tag_name</a>
-            <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-search">search</a>
+            <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-search~3">search</a>
             <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-assign_tag">assign_tag</a>
-            <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-finalize">finalize</a>
+            <a class="list-group-item" href="../module/foxy_xml_tag.html#proc-finalize~6">finalize</a>
         </div>
       </div>
     </div>
@@ -216,8 +233,8 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <ul class="list-inline">
-                  <li class="list-inline-item"><a href='penf~4.html'>penf</a></li>
                   <li class="list-inline-item"><a href='stringifor.html'>stringifor</a></li>
+                  <li class="list-inline-item"><a href='penf~6.html'>penf</a></li>
               </ul>
             </li>
             <li class="list-group-item">
@@ -227,222 +244,257 @@
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: module~~foxy_xml_tag~~UsesGraph Pages: 1 -->
-<svg id="modulefoxy_xml_tagUsesGraph" width="641pt" height="101pt"
- viewBox="0.00 0.00 641.00 101.32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="module~~foxy_xml_tag~~UsesGraph" class="graph" transform="scale(0.55 0.55) rotate(0) translate(4 179.05)">
+<svg id="modulefoxy_xml_tagUsesGraph" width="641pt" height="79pt"
+ viewBox="0.00 0.00 641.00 78.95" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~foxy_xml_tag~~UsesGraph" class="graph" transform="scale(0.48 0.48) rotate(0) translate(4 161.65)">
 <title>module~~foxy_xml_tag~~UsesGraph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-179.05 1154,-179.05 1154,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-161.65 1341,-161.65 1341,4 -4,4"/>
 <!-- module~foxy_xml_tag -->
 <g id="module~~foxy_xml_tag~~UsesGraph_node1" class="node">
 <title>module~foxy_xml_tag</title>
-<polygon fill="none" stroke="black" points="1150,-162 1068,-162 1068,-138 1150,-138 1150,-162"/>
-<text text-anchor="middle" x="1109" y="-147.6" font-family="Helvetica,sans-Serif" font-size="10.50">foxy_xml_tag</text>
+<polygon fill="none" stroke="black" points="1337,-143.17 1255,-143.17 1255,-119.17 1337,-119.17 1337,-143.17"/>
+<text text-anchor="middle" x="1296" y="-128.77" font-family="Helvetica,sans-Serif" font-size="10.50">foxy_xml_tag</text>
 </g>
-<!-- module~penf~4 -->
+<!-- module~penf~6 -->
 <g id="module~~foxy_xml_tag~~UsesGraph_node2" class="node">
-<title>module~penf~4</title>
-<g id="a_module~~foxy_xml_tag~~UsesGraph_node2"><a xlink:href="../module/penf~4.html" xlink:title="penf">
-<polygon fill="#337ab7" stroke="#337ab7" points="537,-142 483,-142 483,-118 537,-118 537,-142"/>
-<text text-anchor="middle" x="510" y="-127.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf</text>
+<title>module~penf~6</title>
+<g id="a_module~~foxy_xml_tag~~UsesGraph_node2"><a xlink:href="../module/penf~6.html" xlink:title="penf">
+<polygon fill="#337ab7" stroke="#337ab7" points="724,-123.17 670,-123.17 670,-99.17 724,-99.17 724,-123.17"/>
+<text text-anchor="middle" x="697" y="-108.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf</text>
 </a>
 </g>
 </g>
-<!-- module~foxy_xml_tag&#45;&gt;module~penf~4 -->
+<!-- module~foxy_xml_tag&#45;&gt;module~penf~6 -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge1" class="edge">
-<title>module~foxy_xml_tag&#45;&gt;module~penf~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1067.86,-153.71C1022.96,-157.83 948.04,-164.61 883.5,-170"/>
+<title>module~foxy_xml_tag&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1254.8,-134.26C1209.84,-137.83 1134.88,-144.12 1070.5,-151.17"/>
 </g>
 <!-- module~stringifor -->
 <g id="module~~foxy_xml_tag~~UsesGraph_node3" class="node">
 <title>module~stringifor</title>
 <g id="a_module~~foxy_xml_tag~~UsesGraph_node3"><a xlink:href="../module/stringifor.html" xlink:title="stringifor">
-<polygon fill="#337ab7" stroke="#337ab7" points="1032,-142 971,-142 971,-118 1032,-118 1032,-142"/>
-<text text-anchor="middle" x="1001.5" y="-127.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">stringifor</text>
+<polygon fill="#337ab7" stroke="#337ab7" points="1219,-123.17 1158,-123.17 1158,-99.17 1219,-99.17 1219,-123.17"/>
+<text text-anchor="middle" x="1188.5" y="-108.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">stringifor</text>
 </a>
 </g>
 </g>
 <!-- module~foxy_xml_tag&#45;&gt;module~stringifor -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge2" class="edge">
 <title>module~foxy_xml_tag&#45;&gt;module~stringifor</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1067.81,-142.38C1059.37,-140.78 1050.47,-139.09 1042.05,-137.5"/>
-<polygon fill="#000000" stroke="#000000" points="1042.55,-134.03 1032.07,-135.61 1041.25,-140.91 1042.55,-134.03"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1254.81,-123.55C1246.37,-121.95 1237.47,-120.26 1229.05,-118.67"/>
+<polygon fill="#000000" stroke="#000000" points="1229.55,-115.2 1219.07,-116.78 1228.25,-122.08 1229.55,-115.2"/>
 </g>
-<!-- module~penf_b_size~6 -->
+<!-- module~penf_allocatable_memory~6 -->
 <g id="module~~foxy_xml_tag~~UsesGraph_node4" class="node">
-<title>module~penf_b_size~6</title>
-<g id="a_module~~foxy_xml_tag~~UsesGraph_node4"><a xlink:href="../module/penf_b_size~6.html" xlink:title="penf_b_size">
-<polygon fill="#337ab7" stroke="#337ab7" points="316,-144 242,-144 242,-120 316,-120 316,-144"/>
-<text text-anchor="middle" x="279" y="-129.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_b_size</text>
+<title>module~penf_allocatable_memory~6</title>
+<g id="a_module~~foxy_xml_tag~~UsesGraph_node4"><a xlink:href="../module/penf_allocatable_memory~6.html" xlink:title="penf_allocatable_memory">
+<polygon fill="#337ab7" stroke="#337ab7" points="634,-123.17 483,-123.17 483,-99.17 634,-99.17 634,-123.17"/>
+<text text-anchor="middle" x="558.5" y="-108.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_allocatable_memory</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_b_size~6 -->
+<!-- module~penf~6&#45;&gt;module~penf_allocatable_memory~6 -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge3" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_b_size~6</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M488.88,-142.06C468.65,-153.22 436.15,-168.6 405.5,-172"/>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-172C370.08,-175.71 333.67,-161.51 309.1,-149.01"/>
-<polygon fill="#000000" stroke="#000000" points="310.45,-145.77 299.98,-144.17 307.17,-151.95 310.45,-145.77"/>
+<title>module~penf~6&#45;&gt;module~penf_allocatable_memory~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M669.68,-111.17C662.06,-111.17 653.29,-111.17 644.11,-111.17"/>
+<polygon fill="#000000" stroke="#000000" points="644.02,-107.67 634.02,-111.17 644.02,-114.67 644.02,-107.67"/>
 </g>
-<!-- module~penf_global_parameters_variables~3 -->
+<!-- module~penf_b_size~3 -->
 <g id="module~~foxy_xml_tag~~UsesGraph_node5" class="node">
-<title>module~penf_global_parameters_variables~3</title>
-<g id="a_module~~foxy_xml_tag~~UsesGraph_node5"><a xlink:href="../module/penf_global_parameters_variables~3.html" xlink:title="penf_global_parameters_variables">
-<polygon fill="#337ab7" stroke="#337ab7" points="196,-144 0,-144 0,-120 196,-120 196,-144"/>
-<text text-anchor="middle" x="98" y="-129.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_global_parameters_variables</text>
+<title>module~penf_b_size~3</title>
+<g id="a_module~~foxy_xml_tag~~UsesGraph_node5"><a xlink:href="../module/penf_b_size~3.html" xlink:title="penf_b_size">
+<polygon fill="#337ab7" stroke="#337ab7" points="316,-123.17 242,-123.17 242,-99.17 316,-99.17 316,-123.17"/>
+<text text-anchor="middle" x="279" y="-108.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_b_size</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf~6&#45;&gt;module~penf_b_size~3 -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge4" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_global_parameters_variables~3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-172C314.65,-181.85 211.57,-161.64 151.01,-146.52"/>
-<polygon fill="#000000" stroke="#000000" points="151.85,-143.12 141.3,-144.05 150.13,-149.91 151.85,-143.12"/>
+<title>module~penf~6&#45;&gt;module~penf_b_size~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M557.5,-151.17C490.14,-156.3 472.84,-156.5 405.5,-151.17"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-151.17C372.5,-148.72 339.04,-137.29 314.77,-127.27"/>
+<polygon fill="#000000" stroke="#000000" points="315.87,-123.93 305.3,-123.24 313.13,-130.37 315.87,-123.93"/>
 </g>
-<!-- module~penf_stringify~4 -->
+<!-- module~penf_global_parameters_variables -->
 <g id="module~~foxy_xml_tag~~UsesGraph_node6" class="node">
-<title>module~penf_stringify~4</title>
-<g id="a_module~~foxy_xml_tag~~UsesGraph_node6"><a xlink:href="../module/penf_stringify~4.html" xlink:title="penf_stringify">
-<polygon fill="#337ab7" stroke="#337ab7" points="447,-123 362,-123 362,-99 447,-99 447,-123"/>
-<text text-anchor="middle" x="404.5" y="-108.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_stringify</text>
+<title>module~penf_global_parameters_variables</title>
+<g id="a_module~~foxy_xml_tag~~UsesGraph_node6"><a xlink:href="../module/penf_global_parameters_variables.html" xlink:title="penf_global_parameters_variables">
+<polygon fill="#337ab7" stroke="#337ab7" points="196,-123.17 0,-123.17 0,-99.17 196,-99.17 196,-123.17"/>
+<text text-anchor="middle" x="98" y="-108.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_global_parameters_variables</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_stringify~4 -->
+<!-- module~penf~6&#45;&gt;module~penf_global_parameters_variables -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge5" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_stringify~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M482.88,-125.21C475.05,-123.77 466.17,-122.14 457.29,-120.51"/>
-<polygon fill="#000000" stroke="#000000" points="457.79,-117.04 447.32,-118.68 456.52,-123.92 457.79,-117.04"/>
+<title>module~penf~6&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-151.17C327.05,-145.12 308.01,-142.38 232,-132.17 215.69,-129.98 198.3,-127.41 181.64,-124.83"/>
+<polygon fill="#000000" stroke="#000000" points="181.81,-121.31 171.39,-123.22 180.73,-128.23 181.81,-121.31"/>
 </g>
-<!-- module~stringifor&#45;&gt;module~penf~4 -->
+<!-- module~penf_stringify~3 -->
+<g id="module~~foxy_xml_tag~~UsesGraph_node7" class="node">
+<title>module~penf_stringify~3</title>
+<g id="a_module~~foxy_xml_tag~~UsesGraph_node7"><a xlink:href="../module/penf_stringify~3.html" xlink:title="penf_stringify">
+<polygon fill="#337ab7" stroke="#337ab7" points="447,-123.17 362,-123.17 362,-99.17 447,-99.17 447,-123.17"/>
+<text text-anchor="middle" x="404.5" y="-108.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_stringify</text>
+</a>
+</g>
+</g>
+<!-- module~penf~6&#45;&gt;module~penf_stringify~3 -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge6" class="edge">
-<title>module~stringifor&#45;&gt;module~penf~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M976.61,-142.06C953.48,-152.79 917.09,-167.2 883.5,-170"/>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M881.5,-170C831.01,-174.21 818.09,-167.25 767.5,-170"/>
+<title>module~penf~6&#45;&gt;module~penf_stringify~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M669.94,-122.36C642.91,-133.11 599.14,-148.15 559.5,-151.17"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M557.5,-151.17C516.13,-154.32 470.28,-139.62 439.87,-127.16"/>
+<polygon fill="#000000" stroke="#000000" points="441.14,-123.9 430.57,-123.22 438.41,-130.34 441.14,-123.9"/>
+</g>
+<!-- module~stringifor&#45;&gt;module~penf~6 -->
+<g id="module~~foxy_xml_tag~~UsesGraph_edge7" class="edge">
+<title>module~stringifor&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1163.61,-123.23C1140.48,-133.96 1104.09,-148.37 1070.5,-151.17"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1068.5,-151.17C961.1,-160.13 933.48,-159.16 826,-151.17"/>
 </g>
 <!-- module~stringifor_string_t -->
-<g id="module~~foxy_xml_tag~~UsesGraph_node7" class="node">
+<g id="module~~foxy_xml_tag~~UsesGraph_node8" class="node">
 <title>module~stringifor_string_t</title>
-<g id="a_module~~foxy_xml_tag~~UsesGraph_node7"><a xlink:href="../module/stringifor_string_t.html" xlink:title="stringifor_string_t">
-<polygon fill="#337ab7" stroke="#337ab7" points="935,-142 830,-142 830,-118 935,-118 935,-142"/>
-<text text-anchor="middle" x="882.5" y="-127.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">stringifor_string_t</text>
+<g id="a_module~~foxy_xml_tag~~UsesGraph_node8"><a xlink:href="../module/stringifor_string_t.html" xlink:title="stringifor_string_t">
+<polygon fill="#337ab7" stroke="#337ab7" points="1122,-123.17 1017,-123.17 1017,-99.17 1122,-99.17 1122,-123.17"/>
+<text text-anchor="middle" x="1069.5" y="-108.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">stringifor_string_t</text>
 </a>
 </g>
 </g>
 <!-- module~stringifor&#45;&gt;module~stringifor_string_t -->
-<g id="module~~foxy_xml_tag~~UsesGraph_edge7" class="edge">
-<title>module~stringifor&#45;&gt;module~stringifor_string_t</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M970.98,-130C963.11,-130 954.3,-130 945.39,-130"/>
-<polygon fill="#000000" stroke="#000000" points="945.33,-126.5 935.33,-130 945.33,-133.5 945.33,-126.5"/>
-</g>
-<!-- module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~3 -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge8" class="edge">
-<title>module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M241.78,-132C231.22,-132 219.1,-132 206.49,-132"/>
-<polygon fill="#000000" stroke="#000000" points="206.29,-128.5 196.29,-132 206.29,-135.5 206.29,-128.5"/>
+<title>module~stringifor&#45;&gt;module~stringifor_string_t</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1157.98,-111.17C1150.11,-111.17 1141.3,-111.17 1132.39,-111.17"/>
+<polygon fill="#000000" stroke="#000000" points="1132.33,-107.67 1122.33,-111.17 1132.33,-114.67 1132.33,-107.67"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;module~penf_b_size~6 -->
+<!-- module~penf_allocatable_memory~6&#45;&gt;module~penf_global_parameters_variables -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge10" class="edge">
-<title>module~penf_stringify~4&#45;&gt;module~penf_b_size~6</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M361.69,-118.11C350.32,-120.04 337.95,-122.15 326.35,-124.12"/>
-<polygon fill="#000000" stroke="#000000" points="325.67,-120.68 316.4,-125.81 326.84,-127.59 325.67,-120.68"/>
+<title>module~penf_allocatable_memory~6&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-71.17C349.77,-59.94 334.86,-69.54 280,-71.17"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M278,-71.17C231.45,-72.55 179.67,-85.41 143.82,-96.18"/>
+<polygon fill="#000000" stroke="#000000" points="142.68,-92.87 134.15,-99.15 144.74,-99.56 142.68,-92.87"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf_allocatable_memory~6&#45;&gt;module~penf_stringify~3 -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge11" class="edge">
-<title>module~penf_stringify~4&#45;&gt;module~penf_global_parameters_variables~3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M361.84,-109.18C327.07,-108.1 276.23,-107.53 232,-111 212.45,-112.53 191.44,-115.32 172.01,-118.37"/>
-<polygon fill="#000000" stroke="#000000" points="171.33,-114.93 162.02,-119.98 172.45,-121.84 171.33,-114.93"/>
+<title>module~penf_allocatable_memory~6&#45;&gt;module~penf_stringify~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M482.84,-111.17C474.18,-111.17 465.5,-111.17 457.24,-111.17"/>
+<polygon fill="#000000" stroke="#000000" points="457.05,-107.67 447.05,-111.17 457.05,-114.67 457.05,-107.67"/>
 </g>
 <!-- iso_fortran_env -->
-<g id="module~~foxy_xml_tag~~UsesGraph_node8" class="node">
+<g id="module~~foxy_xml_tag~~UsesGraph_node9" class="node">
 <title>iso_fortran_env</title>
-<g id="a_module~~foxy_xml_tag~~UsesGraph_node8"><a xlink:href="http://fortranwiki.org/fortran/show/iso_fortran_env" xlink:title="iso_fortran_env">
-<polygon fill="#337ab7" stroke="#337ab7" points="326,-64 232,-64 232,-40 326,-40 326,-64"/>
-<text text-anchor="middle" x="279" y="-49.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_fortran_env</text>
+<g id="a_module~~foxy_xml_tag~~UsesGraph_node9"><a xlink:href="http://fortranwiki.org/fortran/show/iso_fortran_env" xlink:title="iso_fortran_env">
+<polygon fill="#337ab7" stroke="#337ab7" points="326,-43.17 232,-43.17 232,-19.17 326,-19.17 326,-43.17"/>
+<text text-anchor="middle" x="279" y="-28.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_fortran_env</text>
 </a>
 </g>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;iso_fortran_env -->
+<!-- module~penf_allocatable_memory~6&#45;&gt;iso_fortran_env -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge9" class="edge">
-<title>module~penf_stringify~4&#45;&gt;iso_fortran_env</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M378.21,-98.92C359.81,-90.13 334.69,-78.13 314.45,-68.46"/>
-<polygon fill="#000000" stroke="#000000" points="315.79,-65.22 305.26,-64.07 312.77,-71.53 315.79,-65.22"/>
+<title>module~penf_allocatable_memory~6&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M516.48,-99.16C486.05,-90.54 443.43,-79.1 405.5,-71.17"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-71.17C375.19,-65.25 344.23,-55.22 320.39,-46.68"/>
+<polygon fill="#000000" stroke="#000000" points="321.56,-43.38 310.97,-43.25 319.17,-49.96 321.56,-43.38"/>
 </g>
-<!-- module~stringifor_string_t&#45;&gt;module~penf~4 -->
+<!-- module~penf_b_size~3&#45;&gt;module~penf_global_parameters_variables -->
+<g id="module~~foxy_xml_tag~~UsesGraph_edge12" class="edge">
+<title>module~penf_b_size~3&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M241.78,-111.17C231.22,-111.17 219.1,-111.17 206.49,-111.17"/>
+<polygon fill="#000000" stroke="#000000" points="206.29,-107.67 196.29,-111.17 206.29,-114.67 206.29,-107.67"/>
+</g>
+<!-- module~penf_stringify~3&#45;&gt;module~penf_b_size~3 -->
+<g id="module~~foxy_xml_tag~~UsesGraph_edge14" class="edge">
+<title>module~penf_stringify~3&#45;&gt;module~penf_b_size~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M361.69,-111.17C350.44,-111.17 338.2,-111.17 326.7,-111.17"/>
+<polygon fill="#000000" stroke="#000000" points="326.4,-107.67 316.4,-111.17 326.4,-114.67 326.4,-107.67"/>
+</g>
+<!-- module~penf_stringify~3&#45;&gt;module~penf_global_parameters_variables -->
 <g id="module~~foxy_xml_tag~~UsesGraph_edge15" class="edge">
-<title>module~stringifor_string_t&#45;&gt;module~penf~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M858.26,-142.06C835.75,-152.78 800.31,-167.19 767.5,-170"/>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M765.5,-170C679.84,-177.33 657.04,-169.13 573,-151 564.38,-149.14 555.28,-146.48 546.8,-143.67"/>
-<polygon fill="#000000" stroke="#000000" points="547.77,-140.3 537.18,-140.35 545.49,-146.92 547.77,-140.3"/>
+<title>module~penf_stringify~3&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M381.43,-98.96C357.24,-86.8 316.95,-70.07 280,-71.17"/>
+</g>
+<!-- module~penf_stringify~3&#45;&gt;iso_fortran_env -->
+<g id="module~~foxy_xml_tag~~UsesGraph_edge13" class="edge">
+<title>module~penf_stringify~3&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M383.39,-99.14C376.51,-94.88 368.83,-89.95 362,-85.17 345.39,-73.55 342.87,-68.41 326,-57.17 321.42,-54.12 316.46,-51.07 311.55,-48.19"/>
+<polygon fill="#000000" stroke="#000000" points="313.28,-45.14 302.86,-43.22 309.8,-51.22 313.28,-45.14"/>
+</g>
+<!-- module~stringifor_string_t&#45;&gt;module~penf~6 -->
+<g id="module~~foxy_xml_tag~~UsesGraph_edge19" class="edge">
+<title>module~stringifor_string_t&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M952.5,-51.17C911.93,-37.91 793.66,-76.5 733.71,-97.92"/>
+<polygon fill="#000000" stroke="#000000" points="732.49,-94.65 724.27,-101.33 734.86,-101.23 732.49,-94.65"/>
 </g>
 <!-- module~stringifor_string_t&#45;&gt;iso_fortran_env -->
-<g id="module~~foxy_xml_tag~~UsesGraph_edge12" class="edge">
+<g id="module~~foxy_xml_tag~~UsesGraph_edge16" class="edge">
 <title>module~stringifor_string_t&#45;&gt;iso_fortran_env</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M765.5,-52C712.84,-31.38 567.29,-46.55 511,-52"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1050.4,-99.16C1028.6,-85.3 990.43,-62.91 954.5,-51.17"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M952.5,-51.17C920.92,-40.85 921.83,-19.68 890,-10.17 834.64,6.37 817.01,-0.78 760,-10.17 731.29,-14.9 727.01,-28.92 698,-31.17"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M696,-31.17C567.59,-37.43 416.62,-34.98 336.55,-32.91"/>
+<polygon fill="#000000" stroke="#000000" points="336.29,-29.4 326.2,-32.64 336.11,-36.4 336.29,-29.4"/>
 </g>
 <!-- module~befor64~4 -->
-<g id="module~~foxy_xml_tag~~UsesGraph_node9" class="node">
+<g id="module~~foxy_xml_tag~~UsesGraph_node10" class="node">
 <title>module~befor64~4</title>
-<g id="a_module~~foxy_xml_tag~~UsesGraph_node9"><a xlink:href="../module/befor64~4.html" xlink:title="befor64">
-<polygon fill="#337ab7" stroke="#337ab7" points="794,-142 739,-142 739,-118 794,-118 794,-142"/>
-<text text-anchor="middle" x="766.5" y="-127.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">befor64</text>
+<g id="a_module~~foxy_xml_tag~~UsesGraph_node10"><a xlink:href="../module/befor64~4.html" xlink:title="befor64">
+<polygon fill="#337ab7" stroke="#337ab7" points="981,-123.17 926,-123.17 926,-99.17 981,-99.17 981,-123.17"/>
+<text text-anchor="middle" x="953.5" y="-108.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">befor64</text>
 </a>
 </g>
 </g>
 <!-- module~stringifor_string_t&#45;&gt;module~befor64~4 -->
-<g id="module~~foxy_xml_tag~~UsesGraph_edge13" class="edge">
+<g id="module~~foxy_xml_tag~~UsesGraph_edge17" class="edge">
 <title>module~stringifor_string_t&#45;&gt;module~befor64~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M829.84,-130C821.23,-130 812.47,-130 804.33,-130"/>
-<polygon fill="#000000" stroke="#000000" points="804.07,-126.5 794.07,-130 804.07,-133.5 804.07,-126.5"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1016.84,-111.17C1008.23,-111.17 999.47,-111.17 991.33,-111.17"/>
+<polygon fill="#000000" stroke="#000000" points="991.07,-107.67 981.07,-111.17 991.07,-114.67 991.07,-107.67"/>
 </g>
 <!-- module~face~4 -->
-<g id="module~~foxy_xml_tag~~UsesGraph_node10" class="node">
+<g id="module~~foxy_xml_tag~~UsesGraph_node11" class="node">
 <title>module~face~4</title>
-<g id="a_module~~foxy_xml_tag~~UsesGraph_node10"><a xlink:href="../module/face~4.html" xlink:title="face">
-<polygon fill="#337ab7" stroke="#337ab7" points="665,-24 611,-24 611,0 665,0 665,-24"/>
-<text text-anchor="middle" x="638" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">face</text>
+<g id="a_module~~foxy_xml_tag~~UsesGraph_node11"><a xlink:href="../module/face~4.html" xlink:title="face">
+<polygon fill="#337ab7" stroke="#337ab7" points="852,-43.17 798,-43.17 798,-19.17 852,-19.17 852,-43.17"/>
+<text text-anchor="middle" x="825" y="-28.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">face</text>
 </a>
 </g>
 </g>
 <!-- module~stringifor_string_t&#45;&gt;module~face~4 -->
-<g id="module~~foxy_xml_tag~~UsesGraph_edge14" class="edge">
+<g id="module~~foxy_xml_tag~~UsesGraph_edge18" class="edge">
 <title>module~stringifor_string_t&#45;&gt;module~face~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M868.29,-117.91C848.17,-100.26 807.92,-67.83 767.5,-52"/>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M765.5,-52C735.39,-40.21 700.27,-29.33 674.68,-21.9"/>
-<polygon fill="#000000" stroke="#000000" points="675.61,-18.52 665.03,-19.13 673.68,-25.25 675.61,-18.52"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M952.5,-51.17C922.97,-41.52 887.98,-36.44 862.3,-33.83"/>
+<polygon fill="#000000" stroke="#000000" points="862.53,-30.33 852.25,-32.88 861.88,-37.3 862.53,-30.33"/>
 </g>
-<!-- module~befor64~4&#45;&gt;module~penf~4 -->
-<g id="module~~foxy_xml_tag~~UsesGraph_edge17" class="edge">
-<title>module~befor64~4&#45;&gt;module~penf~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M738.91,-118.95C727.99,-114.97 715.09,-110.98 703,-109 645.98,-99.68 630.01,-99.61 573,-109 564.3,-110.43 555.17,-112.93 546.68,-115.71"/>
-<polygon fill="#000000" stroke="#000000" points="545.36,-112.46 537.06,-119.06 547.66,-119.07 545.36,-112.46"/>
+<!-- module~befor64~4&#45;&gt;module~penf~6 -->
+<g id="module~~foxy_xml_tag~~UsesGraph_edge21" class="edge">
+<title>module~befor64~4&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M931.17,-123.35C906.5,-136.13 864.36,-154.02 826,-151.17"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M824,-151.17C792.28,-148.81 757.97,-137.28 733.18,-127.2"/>
+<polygon fill="#000000" stroke="#000000" points="734.41,-123.92 723.83,-123.29 731.71,-130.38 734.41,-123.92"/>
 </g>
-<!-- module~befor64_pack_data_m~4 -->
-<g id="module~~foxy_xml_tag~~UsesGraph_node11" class="node">
-<title>module~befor64_pack_data_m~4</title>
-<g id="a_module~~foxy_xml_tag~~UsesGraph_node11"><a xlink:href="../module/befor64_pack_data_m~4.html" xlink:title="befor64_pack_data_m">
-<polygon fill="#337ab7" stroke="#337ab7" points="703,-142 573,-142 573,-118 703,-118 703,-142"/>
-<text text-anchor="middle" x="638" y="-127.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">befor64_pack_data_m</text>
+<!-- module~befor64_pack_data_m~2 -->
+<g id="module~~foxy_xml_tag~~UsesGraph_node12" class="node">
+<title>module~befor64_pack_data_m~2</title>
+<g id="a_module~~foxy_xml_tag~~UsesGraph_node12"><a xlink:href="../module/befor64_pack_data_m~2.html" xlink:title="befor64_pack_data_m">
+<polygon fill="#337ab7" stroke="#337ab7" points="890,-123.17 760,-123.17 760,-99.17 890,-99.17 890,-123.17"/>
+<text text-anchor="middle" x="825" y="-108.77" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">befor64_pack_data_m</text>
 </a>
 </g>
 </g>
-<!-- module~befor64~4&#45;&gt;module~befor64_pack_data_m~4 -->
-<g id="module~~foxy_xml_tag~~UsesGraph_edge16" class="edge">
-<title>module~befor64~4&#45;&gt;module~befor64_pack_data_m~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M738.98,-130C731.21,-130 722.31,-130 713.1,-130"/>
-<polygon fill="#000000" stroke="#000000" points="713.01,-126.5 703.01,-130 713.01,-133.5 713.01,-126.5"/>
+<!-- module~befor64~4&#45;&gt;module~befor64_pack_data_m~2 -->
+<g id="module~~foxy_xml_tag~~UsesGraph_edge20" class="edge">
+<title>module~befor64~4&#45;&gt;module~befor64_pack_data_m~2</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M925.98,-111.17C918.21,-111.17 909.31,-111.17 900.1,-111.17"/>
+<polygon fill="#000000" stroke="#000000" points="900.01,-107.67 890.01,-111.17 900.01,-114.67 900.01,-107.67"/>
 </g>
 <!-- module~face~4&#45;&gt;iso_fortran_env -->
-<g id="module~~foxy_xml_tag~~UsesGraph_edge18" class="edge">
+<g id="module~~foxy_xml_tag~~UsesGraph_edge22" class="edge">
 <title>module~face~4&#45;&gt;iso_fortran_env</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M610.75,-21.9C579.92,-33.25 530.51,-50.49 511,-52"/>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M509,-52C450.22,-56.56 382.7,-55.84 336.29,-54.42"/>
-<polygon fill="#000000" stroke="#000000" points="336.25,-50.92 326.14,-54.09 336.02,-57.92 336.25,-50.92"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M797.89,-29.99C772.38,-29.12 732.46,-28.49 698,-31.17"/>
 </g>
-<!-- module~befor64_pack_data_m~4&#45;&gt;module~penf~4 -->
-<g id="module~~foxy_xml_tag~~UsesGraph_edge19" class="edge">
-<title>module~befor64_pack_data_m~4&#45;&gt;module~penf~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M572.89,-130C564.1,-130 555.34,-130 547.29,-130"/>
-<polygon fill="#000000" stroke="#000000" points="547.17,-126.5 537.17,-130 547.17,-133.5 547.17,-126.5"/>
+<!-- module~befor64_pack_data_m~2&#45;&gt;module~penf~6 -->
+<g id="module~~foxy_xml_tag~~UsesGraph_edge23" class="edge">
+<title>module~befor64_pack_data_m~2&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M759.89,-111.17C751.1,-111.17 742.34,-111.17 734.29,-111.17"/>
+<polygon fill="#000000" stroke="#000000" points="734.17,-107.67 724.17,-111.17 734.17,-114.67 734.17,-107.67"/>
 </g>
 </g>
 </svg>
@@ -1131,7 +1183,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~2"></span>
+              <span class="anchor" id="variable-name~12"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1161,7 +1213,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-attributes~2"></span>
+              <span class="anchor" id="variable-attributes~5"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -1206,7 +1258,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-content"></span>
+              <span class="anchor" id="variable-content~2"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -1221,7 +1273,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-indent~2"></span>
+              <span class="anchor" id="variable-indent~3"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in),</td>
@@ -1295,7 +1347,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~3"></span>
+              <span class="anchor" id="variable-name~13"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1310,7 +1362,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-content~2"></span>
+              <span class="anchor" id="variable-content~3"></span>
               type(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -1340,7 +1392,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-attributes~3"></span>
+              <span class="anchor" id="variable-attributes~6"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -1385,7 +1437,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-indent~3"></span>
+              <span class="anchor" id="variable-indent~4"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in),</td>
@@ -1525,7 +1577,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-indent"></span>
+              <span class="anchor" id="variable-indent~2"></span>
               integer(kind=I4P),
             </td>
               <td>private</td>
@@ -1606,152 +1658,152 @@ modules which it uses.
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/xml_tag.html#boundprocedure-add_attributes'>add_attributes</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/xml_tag.html#boundprocedure-add_single_attribute'>add_single_attribute</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/xml_tag.html#boundprocedure-add_multiple_attributes'>add_multiple_attributes</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/xml_tag.html#boundprocedure-add_stream_attributes'>add_stream_attributes</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
-  <strong><a href='../type/xml_tag.html#boundprocedure-attributes'>attributes</a></strong></td>
-                <td></td>
+  <strong><a href='../type/xml_tag.html#boundprocedure-attributes~4'>attributes</a></strong></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-get_content'>get_content</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
   <strong><a href='../type/xml_tag.html#boundprocedure-delete_attributes'>delete_attributes</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/xml_tag.html#boundprocedure-delete_single_attribute'>delete_single_attribute</a>, <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/xml_tag.html#boundprocedure-delete_multiple_attributes'>delete_multiple_attributes</a></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-delete_content'>delete_content</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-end_tag'>end_tag</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
-  <strong><a href='../type/xml_tag.html#boundprocedure-free'>free</a></strong></td>
-                <td></td>
+  <strong><a href='../type/xml_tag.html#boundprocedure-free~5'>free</a></strong></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-is_attribute_present'>is_attribute_present</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-is_parsed'>is_parsed</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
-  <strong><a href='../type/xml_tag.html#boundprocedure-name'>name</a></strong></td>
-                <td></td>
+  <strong><a href='../type/xml_tag.html#boundprocedure-name~11'>name</a></strong></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-parse'>parse</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-self_closing_tag'>self_closing_tag</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
-  <strong><a href='../type/xml_tag.html#boundprocedure-set'>set</a></strong></td>
-                <td></td>
+  <strong><a href='../type/xml_tag.html#boundprocedure-set~13'>set</a></strong></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-start_tag'>start_tag</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-stringify'>stringify</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, public, pass(self) ::
-  <strong><a href='../type/xml_tag.html#boundprocedure-write'>write</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/proc/write_tag.html'>write_tag</a></td>
-                <td></td>
+  <strong><a href='../type/xml_tag.html#boundprocedure-write'>write</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/proc/write_tag~2.html'>write_tag</a></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  generic, public ::
-  <strong><a href='../type/xml_tag.html#boundprocedure-assignment%28%3D%29'>assignment(=)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/xml_tag.html#boundprocedure-assign_tag'>assign_tag</a></td>
-                <td></td>
+  <strong><a href='../type/xml_tag.html#boundprocedure-assignment%28%3D%29~3'>assignment(=)</a></strong> => <a href='/home/runner/work/VTKFortran/VTKFortran/doc/html/publish/type/xml_tag.html#boundprocedure-assign_tag'>assign_tag</a></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-add_single_attribute'>add_single_attribute</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-add_multiple_attributes'>add_multiple_attributes</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-add_stream_attributes'>add_stream_attributes</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-alloc_attributes'>alloc_attributes</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-delete_single_attribute'>delete_single_attribute</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-delete_multiple_attributes'>delete_multiple_attributes</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-get'>get</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-get_value'>get_value</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-get_attributes'>get_attributes</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-parse_tag_name'>parse_tag_name</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-parse_attributes_names'>parse_attributes_names</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(self) ::
-  <strong><a href='../type/xml_tag.html#boundprocedure-search'>search</a></strong></td>
-                <td></td>
+  <strong><a href='../type/xml_tag.html#boundprocedure-search~3'>search</a></strong></td>
+                  <td></td>
               </tr>
               <tr>
                 <td>  procedure, private, pass(lhs) ::
   <strong><a href='../type/xml_tag.html#boundprocedure-assign_tag'>assign_tag</a></strong></td>
-                <td></td>
+                  <td></td>
               </tr>
           </tbody>
         </table>
@@ -1783,7 +1835,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~2"></span>
+              <span class="anchor" id="variable-name~12"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1813,7 +1865,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-attributes~2"></span>
+              <span class="anchor" id="variable-attributes~5"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -1858,7 +1910,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-content"></span>
+              <span class="anchor" id="variable-content~2"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -1873,7 +1925,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-indent~2"></span>
+              <span class="anchor" id="variable-indent~3"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in),</td>
@@ -1948,7 +2000,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~3"></span>
+              <span class="anchor" id="variable-name~13"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1963,7 +2015,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-content~2"></span>
+              <span class="anchor" id="variable-content~3"></span>
               type(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -1993,7 +2045,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-attributes~3"></span>
+              <span class="anchor" id="variable-attributes~6"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -2038,7 +2090,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-indent~3"></span>
+              <span class="anchor" id="variable-indent~4"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in),</td>
@@ -2098,7 +2150,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self"></span>
+              <span class="anchor" id="variable-self~389"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -2143,7 +2195,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~3"></span>
+              <span class="anchor" id="variable-self~391"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -2203,7 +2255,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~5"></span>
+              <span class="anchor" id="variable-self~393"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -2248,7 +2300,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~6"></span>
+              <span class="anchor" id="variable-self~394"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -2293,7 +2345,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~9"></span>
+              <span class="anchor" id="variable-self~397"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -2353,7 +2405,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~10"></span>
+              <span class="anchor" id="variable-self~398"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -2413,7 +2465,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~11"></span>
+              <span class="anchor" id="variable-self~399"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -2533,7 +2585,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~13"></span>
+              <span class="anchor" id="variable-self~401"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -2548,7 +2600,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~7"></span>
+              <span class="anchor" id="variable-name~17"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -2598,7 +2650,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~2"></span>
+              <span class="anchor" id="variable-self~390"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -2613,7 +2665,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~4"></span>
+              <span class="anchor" id="variable-name~14"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -2628,7 +2680,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-content~3"></span>
+              <span class="anchor" id="variable-content~4"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2649,7 +2701,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-free"></span> <h3>private elemental subroutine <a href='../proc/free.html'>free</a>(self)  
+    <div class="card-header codesum"><span class="anchor" id="proc-free~5"></span> <h3>private elemental subroutine <a href='../proc/free~5.html'>free</a>(self)  
 </h3></div>
     <div class="card-body">
           
@@ -2668,7 +2720,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~4"></span>
+              <span class="anchor" id="variable-self~392"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -2708,7 +2760,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~7"></span>
+              <span class="anchor" id="variable-self~395"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -2723,7 +2775,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-source~2"></span>
+              <span class="anchor" id="variable-source~7"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -2793,7 +2845,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~8"></span>
+              <span class="anchor" id="variable-self~396"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -2808,7 +2860,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~6"></span>
+              <span class="anchor" id="variable-name~16"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -2838,7 +2890,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-attributes~4"></span>
+              <span class="anchor" id="variable-attributes~7"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -2883,7 +2935,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-content~4"></span>
+              <span class="anchor" id="variable-content~5"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -2898,7 +2950,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-indent~4"></span>
+              <span class="anchor" id="variable-indent~5"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in),</td>
@@ -2949,7 +3001,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-write_tag"></span> <h3>private  subroutine <a href='../proc/write_tag.html'>write_tag</a>(self, unit, is_indented, is_content_indented, form, end_record, only_start, only_content, only_end, iostat, iomsg)  
+    <div class="card-header codesum"><span class="anchor" id="proc-write_tag~2"></span> <h3>private  subroutine <a href='../proc/write_tag~2.html'>write_tag</a>(self, unit, is_indented, is_content_indented, form, end_record, only_start, only_content, only_end, iostat, iomsg)  
 </h3></div>
     <div class="card-body">
           
@@ -2968,7 +3020,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~12"></span>
+              <span class="anchor" id="variable-self~400"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -2983,7 +3035,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-unit"></span>
+              <span class="anchor" id="variable-unit~37"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in)</td>
@@ -3028,7 +3080,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-form"></span>
+              <span class="anchor" id="variable-form~13"></span>
               character(len=*),
             </td>
 <td>intent(in),</td>
@@ -3103,7 +3155,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iostat~2"></span>
+              <span class="anchor" id="variable-iostat~39"></span>
               integer(kind=I4P),
             </td>
 <td>intent(out),</td>
@@ -3118,7 +3170,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-iomsg~2"></span>
+              <span class="anchor" id="variable-iomsg~39"></span>
               character(len=*),
             </td>
 <td>intent(out),</td>
@@ -3158,7 +3210,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~14"></span>
+              <span class="anchor" id="variable-self~402"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3228,7 +3280,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~15"></span>
+              <span class="anchor" id="variable-self~403"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3243,7 +3295,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-attributes~5"></span>
+              <span class="anchor" id="variable-attributes~8"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3298,7 +3350,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~16"></span>
+              <span class="anchor" id="variable-self~404"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3368,7 +3420,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~17"></span>
+              <span class="anchor" id="variable-self~405"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3423,7 +3475,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~18"></span>
+              <span class="anchor" id="variable-self~406"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3463,7 +3515,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~19"></span>
+              <span class="anchor" id="variable-self~407"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3478,7 +3530,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~8"></span>
+              <span class="anchor" id="variable-name~18"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3518,7 +3570,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~20"></span>
+              <span class="anchor" id="variable-self~408"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3533,7 +3585,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-name~9"></span>
+              <span class="anchor" id="variable-name~19"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3573,7 +3625,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~21"></span>
+              <span class="anchor" id="variable-self~409"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3588,7 +3640,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-source~3"></span>
+              <span class="anchor" id="variable-source~8"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3628,7 +3680,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~22"></span>
+              <span class="anchor" id="variable-self~410"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3643,7 +3695,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-source~4"></span>
+              <span class="anchor" id="variable-source~9"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3683,7 +3735,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~23"></span>
+              <span class="anchor" id="variable-self~411"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3698,7 +3750,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-source~5"></span>
+              <span class="anchor" id="variable-source~10"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3738,7 +3790,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~24"></span>
+              <span class="anchor" id="variable-self~412"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3753,7 +3805,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-source~6"></span>
+              <span class="anchor" id="variable-source~11"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3793,7 +3845,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~25"></span>
+              <span class="anchor" id="variable-self~413"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3808,7 +3860,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-source~7"></span>
+              <span class="anchor" id="variable-source~12"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3859,7 +3911,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-search"></span> <h3>private elemental subroutine <a href='../proc/search.html'>search</a>(self, tag_name, source, tstart, tend)  
+    <div class="card-header codesum"><span class="anchor" id="proc-search~3"></span> <h3>private elemental subroutine <a href='../proc/search~3.html'>search</a>(self, tag_name, source, tstart, tend)  
 </h3></div>
     <div class="card-body">
           
@@ -3878,7 +3930,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~26"></span>
+              <span class="anchor" id="variable-self~414"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3908,7 +3960,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-source~8"></span>
+              <span class="anchor" id="variable-source~13"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3978,7 +4030,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-lhs"></span>
+              <span class="anchor" id="variable-lhs~165"></span>
               class(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -3993,7 +4045,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-rhs"></span>
+              <span class="anchor" id="variable-rhs~165"></span>
               type(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(in)</td>
@@ -4014,7 +4066,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-finalize"></span> <h3>private elemental subroutine <a href='../proc/finalize.html'>finalize</a>(tag)  
+    <div class="card-header codesum"><span class="anchor" id="proc-finalize~6"></span> <h3>private elemental subroutine <a href='../proc/finalize~6.html'>finalize</a>(tag)  
 </h3></div>
     <div class="card-body">
           
@@ -4033,7 +4085,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-tag~5"></span>
+              <span class="anchor" id="variable-tag~10"></span>
               type(<a href='../type/xml_tag.html'>xml_tag</a>),
             </td>
 <td>intent(inout)</td>
@@ -4082,27 +4134,5 @@ modules which it uses.
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

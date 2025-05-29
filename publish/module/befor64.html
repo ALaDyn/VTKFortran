@@ -12,14 +12,29 @@
 
     <title>befor64 &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -79,7 +94,7 @@
 
             <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
               <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-                 title=" 2.3% of total for modules and submodules.">538 statements</a>
+                 title=" 1.4% of total for modules and submodules.">538 statements</a>
             </li>
 
             <li class="list-inline-item" id="source-file">
@@ -91,7 +106,7 @@
       <div class="col">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-end mb-0">
-                <li class="breadcrumb-item"><a href='../sourcefile/befor64.f90~3.html'>befor64.F90</a></li>
+                <li class="breadcrumb-item"><a href='../sourcefile/befor64.f90~2.html'>befor64.F90</a></li>
             <li class="breadcrumb-item active" aria-current="page">befor64</li>
           </ol>
         </nav>
@@ -99,9 +114,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -118,8 +135,8 @@
       </a>
       <div id="vars-0" class="collapse">
         <div class="list-group list-group-flush">
-            <a class="list-group-item" href="../module/befor64.html#variable-is_b64_initialized~3">is_b64_initialized</a>
-            <a class="list-group-item" href="../module/befor64.html#variable-base64~3">base64</a>
+            <a class="list-group-item" href="../module/befor64.html#variable-is_b64_initialized~2">is_b64_initialized</a>
+            <a class="list-group-item" href="../module/befor64.html#variable-base64~2">base64</a>
         </div>
       </div>
     </div>
@@ -137,10 +154,10 @@
       </a>
       <div id="inters-0" class="collapse">
         <div class="list-group list-group-flush">
-            <a class="list-group-item" href="../module/befor64.html#interface-b64_encode~3">b64_encode</a>
-            <a class="list-group-item" href="../module/befor64.html#interface-b64_encode_up~3">b64_encode_up</a>
-            <a class="list-group-item" href="../module/befor64.html#interface-b64_decode~3">b64_decode</a>
-            <a class="list-group-item" href="../module/befor64.html#interface-b64_decode_up~3">b64_decode_up</a>
+            <a class="list-group-item" href="../module/befor64.html#interface-b64_encode~2">b64_encode</a>
+            <a class="list-group-item" href="../module/befor64.html#interface-b64_encode_up~2">b64_encode_up</a>
+            <a class="list-group-item" href="../module/befor64.html#interface-b64_decode~2">b64_decode</a>
+            <a class="list-group-item" href="../module/befor64.html#interface-b64_decode_up~2">b64_decode_up</a>
         </div>
       </div>
     </div>
@@ -155,45 +172,45 @@
       </a>
       <div id="subs-0" class="collapse">
         <div class="list-group list-group-flush">
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_init~3">b64_init</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-encode_bits~3">encode_bits</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-decode_bits~3">decode_bits</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_up~3">b64_encode_up</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_up_a~3">b64_encode_up_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_up~3">b64_decode_up</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_up_a~3">b64_decode_up_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r16~3">b64_encode_R16</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r8~3">b64_encode_R8</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r4~3">b64_encode_R4</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i8~3">b64_encode_I8</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i4~3">b64_encode_I4</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i2~3">b64_encode_I2</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i1~3">b64_encode_I1</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_string~3">b64_encode_string</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r16_a~3">b64_encode_R16_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r8_a~3">b64_encode_R8_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r4_a~3">b64_encode_R4_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i8_a~3">b64_encode_I8_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i4_a~3">b64_encode_I4_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i2_a~3">b64_encode_I2_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i1_a~3">b64_encode_I1_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_string_a~3">b64_encode_string_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r16~3">b64_decode_R16</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r8~3">b64_decode_R8</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r4~3">b64_decode_R4</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i8~3">b64_decode_I8</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i4~3">b64_decode_I4</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i2~3">b64_decode_I2</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i1~3">b64_decode_I1</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_string~3">b64_decode_string</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r16_a~3">b64_decode_R16_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r8_a~3">b64_decode_R8_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r4_a~3">b64_decode_R4_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i8_a~3">b64_decode_I8_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i4_a~3">b64_decode_I4_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i2_a~3">b64_decode_I2_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i1_a~3">b64_decode_I1_a</a>
-            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_string_a~3">b64_decode_string_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_init~2">b64_init</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-encode_bits~2">encode_bits</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-decode_bits~2">decode_bits</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_up~2">b64_encode_up</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_up_a~2">b64_encode_up_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_up~2">b64_decode_up</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_up_a~2">b64_decode_up_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r16~2">b64_encode_R16</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r8~2">b64_encode_R8</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r4~2">b64_encode_R4</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i8~2">b64_encode_I8</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i4~2">b64_encode_I4</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i2~2">b64_encode_I2</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i1~2">b64_encode_I1</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_string~2">b64_encode_string</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r16_a~2">b64_encode_R16_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r8_a~2">b64_encode_R8_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_r4_a~2">b64_encode_R4_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i8_a~2">b64_encode_I8_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i4_a~2">b64_encode_I4_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i2_a~2">b64_encode_I2_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_i1_a~2">b64_encode_I1_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_encode_string_a~2">b64_encode_string_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r16~2">b64_decode_R16</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r8~2">b64_decode_R8</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r4~2">b64_decode_R4</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i8~2">b64_decode_I8</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i4~2">b64_decode_I4</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i2~2">b64_decode_I2</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i1~2">b64_decode_I1</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_string~2">b64_decode_string</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r16_a~2">b64_decode_R16_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r8_a~2">b64_decode_R8_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_r4_a~2">b64_decode_R4_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i8_a~2">b64_decode_I8_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i4_a~2">b64_decode_I4_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i2_a~2">b64_decode_I2_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_i1_a~2">b64_decode_I1_a</a>
+            <a class="list-group-item" href="../module/befor64.html#proc-b64_decode_string_a~2">b64_decode_string_a</a>
         </div>
       </div>
     </div>
@@ -219,8 +236,8 @@
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
               <ul class="list-inline">
-                  <li class="list-inline-item"><a href='penf~4.html'>penf</a></li>
-                  <li class="list-inline-item"><a href='befor64_pack_data_m~4.html'>befor64_pack_data_m</a></li>
+                  <li class="list-inline-item"><a href='befor64_pack_data_m~2.html'>befor64_pack_data_m</a></li>
+                  <li class="list-inline-item"><a href='penf~6.html'>penf</a></li>
               </ul>
             </li>
             <li class="list-group-item">
@@ -230,131 +247,166 @@
 <!-- Generated by graphviz version 2.43.0 (0)
  -->
 <!-- Title: module~~befor64~~UsesGraph Pages: 1 -->
-<svg id="modulebefor64UsesGraph" width="641pt" height="95pt"
- viewBox="0.00 0.00 641.00 94.84" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="module~~befor64~~UsesGraph" class="graph" transform="scale(0.8 0.8) rotate(0) translate(4 114.66)">
+<svg id="modulebefor64UsesGraph" width="641pt" height="104pt"
+ viewBox="0.00 0.00 641.00 103.64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="module~~befor64~~UsesGraph" class="graph" transform="scale(0.65 0.65) rotate(0) translate(4 155.9)">
 <title>module~~befor64~~UsesGraph</title>
-<polygon fill="white" stroke="transparent" points="-4,4 -4,-114.66 798,-114.66 798,4 -4,4"/>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-155.9 985,-155.9 985,4 -4,4"/>
 <!-- module~befor64 -->
 <g id="module~~befor64~~UsesGraph_node1" class="node">
 <title>module~befor64</title>
-<polygon fill="none" stroke="black" points="794,-32.31 739,-32.31 739,-8.31 794,-8.31 794,-32.31"/>
-<text text-anchor="middle" x="766.5" y="-17.91" font-family="Helvetica,sans-Serif" font-size="10.50">befor64</text>
+<polygon fill="none" stroke="black" points="981,-57.49 926,-57.49 926,-33.49 981,-33.49 981,-57.49"/>
+<text text-anchor="middle" x="953.5" y="-43.09" font-family="Helvetica,sans-Serif" font-size="10.50">befor64</text>
 </g>
-<!-- module~befor64_pack_data_m~4 -->
+<!-- module~befor64_pack_data_m~2 -->
 <g id="module~~befor64~~UsesGraph_node2" class="node">
-<title>module~befor64_pack_data_m~4</title>
-<g id="a_module~~befor64~~UsesGraph_node2"><a xlink:href="../module/befor64_pack_data_m~4.html" xlink:title="befor64_pack_data_m">
-<polygon fill="#337ab7" stroke="#337ab7" points="703,-52.31 573,-52.31 573,-28.31 703,-28.31 703,-52.31"/>
-<text text-anchor="middle" x="638" y="-37.91" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">befor64_pack_data_m</text>
+<title>module~befor64_pack_data_m~2</title>
+<g id="a_module~~befor64~~UsesGraph_node2"><a xlink:href="../module/befor64_pack_data_m~2.html" xlink:title="befor64_pack_data_m">
+<polygon fill="#337ab7" stroke="#337ab7" points="890,-77.49 760,-77.49 760,-53.49 890,-53.49 890,-77.49"/>
+<text text-anchor="middle" x="825" y="-63.09" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">befor64_pack_data_m</text>
 </a>
 </g>
 </g>
-<!-- module~befor64&#45;&gt;module~befor64_pack_data_m~4 -->
+<!-- module~befor64&#45;&gt;module~befor64_pack_data_m~2 -->
 <g id="module~~befor64~~UsesGraph_edge1" class="edge">
-<title>module~befor64&#45;&gt;module~befor64_pack_data_m~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M738.98,-24.5C731.21,-25.73 722.31,-27.13 713.1,-28.59"/>
-<polygon fill="#000000" stroke="#000000" points="712.34,-25.17 703.01,-30.19 713.44,-32.08 712.34,-25.17"/>
+<title>module~befor64&#45;&gt;module~befor64_pack_data_m~2</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M925.98,-49.68C918.21,-50.91 909.31,-52.32 900.1,-53.77"/>
+<polygon fill="#000000" stroke="#000000" points="899.34,-50.35 890.01,-55.37 900.44,-57.26 899.34,-50.35"/>
 </g>
-<!-- module~penf~4 -->
+<!-- module~penf~6 -->
 <g id="module~~befor64~~UsesGraph_node3" class="node">
-<title>module~penf~4</title>
-<g id="a_module~~befor64~~UsesGraph_node3"><a xlink:href="../module/penf~4.html" xlink:title="penf">
-<polygon fill="#337ab7" stroke="#337ab7" points="537,-32.31 483,-32.31 483,-8.31 537,-8.31 537,-32.31"/>
-<text text-anchor="middle" x="510" y="-17.91" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf</text>
+<title>module~penf~6</title>
+<g id="a_module~~befor64~~UsesGraph_node3"><a xlink:href="../module/penf~6.html" xlink:title="penf">
+<polygon fill="#337ab7" stroke="#337ab7" points="724,-57.49 670,-57.49 670,-33.49 724,-33.49 724,-57.49"/>
+<text text-anchor="middle" x="697" y="-43.09" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf</text>
 </a>
 </g>
 </g>
-<!-- module~befor64&#45;&gt;module~penf~4 -->
+<!-- module~befor64&#45;&gt;module~penf~6 -->
 <g id="module~~befor64~~UsesGraph_edge2" class="edge">
-<title>module~befor64&#45;&gt;module~penf~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M738.74,-19.78C727.67,-19.59 714.72,-19.4 703,-19.31 645.22,-18.84 630.78,-18.84 573,-19.31 564.75,-19.37 555.88,-19.49 547.51,-19.62"/>
-<polygon fill="#000000" stroke="#000000" points="547.19,-16.12 537.24,-19.79 547.3,-23.12 547.19,-16.12"/>
+<title>module~befor64&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M925.74,-44.97C914.67,-44.78 901.72,-44.58 890,-44.49 832.22,-44.03 817.78,-44.02 760,-44.49 751.75,-44.56 742.88,-44.67 734.51,-44.8"/>
+<polygon fill="#000000" stroke="#000000" points="734.19,-41.31 724.24,-44.97 734.3,-48.31 734.19,-41.31"/>
 </g>
-<!-- module~befor64_pack_data_m~4&#45;&gt;module~penf~4 -->
+<!-- module~befor64_pack_data_m~2&#45;&gt;module~penf~6 -->
 <g id="module~~befor64~~UsesGraph_edge3" class="edge">
-<title>module~befor64_pack_data_m~4&#45;&gt;module~penf~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M572.89,-30.13C564.1,-28.73 555.34,-27.34 547.29,-26.07"/>
-<polygon fill="#000000" stroke="#000000" points="547.6,-22.57 537.17,-24.46 546.5,-29.48 547.6,-22.57"/>
+<title>module~befor64_pack_data_m~2&#45;&gt;module~penf~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M759.89,-55.31C751.1,-53.92 742.34,-52.53 734.29,-51.25"/>
+<polygon fill="#000000" stroke="#000000" points="734.6,-47.76 724.17,-49.64 733.5,-54.67 734.6,-47.76"/>
 </g>
-<!-- module~penf_b_size~6 -->
+<!-- module~penf_allocatable_memory~6 -->
 <g id="module~~befor64~~UsesGraph_node4" class="node">
-<title>module~penf_b_size~6</title>
-<g id="a_module~~befor64~~UsesGraph_node4"><a xlink:href="../module/penf_b_size~6.html" xlink:title="penf_b_size">
-<polygon fill="#337ab7" stroke="#337ab7" points="316,-52.31 242,-52.31 242,-28.31 316,-28.31 316,-52.31"/>
-<text text-anchor="middle" x="279" y="-37.91" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_b_size</text>
+<title>module~penf_allocatable_memory~6</title>
+<g id="a_module~~befor64~~UsesGraph_node4"><a xlink:href="../module/penf_allocatable_memory~6.html" xlink:title="penf_allocatable_memory">
+<polygon fill="#337ab7" stroke="#337ab7" points="634,-77.49 483,-77.49 483,-53.49 634,-53.49 634,-77.49"/>
+<text text-anchor="middle" x="558.5" y="-63.09" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_allocatable_memory</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_b_size~6 -->
+<!-- module~penf~6&#45;&gt;module~penf_allocatable_memory~6 -->
 <g id="module~~befor64~~UsesGraph_edge4" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_b_size~6</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-0.31C371.07,0.17 336.08,-12.53 311.65,-23.74"/>
-<polygon fill="#000000" stroke="#000000" points="310.03,-20.63 302.51,-28.09 313.04,-26.95 310.03,-20.63"/>
+<title>module~penf~6&#45;&gt;module~penf_allocatable_memory~6</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M669.68,-49.35C662.06,-50.46 653.29,-51.75 644.11,-53.09"/>
+<polygon fill="#000000" stroke="#000000" points="643.4,-49.66 634.02,-54.57 644.42,-56.58 643.4,-49.66"/>
 </g>
-<!-- module~penf_global_parameters_variables~3 -->
+<!-- module~penf_b_size~3 -->
 <g id="module~~befor64~~UsesGraph_node5" class="node">
-<title>module~penf_global_parameters_variables~3</title>
-<g id="a_module~~befor64~~UsesGraph_node5"><a xlink:href="../module/penf_global_parameters_variables~3.html" xlink:title="penf_global_parameters_variables">
-<polygon fill="#337ab7" stroke="#337ab7" points="196,-52.31 0,-52.31 0,-28.31 196,-28.31 196,-52.31"/>
-<text text-anchor="middle" x="98" y="-37.91" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_global_parameters_variables</text>
+<title>module~penf_b_size~3</title>
+<g id="a_module~~befor64~~UsesGraph_node5"><a xlink:href="../module/penf_b_size~3.html" xlink:title="penf_b_size">
+<polygon fill="#337ab7" stroke="#337ab7" points="316,-37.49 242,-37.49 242,-13.49 316,-13.49 316,-37.49"/>
+<text text-anchor="middle" x="279" y="-23.09" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_b_size</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf~6&#45;&gt;module~penf_b_size~3 -->
 <g id="module~~befor64~~UsesGraph_edge5" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_global_parameters_variables~3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M482.89,-12.62C462.12,-7.15 432.22,-0.7 405.5,-0.31"/>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-0.31C320.05,0.92 224.8,-14.31 163.39,-26.33"/>
-<polygon fill="#000000" stroke="#000000" points="162.58,-22.92 153.45,-28.3 163.94,-29.79 162.58,-22.92"/>
+<title>module~penf~6&#45;&gt;module~penf_b_size~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-25.49C378.11,-23.48 349.68,-23.33 326.51,-23.76"/>
+<polygon fill="#000000" stroke="#000000" points="326.19,-20.26 316.27,-23.99 326.34,-27.26 326.19,-20.26"/>
 </g>
-<!-- module~penf_stringify~4 -->
+<!-- module~penf_global_parameters_variables -->
 <g id="module~~befor64~~UsesGraph_node6" class="node">
-<title>module~penf_stringify~4</title>
-<g id="a_module~~befor64~~UsesGraph_node6"><a xlink:href="../module/penf_stringify~4.html" xlink:title="penf_stringify">
-<polygon fill="#337ab7" stroke="#337ab7" points="447,-73.31 362,-73.31 362,-49.31 447,-49.31 447,-73.31"/>
-<text text-anchor="middle" x="404.5" y="-58.91" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_stringify</text>
+<title>module~penf_global_parameters_variables</title>
+<g id="a_module~~befor64~~UsesGraph_node6"><a xlink:href="../module/penf_global_parameters_variables.html" xlink:title="penf_global_parameters_variables">
+<polygon fill="#337ab7" stroke="#337ab7" points="196,-57.49 0,-57.49 0,-33.49 196,-33.49 196,-57.49"/>
+<text text-anchor="middle" x="98" y="-43.09" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_global_parameters_variables</text>
 </a>
 </g>
 </g>
-<!-- module~penf~4&#45;&gt;module~penf_stringify~4 -->
+<!-- module~penf~6&#45;&gt;module~penf_global_parameters_variables -->
 <g id="module~~befor64~~UsesGraph_edge6" class="edge">
-<title>module~penf~4&#45;&gt;module~penf_stringify~4</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M482.88,-30.65C471.53,-35.15 457.96,-40.52 445.39,-45.5"/>
-<polygon fill="#000000" stroke="#000000" points="444.03,-42.28 436.02,-49.22 446.61,-48.79 444.03,-42.28"/>
+<title>module~penf~6&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M670,-39.49C642.66,-33.7 598.3,-25.77 559.5,-25.49"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M557.5,-25.49C489.95,-25.01 472.84,-30.82 405.5,-25.49"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-25.49C367.92,-22.67 361.37,-9.2 326,-4.49 284.59,1.02 273.31,1.73 232,-4.49 199.8,-9.34 164.64,-20.45 138.56,-29.88"/>
+<polygon fill="#000000" stroke="#000000" points="137.2,-26.65 129.03,-33.4 139.63,-33.22 137.2,-26.65"/>
 </g>
-<!-- module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf_stringify~3 -->
+<g id="module~~befor64~~UsesGraph_node7" class="node">
+<title>module~penf_stringify~3</title>
+<g id="a_module~~befor64~~UsesGraph_node7"><a xlink:href="../module/penf_stringify~3.html" xlink:title="penf_stringify">
+<polygon fill="#337ab7" stroke="#337ab7" points="447,-77.49 362,-77.49 362,-53.49 447,-53.49 447,-77.49"/>
+<text text-anchor="middle" x="404.5" y="-63.09" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">penf_stringify</text>
+</a>
+</g>
+</g>
+<!-- module~penf~6&#45;&gt;module~penf_stringify~3 -->
 <g id="module~~befor64~~UsesGraph_edge7" class="edge">
-<title>module~penf_b_size~6&#45;&gt;module~penf_global_parameters_variables~3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M241.78,-40.31C231.22,-40.31 219.1,-40.31 206.49,-40.31"/>
-<polygon fill="#000000" stroke="#000000" points="206.29,-36.81 196.29,-40.31 206.29,-43.81 206.29,-36.81"/>
+<title>module~penf~6&#45;&gt;module~penf_stringify~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M557.5,-25.49C517.24,-25.2 472.9,-38.53 442.56,-49.88"/>
+<polygon fill="#000000" stroke="#000000" points="441.29,-46.61 433.22,-53.47 443.81,-53.15 441.29,-46.61"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;module~penf_b_size~6 -->
+<!-- module~penf_allocatable_memory~6&#45;&gt;module~penf_global_parameters_variables -->
 <g id="module~~befor64~~UsesGraph_edge9" class="edge">
-<title>module~penf_stringify~4&#45;&gt;module~penf_b_size~6</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M361.69,-54.2C350.32,-52.26 337.95,-50.16 326.35,-48.19"/>
-<polygon fill="#000000" stroke="#000000" points="326.84,-44.72 316.4,-46.49 325.67,-51.62 326.84,-44.72"/>
+<title>module~penf_allocatable_memory~6&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-145.49C327.8,-157.75 304.58,-151.24 232,-126.49 190.11,-112.2 147.41,-83.07 122.07,-63.91"/>
+<polygon fill="#000000" stroke="#000000" points="123.91,-60.92 113.85,-57.6 119.65,-66.47 123.91,-60.92"/>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;module~penf_global_parameters_variables~3 -->
+<!-- module~penf_allocatable_memory~6&#45;&gt;module~penf_stringify~3 -->
 <g id="module~~befor64~~UsesGraph_edge10" class="edge">
-<title>module~penf_stringify~4&#45;&gt;module~penf_global_parameters_variables~3</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M386.98,-73.44C371.95,-83.67 348.7,-97.55 326,-103.31 285.5,-113.57 272.76,-112.47 232,-103.31 193.2,-94.58 152.42,-73.18 126.4,-57.74"/>
-<polygon fill="#000000" stroke="#000000" points="128.21,-54.74 117.85,-52.55 124.59,-60.73 128.21,-54.74"/>
+<title>module~penf_allocatable_memory~6&#45;&gt;module~penf_stringify~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M482.84,-65.49C474.18,-65.49 465.5,-65.49 457.24,-65.49"/>
+<polygon fill="#000000" stroke="#000000" points="457.05,-61.99 447.05,-65.49 457.05,-68.99 457.05,-61.99"/>
 </g>
 <!-- iso_fortran_env -->
-<g id="module~~befor64~~UsesGraph_node7" class="node">
+<g id="module~~befor64~~UsesGraph_node8" class="node">
 <title>iso_fortran_env</title>
-<g id="a_module~~befor64~~UsesGraph_node7"><a xlink:href="http://fortranwiki.org/fortran/show/iso_fortran_env" xlink:title="iso_fortran_env">
-<polygon fill="#337ab7" stroke="#337ab7" points="326,-94.31 232,-94.31 232,-70.31 326,-70.31 326,-94.31"/>
-<text text-anchor="middle" x="279" y="-79.91" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_fortran_env</text>
+<g id="a_module~~befor64~~UsesGraph_node8"><a xlink:href="http://fortranwiki.org/fortran/show/iso_fortran_env" xlink:title="iso_fortran_env">
+<polygon fill="#337ab7" stroke="#337ab7" points="326,-117.49 232,-117.49 232,-93.49 326,-93.49 326,-117.49"/>
+<text text-anchor="middle" x="279" y="-103.09" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_fortran_env</text>
 </a>
 </g>
 </g>
-<!-- module~penf_stringify~4&#45;&gt;iso_fortran_env -->
+<!-- module~penf_allocatable_memory~6&#45;&gt;iso_fortran_env -->
 <g id="module~~befor64~~UsesGraph_edge8" class="edge">
-<title>module~penf_stringify~4&#45;&gt;iso_fortran_env</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M361.69,-68.42C353.44,-69.82 344.66,-71.31 336.03,-72.78"/>
-<polygon fill="#000000" stroke="#000000" points="335.28,-69.36 326.01,-74.48 336.45,-76.26 335.28,-69.36"/>
+<title>module~penf_allocatable_memory~6&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M542.74,-77.53C516.88,-97.58 460.84,-136.53 405.5,-145.49"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M403.5,-145.49C369.57,-150.98 332.23,-135.73 307.59,-122.51"/>
+<polygon fill="#000000" stroke="#000000" points="309.24,-119.42 298.8,-117.58 305.82,-125.53 309.24,-119.42"/>
+</g>
+<!-- module~penf_b_size~3&#45;&gt;module~penf_global_parameters_variables -->
+<g id="module~~befor64~~UsesGraph_edge11" class="edge">
+<title>module~penf_b_size~3&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M241.78,-29.54C231.22,-30.72 219.1,-32.07 206.49,-33.48"/>
+<polygon fill="#000000" stroke="#000000" points="205.84,-30.03 196.29,-34.62 206.61,-36.99 205.84,-30.03"/>
+</g>
+<!-- module~penf_stringify~3&#45;&gt;module~penf_b_size~3 -->
+<g id="module~~befor64~~UsesGraph_edge13" class="edge">
+<title>module~penf_stringify~3&#45;&gt;module~penf_b_size~3</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M366.45,-53.49C353.64,-49.34 339.14,-44.64 325.72,-40.3"/>
+<polygon fill="#000000" stroke="#000000" points="326.77,-36.96 316.18,-37.21 324.61,-43.62 326.77,-36.96"/>
+</g>
+<!-- module~penf_stringify~3&#45;&gt;module~penf_global_parameters_variables -->
+<g id="module~~befor64~~UsesGraph_edge14" class="edge">
+<title>module~penf_stringify~3&#45;&gt;module~penf_global_parameters_variables</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M361.8,-62.75C321.94,-60.13 260.14,-56.07 206.49,-52.55"/>
+<polygon fill="#000000" stroke="#000000" points="206.43,-49.04 196.22,-51.88 205.97,-56.02 206.43,-49.04"/>
+</g>
+<!-- module~penf_stringify~3&#45;&gt;iso_fortran_env -->
+<g id="module~~befor64~~UsesGraph_edge12" class="edge">
+<title>module~penf_stringify~3&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M366.45,-77.49C354.1,-81.49 340.18,-86 327.18,-90.21"/>
+<polygon fill="#000000" stroke="#000000" points="325.89,-86.95 317.45,-93.36 328.05,-93.61 325.89,-86.95"/>
 </g>
 </g>
 </svg>
@@ -455,7 +507,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-is_b64_initialized~3"></span>
+              <span class="anchor" id="variable-is_b64_initialized~2"></span>
               logical,
             </td>
               <td>public</td>
@@ -472,7 +524,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-base64~3"></span>
+              <span class="anchor" id="variable-base64~2"></span>
               character(len=64),
             </td>
               <td>private</td>
@@ -498,14 +550,14 @@ modules which it uses.
           <h2>Interfaces</h2>
               <div class="card">
     <div class="card-header bg-light codesum">
-      <span class="anchor" id="interface-b64_encode~3"></span>
-      <h3>public        interface <a href='../interface/b64_encode~3.html'>b64_encode</a> 
+      <span class="anchor" id="interface-b64_encode~2"></span>
+      <h3>public        interface <a href='../interface/b64_encode~2.html'>b64_encode</a> 
       </h3>
     </div>
     <ul class="list-group">
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_r8~3.html'>b64_encode_R8</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_r8~2.html'>b64_encode_R8</a>(n, code)  
 
     </h3>
     
@@ -524,7 +576,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~458"></span>
+              <span class="anchor" id="variable-n~138"></span>
               real(kind=R8P),
             </td>
 <td>intent(in)</td>
@@ -539,7 +591,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~237"></span>
+              <span class="anchor" id="variable-code~46"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -559,7 +611,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_r8_a~3.html'>b64_encode_R8_a</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_r8_a~2.html'>b64_encode_R8_a</a>(n, code)  
 
     </h3>
     
@@ -578,7 +630,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~465"></span>
+              <span class="anchor" id="variable-n~145"></span>
               real(kind=R8P),
             </td>
 <td>intent(in)</td>
@@ -593,7 +645,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~245"></span>
+              <span class="anchor" id="variable-code~54"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -613,7 +665,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_r4~3.html'>b64_encode_R4</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_r4~2.html'>b64_encode_R4</a>(n, code)  
 
     </h3>
     
@@ -632,7 +684,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~459"></span>
+              <span class="anchor" id="variable-n~139"></span>
               real(kind=R4P),
             </td>
 <td>intent(in)</td>
@@ -647,7 +699,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~238"></span>
+              <span class="anchor" id="variable-code~47"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -667,7 +719,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_r4_a~3.html'>b64_encode_R4_a</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_r4_a~2.html'>b64_encode_R4_a</a>(n, code)  
 
     </h3>
     
@@ -686,7 +738,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~466"></span>
+              <span class="anchor" id="variable-n~146"></span>
               real(kind=R4P),
             </td>
 <td>intent(in)</td>
@@ -701,7 +753,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~246"></span>
+              <span class="anchor" id="variable-code~55"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -721,7 +773,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_i8~3.html'>b64_encode_I8</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_i8~2.html'>b64_encode_I8</a>(n, code)  
 
     </h3>
     
@@ -740,7 +792,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~460"></span>
+              <span class="anchor" id="variable-n~140"></span>
               integer(kind=I8P),
             </td>
 <td>intent(in)</td>
@@ -755,7 +807,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~239"></span>
+              <span class="anchor" id="variable-code~48"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -775,7 +827,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_i8_a~3.html'>b64_encode_I8_a</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_i8_a~2.html'>b64_encode_I8_a</a>(n, code)  
 
     </h3>
     
@@ -794,7 +846,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~467"></span>
+              <span class="anchor" id="variable-n~147"></span>
               integer(kind=I8P),
             </td>
 <td>intent(in)</td>
@@ -809,7 +861,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~247"></span>
+              <span class="anchor" id="variable-code~56"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -829,7 +881,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_i4~3.html'>b64_encode_I4</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_i4~2.html'>b64_encode_I4</a>(n, code)  
 
     </h3>
     
@@ -848,7 +900,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~461"></span>
+              <span class="anchor" id="variable-n~141"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in)</td>
@@ -863,7 +915,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~240"></span>
+              <span class="anchor" id="variable-code~49"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -883,7 +935,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_i4_a~3.html'>b64_encode_I4_a</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_i4_a~2.html'>b64_encode_I4_a</a>(n, code)  
 
     </h3>
     
@@ -902,7 +954,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~468"></span>
+              <span class="anchor" id="variable-n~148"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in)</td>
@@ -917,7 +969,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~248"></span>
+              <span class="anchor" id="variable-code~57"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -937,7 +989,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_i2~3.html'>b64_encode_I2</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_i2~2.html'>b64_encode_I2</a>(n, code)  
 
     </h3>
     
@@ -956,7 +1008,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~462"></span>
+              <span class="anchor" id="variable-n~142"></span>
               integer(kind=I2P),
             </td>
 <td>intent(in)</td>
@@ -971,7 +1023,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~241"></span>
+              <span class="anchor" id="variable-code~50"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -991,7 +1043,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_i2_a~3.html'>b64_encode_I2_a</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_i2_a~2.html'>b64_encode_I2_a</a>(n, code)  
 
     </h3>
     
@@ -1010,7 +1062,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~469"></span>
+              <span class="anchor" id="variable-n~149"></span>
               integer(kind=I2P),
             </td>
 <td>intent(in)</td>
@@ -1025,7 +1077,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~249"></span>
+              <span class="anchor" id="variable-code~58"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -1045,7 +1097,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_i1~3.html'>b64_encode_I1</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_i1~2.html'>b64_encode_I1</a>(n, code)  
 
     </h3>
     
@@ -1064,7 +1116,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~463"></span>
+              <span class="anchor" id="variable-n~143"></span>
               integer(kind=I1P),
             </td>
 <td>intent(in)</td>
@@ -1079,7 +1131,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~242"></span>
+              <span class="anchor" id="variable-code~51"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -1099,7 +1151,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_i1_a~3.html'>b64_encode_I1_a</a>(n, code)  
+    private pure subroutine <a href='../proc/b64_encode_i1_a~2.html'>b64_encode_I1_a</a>(n, code)  
 
     </h3>
     
@@ -1118,7 +1170,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~470"></span>
+              <span class="anchor" id="variable-n~150"></span>
               integer(kind=I1P),
             </td>
 <td>intent(in)</td>
@@ -1133,7 +1185,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~250"></span>
+              <span class="anchor" id="variable-code~59"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -1153,7 +1205,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_string~3.html'>b64_encode_string</a>(s, code)  
+    private pure subroutine <a href='../proc/b64_encode_string~2.html'>b64_encode_string</a>(s, code)  
 
     </h3>
     
@@ -1172,7 +1224,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~27"></span>
+              <span class="anchor" id="variable-s~7"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1187,7 +1239,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~243"></span>
+              <span class="anchor" id="variable-code~52"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -1207,7 +1259,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_string_a~3.html'>b64_encode_string_a</a>(s, code)  
+    private pure subroutine <a href='../proc/b64_encode_string_a~2.html'>b64_encode_string_a</a>(s, code)  
 
     </h3>
     
@@ -1226,7 +1278,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~28"></span>
+              <span class="anchor" id="variable-s~8"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1241,7 +1293,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~251"></span>
+              <span class="anchor" id="variable-code~60"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -1264,14 +1316,14 @@ modules which it uses.
 
               <div class="card">
     <div class="card-header bg-light codesum">
-      <span class="anchor" id="interface-b64_encode_up~3"></span>
-      <h3>private        interface <a href='../interface/b64_encode_up~3.html'>b64_encode_up</a> 
+      <span class="anchor" id="interface-b64_encode_up~2"></span>
+      <h3>private        interface <a href='../interface/b64_encode_up~2.html'>b64_encode_up</a> 
       </h3>
     </div>
     <ul class="list-group">
           <li class="list-group-item">
                 <h3>
-    private  interface <a href='../interface/b64_encode_up~3.html'>b64_encode_up</a>()  
+    private  interface <a href='../interface/b64_encode_up~2.html'>b64_encode_up</a>()  
 
     </h3>
     
@@ -1283,7 +1335,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_encode_up_a~3.html'>b64_encode_up_a</a>(up, code)  
+    private pure subroutine <a href='../proc/b64_encode_up_a~2.html'>b64_encode_up_a</a>(up, code)  
 
     </h3>
     
@@ -1302,7 +1354,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-up~10"></span>
+              <span class="anchor" id="variable-up~6"></span>
               class(*),
             </td>
 <td>intent(in)</td>
@@ -1317,7 +1369,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~233"></span>
+              <span class="anchor" id="variable-code~42"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -1340,14 +1392,14 @@ modules which it uses.
 
               <div class="card">
     <div class="card-header bg-light codesum">
-      <span class="anchor" id="interface-b64_decode~3"></span>
-      <h3>public        interface <a href='../interface/b64_decode~3.html'>b64_decode</a> 
+      <span class="anchor" id="interface-b64_decode~2"></span>
+      <h3>public        interface <a href='../interface/b64_decode~2.html'>b64_decode</a> 
       </h3>
     </div>
     <ul class="list-group">
           <li class="list-group-item">
                 <h3>
-    private elemental subroutine <a href='../proc/b64_decode_r8~3.html'>b64_decode_R8</a>(code, n)  
+    private elemental subroutine <a href='../proc/b64_decode_r8~2.html'>b64_decode_R8</a>(code, n)  
 
     </h3>
     
@@ -1366,7 +1418,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~253"></span>
+              <span class="anchor" id="variable-code~62"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1381,7 +1433,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~472"></span>
+              <span class="anchor" id="variable-n~152"></span>
               real(kind=R8P),
             </td>
 <td>intent(out)</td>
@@ -1401,7 +1453,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_decode_r8_a~3.html'>b64_decode_R8_a</a>(code, n)  
+    private pure subroutine <a href='../proc/b64_decode_r8_a~2.html'>b64_decode_R8_a</a>(code, n)  
 
     </h3>
     
@@ -1420,7 +1472,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~261"></span>
+              <span class="anchor" id="variable-code~70"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1435,7 +1487,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~479"></span>
+              <span class="anchor" id="variable-n~159"></span>
               real(kind=R8P),
             </td>
 <td>intent(out)</td>
@@ -1455,7 +1507,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private elemental subroutine <a href='../proc/b64_decode_r4~3.html'>b64_decode_R4</a>(code, n)  
+    private elemental subroutine <a href='../proc/b64_decode_r4~2.html'>b64_decode_R4</a>(code, n)  
 
     </h3>
     
@@ -1474,7 +1526,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~254"></span>
+              <span class="anchor" id="variable-code~63"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1489,7 +1541,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~473"></span>
+              <span class="anchor" id="variable-n~153"></span>
               real(kind=R4P),
             </td>
 <td>intent(out)</td>
@@ -1509,7 +1561,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_decode_r4_a~3.html'>b64_decode_R4_a</a>(code, n)  
+    private pure subroutine <a href='../proc/b64_decode_r4_a~2.html'>b64_decode_R4_a</a>(code, n)  
 
     </h3>
     
@@ -1528,7 +1580,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~262"></span>
+              <span class="anchor" id="variable-code~71"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1543,7 +1595,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~480"></span>
+              <span class="anchor" id="variable-n~160"></span>
               real(kind=R4P),
             </td>
 <td>intent(out)</td>
@@ -1563,7 +1615,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private elemental subroutine <a href='../proc/b64_decode_i8~3.html'>b64_decode_I8</a>(code, n)  
+    private elemental subroutine <a href='../proc/b64_decode_i8~2.html'>b64_decode_I8</a>(code, n)  
 
     </h3>
     
@@ -1582,7 +1634,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~255"></span>
+              <span class="anchor" id="variable-code~64"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1597,7 +1649,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~474"></span>
+              <span class="anchor" id="variable-n~154"></span>
               integer(kind=I8P),
             </td>
 <td>intent(out)</td>
@@ -1617,7 +1669,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_decode_i8_a~3.html'>b64_decode_I8_a</a>(code, n)  
+    private pure subroutine <a href='../proc/b64_decode_i8_a~2.html'>b64_decode_I8_a</a>(code, n)  
 
     </h3>
     
@@ -1636,7 +1688,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~263"></span>
+              <span class="anchor" id="variable-code~72"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1651,7 +1703,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~481"></span>
+              <span class="anchor" id="variable-n~161"></span>
               integer(kind=I8P),
             </td>
 <td>intent(out)</td>
@@ -1671,7 +1723,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private elemental subroutine <a href='../proc/b64_decode_i4~3.html'>b64_decode_I4</a>(code, n)  
+    private elemental subroutine <a href='../proc/b64_decode_i4~2.html'>b64_decode_I4</a>(code, n)  
 
     </h3>
     
@@ -1690,7 +1742,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~256"></span>
+              <span class="anchor" id="variable-code~65"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1705,7 +1757,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~475"></span>
+              <span class="anchor" id="variable-n~155"></span>
               integer(kind=I4P),
             </td>
 <td>intent(out)</td>
@@ -1725,7 +1777,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_decode_i4_a~3.html'>b64_decode_I4_a</a>(code, n)  
+    private pure subroutine <a href='../proc/b64_decode_i4_a~2.html'>b64_decode_I4_a</a>(code, n)  
 
     </h3>
     
@@ -1744,7 +1796,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~264"></span>
+              <span class="anchor" id="variable-code~73"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1759,7 +1811,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~482"></span>
+              <span class="anchor" id="variable-n~162"></span>
               integer(kind=I4P),
             </td>
 <td>intent(out)</td>
@@ -1779,7 +1831,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private elemental subroutine <a href='../proc/b64_decode_i2~3.html'>b64_decode_I2</a>(code, n)  
+    private elemental subroutine <a href='../proc/b64_decode_i2~2.html'>b64_decode_I2</a>(code, n)  
 
     </h3>
     
@@ -1798,7 +1850,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~257"></span>
+              <span class="anchor" id="variable-code~66"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1813,7 +1865,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~476"></span>
+              <span class="anchor" id="variable-n~156"></span>
               integer(kind=I2P),
             </td>
 <td>intent(out)</td>
@@ -1833,7 +1885,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_decode_i2_a~3.html'>b64_decode_I2_a</a>(code, n)  
+    private pure subroutine <a href='../proc/b64_decode_i2_a~2.html'>b64_decode_I2_a</a>(code, n)  
 
     </h3>
     
@@ -1852,7 +1904,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~265"></span>
+              <span class="anchor" id="variable-code~74"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1867,7 +1919,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~483"></span>
+              <span class="anchor" id="variable-n~163"></span>
               integer(kind=I2P),
             </td>
 <td>intent(out)</td>
@@ -1887,7 +1939,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private elemental subroutine <a href='../proc/b64_decode_i1~3.html'>b64_decode_I1</a>(code, n)  
+    private elemental subroutine <a href='../proc/b64_decode_i1~2.html'>b64_decode_I1</a>(code, n)  
 
     </h3>
     
@@ -1906,7 +1958,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~258"></span>
+              <span class="anchor" id="variable-code~67"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1921,7 +1973,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~477"></span>
+              <span class="anchor" id="variable-n~157"></span>
               integer(kind=I1P),
             </td>
 <td>intent(out)</td>
@@ -1941,7 +1993,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_decode_i1_a~3.html'>b64_decode_I1_a</a>(code, n)  
+    private pure subroutine <a href='../proc/b64_decode_i1_a~2.html'>b64_decode_I1_a</a>(code, n)  
 
     </h3>
     
@@ -1960,7 +2012,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~266"></span>
+              <span class="anchor" id="variable-code~75"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -1975,7 +2027,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~484"></span>
+              <span class="anchor" id="variable-n~164"></span>
               integer(kind=I1P),
             </td>
 <td>intent(out)</td>
@@ -1995,7 +2047,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private elemental subroutine <a href='../proc/b64_decode_string~3.html'>b64_decode_string</a>(code, s)  
+    private elemental subroutine <a href='../proc/b64_decode_string~2.html'>b64_decode_string</a>(code, s)  
 
     </h3>
     
@@ -2014,7 +2066,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~259"></span>
+              <span class="anchor" id="variable-code~68"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -2029,7 +2081,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~29"></span>
+              <span class="anchor" id="variable-s~9"></span>
               character(len=*),
             </td>
 <td>intent(out)</td>
@@ -2049,7 +2101,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private pure subroutine <a href='../proc/b64_decode_string_a~3.html'>b64_decode_string_a</a>(code, s)  
+    private pure subroutine <a href='../proc/b64_decode_string_a~2.html'>b64_decode_string_a</a>(code, s)  
 
     </h3>
     
@@ -2068,7 +2120,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~267"></span>
+              <span class="anchor" id="variable-code~76"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -2083,7 +2135,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~30"></span>
+              <span class="anchor" id="variable-s~10"></span>
               character(len=*),
             </td>
 <td>intent(out)</td>
@@ -2106,14 +2158,14 @@ modules which it uses.
 
               <div class="card">
     <div class="card-header bg-light codesum">
-      <span class="anchor" id="interface-b64_decode_up~3"></span>
-      <h3>private        interface <a href='../interface/b64_decode_up~3.html'>b64_decode_up</a> 
+      <span class="anchor" id="interface-b64_decode_up~2"></span>
+      <h3>private        interface <a href='../interface/b64_decode_up~2.html'>b64_decode_up</a> 
       </h3>
     </div>
     <ul class="list-group">
           <li class="list-group-item">
                 <h3>
-    private  interface <a href='../interface/b64_decode_up~3.html'>b64_decode_up</a>()  
+    private  interface <a href='../interface/b64_decode_up~2.html'>b64_decode_up</a>()  
 
     </h3>
     
@@ -2125,7 +2177,7 @@ modules which it uses.
           </li>
           <li class="list-group-item">
                 <h3>
-    private  subroutine <a href='../proc/b64_decode_up_a~3.html'>b64_decode_up_a</a>(code, up)  
+    private  subroutine <a href='../proc/b64_decode_up_a~2.html'>b64_decode_up_a</a>(code, up)  
 
     </h3>
     
@@ -2144,7 +2196,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~235"></span>
+              <span class="anchor" id="variable-code~44"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -2159,7 +2211,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-up~12"></span>
+              <span class="anchor" id="variable-up~8"></span>
               class(*),
             </td>
 <td>intent(out)</td>
@@ -2189,7 +2241,7 @@ modules which it uses.
         <section>
           <h2>Subroutines</h2>
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_init~3"></span> <h3>public  subroutine <a href='../proc/b64_init~3.html'>b64_init</a>()  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_init~2"></span> <h3>public  subroutine <a href='../proc/b64_init~2.html'>b64_init</a>()  
 </h3></div>
     <div class="card-body">
           
@@ -2202,7 +2254,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-encode_bits~3"></span> <h3>private pure subroutine <a href='../proc/encode_bits~3.html'>encode_bits</a>(bits, padd, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-encode_bits~2"></span> <h3>private pure subroutine <a href='../proc/encode_bits~2.html'>encode_bits</a>(bits, padd, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2221,7 +2273,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-bits~29"></span>
+              <span class="anchor" id="variable-bits~11"></span>
               integer(kind=I1P),
             </td>
 <td>intent(in)</td>
@@ -2236,7 +2288,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-padd~35"></span>
+              <span class="anchor" id="variable-padd~18"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in)</td>
@@ -2251,7 +2303,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~230"></span>
+              <span class="anchor" id="variable-code~39"></span>
               character(len=*),
             </td>
 <td>intent(out)</td>
@@ -2272,7 +2324,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-decode_bits~3"></span> <h3>private pure subroutine <a href='../proc/decode_bits~3.html'>decode_bits</a>(code, bits)  
+    <div class="card-header codesum"><span class="anchor" id="proc-decode_bits~2"></span> <h3>private pure subroutine <a href='../proc/decode_bits~2.html'>decode_bits</a>(code, bits)  
 </h3></div>
     <div class="card-body">
           
@@ -2291,7 +2343,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~231"></span>
+              <span class="anchor" id="variable-code~40"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -2306,7 +2358,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-bits~30"></span>
+              <span class="anchor" id="variable-bits~12"></span>
               integer(kind=I1P),
             </td>
 <td>intent(out)</td>
@@ -2327,7 +2379,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_up~3"></span> <h3>public  subroutine <a href='../proc/b64_encode_up~3.html'>b64_encode_up</a>(up, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_up~2"></span> <h3>public  subroutine <a href='../proc/b64_encode_up~2.html'>b64_encode_up</a>(up, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2346,7 +2398,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-up~9"></span>
+              <span class="anchor" id="variable-up~5"></span>
               class(*),
             </td>
 <td>intent(in)</td>
@@ -2361,7 +2413,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~232"></span>
+              <span class="anchor" id="variable-code~41"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2382,7 +2434,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_up_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_up_a~3.html'>b64_encode_up_a</a>(up, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_up_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_up_a~2.html'>b64_encode_up_a</a>(up, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2401,7 +2453,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-up~10"></span>
+              <span class="anchor" id="variable-up~6"></span>
               class(*),
             </td>
 <td>intent(in)</td>
@@ -2416,7 +2468,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~233"></span>
+              <span class="anchor" id="variable-code~42"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2437,7 +2489,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_up~3"></span> <h3>public  subroutine <a href='../proc/b64_decode_up~3.html'>b64_decode_up</a>(code, up)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_up~2"></span> <h3>public  subroutine <a href='../proc/b64_decode_up~2.html'>b64_decode_up</a>(code, up)  
 </h3></div>
     <div class="card-body">
           
@@ -2456,7 +2508,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~234"></span>
+              <span class="anchor" id="variable-code~43"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -2471,7 +2523,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-up~11"></span>
+              <span class="anchor" id="variable-up~7"></span>
               class(*),
             </td>
 <td>intent(out)</td>
@@ -2492,7 +2544,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_up_a~3"></span> <h3>private  subroutine <a href='../proc/b64_decode_up_a~3.html'>b64_decode_up_a</a>(code, up)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_up_a~2"></span> <h3>private  subroutine <a href='../proc/b64_decode_up_a~2.html'>b64_decode_up_a</a>(code, up)  
 </h3></div>
     <div class="card-body">
           
@@ -2511,7 +2563,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~235"></span>
+              <span class="anchor" id="variable-code~44"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -2526,7 +2578,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-up~12"></span>
+              <span class="anchor" id="variable-up~8"></span>
               class(*),
             </td>
 <td>intent(out)</td>
@@ -2547,7 +2599,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r16~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r16~3.html'>b64_encode_R16</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r16~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r16~2.html'>b64_encode_R16</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2566,7 +2618,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~457"></span>
+              <span class="anchor" id="variable-n~137"></span>
               real(kind=R16P),
             </td>
 <td>intent(in)</td>
@@ -2581,7 +2633,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~236"></span>
+              <span class="anchor" id="variable-code~45"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2602,7 +2654,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r8~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r8~3.html'>b64_encode_R8</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r8~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r8~2.html'>b64_encode_R8</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2621,7 +2673,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~458"></span>
+              <span class="anchor" id="variable-n~138"></span>
               real(kind=R8P),
             </td>
 <td>intent(in)</td>
@@ -2636,7 +2688,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~237"></span>
+              <span class="anchor" id="variable-code~46"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2657,7 +2709,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r4~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r4~3.html'>b64_encode_R4</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r4~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r4~2.html'>b64_encode_R4</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2676,7 +2728,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~459"></span>
+              <span class="anchor" id="variable-n~139"></span>
               real(kind=R4P),
             </td>
 <td>intent(in)</td>
@@ -2691,7 +2743,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~238"></span>
+              <span class="anchor" id="variable-code~47"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2712,7 +2764,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i8~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i8~3.html'>b64_encode_I8</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i8~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i8~2.html'>b64_encode_I8</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2731,7 +2783,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~460"></span>
+              <span class="anchor" id="variable-n~140"></span>
               integer(kind=I8P),
             </td>
 <td>intent(in)</td>
@@ -2746,7 +2798,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~239"></span>
+              <span class="anchor" id="variable-code~48"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2767,7 +2819,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i4~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i4~3.html'>b64_encode_I4</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i4~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i4~2.html'>b64_encode_I4</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2786,7 +2838,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~461"></span>
+              <span class="anchor" id="variable-n~141"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in)</td>
@@ -2801,7 +2853,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~240"></span>
+              <span class="anchor" id="variable-code~49"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2822,7 +2874,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i2~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i2~3.html'>b64_encode_I2</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i2~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i2~2.html'>b64_encode_I2</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2841,7 +2893,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~462"></span>
+              <span class="anchor" id="variable-n~142"></span>
               integer(kind=I2P),
             </td>
 <td>intent(in)</td>
@@ -2856,7 +2908,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~241"></span>
+              <span class="anchor" id="variable-code~50"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2877,7 +2929,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i1~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i1~3.html'>b64_encode_I1</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i1~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i1~2.html'>b64_encode_I1</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2896,7 +2948,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~463"></span>
+              <span class="anchor" id="variable-n~143"></span>
               integer(kind=I1P),
             </td>
 <td>intent(in)</td>
@@ -2911,7 +2963,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~242"></span>
+              <span class="anchor" id="variable-code~51"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2932,7 +2984,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_string~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_string~3.html'>b64_encode_string</a>(s, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_string~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_string~2.html'>b64_encode_string</a>(s, code)  
 </h3></div>
     <div class="card-body">
           
@@ -2951,7 +3003,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~27"></span>
+              <span class="anchor" id="variable-s~7"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -2966,7 +3018,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~243"></span>
+              <span class="anchor" id="variable-code~52"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -2987,7 +3039,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r16_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r16_a~3.html'>b64_encode_R16_a</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r16_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r16_a~2.html'>b64_encode_R16_a</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -3006,7 +3058,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~464"></span>
+              <span class="anchor" id="variable-n~144"></span>
               real(kind=R16P),
             </td>
 <td>intent(in)</td>
@@ -3021,7 +3073,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~244"></span>
+              <span class="anchor" id="variable-code~53"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -3042,7 +3094,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r8_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r8_a~3.html'>b64_encode_R8_a</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r8_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r8_a~2.html'>b64_encode_R8_a</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -3061,7 +3113,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~465"></span>
+              <span class="anchor" id="variable-n~145"></span>
               real(kind=R8P),
             </td>
 <td>intent(in)</td>
@@ -3076,7 +3128,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~245"></span>
+              <span class="anchor" id="variable-code~54"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -3097,7 +3149,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r4_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r4_a~3.html'>b64_encode_R4_a</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_r4_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_r4_a~2.html'>b64_encode_R4_a</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -3116,7 +3168,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~466"></span>
+              <span class="anchor" id="variable-n~146"></span>
               real(kind=R4P),
             </td>
 <td>intent(in)</td>
@@ -3131,7 +3183,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~246"></span>
+              <span class="anchor" id="variable-code~55"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -3152,7 +3204,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i8_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i8_a~3.html'>b64_encode_I8_a</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i8_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i8_a~2.html'>b64_encode_I8_a</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -3171,7 +3223,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~467"></span>
+              <span class="anchor" id="variable-n~147"></span>
               integer(kind=I8P),
             </td>
 <td>intent(in)</td>
@@ -3186,7 +3238,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~247"></span>
+              <span class="anchor" id="variable-code~56"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -3207,7 +3259,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i4_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i4_a~3.html'>b64_encode_I4_a</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i4_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i4_a~2.html'>b64_encode_I4_a</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -3226,7 +3278,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~468"></span>
+              <span class="anchor" id="variable-n~148"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in)</td>
@@ -3241,7 +3293,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~248"></span>
+              <span class="anchor" id="variable-code~57"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -3262,7 +3314,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i2_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i2_a~3.html'>b64_encode_I2_a</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i2_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i2_a~2.html'>b64_encode_I2_a</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -3281,7 +3333,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~469"></span>
+              <span class="anchor" id="variable-n~149"></span>
               integer(kind=I2P),
             </td>
 <td>intent(in)</td>
@@ -3296,7 +3348,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~249"></span>
+              <span class="anchor" id="variable-code~58"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -3317,7 +3369,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i1_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i1_a~3.html'>b64_encode_I1_a</a>(n, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_i1_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_i1_a~2.html'>b64_encode_I1_a</a>(n, code)  
 </h3></div>
     <div class="card-body">
           
@@ -3336,7 +3388,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~470"></span>
+              <span class="anchor" id="variable-n~150"></span>
               integer(kind=I1P),
             </td>
 <td>intent(in)</td>
@@ -3351,7 +3403,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~250"></span>
+              <span class="anchor" id="variable-code~59"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -3372,7 +3424,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_string_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_encode_string_a~3.html'>b64_encode_string_a</a>(s, code)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_encode_string_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_encode_string_a~2.html'>b64_encode_string_a</a>(s, code)  
 </h3></div>
     <div class="card-body">
           
@@ -3391,7 +3443,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~28"></span>
+              <span class="anchor" id="variable-s~8"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3406,7 +3458,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~251"></span>
+              <span class="anchor" id="variable-code~60"></span>
               character(len=:),
             </td>
 <td>intent(out),</td>
@@ -3427,7 +3479,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r16~3"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_r16~3.html'>b64_decode_R16</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r16~2"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_r16~2.html'>b64_decode_R16</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -3446,7 +3498,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~252"></span>
+              <span class="anchor" id="variable-code~61"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3461,7 +3513,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~471"></span>
+              <span class="anchor" id="variable-n~151"></span>
               real(kind=R16P),
             </td>
 <td>intent(out)</td>
@@ -3482,7 +3534,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r8~3"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_r8~3.html'>b64_decode_R8</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r8~2"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_r8~2.html'>b64_decode_R8</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -3501,7 +3553,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~253"></span>
+              <span class="anchor" id="variable-code~62"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3516,7 +3568,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~472"></span>
+              <span class="anchor" id="variable-n~152"></span>
               real(kind=R8P),
             </td>
 <td>intent(out)</td>
@@ -3537,7 +3589,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r4~3"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_r4~3.html'>b64_decode_R4</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r4~2"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_r4~2.html'>b64_decode_R4</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -3556,7 +3608,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~254"></span>
+              <span class="anchor" id="variable-code~63"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3571,7 +3623,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~473"></span>
+              <span class="anchor" id="variable-n~153"></span>
               real(kind=R4P),
             </td>
 <td>intent(out)</td>
@@ -3592,7 +3644,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i8~3"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_i8~3.html'>b64_decode_I8</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i8~2"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_i8~2.html'>b64_decode_I8</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -3611,7 +3663,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~255"></span>
+              <span class="anchor" id="variable-code~64"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3626,7 +3678,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~474"></span>
+              <span class="anchor" id="variable-n~154"></span>
               integer(kind=I8P),
             </td>
 <td>intent(out)</td>
@@ -3647,7 +3699,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i4~3"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_i4~3.html'>b64_decode_I4</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i4~2"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_i4~2.html'>b64_decode_I4</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -3666,7 +3718,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~256"></span>
+              <span class="anchor" id="variable-code~65"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3681,7 +3733,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~475"></span>
+              <span class="anchor" id="variable-n~155"></span>
               integer(kind=I4P),
             </td>
 <td>intent(out)</td>
@@ -3702,7 +3754,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i2~3"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_i2~3.html'>b64_decode_I2</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i2~2"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_i2~2.html'>b64_decode_I2</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -3721,7 +3773,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~257"></span>
+              <span class="anchor" id="variable-code~66"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3736,7 +3788,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~476"></span>
+              <span class="anchor" id="variable-n~156"></span>
               integer(kind=I2P),
             </td>
 <td>intent(out)</td>
@@ -3757,7 +3809,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i1~3"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_i1~3.html'>b64_decode_I1</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i1~2"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_i1~2.html'>b64_decode_I1</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -3776,7 +3828,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~258"></span>
+              <span class="anchor" id="variable-code~67"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3791,7 +3843,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~477"></span>
+              <span class="anchor" id="variable-n~157"></span>
               integer(kind=I1P),
             </td>
 <td>intent(out)</td>
@@ -3812,7 +3864,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_string~3"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_string~3.html'>b64_decode_string</a>(code, s)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_string~2"></span> <h3>private elemental subroutine <a href='../proc/b64_decode_string~2.html'>b64_decode_string</a>(code, s)  
 </h3></div>
     <div class="card-body">
           
@@ -3831,7 +3883,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~259"></span>
+              <span class="anchor" id="variable-code~68"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3846,7 +3898,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~29"></span>
+              <span class="anchor" id="variable-s~9"></span>
               character(len=*),
             </td>
 <td>intent(out)</td>
@@ -3867,7 +3919,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r16_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_decode_r16_a~3.html'>b64_decode_R16_a</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r16_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_decode_r16_a~2.html'>b64_decode_R16_a</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -3886,7 +3938,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~260"></span>
+              <span class="anchor" id="variable-code~69"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3901,7 +3953,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~478"></span>
+              <span class="anchor" id="variable-n~158"></span>
               real(kind=R16P),
             </td>
 <td>intent(out)</td>
@@ -3922,7 +3974,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r8_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_decode_r8_a~3.html'>b64_decode_R8_a</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r8_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_decode_r8_a~2.html'>b64_decode_R8_a</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -3941,7 +3993,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~261"></span>
+              <span class="anchor" id="variable-code~70"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -3956,7 +4008,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~479"></span>
+              <span class="anchor" id="variable-n~159"></span>
               real(kind=R8P),
             </td>
 <td>intent(out)</td>
@@ -3977,7 +4029,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r4_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_decode_r4_a~3.html'>b64_decode_R4_a</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_r4_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_decode_r4_a~2.html'>b64_decode_R4_a</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -3996,7 +4048,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~262"></span>
+              <span class="anchor" id="variable-code~71"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -4011,7 +4063,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~480"></span>
+              <span class="anchor" id="variable-n~160"></span>
               real(kind=R4P),
             </td>
 <td>intent(out)</td>
@@ -4032,7 +4084,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i8_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_decode_i8_a~3.html'>b64_decode_I8_a</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i8_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_decode_i8_a~2.html'>b64_decode_I8_a</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -4051,7 +4103,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~263"></span>
+              <span class="anchor" id="variable-code~72"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -4066,7 +4118,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~481"></span>
+              <span class="anchor" id="variable-n~161"></span>
               integer(kind=I8P),
             </td>
 <td>intent(out)</td>
@@ -4087,7 +4139,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i4_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_decode_i4_a~3.html'>b64_decode_I4_a</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i4_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_decode_i4_a~2.html'>b64_decode_I4_a</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -4106,7 +4158,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~264"></span>
+              <span class="anchor" id="variable-code~73"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -4121,7 +4173,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~482"></span>
+              <span class="anchor" id="variable-n~162"></span>
               integer(kind=I4P),
             </td>
 <td>intent(out)</td>
@@ -4142,7 +4194,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i2_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_decode_i2_a~3.html'>b64_decode_I2_a</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i2_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_decode_i2_a~2.html'>b64_decode_I2_a</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -4161,7 +4213,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~265"></span>
+              <span class="anchor" id="variable-code~74"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -4176,7 +4228,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~483"></span>
+              <span class="anchor" id="variable-n~163"></span>
               integer(kind=I2P),
             </td>
 <td>intent(out)</td>
@@ -4197,7 +4249,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i1_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_decode_i1_a~3.html'>b64_decode_I1_a</a>(code, n)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_i1_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_decode_i1_a~2.html'>b64_decode_I1_a</a>(code, n)  
 </h3></div>
     <div class="card-body">
           
@@ -4216,7 +4268,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~266"></span>
+              <span class="anchor" id="variable-code~75"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -4231,7 +4283,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-n~484"></span>
+              <span class="anchor" id="variable-n~164"></span>
               integer(kind=I1P),
             </td>
 <td>intent(out)</td>
@@ -4252,7 +4304,7 @@ modules which it uses.
   </div>
 
               <div class="card">
-    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_string_a~3"></span> <h3>private pure subroutine <a href='../proc/b64_decode_string_a~3.html'>b64_decode_string_a</a>(code, s)  
+    <div class="card-header codesum"><span class="anchor" id="proc-b64_decode_string_a~2"></span> <h3>private pure subroutine <a href='../proc/b64_decode_string_a~2.html'>b64_decode_string_a</a>(code, s)  
 </h3></div>
     <div class="card-body">
           
@@ -4271,7 +4323,7 @@ modules which it uses.
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-code~267"></span>
+              <span class="anchor" id="variable-code~76"></span>
               character(len=*),
             </td>
 <td>intent(in)</td>
@@ -4286,7 +4338,7 @@ modules which it uses.
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-s~30"></span>
+              <span class="anchor" id="variable-s~10"></span>
               character(len=*),
             </td>
 <td>intent(out)</td>
@@ -4335,27 +4387,5 @@ modules which it uses.
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

@@ -12,14 +12,29 @@
 
     <title>parse_scratch_files &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -100,9 +115,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -165,7 +182,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~318"></span>
+              <span class="anchor" id="variable-self~243"></span>
               class(<a href='../type/vtm_file.html'>vtm_file</a>),
             </td>
 <td>intent(inout)</td>
@@ -183,7 +200,7 @@
 
       <h3>Return Value
         <small>
-          <span class="anchor" id="variable-error~164"></span>
+          <span class="anchor" id="variable-error~207"></span>
           integer(kind=I4P)
         </small>
       </h3>
@@ -382,18 +399,18 @@
 <path fill="none" stroke="#000000" d="M506.85,-145.98C525.97,-142.54 547.32,-139.14 567,-137 764.9,-115.5 815.43,-118 1014.5,-118 1014.5,-118 1014.5,-118 1321,-118 1442.52,-118 1581.48,-159.31 1650.07,-182.56"/>
 <polygon fill="#000000" stroke="#000000" points="1649.07,-185.92 1659.67,-185.85 1651.34,-179.29 1649.07,-185.92"/>
 </g>
-<!-- proc~upper~2 -->
+<!-- proc~upper~4 -->
 <g id="proc~~parse_scratch_files~~CallsGraph_node13" class="node">
-<title>proc~upper~2</title>
-<g id="a_proc~~parse_scratch_files~~CallsGraph_node13"><a xlink:href="../proc/upper~2.html" xlink:title="string%upper">
+<title>proc~upper~4</title>
+<g id="a_proc~~parse_scratch_files~~CallsGraph_node13"><a xlink:href="../proc/upper~4.html" xlink:title="string%upper">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="741.5,-170 657.5,-170 657.5,-146 741.5,-146 741.5,-170"/>
 <text text-anchor="middle" x="699.5" y="-155.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%upper</text>
 </a>
 </g>
 </g>
-<!-- proc~write_block_scratch&#45;&gt;proc~upper~2 -->
+<!-- proc~write_block_scratch&#45;&gt;proc~upper~4 -->
 <g id="proc~~parse_scratch_files~~CallsGraph_edge13" class="edge">
-<title>proc~write_block_scratch&#45;&gt;proc~upper~2</title>
+<title>proc~write_block_scratch&#45;&gt;proc~upper~4</title>
 <path fill="none" stroke="#000000" d="M531.08,-158C569.43,-158 613.67,-158 647.05,-158"/>
 <polygon fill="#000000" stroke="#000000" points="647.48,-161.5 657.48,-158 647.48,-154.5 647.48,-161.5"/>
 </g>
@@ -409,9 +426,9 @@
 <path fill="none" stroke="#000000" d="M476.88,-243.92C500.72,-234.72 535.43,-222.71 567,-217 762.89,-181.57 815.43,-198 1014.5,-198 1014.5,-198 1014.5,-198 1321,-198 1436.11,-198 1571.26,-198 1642.74,-198"/>
 <polygon fill="#000000" stroke="#000000" points="1642.81,-201.5 1652.81,-198 1642.81,-194.5 1642.81,-201.5"/>
 </g>
-<!-- proc~write_block_string&#45;&gt;proc~upper~2 -->
+<!-- proc~write_block_string&#45;&gt;proc~upper~4 -->
 <g id="proc~~parse_scratch_files~~CallsGraph_edge16" class="edge">
-<title>proc~write_block_string&#45;&gt;proc~upper~2</title>
+<title>proc~write_block_string&#45;&gt;proc~upper~4</title>
 <path fill="none" stroke="#000000" d="M463.57,-243.8C485.67,-227.63 527.24,-199.37 567,-184 592.66,-174.08 622.66,-167.78 647.53,-163.87"/>
 <polygon fill="#000000" stroke="#000000" points="648.11,-167.32 657.48,-162.39 647.08,-160.4 648.11,-167.32"/>
 </g>
@@ -1167,18 +1184,18 @@ implementation in a submodule of an interface in a parent module.
 <polygon fill="none" stroke="black" points="450,-24 284,-24 284,0 450,0 450,-24"/>
 <text text-anchor="middle" x="367" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50">vtm_file%parse_scratch_files</text>
 </g>
-<!-- proc~finalize~5 -->
+<!-- proc~finalize~4 -->
 <g id="proc~~parse_scratch_files~~CalledByGraph_node2" class="node">
-<title>proc~finalize~5</title>
-<g id="a_proc~~parse_scratch_files~~CalledByGraph_node2"><a xlink:href="../proc/finalize~5.html" xlink:title="vtm_file%finalize">
+<title>proc~finalize~4</title>
+<g id="a_proc~~parse_scratch_files~~CalledByGraph_node2"><a xlink:href="../proc/finalize~4.html" xlink:title="vtm_file%finalize">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="248,-24 145,-24 145,0 248,0 248,-24"/>
 <text text-anchor="middle" x="196.5" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vtm_file%finalize</text>
 </a>
 </g>
 </g>
-<!-- proc~finalize~5&#45;&gt;proc~parse_scratch_files -->
+<!-- proc~finalize~4&#45;&gt;proc~parse_scratch_files -->
 <g id="proc~~parse_scratch_files~~CalledByGraph_edge1" class="edge">
-<title>proc~finalize~5&#45;&gt;proc~parse_scratch_files</title>
+<title>proc~finalize~4&#45;&gt;proc~parse_scratch_files</title>
 <path fill="none" stroke="#000000" d="M248.06,-12C256.3,-12 265.05,-12 273.92,-12"/>
 <polygon fill="#000000" stroke="#000000" points="273.97,-15.5 283.97,-12 273.97,-8.5 273.97,-15.5"/>
 </g>
@@ -1191,9 +1208,9 @@ implementation in a submodule of an interface in a parent module.
 </a>
 </g>
 </g>
-<!-- proc~initialize~4&#45;&gt;proc~finalize~5 -->
+<!-- proc~initialize~4&#45;&gt;proc~finalize~4 -->
 <g id="proc~~parse_scratch_files~~CalledByGraph_edge2" class="edge">
-<title>proc~initialize~4&#45;&gt;proc~finalize~5</title>
+<title>proc~initialize~4&#45;&gt;proc~finalize~4</title>
 <path fill="none" stroke="#000000" d="M109.23,-12C117.56,-12 126.22,-12 134.69,-12"/>
 <polygon fill="#000000" stroke="#000000" points="134.91,-15.5 144.91,-12 134.91,-8.5 134.91,-15.5"/>
 </g>
@@ -1353,27 +1370,5 @@ implementation in a submodule of an interface in a parent module.
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>

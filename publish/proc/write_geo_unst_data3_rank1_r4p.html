@@ -12,14 +12,29 @@
 
     <title>write_geo_unst_data3_rank1_R4P &ndash; Lib_VTK_IO</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../css/pygments.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link href="../css/fontawesome.min.css" rel="stylesheet">
+    <link href="../css/brands.min.css" rel="stylesheet">
+    <link href="../css/regular.min.css" rel="stylesheet">
+    <link href="../css/solid.min.css" rel="stylesheet">
+    <link href="../css/v4-font-face.min.css" rel="stylesheet">
+    <link href="../css/v4-shims.min.css" rel="stylesheet">
+    <!-- MathJax -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" } }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async
+            integrity="sha256-DViIOMYdwlM/axqoGDPeUyf0urLoHMN4QACBKyB58Uw=" crossorigin="anonymous"></script>
+    <!-- Other scripts and stylesheets -->
     <link href="../css/local.css" rel="stylesheet">
-      <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="../css/pygments.css" rel="stylesheet">
     <script src="../js/svg-pan-zoom.min.js"></script>
   </head>
 
@@ -79,7 +94,7 @@
 
             <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
               <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-                 title=" 0.1% of total for procedures.">17 statements</a>
+                 title=" 0.0% of total for procedures.">17 statements</a>
             </li>
 
             <li class="list-inline-item" id="source-file">
@@ -100,9 +115,11 @@
     </div>
   </div>
   <script>
-    $(function () {
-    $('[data-bs-toggle="tooltip"]').tooltip()
-    })
+    // Enable Bootstrap tooltips
+    (function () {
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    })();
   </script>
 
   </div>
@@ -165,7 +182,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~413"></span>
+              <span class="anchor" id="variable-self~83"></span>
               class(<a href='../type/xml_writer_abstract.html'>xml_writer_abstract</a>),
             </td>
 <td>intent(inout)</td>
@@ -180,7 +197,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-np~6"></span>
+              <span class="anchor" id="variable-np~5"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in)</td>
@@ -195,7 +212,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-nc~6"></span>
+              <span class="anchor" id="variable-nc~5"></span>
               integer(kind=I4P),
             </td>
 <td>intent(in)</td>
@@ -210,7 +227,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-x~303"></span>
+              <span class="anchor" id="variable-x~57"></span>
               real(kind=R4P),
             </td>
 <td>intent(in)</td>
@@ -225,7 +242,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-y~174"></span>
+              <span class="anchor" id="variable-y~32"></span>
               real(kind=R4P),
             </td>
 <td>intent(in)</td>
@@ -240,7 +257,7 @@
         </tr>
         <tr>
             <td>
-              <span class="anchor" id="variable-z~174"></span>
+              <span class="anchor" id="variable-z~32"></span>
               real(kind=R4P),
             </td>
 <td>intent(in)</td>
@@ -258,7 +275,7 @@
 
       <h3>Return Value
         <small>
-          <span class="anchor" id="variable-error~242"></span>
+          <span class="anchor" id="variable-error~87"></span>
           integer(kind=I4P)
         </small>
       </h3>
@@ -1774,18 +1791,18 @@
 <path fill="none" stroke="#000000" d="M877.81,-142.55C1013.58,-145.36 1225.5,-150.63 1409,-159 1472.62,-161.9 1488.56,-162.51 1552,-168 1571.28,-169.67 1592.44,-171.9 1610.95,-173.99"/>
 <polygon fill="#000000" stroke="#000000" points="1610.59,-177.47 1620.92,-175.13 1611.39,-170.52 1610.59,-177.47"/>
 </g>
-<!-- proc~upper~2 -->
+<!-- proc~upper~4 -->
 <g id="proc~~write_geo_unst_data3_rank1_r4p~~CallsGraph_node61" class="node">
-<title>proc~upper~2</title>
-<g id="a_proc~~write_geo_unst_data3_rank1_r4p~~CallsGraph_node61"><a xlink:href="../proc/upper~2.html" xlink:title="string%upper">
+<title>proc~upper~4</title>
+<g id="a_proc~~write_geo_unst_data3_rank1_r4p~~CallsGraph_node61"><a xlink:href="../proc/upper~4.html" xlink:title="string%upper">
 <polygon fill="#d94e8f" stroke="#d94e8f" points="1081.5,-192 997.5,-192 997.5,-168 1081.5,-168 1081.5,-192"/>
 <text text-anchor="middle" x="1039.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">string%upper</text>
 </a>
 </g>
 </g>
-<!-- proc~write_dataarray_location_tag&#45;&gt;proc~upper~2 -->
+<!-- proc~write_dataarray_location_tag&#45;&gt;proc~upper~4 -->
 <g id="proc~~write_geo_unst_data3_rank1_r4p~~CallsGraph_edge157" class="edge">
-<title>proc~write_dataarray_location_tag&#45;&gt;proc~upper~2</title>
+<title>proc~write_dataarray_location_tag&#45;&gt;proc~upper~4</title>
 <path fill="none" stroke="#000000" d="M828.16,-152C880.18,-158.93 943.7,-167.38 987.23,-173.18"/>
 <polygon fill="#000000" stroke="#000000" points="986.93,-176.67 997.31,-174.52 987.85,-169.73 986.93,-176.67"/>
 </g>
@@ -2551,18 +2568,18 @@
 <path fill="none" stroke="#000000" d="M1042.33,-1622.71C1053.04,-1551.82 1109.92,-1188.2 1192,-900 1221.59,-796.1 1270.29,-676.33 1290.39,-628.42"/>
 <polygon fill="#000000" stroke="#000000" points="1293.67,-629.64 1294.33,-619.07 1287.22,-626.92 1293.67,-629.64"/>
 </g>
-<!-- proc~write_tag~2 -->
+<!-- proc~write_tag -->
 <g id="proc~~write_geo_unst_data3_rank1_r4p~~CallsGraph_node113" class="node">
-<title>proc~write_tag~2</title>
-<g id="a_proc~~write_geo_unst_data3_rank1_r4p~~CallsGraph_node113"><a xlink:href="../proc/write_tag~2.html" xlink:title="xml_writer_abstract%write_tag">
+<title>proc~write_tag</title>
+<g id="a_proc~~write_geo_unst_data3_rank1_r4p~~CallsGraph_node113"><a xlink:href="../proc/write_tag.html" xlink:title="xml_writer_abstract%write_tag">
 <polygon fill="#d9534f" stroke="#d9534f" points="1388,-192 1213,-192 1213,-168 1388,-168 1388,-192"/>
 <text text-anchor="middle" x="1300.5" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">xml_writer_abstract%write_tag</text>
 </a>
 </g>
 </g>
-<!-- proc~write_dataarray_tag&#45;&gt;proc~write_tag~2 -->
+<!-- proc~write_dataarray_tag&#45;&gt;proc~write_tag -->
 <g id="proc~~write_geo_unst_data3_rank1_r4p~~CallsGraph_edge212" class="edge">
-<title>proc~write_dataarray_tag&#45;&gt;proc~write_tag~2</title>
+<title>proc~write_dataarray_tag&#45;&gt;proc~write_tag</title>
 <path fill="none" stroke="#000000" d="M1040.95,-1622.86C1045.93,-1490.54 1092.73,-319.28 1192,-206 1195.55,-201.95 1199.61,-198.48 1204.02,-195.5"/>
 <polygon fill="#000000" stroke="#000000" points="1206,-198.4 1212.92,-190.37 1202.51,-192.34 1206,-198.4"/>
 </g>
@@ -3397,9 +3414,9 @@
 <path fill="none" stroke="#000000" d="M1365.25,-1622.98C1379.66,-1620.15 1394.87,-1617.05 1409,-1614 1424.05,-1610.75 1440.47,-1606.92 1455.04,-1603.44"/>
 <polygon fill="#000000" stroke="#000000" points="1455.89,-1606.84 1464.79,-1601.09 1454.25,-1600.03 1455.89,-1606.84"/>
 </g>
-<!-- proc~write_tag~2&#45;&gt;proc~stringify -->
+<!-- proc~write_tag&#45;&gt;proc~stringify -->
 <g id="proc~~write_geo_unst_data3_rank1_r4p~~CallsGraph_edge320" class="edge">
-<title>proc~write_tag~2&#45;&gt;proc~stringify</title>
+<title>proc~write_tag&#45;&gt;proc~stringify</title>
 <path fill="none" stroke="#000000" d="M1330.42,-167.9C1364.54,-153.63 1421.37,-129.85 1459.14,-114.05"/>
 <polygon fill="#000000" stroke="#000000" points="1460.91,-117.1 1468.78,-110.02 1458.2,-110.65 1460.91,-117.1"/>
 </g>
@@ -4621,46 +4638,46 @@ implementation in a submodule of an interface in a parent module.
 <g id="proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_node13" class="node">
 <title>program~vtk_fortran_write_vtm</title>
 <g id="a_proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_node13"><a xlink:href="../program/vtk_fortran_write_vtm.html" xlink:title="vtk_fortran_write_vtm">
-<polygon fill="#f0ad4e" stroke="#f0ad4e" points="136.5,-234 9.5,-234 9.5,-210 136.5,-210 136.5,-234"/>
-<text text-anchor="middle" x="73" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vtk_fortran_write_vtm</text>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="136.5,-150 9.5,-150 9.5,-126 136.5,-126 136.5,-150"/>
+<text text-anchor="middle" x="73" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vtk_fortran_write_vtm</text>
 </a>
 </g>
 </g>
-<!-- program~vtk_fortran_write_vtm&#45;&gt;proc~write_data -->
-<g id="proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_edge11" class="edge">
-<title>program~vtk_fortran_write_vtm&#45;&gt;proc~write_data</title>
-<path fill="none" stroke="#000000" d="M136.85,-222C157.37,-222 179.68,-222 198.41,-222"/>
-<polygon fill="#000000" stroke="#000000" points="198.41,-225.5 208.41,-222 198.41,-218.5 198.41,-225.5"/>
+<!-- program~vtk_fortran_write_vtm&#45;&gt;proc~write_data~3 -->
+<g id="proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_edge13" class="edge">
+<title>program~vtk_fortran_write_vtm&#45;&gt;proc~write_data~3</title>
+<path fill="none" stroke="#000000" d="M136.85,-138C157.37,-138 179.68,-138 198.41,-138"/>
+<polygon fill="#000000" stroke="#000000" points="198.41,-141.5 208.41,-138 198.41,-134.5 198.41,-141.5"/>
 </g>
 <!-- program~vtk_fortran_write_vts -->
 <g id="proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_node14" class="node">
 <title>program~vtk_fortran_write_vts</title>
 <g id="a_proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_node14"><a xlink:href="../program/vtk_fortran_write_vts.html" xlink:title="vtk_fortran_write_vts">
-<polygon fill="#f0ad4e" stroke="#f0ad4e" points="134,-192 12,-192 12,-168 134,-168 134,-192"/>
-<text text-anchor="middle" x="73" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vtk_fortran_write_vts</text>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="134,-234 12,-234 12,-210 134,-210 134,-234"/>
+<text text-anchor="middle" x="73" y="-219.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vtk_fortran_write_vts</text>
 </a>
 </g>
 </g>
-<!-- program~vtk_fortran_write_vts&#45;&gt;proc~write_data~2 -->
-<g id="proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_edge12" class="edge">
-<title>program~vtk_fortran_write_vts&#45;&gt;proc~write_data~2</title>
-<path fill="none" stroke="#000000" d="M134.47,-180C155.6,-180 178.88,-180 198.31,-180"/>
-<polygon fill="#000000" stroke="#000000" points="198.38,-183.5 208.38,-180 198.38,-176.5 198.38,-183.5"/>
+<!-- program~vtk_fortran_write_vts&#45;&gt;proc~write_data -->
+<g id="proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_edge11" class="edge">
+<title>program~vtk_fortran_write_vts&#45;&gt;proc~write_data</title>
+<path fill="none" stroke="#000000" d="M134.47,-222C155.6,-222 178.88,-222 198.31,-222"/>
+<polygon fill="#000000" stroke="#000000" points="198.38,-225.5 208.38,-222 198.38,-218.5 198.38,-225.5"/>
 </g>
 <!-- program~vtk_fortran_write_vtu -->
 <g id="proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_node15" class="node">
 <title>program~vtk_fortran_write_vtu</title>
 <g id="a_proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_node15"><a xlink:href="../program/vtk_fortran_write_vtu.html" xlink:title="vtk_fortran_write_vtu">
-<polygon fill="#f0ad4e" stroke="#f0ad4e" points="135,-150 11,-150 11,-126 135,-126 135,-150"/>
-<text text-anchor="middle" x="73" y="-135.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vtk_fortran_write_vtu</text>
+<polygon fill="#f0ad4e" stroke="#f0ad4e" points="135,-192 11,-192 11,-168 135,-168 135,-192"/>
+<text text-anchor="middle" x="73" y="-177.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">vtk_fortran_write_vtu</text>
 </a>
 </g>
 </g>
-<!-- program~vtk_fortran_write_vtu&#45;&gt;proc~write_data~3 -->
-<g id="proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_edge13" class="edge">
-<title>program~vtk_fortran_write_vtu&#45;&gt;proc~write_data~3</title>
-<path fill="none" stroke="#000000" d="M135.42,-138C156.22,-138 179,-138 198.1,-138"/>
-<polygon fill="#000000" stroke="#000000" points="198.29,-141.5 208.29,-138 198.29,-134.5 198.29,-141.5"/>
+<!-- program~vtk_fortran_write_vtu&#45;&gt;proc~write_data~2 -->
+<g id="proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_edge12" class="edge">
+<title>program~vtk_fortran_write_vtu&#45;&gt;proc~write_data~2</title>
+<path fill="none" stroke="#000000" d="M135.42,-180C156.22,-180 179,-180 198.1,-180"/>
+<polygon fill="#000000" stroke="#000000" points="198.29,-183.5 208.29,-180 198.29,-176.5 198.29,-183.5"/>
 </g>
 <!-- program~vtk_fortran_write_vtu~2 -->
 <g id="proc~~write_geo_unst_data3_rank1_r4p~~CalledByGraph_node16" class="node">
@@ -4824,27 +4841,5 @@ implementation in a submodule of an interface in a parent module.
         <br>
       </div> <!-- /container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-
-    <!-- MathJax JavaScript
-             ================================================== -->
-             <!-- Placed at the end of the document so the pages load faster -->
-        <script type="text/x-mathjax-config">
-          MathJax.Hub.Config({
-          TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
-          jax: ['input/TeX','input/MathML','output/HTML-CSS'],
-          extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
-          });
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-          <script src="../tipuesearch/tipuesearch_content.js"></script>
-          <script src="../tipuesearch/tipuesearch_set.js"></script>
-          <script src="../tipuesearch/tipuesearch.js"></script>
-
   </body>
 </html>
