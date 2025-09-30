@@ -40,8 +40,61 @@ if(NOT TARGET FoXy)
 	add_subdirectory(src/third_party/FoXy)
 endif()
 
+
+# ---------- Fortran module dirs + explicit deps for third_party ----------
+# Put all third-party .mod files in a stable, known place
+set(_vtkf_modroot "${CMAKE_BINARY_DIR}/mod")
+file(MAKE_DIRECTORY "${_vtkf_modroot}")
+
+foreach(tgt PENF BeFoR64 FACE StringiFor FoXy)
+  if (TARGET ${tgt})
+    set_target_properties(${tgt} PROPERTIES Fortran_MODULE_DIRECTORY "${_vtkf_modroot}/${tgt}")
+  endif()
+endforeach()
+
+# BeFoR64 depends on PENF
+if (TARGET BeFoR64 AND TARGET PENF)
+  add_dependencies(BeFoR64 PENF)
+  target_include_directories(BeFoR64 PRIVATE "${_vtkf_modroot}/PENF")
+  # Optional: enforce link-order in some generators
+  target_link_libraries(BeFoR64 PENF)
+endif()
+
+# StringiFor depends on BeFoR64, FACE, PENF
+if (TARGET StringiFor)
+  foreach(dep BeFoR64 FACE PENF)
+    if (TARGET ${dep})
+      add_dependencies(StringiFor ${dep})
+      target_include_directories(StringiFor PRIVATE "${_vtkf_modroot}/${dep}")
+      target_link_libraries(StringiFor ${dep})
+    endif()
+  endforeach()
+endif()
+
+# FoXy depends on StringiFor, BeFoR64, FACE, PENF
+if (TARGET FoXy)
+  foreach(dep StringiFor BeFoR64 FACE PENF)
+    if (TARGET ${dep})
+      add_dependencies(FoXy ${dep})
+      target_include_directories(FoXy PRIVATE "${_vtkf_modroot}/${dep}")
+      target_link_libraries(FoXy ${dep})
+    endif()
+  endforeach()
+endif()
+
 # generate the library and install instructions
 add_subdirectory(src/lib)
+
+# ---------- VTKFortran depends on all third_party ----------
+if (TARGET VTKFortran)
+  foreach(dep FoXy StringiFor BeFoR64 FACE PENF)
+    if (TARGET ${dep})
+      add_dependencies(VTKFortran ${dep})
+      target_include_directories(VTKFortran PRIVATE "${_vtkf_modroot}/${dep}")
+      target_link_libraries(VTKFortran ${dep})   # plain signature is fine
+    endif()
+  endforeach()
+endif()
 
 # testing
 if(${PROJECT_SOURCE_DIR} STREQUAL ${CMAKE_SOURCE_DIR})
