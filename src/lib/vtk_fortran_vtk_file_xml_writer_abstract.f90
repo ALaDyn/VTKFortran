@@ -623,7 +623,7 @@ abstract interface
   logical,                    intent(in), optional :: is_tuples    !< Use "NumberOfTuples" instead of "NumberOfComponents".
   integer(I4P)                                     :: error        !< Error status.
   endfunction write_dataarray3_rank3_I1P_interface
-  
+
   function write_dataarray6_rank1_R8P_interface(self, data_name, u, v, w, x, y, z, is_tuples) result(error)
   !< Write `<DataArray... NumberOfComponents="6"...>...</DataArray>` tag (R8P).
   import :: xml_writer_abstract, I4P, R8P
@@ -1287,7 +1287,7 @@ contains
    integer(I4P)                              :: error !< Error status.
 
    if ((n/=size(x, dim=1)).or.(n/=size(y, dim=1)).or.(n/=size(z, dim=1))) then
-      self%error = 1
+      error = 1 ; self%error = error
       return
    endif
    call self%write_start_tag(name='Points')
@@ -1306,7 +1306,7 @@ contains
    integer(I4P)                              :: error !< Error status.
 
    if ((n/=size(x, dim=1)).or.(n/=size(y, dim=1)).or.(n/=size(z, dim=1))) then
-      self%error = 1
+      error = 1 ; self%error = error
       return
    endif
    call self%write_start_tag(name='Points')
@@ -1327,7 +1327,7 @@ contains
    if ((n/=size(x, dim=1)*size(x, dim=2)*size(x, dim=3)).or.&
        (n/=size(y, dim=1)*size(y, dim=2)*size(y, dim=3)).or.&
        (n/=size(z, dim=1)*size(z, dim=2)*size(z, dim=3))) then
-      self%error = 1
+      error = 1 ; self%error = error
       return
    endif
    call self%write_start_tag(name='Points')
@@ -1348,7 +1348,7 @@ contains
    if ((n/=size(x, dim=1)*size(x, dim=2)*size(x, dim=3)).or.&
        (n/=size(y, dim=1)*size(y, dim=2)*size(y, dim=3)).or.&
        (n/=size(z, dim=1)*size(z, dim=2)*size(z, dim=3))) then
-      self%error = 1
+      error = 1 ; self%error = error
       return
    endif
    call self%write_start_tag(name='Points')
@@ -1367,7 +1367,7 @@ contains
    integer(I4P)                              :: error      !< Error status.
 
    if (np/=size(xyz, dim=2)) then
-      self%error = 1
+      error = 1 ; self%error = error
       return
    endif
    call self%write_start_tag(name='Points')
@@ -1385,7 +1385,7 @@ contains
    integer(I4P)                              :: error      !< Error status.
 
    if (np/=size(xyz, dim=2)) then
-      self%error = 1
+      error = 1 ; self%error = error
       return
    endif
    call self%write_start_tag(name='Points')
@@ -1405,7 +1405,7 @@ contains
    integer(I4P)                              :: error !< Error status.
 
    if ((np/=size(x, dim=1)).or.(np/=size(y, dim=1)).or.(np/=size(z, dim=1))) then
-      self%error = 1
+      error = 1 ; self%error = error
       return
    endif
    call self%write_start_tag(name='Points')
@@ -1425,7 +1425,7 @@ contains
    integer(I4P)                              :: error !< Error status.
 
    if ((np/=size(x, dim=1)).or.(np/=size(y, dim=1)).or.(np/=size(z, dim=1))) then
-      self%error = 1
+      error = 1 ; self%error = error
       return
    endif
    call self%write_start_tag(name='Points')

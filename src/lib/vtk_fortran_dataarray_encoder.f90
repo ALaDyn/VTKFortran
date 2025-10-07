@@ -118,10 +118,10 @@ contains
   real(R16P),      intent(in)   :: x(1:) !< Data variable.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension size
-  
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension size.
+
   size_n = size(x,dim=1)
   l = DR16P+1
   sp = 0
@@ -137,10 +137,10 @@ contains
   real(R8P),       intent(in)   :: x(1:) !< Data variable.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension size
-  
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension size.
+
   size_n = size(x,dim=1)
   l = DR8P+1
   sp = 0
@@ -156,10 +156,10 @@ contains
   real(R4P),       intent(in)   :: x(1:) !< Data variable.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension size
-  
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension size.
+
   size_n = size(x,dim=1)
   l = DR4P+1
   sp = 0
@@ -175,10 +175,10 @@ contains
   integer(I8P),    intent(in)   :: x(1:) !< Data variable.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension size
-  
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension size.
+
   size_n = size(x,dim=1)
   l = DI8P+1
   sp = 0
@@ -194,10 +194,10 @@ contains
   integer(I4P),    intent(in)   :: x(1:) !< Data variable.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension size
-  
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension size.
+
   size_n = size(x,dim=1)
   l = DI4P+1
   sp = 0
@@ -213,10 +213,10 @@ contains
   integer(I2P),    intent(in)   :: x(1:) !< Data variable.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension size
-  
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension size.
+
   size_n = size(x,dim=1)
   l = DI2P+1
   sp = 0
@@ -232,10 +232,10 @@ contains
   integer(I1P),    intent(in)   :: x(1:) !< Data variable.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension size
-  
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension size.
+
   size_n = size(x,dim=1)
   l = DI1P+1
   sp = 0
@@ -252,11 +252,11 @@ contains
   character(len=:), allocatable :: code     !< Encoded base64 dataarray.
   integer(I4P)                  :: n1       !< Counter.
   integer(I4P)                  :: n2       !< Counter.
-  integer(I4P)                  :: l        !< Length
-  integer(I4P)                  :: sp       !< String pointer
-  integer(I4P)                  :: size_n1  !< Dimension 1 size
-  integer(I4P)                  :: size_n2  !< Dimension 2 size
-  
+  integer(I4P)                  :: l        !< Length.
+  integer(I4P)                  :: sp       !< String pointer.
+  integer(I4P)                  :: size_n1  !< Dimension 1 size.
+  integer(I4P)                  :: size_n2  !< Dimension 2 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   l = DR16P + 1
@@ -265,7 +265,7 @@ contains
   do n2=1, size(x, dim=2)
     do n1=1, size(x, dim=1)-1
       code(sp+1:sp+l) = str(n=x(n1, n2))//' '
-      sp = sp + l 
+      sp = sp + l
     enddo
     code(sp+1:sp+l) = ' '//str(n=x(size(x, dim=1), n2))
     sp = sp + l
@@ -278,11 +278,11 @@ contains
   character(len=:), allocatable :: code     !< Encoded base64 dataarray.
   integer(I4P)                  :: n1       !< Counter.
   integer(I4P)                  :: n2       !< Counter.
-  integer(I4P)                  :: l        !< Length
-  integer(I4P)                  :: sp       !< String pointer
-  integer(I4P)                  :: size_n1  !< Dimension 1 size
-  integer(I4P)                  :: size_n2  !< Dimension 2 size
-  
+  integer(I4P)                  :: l        !< Length.
+  integer(I4P)                  :: sp       !< String pointer.
+  integer(I4P)                  :: size_n1  !< Dimension 1 size.
+  integer(I4P)                  :: size_n2  !< Dimension 2 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   l = DR8P + 1
@@ -304,11 +304,11 @@ contains
   character(len=:), allocatable :: code     !< Encoded base64 dataarray.
   integer(I4P)                  :: n1       !< Counter.
   integer(I4P)                  :: n2       !< Counter.
-  integer(I4P)                  :: l        !< Length
-  integer(I4P)                  :: sp       !< String pointer
-  integer(I4P)                  :: size_n1  !< Dimension 1 size
-  integer(I4P)                  :: size_n2  !< Dimension 2 size
-  
+  integer(I4P)                  :: l        !< Length.
+  integer(I4P)                  :: sp       !< String pointer.
+  integer(I4P)                  :: size_n1  !< Dimension 1 size.
+  integer(I4P)                  :: size_n2  !< Dimension 2 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   l = DR4P + 1
@@ -330,11 +330,11 @@ contains
   character(len=:), allocatable :: code     !< Encoded base64 dataarray.
   integer(I4P)                  :: n1       !< Counter.
   integer(I4P)                  :: n2       !< Counter.
-  integer(I4P)                  :: l        !< Length
-  integer(I4P)                  :: sp       !< String pointer
-  integer(I4P)                  :: size_n1  !< Dimension 1 size
-  integer(I4P)                  :: size_n2  !< Dimension 2 size
-  
+  integer(I4P)                  :: l        !< Length.
+  integer(I4P)                  :: sp       !< String pointer.
+  integer(I4P)                  :: size_n1  !< Dimension 1 size.
+  integer(I4P)                  :: size_n2  !< Dimension 2 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   l = DI8P + 1
@@ -356,11 +356,11 @@ contains
   character(len=:), allocatable :: code     !< Encoded base64 dataarray.
   integer(I4P)                  :: n1       !< Counter.
   integer(I4P)                  :: n2       !< Counter.
-  integer(I4P)                  :: l        !< Length
-  integer(I4P)                  :: sp       !< String pointer
-  integer(I4P)                  :: size_n1  !< Dimension 1 size
-  integer(I4P)                  :: size_n2  !< Dimension 2 size
-  
+  integer(I4P)                  :: l        !< Length.
+  integer(I4P)                  :: sp       !< String pointer.
+  integer(I4P)                  :: size_n1  !< Dimension 1 size.
+  integer(I4P)                  :: size_n2  !< Dimension 2 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   l = DI4P + 1
@@ -382,11 +382,11 @@ contains
   character(len=:), allocatable :: code     !< Encoded base64 dataarray.
   integer(I4P)                  :: n1       !< Counter.
   integer(I4P)                  :: n2       !< Counter.
-  integer(I4P)                  :: l        !< Length
-  integer(I4P)                  :: sp       !< String pointer
-  integer(I4P)                  :: size_n1  !< Dimension 1 size
-  integer(I4P)                  :: size_n2  !< Dimension 2 size
-  
+  integer(I4P)                  :: l        !< Length.
+  integer(I4P)                  :: sp       !< String pointer.
+  integer(I4P)                  :: size_n1  !< Dimension 1 size.
+  integer(I4P)                  :: size_n2  !< Dimension 2 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   l = DI4P + 1
@@ -408,11 +408,11 @@ contains
   character(len=:), allocatable :: code     !< Encoded base64 dataarray.
   integer(I4P)                  :: n1       !< Counter.
   integer(I4P)                  :: n2       !< Counter.
-  integer(I4P)                  :: l        !< Length
-  integer(I4P)                  :: sp       !< String pointer
-  integer(I4P)                  :: size_n1  !< Dimension 1 size
-  integer(I4P)                  :: size_n2  !< Dimension 2 size
-  
+  integer(I4P)                  :: l        !< Length.
+  integer(I4P)                  :: sp       !< String pointer.
+  integer(I4P)                  :: size_n1  !< Dimension 1 size.
+  integer(I4P)                  :: size_n2  !< Dimension 2 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   l = DI1P + 1
@@ -435,16 +435,16 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
-  
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
+
   l = DR16P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
@@ -466,16 +466,16 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
-  
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
+
   l = DR8P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
@@ -498,16 +498,16 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
-  
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
+
   l = DR4P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
@@ -530,16 +530,16 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
-  
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
+
   l = DI8P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
@@ -562,16 +562,16 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length 
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
-  
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
+
   l = DI4P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
@@ -594,16 +594,16 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
-  
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
+
   l = DI2P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
@@ -626,16 +626,16 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
-  
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
+
   l = DI1P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
@@ -659,18 +659,18 @@ contains
   integer(I4P)                  :: n2             !< Counter.
   integer(I4P)                  :: n3             !< Counter.
   integer(I4P)                  :: n4             !< Counter.
-  integer(I4P)                  :: l              !< Length
-  integer(I4P)                  :: sp             !< String pointer
-  integer(I4P)                  :: size_n1        !< Dimension 1 size
-  integer(I4P)                  :: size_n2        !< Dimension 2 size
-  integer(I4P)                  :: size_n3        !< Dimension 3 size
-  integer(I4P)                  :: size_n4        !< Dimension 4 size
-  
+  integer(I4P)                  :: l              !< Length.
+  integer(I4P)                  :: sp             !< String pointer.
+  integer(I4P)                  :: size_n1        !< Dimension 1 size.
+  integer(I4P)                  :: size_n2        !< Dimension 2 size.
+  integer(I4P)                  :: size_n3        !< Dimension 3 size.
+  integer(I4P)                  :: size_n4        !< Dimension 4 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  size_n3 = size(x, dim=4)
-  
+  size_n4 = size(x, dim=4)
+
   l = DR16P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3*size_n4)
@@ -694,18 +694,18 @@ contains
   integer(I4P)                  :: n2             !< Counter.
   integer(I4P)                  :: n3             !< Counter.
   integer(I4P)                  :: n4             !< Counter.
-  integer(I4P)                  :: l              !< Length
-  integer(I4P)                  :: sp             !< String pointer
-  integer(I4P)                  :: size_n1        !< Dimension 1 size
-  integer(I4P)                  :: size_n2        !< Dimension 2 size
-  integer(I4P)                  :: size_n3        !< Dimension 3 size
-  integer(I4P)                  :: size_n4        !< Dimension 4 size
-  
+  integer(I4P)                  :: l              !< Length.
+  integer(I4P)                  :: sp             !< String pointer.
+  integer(I4P)                  :: size_n1        !< Dimension 1 size.
+  integer(I4P)                  :: size_n2        !< Dimension 2 size.
+  integer(I4P)                  :: size_n3        !< Dimension 3 size.
+  integer(I4P)                  :: size_n4        !< Dimension 4 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  size_n3 = size(x, dim=4)
-  
+  size_n4 = size(x, dim=4)
+
   l = DR8P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3*size_n4)
@@ -729,18 +729,18 @@ contains
   integer(I4P)                  :: n2             !< Counter.
   integer(I4P)                  :: n3             !< Counter.
   integer(I4P)                  :: n4             !< Counter.
-  integer(I4P)                  :: l              !< Length
-  integer(I4P)                  :: sp             !< String pointer
-  integer(I4P)                  :: size_n1        !< Dimension 1 size
-  integer(I4P)                  :: size_n2        !< Dimension 2 size
-  integer(I4P)                  :: size_n3        !< Dimension 3 size
-  integer(I4P)                  :: size_n4        !< Dimension 4 size
-  
+  integer(I4P)                  :: l              !< Length.
+  integer(I4P)                  :: sp             !< String pointer.
+  integer(I4P)                  :: size_n1        !< Dimension 1 size.
+  integer(I4P)                  :: size_n2        !< Dimension 2 size.
+  integer(I4P)                  :: size_n3        !< Dimension 3 size.
+  integer(I4P)                  :: size_n4        !< Dimension 4 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  size_n3 = size(x, dim=4)
-  
+  size_n4 = size(x, dim=4)
+
   l = DR4P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3*size_n4)
@@ -764,18 +764,18 @@ contains
   integer(I4P)                  :: n2             !< Counter.
   integer(I4P)                  :: n3             !< Counter.
   integer(I4P)                  :: n4             !< Counter.
-  integer(I4P)                  :: l              !< Length
-  integer(I4P)                  :: sp             !< String pointer
-  integer(I4P)                  :: size_n1        !< Dimension 1 size
-  integer(I4P)                  :: size_n2        !< Dimension 2 size
-  integer(I4P)                  :: size_n3        !< Dimension 3 size
-  integer(I4P)                  :: size_n4        !< Dimension 4 size
-  
+  integer(I4P)                  :: l              !< Length.
+  integer(I4P)                  :: sp             !< String pointer.
+  integer(I4P)                  :: size_n1        !< Dimension 1 size.
+  integer(I4P)                  :: size_n2        !< Dimension 2 size.
+  integer(I4P)                  :: size_n3        !< Dimension 3 size.
+  integer(I4P)                  :: size_n4        !< Dimension 4 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  size_n3 = size(x, dim=4)
-  
+  size_n4 = size(x, dim=4)
+
   l = DI8P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3*size_n4)
@@ -799,18 +799,18 @@ contains
   integer(I4P)                  :: n2             !< Counter.
   integer(I4P)                  :: n3             !< Counter.
   integer(I4P)                  :: n4             !< Counter.
-  integer(I4P)                  :: l              !< Length
-  integer(I4P)                  :: sp             !< String pointer
-  integer(I4P)                  :: size_n1        !< Dimension 1 size
-  integer(I4P)                  :: size_n2        !< Dimension 2 size
-  integer(I4P)                  :: size_n3        !< Dimension 3 size
-  integer(I4P)                  :: size_n4        !< Dimension 4 size
-  
+  integer(I4P)                  :: l              !< Length.
+  integer(I4P)                  :: sp             !< String pointer.
+  integer(I4P)                  :: size_n1        !< Dimension 1 size.
+  integer(I4P)                  :: size_n2        !< Dimension 2 size.
+  integer(I4P)                  :: size_n3        !< Dimension 3 size.
+  integer(I4P)                  :: size_n4        !< Dimension 4 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  size_n3 = size(x, dim=4)
-  
+  size_n4 = size(x, dim=4)
+
   l = DI4P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3*size_n4)
@@ -834,18 +834,18 @@ contains
   integer(I4P)                  :: n2             !< Counter.
   integer(I4P)                  :: n3             !< Counter.
   integer(I4P)                  :: n4             !< Counter.
-  integer(I4P)                  :: l              !< Length
-  integer(I4P)                  :: sp             !< String pointer
-  integer(I4P)                  :: size_n1        !< Dimension 1 size
-  integer(I4P)                  :: size_n2        !< Dimension 2 size
-  integer(I4P)                  :: size_n3        !< Dimension 3 size
-  integer(I4P)                  :: size_n4        !< Dimension 4 size
-  
+  integer(I4P)                  :: l              !< Length.
+  integer(I4P)                  :: sp             !< String pointer.
+  integer(I4P)                  :: size_n1        !< Dimension 1 size.
+  integer(I4P)                  :: size_n2        !< Dimension 2 size.
+  integer(I4P)                  :: size_n3        !< Dimension 3 size.
+  integer(I4P)                  :: size_n4        !< Dimension 4 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  size_n3 = size(x, dim=4)
-  
+  size_n4 = size(x, dim=4)
+
   l = DI2P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3*size_n4)
@@ -869,18 +869,18 @@ contains
   integer(I4P)                  :: n2             !< Counter.
   integer(I4P)                  :: n3             !< Counter.
   integer(I4P)                  :: n4             !< Counter.
-  integer(I4P)                  :: l              !< Length
-  integer(I4P)                  :: sp             !< String pointer
-  integer(I4P)                  :: size_n1        !< Dimension 1 size
-  integer(I4P)                  :: size_n2        !< Dimension 2 size
-  integer(I4P)                  :: size_n3        !< Dimension 3 size
-  integer(I4P)                  :: size_n4        !< Dimension 4 size
-  
+  integer(I4P)                  :: l              !< Length.
+  integer(I4P)                  :: sp             !< String pointer.
+  integer(I4P)                  :: size_n1        !< Dimension 1 size.
+  integer(I4P)                  :: size_n2        !< Dimension 2 size.
+  integer(I4P)                  :: size_n3        !< Dimension 3 size.
+  integer(I4P)                  :: size_n4        !< Dimension 4 size.
+
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  size_n3 = size(x, dim=4)
-  
+  size_n4 = size(x, dim=4)
+
   l = DI1P + 1
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3*size_n4)
@@ -903,12 +903,12 @@ contains
   real(R16P),      intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DR16P*3 + 2
+  l = DR16P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -924,12 +924,12 @@ contains
   real(R8P),       intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
-  
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
+
   size_n = size(x, dim=1)
-  l = DR8P*3 + 2
+  l = DR8P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -945,12 +945,12 @@ contains
   real(R4P),       intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DR4P*3 + 2
+  l = DR4P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -966,12 +966,12 @@ contains
   integer(I8P),    intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DI8P*3 + 2
+  l = DI8P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -987,12 +987,12 @@ contains
   integer(I4P),    intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
-  
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
+
   size_n = size(x, dim=1)
-  l = DI4P*3 + 2
+  l = DI4P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -1008,12 +1008,12 @@ contains
   integer(I2P),    intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DI2P*3 + 2
+  l = DI2P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -1029,12 +1029,12 @@ contains
   integer(I1P),    intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DI1P*3 + 2
+  l = DI1P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -1052,17 +1052,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DR16P*3 + 2
+
+  l = DR16P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size(x, dim=3)
@@ -1084,17 +1084,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DR8P*3 + 2
+
+  l = DR8P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size(x, dim=3)
@@ -1116,17 +1116,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DR4P*3 + 2
+
+  l = DR4P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size(x, dim=3)
@@ -1148,17 +1148,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DI8P*3 + 2
+
+  l = DI8P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size(x, dim=3)
@@ -1180,17 +1180,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DI4P*3 + 2
+
+  l = DI4P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size(x, dim=3)
@@ -1212,17 +1212,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DI2P*3 + 2
+
+  l = DI2P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size(x, dim=3)
@@ -1244,17 +1244,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DI1P*3 + 2
+
+  l = DI1P*3 + 3
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size(x, dim=3)
@@ -1266,7 +1266,7 @@ contains
     enddo
   enddo
   endfunction encode_ascii_dataarray3_rank3_I1P
-  
+
   function encode_ascii_dataarray6_rank1_R16P(u, v, w, x, y, z) result(code)
   !< Encode (Base64) a dataarray with 6 components of rank 1 (R16P).
   real(R16P),      intent(in)   :: u(1:) !< U component.
@@ -1277,12 +1277,12 @@ contains
   real(R16P),      intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
-  
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
+
   size_n = size(x, dim=1)
-  l = DR16P*6 + 5
+  l = DR16P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -1302,12 +1302,12 @@ contains
   real(R8P),       intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DR8P*6 + 5
+  l = DR8P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -1327,12 +1327,12 @@ contains
   real(R4P),       intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DR4P*6 + 5
+  l = DR4P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -1352,12 +1352,12 @@ contains
   integer(I8P),    intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DI8P*6 + 5
+  l = DI8P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -1377,12 +1377,12 @@ contains
   integer(I4P),    intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DI4P*6 + 5
+  l = DI4P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -1402,12 +1402,12 @@ contains
   integer(I2P),    intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DI2P*6 + 5
+  l = DI2P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -1427,12 +1427,12 @@ contains
   integer(I1P),    intent(in)   :: z(1:) !< Z component.
   character(len=:), allocatable :: code  !< Encoded base64 dataarray.
   integer(I4P)                  :: n     !< Counter.
-  integer(I4P)                  :: l     !< Length
-  integer(I4P)                  :: sp    !< String pointer
-  integer(I4P)                  :: size_n!< Dimension 1 size
+  integer(I4P)                  :: l     !< Length.
+  integer(I4P)                  :: sp    !< String pointer.
+  integer(I4P)                  :: size_n!< Dimension 1 size.
 
   size_n = size(x, dim=1)
-  l = DI1P*6 + 5
+  l = DI1P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n)
   do n=1, size_n
@@ -1454,17 +1454,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DR16P*6 + 5
+
+  l = DR16P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size_n3
@@ -1490,17 +1490,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DR8P*6 + 5
+
+  l = DR8P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size_n3
@@ -1526,17 +1526,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DR4P*6 + 5
+
+  l = DR4P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size_n3
@@ -1562,17 +1562,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DI8P*6 + 5
+
+  l = DI8P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size_n3
@@ -1598,17 +1598,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DI4P*6 + 5
+
+  l = DI4P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size_n3
@@ -1634,17 +1634,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DI2P*6 + 5
+
+  l = DI2P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size_n3
@@ -1670,17 +1670,17 @@ contains
   integer(I4P)                  :: n1          !< Counter.
   integer(I4P)                  :: n2          !< Counter.
   integer(I4P)                  :: n3          !< Counter.
-  integer(I4P)                  :: l           !< Length
-  integer(I4P)                  :: sp          !< String pointer
-  integer(I4P)                  :: size_n1     !< Dimension 1 size
-  integer(I4P)                  :: size_n2     !< Dimension 2 size
-  integer(I4P)                  :: size_n3     !< Dimension 3 size
+  integer(I4P)                  :: l           !< Length.
+  integer(I4P)                  :: sp          !< String pointer.
+  integer(I4P)                  :: size_n1     !< Dimension 1 size.
+  integer(I4P)                  :: size_n2     !< Dimension 2 size.
+  integer(I4P)                  :: size_n3     !< Dimension 3 size.
 
   size_n1 = size(x, dim=1)
   size_n2 = size(x, dim=2)
   size_n3 = size(x, dim=3)
-  
-  l = DI1P*6 + 5
+
+  l = DI1P*6 + 6
   sp = 0
   code = repeat(' ',l*size_n1*size_n2*size_n3)
   do n3=1, size_n3
@@ -2227,7 +2227,7 @@ contains
                  packed=xyz)
   call b64_encode(n=xyz,code=code)
   endfunction encode_binary_dataarray3_rank3_I1P
-  
+
   function encode_binary_dataarray6_rank1_R8P(u, v, w, x, y, z) result(code)
   !< Encode (Base64) a dataarray with 6 components of rank 1 (R8P).
   real(R8P),    intent(in)      :: u(1:)  !< U component.

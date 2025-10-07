@@ -20,6 +20,9 @@ real(R8P),    dimension(1:np) :: v                                              
 integer(I4P), dimension(1:np) :: v_x                                                          !< X component points-variable.
 integer(I4P), dimension(1:np) :: v_y                                                          !< Y component points-variable.
 integer(I4P), dimension(1:np) :: v_z                                                          !< Z component points-variable.
+real(R8P),    dimension(1:np) :: r_x                                                          !< X component points-variable, real.
+real(R8P),    dimension(1:np) :: r_y                                                          !< Y component points-variable, real.
+real(R8P),    dimension(1:np) :: r_z                                                          !< Z component points-variable, real.
 integer(I4P)                  :: error                                                        !< Status error.
 logical                       :: test_passed(1)                                               !< List of passed tests.
 
@@ -36,9 +39,14 @@ connect = [0 ,1 ,4 ,3 ,6 ,7 ,10,9 , &
            24]
 v = [0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0,11.0,12.0,13.0,14.0,15.0,16.0,17.0, &
      18.0,19.0,20.0,21.0,22.0,23.0,24.0,25.0,26.0]
-v_X = [1,1,0,1,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-v_Y = [0,1,2,0,1,2,0,1,2,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-v_Z = [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+v_x = [1,1,0,1,1,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+v_y = [0,1,2,0,1,2,0,1,2,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+v_z = [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+r_x = [1.123456789,1.123456789,0.123456789,1.123456789,1.123456789,0.123456789,1.123456789,1.123456789,0.123456789,&
+       1.123456789,1.123456789,0.123456789,0.123456789,0.123456789,0.123456789,0.123456789,0.123456789,0.123456789,&
+       0.123456789,0.123456789,0.123456789,0.123456789,0.123456789,0.123456789,0.123456789,0.123456789,0.123456789]
+r_y = [0,1,2,0,1,2,0,1,2,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+r_z = [0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 ! ascii
 error = a_vtk_file%initialize(format='ascii', filename='XML_UNST-ascii.vtu', mesh_topology='UnstructuredGrid')
 call write_data
@@ -65,7 +73,8 @@ contains
   error = a_vtk_file%xml_writer%write_connectivity(nc=nc, connectivity=connect, offset=offset, cell_type=cell_type)
   error = a_vtk_file%xml_writer%write_dataarray(location='node', action='open')
   error = a_vtk_file%xml_writer%write_dataarray(data_name='scalars', x=v)
-  error = a_vtk_file%xml_writer%write_dataarray(data_name='vector', x=v_x, y=v_y, z=v_z)
+  error = a_vtk_file%xml_writer%write_dataarray(data_name='vector-integer', x=v_x, y=v_y, z=v_z)
+  error = a_vtk_file%xml_writer%write_dataarray(data_name='vector-real', x=r_x, y=r_y, z=r_z)
   error = a_vtk_file%xml_writer%write_dataarray(location='node', action='close')
   error = a_vtk_file%xml_writer%write_piece()
   endsubroutine write_data

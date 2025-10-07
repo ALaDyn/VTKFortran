@@ -8,7 +8,7 @@
   branch = master
 [submodule "src/third_party/StringiFor"]
   path = src/third_party/StringiFor
-  url = https://github.com/szaghi/StringiFor
+  url = git@github.com:szaghi/StringiFor.git
   branch = master
 [submodule "src/third_party/FoXy"]
   path = src/third_party/FoXy
