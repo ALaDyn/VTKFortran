@@ -1,156 +1,157 @@
-#################################################################
-# HEADER
-#################################################################
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8.12)
-SET(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS TRUE)
+# The target of the library VTKFortran is exported
+# as VTKFortran::VTKFortran to a package config file for VTKFortran
+#
+# usage:
+#     find_package(VTKFortran)
+#     ...
+#     target_link_library(<target> VTKFortran)
+#
+# the config file is generatet in the build and install directories
+
+cmake_minimum_required(VERSION 3.13)
+project(VTKFortran VERSION 0.9.9 LANGUAGES Fortran)
+
+set(CMAKE_VERBOSE_MAKEFILE TRUE)
+# seach path for additional cmake modules
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR}/cmake/Modules)
 
 
-PROJECT(VTK_IO Fortran C)
+# set export variables needed for building
+set(TARGETS_EXPORT_NAME "${PROJECT_NAME}Targets")
+set(NAMESPACE "${PROJECT_NAME}::")
 
-# Note the agreement between the first number of the triplet 
-# VERSION and the SOVERSION
-SET(${PROJECT_NAME}_VERSION 0.0.1)
-SET(${PROJECT_NAME}_SOVERSION 0)
+if(NOT TARGET PENF)
+    add_subdirectory(src/third_party/PENF)
+endif()
 
-SET(LIB ${PROJECT_NAME})  
+if(NOT TARGET BeFoR64)
+    add_subdirectory(src/third_party/BeFoR64)
+endif()
 
-SET(CMAKE_VERBOSE_MAKEFILE TRUE)
+if(NOT TARGET FACE)
+    add_subdirectory(src/third_party/FACE)
+endif()
 
+if(NOT TARGET StringiFor)
+	add_subdirectory(src/third_party/StringiFor)
+endif()
 
-#################################################################
-# DEFINE PATHS
-#################################################################
-
-SET(SRC_PATH ${CMAKE_SOURCE_DIR}/src)
-SET(LIB_SRC_PATH ${SRC_PATH}/lib)
-SET(TEST_SRC_PATH ${SRC_PATH}/test)
-
-SET(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMake/Modules/")
-
-
-#################################################################
-# BUILD PATHS
-#################################################################
-
-SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
-SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
-SET(CMAKE_Fortran_MODULE_DIRECTORY ${PROJECT_BINARY_DIR}/modules)
-INCLUDE_DIRECTORIES(${CMAKE_Fortran_MODULE_DIRECTORY})
+if(NOT TARGET FoXy)
+	add_subdirectory(src/third_party/FoXy)
+endif()
 
 
-#################################################################
-# CONFIGURATION TYPES & BUILD MODE
-#################################################################
+# ---------- Fortran module dirs + explicit deps for third_party ----------
+# Put all third-party .mod files in a stable, known place
+set(_vtkf_modroot "${CMAKE_BINARY_DIR}/mod")
+file(MAKE_DIRECTORY "${_vtkf_modroot}")
 
-SET(CMAKE_CONFIGURATION_TYPES DEBUG RELEASE)
-IF(NOT CMAKE_BUILD_TYPE)
-  SET(CMAKE_BUILD_TYPE RELEASE CACHE STRING
-      "Choose the type of build, options are: NONE DEBUG RELEASE"
-      FORCE)
+foreach(tgt PENF BeFoR64 FACE StringiFor FoXy)
+  if (TARGET ${tgt})
+    set_target_properties(${tgt} PROPERTIES Fortran_MODULE_DIRECTORY "${_vtkf_modroot}/${tgt}")
+  endif()
+endforeach()
 
-  SET_PROPERTY(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS NONE DEBUG RELEASE)
-ENDIF(NOT CMAKE_BUILD_TYPE)
+# BeFoR64 depends on PENF
+if (TARGET BeFoR64 AND TARGET PENF)
+  add_dependencies(BeFoR64 PENF)
+  target_include_directories(BeFoR64 PRIVATE "${_vtkf_modroot}/PENF")
+  # Optional: enforce link-order in some generators
+  target_link_libraries(BeFoR64 PENF)
+endif()
 
+# StringiFor depends on BeFoR64, FACE, PENF
+if (TARGET StringiFor)
+  foreach(dep BeFoR64 FACE PENF)
+    if (TARGET ${dep})
+      add_dependencies(StringiFor ${dep})
+      target_include_directories(StringiFor PRIVATE "${_vtkf_modroot}/${dep}")
+      target_link_libraries(StringiFor ${dep})
+    endif()
+  endforeach()
+endif()
 
-#################################################################
-# Setting up options
-#################################################################
+# FoXy depends on StringiFor, BeFoR64, FACE, PENF
+if (TARGET FoXy)
+  foreach(dep StringiFor BeFoR64 FACE PENF)
+    if (TARGET ${dep})
+      add_dependencies(FoXy ${dep})
+      target_include_directories(FoXy PRIVATE "${_vtkf_modroot}/${dep}")
+      target_link_libraries(FoXy ${dep})
+    endif()
+  endforeach()
+endif()
 
-GET_FILENAME_COMPONENT(Fortran_COMPILER_NAME ${CMAKE_Fortran_COMPILER} NAME)
+# generate the library and install instructions
+add_subdirectory(src/lib)
 
-OPTION(${PROJECT_NAME}_ENABLE_F03STD "To force strict conformance to the Fortran 2003 standard" OFF)
-OPTION(${PROJECT_NAME}_ENABLE_OPTIMIZE "To activate optimization flags" OFF)
-OPTION(${PROJECT_NAME}_ENABLE_OPENMP "To activate the OpenMP extensions for Fortran" OFF)
-OPTION(${PROJECT_NAME}_ENABLE_MPI "To compile MPI tests and link against MPI library" OFF)
-OPTION(${PROJECT_NAME}_ENABLE_R16P "To define a real precission type with 128 bits" OFF)
-#OPTION(${PROJECT_NAME}_ENABLE_HUGE "To use 64 bit instead 32 bit integer as a bit counter" OFF)
+# ---------- VTKFortran depends on all third_party ----------
+if (TARGET VTKFortran)
+  foreach(dep FoXy StringiFor BeFoR64 FACE PENF)
+    if (TARGET ${dep})
+      add_dependencies(VTKFortran ${dep})
+      target_include_directories(VTKFortran PRIVATE "${_vtkf_modroot}/${dep}")
+      target_link_libraries(VTKFortran ${dep})   # plain signature is fine
+    endif()
+  endforeach()
+endif()
 
+# testing
+if(${PROJECT_SOURCE_DIR} STREQUAL ${CMAKE_SOURCE_DIR})
+    set(main_project TRUE)
+else()
+    set(main_project FALSE)
+endif()
 
+include(CMakeDependentOption)
+cmake_dependent_option(BUILD_TESTING_${PROJECT_NAME}
+     "Build the testing tree for project ${PROJECT_NAME}." OFF
+     "BUILD_TESTING;NOT main_project" OFF
+)
 
-IF (${${PROJECT_NAME}_ENABLE_F03STD})
-    IF (${CMAKE_Fortran_COMPILER_ID} STREQUAL "GNU" OR Fortran_COMPILER_NAME MATCHES "gfortran*")
-        SET(EXTRA_FLAGS "${EXTRA_FLAGS}  -std=f2003 -fall-intrinsics")
-    ELSEIF (${CMAKE_Fortran_COMPILER_ID} STREQUAL "Intel" OR Fortran_COMPILER_NAME MATCHES "ifort*")
-        SET(EXTRA_FLAGS "${EXTRA_FLAGS}  -std03")
-    ENDIF ()
-ENDIF ()
+if (main_project AND NOT DEFINED BUILD_TESTING)
+    set(BUILD_TESTING ON)
+endif()
 
-IF (${${PROJECT_NAME}_ENABLE_OPTIMIZE})
-    IF (${CMAKE_Fortran_COMPILER_ID} STREQUAL "GNU" OR Fortran_COMPILER_NAME MATCHES "gfortran*")
-        SET(EXTRA_FLAGS "${EXTRA_FLAGS}  -O3")
-    ELSEIF (${CMAKE_Fortran_COMPILER_ID} STREQUAL "Intel" OR Fortran_COMPILER_NAME MATCHES "ifort*")
-        SET(EXTRA_FLAGS "${EXTRA_FLAGS}  -O3 -ipo -inline all -ipo-jobs4 -vec-report1")
-    ENDIF ()
-ENDIF ()
+if((main_project AND BUILD_TESTING) OR BUILD_TESTING_${PROJECT_NAME})
+    enable_testing()
+    add_subdirectory(src/tests)
+endif()
 
-IF (${${PROJECT_NAME}_ENABLE_OPENMP})
-    FIND_PACKAGE( OpenMP )
-    IF (${OPENMP_FOUND})
-        SET(EXTRA_FLAGS ${OpenMP_Fortran_FLAGS})
-        ADD_DEFINITIONS("-DOPENMP")
-    ELSE ()
-        OPTION(${PROJECT_NAME}_ENABLE_OPENMP "To activate the OpenMP extensions for Fortran" OFF)
-    ENDIF ()
-ENDIF ()
+# generate package config files
+include(GNUInstallDirs)
+set(project_config "${PROJECT_NAME}Config.cmake")
+set(cmake_files_dir "${CMAKE_CURRENT_BINARY_DIR}/CMakeFiles")
+set(config_install_dir "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}")
+set(config_build_dir "${CMAKE_CURRENT_BINARY_DIR}/${config_install_dir}")
 
-IF (${${PROJECT_NAME}_ENABLE_MPI})
-    FIND_PACKAGE(MPI)
-    IF(${MPI_FOUND})
-        INCLUDE(CMakeForceCompiler)
-        CMAKE_FORCE_Fortran_COMPILER(${MPI_Fortran_COMPILER} ${CMAKE_Fortran_COMPILER_ID})
-        ADD_DEFINITIONS(${MPI_Fortran_COMPILE_FLAGS})
-        INCLUDE_DIRECTORIES(${MPI_Fortran_INCLUDE_PATH})
-        LINK_DIRECTORIES(${MPI_Fortran_LIBRARIES})
-        ADD_DEFINITIONS("-DMPI2")
-    ELSE ()
-        OPTION(${PROJECT_NAME}_ENABLE_MPI "To compile MPI tests and link against MPI library" OFF)
-    ENDIF ()
-ENDIF ()
+# export targets for install
+install(EXPORT ${TARGETS_EXPORT_NAME}
+    NAMESPACE
+        ${NAMESPACE}
+    DESTINATION
+        ${config_install_dir}
+    COMPONENT Development
+)
 
-IF (${${PROJECT_NAME}_ENABLE_R16P})
-    ADD_DEFINITIONS("-Dr16p")
-ENDIF ()
+# export targets into build
+export(EXPORT ${TARGETS_EXPORT_NAME}
+    NAMESPACE
+        ${NAMESPACE}
+    FILE
+        ${config_build_dir}/${TARGETS_EXPORT_NAME}.cmake
+)
 
-#IF (${${PROJECT_NAME}_ENABLE_HUGE})
-#    ADD_DEFINITIONS("-DHUGE")
-#ENDIF ()
+#create package config
+include(CMakePackageConfigHelpers)
+configure_package_config_file(cmake/PackageConfig.cmake.in ${cmake_files_dir}/${project_config}
+    INSTALL_DESTINATION ${config_install_dir}
+)
+install(FILES ${cmake_files_dir}/${project_config}
+    DESTINATION ${config_install_dir}
+)
 
-
-#################################################################
-# FFLAGS depend on the compiler and the build type
-#################################################################
-
-
-IF (${CMAKE_Fortran_COMPILER_ID} STREQUAL "GNU" OR Fortran_COMPILER_NAME MATCHES "gfortran*")
-  # gfortran 
-  set(FORTRAN_FLAGS "-cpp -frealloc-lhs ")
-  set (CMAKE_Fortran_FLAGS "${FORTRAN_FLAGS} " CACHE STRING "" FORCE)
-  set (CMAKE_Fortran_FLAGS_RELEASE "${EXTRA_FLAGS} " CACHE STRING "" FORCE)
-  set (CMAKE_Fortran_FLAGS_DEBUG   "-O0 -g3 -Warray-bounds -Wcharacter-truncation -Wline-truncation -Wimplicit-interface -Wimplicit-procedure -Wunderflow -Wuninitialized -fcheck=all -fmodule-private -ffree-line-length-132 -fimplicit-none -fbacktrace -fdump-core -finit-real=nan -std=f2003 -fall-intrinsics " CACHE STRING "" FORCE)
-ELSEIF (${CMAKE_Fortran_COMPILER_ID} STREQUAL "Intel" OR Fortran_COMPILER_NAME MATCHES "ifort*")
-  # ifort
-  set(FORTRAN_FLAGS "-cpp -assume realloc_lhs ")
-  set (CMAKE_Fortran_FLAGS "${FORTRAN_FLAGS} " CACHE STRING "" FORCE)
-  set (CMAKE_Fortran_FLAGS_RELEASE "${EXTRA_FLAGS} " CACHE STRING "" FORCE)
-  set (CMAKE_Fortran_FLAGS_DEBUG   "-O0 -debug all -check all -warn all -extend-source 132 -traceback -gen-interfaces " CACHE STRING "" FORCE)
-#-fpe-all=0 -fp-stack-check -fstack-protector-all -ftrapuv -no-ftz -std03
-ELSE ()
-  message ("No optimized Fortran compiler flags are known, we just try -O2...")
-  set (CMAKE_Fortran_FLAGS_RELEASE "-O2")
-  set (CMAKE_Fortran_FLAGS_DEBUG   "-O0 -g")
-ENDIF ()
-
-message("Fortra_FLAGS: ${FORTRAN_FLAGS}")
-message("CMAKE_Fortran_FLAGS: ${CMAKE_Fortran_FLAGS}")
-message("CMAKE_Fortran_FLAGS_RELEASE: ${CMAKE_Fortran_FLAGS_RELEASE}")
-message("CMAKE_Fortra_FLAGS_DEBUG: ${CMAKE_Fortran_FLAGS_DEBUG}")
-
-
-#################################################################
-# ADD SOURCE SUBDIRS
-#################################################################
-
-
-ADD_SUBDIRECTORY(${LIB_SRC_PATH})
-ADD_SUBDIRECTORY(${TEST_SRC_PATH})
-
+configure_package_config_file(cmake/PackageConfig.cmake.in ${config_build_dir}/${project_config}
+    INSTALL_DESTINATION ${config_build_dir}
+    INSTALL_PREFIX ${CMAKE_CURRENT_BINARY_DIR}
+)
