@@ -94,7 +94,7 @@
 
             <li class="list-inline-item" id="statements"><i class="fa fa-list-ol"></i>
               <a data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-                 title=" 0.0% of total for procedures.">13 statements</a>
+                 title=" 0.1% of total for procedures.">19 statements</a>
             </li>
 
             <li class="list-inline-item" id="source-file">
@@ -161,7 +161,7 @@
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>private pure function create_tag_flat(name, attribute, attributes, attributes_stream, sanitize_attributes_value, content, indent, is_content_indented, is_self_closing) result(tag)  
+    <h2>private pure function create_tag_flat(name, attribute, attributes, attributes_stream, sanitize_attributes_value, pos, content, indent, is_content_indented, is_self_closing, id, level, parent_id, attributes_stream_alloc, content_alloc) result(tag)  
 </h2>
     
 
@@ -255,6 +255,21 @@
         </tr>
         <tr>
             <td>
+              <span class="anchor" id="variable-pos~8"></span>
+              integer(kind=I4P),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>pos</strong>(1:)</td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
               <span class="anchor" id="variable-content~2"></span>
               character(len=*),
             </td>
@@ -313,12 +328,87 @@
                 
             </td>
         </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-id~2"></span>
+              integer(kind=I4P),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>id</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-level~2"></span>
+              integer(kind=I4P),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>level</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-parent_id~2"></span>
+              integer(kind=I4P),
+            </td>
+<td>intent(in),</td>
+              <td>optional</td>            <td>
+              
+            </td>
+            <td>::</td>
+            <td><strong>parent_id</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-attributes_stream_alloc"></span>
+              character(len=:),
+            </td>
+<td>intent(in),</td>
+              <td>optional,</td>            <td>
+              allocatable
+            </td>
+            <td>::</td>
+            <td><strong>attributes_stream_alloc</strong></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <span class="anchor" id="variable-content_alloc"></span>
+              character(len=:),
+            </td>
+<td>intent(in),</td>
+              <td>optional,</td>            <td>
+              allocatable
+            </td>
+            <td>::</td>
+            <td><strong>content_alloc</strong></td>
+            <td>
+                
+            </td>
+        </tr>
     </tbody>
   </table>
 
       <h3>Return Value
         <small>
-          <span class="anchor" id="variable-tag~6"></span>
+          <span class="anchor" id="variable-tag~7"></span>
           type(<a href='../type/xml_tag.html'>xml_tag</a>)
         </small>
       </h3>
@@ -695,26 +785,43 @@ implementation in a submodule of an interface in a parent module.
     
     <section>
     <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="hl codehilite"><pre><span></span><span class="w">  </span><span class="k">pure function </span><span class="n">create_tag_flat</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">attribute</span><span class="p">,</span><span class="w"> </span><span class="n">attributes</span><span class="p">,</span><span class="w"> </span><span class="n">attributes_stream</span><span class="p">,</span><span class="w"> </span><span class="n">sanitize_attributes_value</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="p">,</span><span class="w"> </span><span class="n">indent</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span>
-<span class="w">                                </span><span class="n">is_content_indented</span><span class="p">,</span><span class="w"> </span><span class="n">is_self_closing</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
-<span class="w">  </span><span class="c">!&lt; Return an instance of xml tag.</span>
-<span class="w">  </span><span class="c">!&lt;</span>
-<span class="w">  </span><span class="c">!&lt; Attributes are passed by array.</span>
-<span class="w">  </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">           </span><span class="kd">::</span><span class="w"> </span><span class="n">name</span><span class="w">                      </span><span class="c">!&lt; Tag name.</span>
-<span class="w">  </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">attribute</span><span class="p">(</span><span class="mi">1</span><span class="p">:)</span><span class="w">             </span><span class="c">!&lt; Attribute name/value pair [1:2].</span>
-<span class="w">  </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">attributes</span><span class="p">(</span><span class="mi">1</span><span class="p">:,</span><span class="mi">1</span><span class="p">:)</span><span class="w">         </span><span class="c">!&lt; Attributes list of name/value pairs [1:2,1:].</span>
-<span class="w">  </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">attributes_stream</span><span class="w">         </span><span class="c">!&lt; Attributes list of name/value pairs as single stream.</span>
-<span class="w">  </span><span class="kt">logical</span><span class="p">,</span><span class="w">      </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">sanitize_attributes_value</span><span class="w"> </span><span class="c">!&lt; Sanitize attributes value.</span>
-<span class="w">  </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">content</span><span class="w">                   </span><span class="c">!&lt; Tag value.</span>
-<span class="w">  </span><span class="kt">integer</span><span class="p">(</span><span class="n">I4P</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">indent</span><span class="w">                    </span><span class="c">!&lt; Number of indent-white-spaces.</span>
-<span class="w">  </span><span class="kt">logical</span><span class="p">,</span><span class="w">      </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">is_content_indented</span><span class="w">       </span><span class="c">!&lt; Activate content indentation.</span>
-<span class="w">  </span><span class="kt">logical</span><span class="p">,</span><span class="w">      </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">is_self_closing</span><span class="w">           </span><span class="c">!&lt; The tag is self closing.</span>
-<span class="w">  </span><span class="k">type</span><span class="p">(</span><span class="n">xml_tag</span><span class="p">)</span><span class="w">                      </span><span class="kd">::</span><span class="w"> </span><span class="n">tag</span><span class="w">                       </span><span class="c">!&lt; XML tag.</span>
+    <div class="hl codehilite"><pre><span></span><span class="w">   </span><span class="k">pure function </span><span class="n">create_tag_flat</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">attribute</span><span class="p">,</span><span class="w"> </span><span class="n">attributes</span><span class="p">,</span><span class="w"> </span><span class="n">attributes_stream</span><span class="p">,</span><span class="w"> </span><span class="n">sanitize_attributes_value</span><span class="p">,</span><span class="w"> </span><span class="n">pos</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="p">,</span><span class="w">     </span><span class="p">&amp;</span>
+<span class="w">                                 </span><span class="n">indent</span><span class="p">,</span><span class="w"> </span><span class="n">is_content_indented</span><span class="p">,</span><span class="w"> </span><span class="n">is_self_closing</span><span class="p">,</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">level</span><span class="p">,</span><span class="w"> </span><span class="n">parent_id</span><span class="p">,</span><span class="w"> </span><span class="n">attributes_stream_alloc</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span>
+<span class="w">                                 </span><span class="n">content_alloc</span><span class="p">)</span><span class="w"> </span><span class="k">result</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+<span class="w">   </span><span class="c">!&lt; Return an instance of xml tag.</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w">              </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">           </span><span class="kd">::</span><span class="w"> </span><span class="n">name</span><span class="w">                      </span><span class="c">!&lt; Tag name.</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w">              </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">attribute</span><span class="p">(</span><span class="mi">1</span><span class="p">:)</span><span class="w">             </span><span class="c">!&lt; Attribute name/value pair [1:2].</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w">              </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">attributes</span><span class="p">(</span><span class="mi">1</span><span class="p">:,</span><span class="mi">1</span><span class="p">:)</span><span class="w">         </span><span class="c">!&lt; Attributes list of name/value pairs [1:2,1:].</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w">              </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">attributes_stream</span><span class="w">         </span><span class="c">!&lt; Attributes list as single stream.</span>
+<span class="w">   </span><span class="kt">logical</span><span class="p">,</span><span class="w">                   </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">sanitize_attributes_value</span><span class="w"> </span><span class="c">!&lt; Sanitize attributes value.</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="n">I4P</span><span class="p">),</span><span class="w">              </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">pos</span><span class="p">(</span><span class="mi">1</span><span class="p">:)</span><span class="w">                   </span><span class="c">!&lt; Characters position (in source) indexes.</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w">              </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">content</span><span class="w">                   </span><span class="c">!&lt; Tag value.</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="n">I4P</span><span class="p">),</span><span class="w">              </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">indent</span><span class="w">                    </span><span class="c">!&lt; Number of indent-white-spaces.</span>
+<span class="w">   </span><span class="kt">logical</span><span class="p">,</span><span class="w">                   </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">is_content_indented</span><span class="w">       </span><span class="c">!&lt; Activate content indentation.</span>
+<span class="w">   </span><span class="kt">logical</span><span class="p">,</span><span class="w">                   </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">is_self_closing</span><span class="w">           </span><span class="c">!&lt; The tag is self closing.</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="n">I4P</span><span class="p">),</span><span class="w">              </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">id</span><span class="w">                        </span><span class="c">!&lt; Uniq ID.</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="n">I4P</span><span class="p">),</span><span class="w">              </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">level</span><span class="w">                     </span><span class="c">!&lt; Tag hierarchy level.</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="n">I4P</span><span class="p">),</span><span class="w">              </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">parent_id</span><span class="w">                 </span><span class="c">!&lt; Parent uniq ID.</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(:),</span><span class="w"> </span><span class="k">allocatable</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">attributes_stream_alloc</span><span class="w">   </span><span class="c">!&lt; Attributes list stream, allocatable input.</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(:),</span><span class="w"> </span><span class="k">allocatable</span><span class="p">,</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">),</span><span class="w"> </span><span class="k">optional</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">content_alloc</span><span class="w">             </span><span class="c">!&lt; Tag value, allocatable input.</span>
+<span class="w">   </span><span class="k">type</span><span class="p">(</span><span class="n">xml_tag</span><span class="p">)</span><span class="w">                                   </span><span class="kd">::</span><span class="w"> </span><span class="n">tag</span><span class="w">                       </span><span class="c">!&lt; XML tag.</span>
 
-<span class="w">  </span><span class="k">call </span><span class="n">tag</span><span class="p">%</span><span class="n">set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">attribute</span><span class="o">=</span><span class="n">attribute</span><span class="p">,</span><span class="w"> </span><span class="n">attributes</span><span class="o">=</span><span class="n">attributes</span><span class="p">,</span><span class="w"> </span><span class="n">attributes_stream</span><span class="o">=</span><span class="n">attributes_stream</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span>
-<span class="w">               </span><span class="n">sanitize_attributes_value</span><span class="o">=</span><span class="n">sanitize_attributes_value</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="o">=</span><span class="n">content</span><span class="p">,</span><span class="w">                       </span><span class="p">&amp;</span>
-<span class="w">               </span><span class="n">indent</span><span class="o">=</span><span class="n">indent</span><span class="p">,</span><span class="w"> </span><span class="n">is_content_indented</span><span class="o">=</span><span class="n">is_content_indented</span><span class="p">,</span><span class="w"> </span><span class="n">is_self_closing</span><span class="o">=</span><span class="n">is_self_closing</span><span class="p">)</span>
-<span class="w">  </span><span class="k">endfunction </span><span class="n">create_tag_flat</span>
+<span class="w">   </span><span class="k">call </span><span class="n">tag</span><span class="p">%</span><span class="n">set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span><span class="w">                                           </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">attribute</span><span class="o">=</span><span class="n">attribute</span><span class="p">,</span><span class="w">                                 </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">attributes</span><span class="o">=</span><span class="n">attributes</span><span class="p">,</span><span class="w">                               </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">attributes_stream</span><span class="o">=</span><span class="n">attributes_stream</span><span class="p">,</span><span class="w">                 </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">sanitize_attributes_value</span><span class="o">=</span><span class="n">sanitize_attributes_value</span><span class="p">,</span><span class="w"> </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">content</span><span class="o">=</span><span class="n">content</span><span class="p">,</span><span class="w">                                     </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">pos</span><span class="o">=</span><span class="n">pos</span><span class="p">,</span><span class="w">                                             </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">indent</span><span class="o">=</span><span class="n">indent</span><span class="p">,</span><span class="w">                                       </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">is_content_indented</span><span class="o">=</span><span class="n">is_content_indented</span><span class="p">,</span><span class="w">             </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">is_self_closing</span><span class="o">=</span><span class="n">is_self_closing</span><span class="p">,</span><span class="w">                     </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">id</span><span class="o">=</span><span class="n">id</span><span class="p">,</span><span class="w">                                               </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">level</span><span class="o">=</span><span class="n">level</span><span class="p">,</span><span class="w">                                         </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">parent_id</span><span class="o">=</span><span class="n">parent_id</span><span class="p">,</span><span class="w">                                 </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">attributes_stream_alloc</span><span class="o">=</span><span class="n">attributes_stream_alloc</span><span class="p">,</span><span class="w">     </span><span class="p">&amp;</span>
+<span class="w">                </span><span class="n">content_alloc</span><span class="o">=</span><span class="n">content_alloc</span><span class="p">)</span>
+<span class="w">   </span><span class="k">endfunction </span><span class="n">create_tag_flat</span>
 </pre></div>
 
     </section>

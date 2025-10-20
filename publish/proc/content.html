@@ -182,7 +182,7 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-self~468"></span>
+              <span class="anchor" id="variable-self~253"></span>
               class(<a href='../type/xml_file.html'>xml_file</a>),
             </td>
 <td>intent(in)</td>
@@ -288,24 +288,24 @@
 <path fill="none" stroke="#000000" d="M267.43,-153.53C353.84,-150.15 508.57,-144.09 597.05,-140.62"/>
 <polygon fill="#000000" stroke="#000000" points="597.39,-144.11 607.24,-140.22 597.11,-137.12 597.39,-144.11"/>
 </g>
-<!-- proc~search~3 -->
+<!-- proc~search~2 -->
 <g id="proc~~content~~CallsGraph_node5" class="node">
-<title>proc~search~3</title>
-<g id="a_proc~~content~~CallsGraph_node5"><a xlink:href="../proc/search~3.html" xlink:title="xml_tag%search">
+<title>proc~search~2</title>
+<g id="a_proc~~content~~CallsGraph_node5"><a xlink:href="../proc/search~2.html" xlink:title="xml_tag%search">
 <polygon fill="#d9534f" stroke="#d9534f" points="403,-128 303,-128 303,-104 403,-104 403,-128"/>
 <text text-anchor="middle" x="353" y="-113.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">xml_tag%search</text>
 </a>
 </g>
 </g>
-<!-- proc~get_content&#45;&gt;proc~search~3 -->
+<!-- proc~get_content&#45;&gt;proc~search~2 -->
 <g id="proc~~content~~CallsGraph_edge4" class="edge">
-<title>proc~get_content&#45;&gt;proc~search~3</title>
+<title>proc~get_content&#45;&gt;proc~search~2</title>
 <path fill="none" stroke="#000000" d="M248.75,-144C264.14,-139.83 281.59,-135.1 297.69,-130.73"/>
 <polygon fill="#000000" stroke="#000000" points="298.79,-134.06 307.52,-128.06 296.95,-127.3 298.79,-134.06"/>
 </g>
-<!-- proc~search~3&#45;&gt;proc~is_allocated -->
+<!-- proc~search~2&#45;&gt;proc~is_allocated -->
 <g id="proc~~content~~CallsGraph_edge5" class="edge">
-<title>proc~search~3&#45;&gt;proc~is_allocated</title>
+<title>proc~search~2&#45;&gt;proc~is_allocated</title>
 <path fill="none" stroke="#000000" d="M403.12,-119.49C455.54,-123.21 538.92,-129.12 597.27,-133.26"/>
 <polygon fill="#000000" stroke="#000000" points="597.27,-136.77 607.49,-133.99 597.77,-129.79 597.27,-136.77"/>
 </g>
@@ -318,9 +318,9 @@
 </a>
 </g>
 </g>
-<!-- proc~search~3&#45;&gt;proc~parse -->
+<!-- proc~search~2&#45;&gt;proc~parse -->
 <g id="proc~~content~~CallsGraph_edge6" class="edge">
-<title>proc~search~3&#45;&gt;proc~parse</title>
+<title>proc~search~2&#45;&gt;proc~parse</title>
 <path fill="none" stroke="#000000" d="M395.45,-103.98C407.52,-100.48 420.85,-96.61 433.45,-92.95"/>
 <polygon fill="#000000" stroke="#000000" points="434.74,-96.22 443.37,-90.08 432.79,-89.5 434.74,-96.22"/>
 </g>
@@ -519,24 +519,24 @@ implementation in a submodule of an interface in a parent module.
     
     <section>
     <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="hl codehilite"><pre><span></span><span class="w">  </span><span class="k">pure function </span><span class="n">content</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">)</span>
-<span class="w">  </span><span class="c">!&lt; Return tag content of tag named *name*.</span>
-<span class="w">  </span><span class="c">!&lt;</span>
-<span class="w">  </span><span class="c">!&lt; @note If there is no value, the *tag_content* string is returned empty, but allocated.</span>
-<span class="w">  </span><span class="k">class</span><span class="p">(</span><span class="n">xml_file</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">self</span><span class="w">    </span><span class="c">!&lt; XML file.</span>
-<span class="w">  </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w">    </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">name</span><span class="w">    </span><span class="c">!&lt; Tag name.</span>
-<span class="w">  </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="p">:),</span><span class="w"> </span><span class="k">allocatable</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">content</span><span class="w"> </span><span class="c">!&lt; Tag content.</span>
-<span class="w">  </span><span class="kt">integer</span><span class="p">(</span><span class="n">I4P</span><span class="p">)</span><span class="w">                  </span><span class="kd">::</span><span class="w"> </span><span class="n">t</span><span class="w">       </span><span class="c">!&lt; Counter.</span>
+    <div class="hl codehilite"><pre><span></span><span class="w">   </span><span class="k">pure function </span><span class="n">content</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">)</span>
+<span class="w">   </span><span class="c">!&lt; Return tag content of tag named *name*.</span>
+<span class="w">   </span><span class="c">!&lt;</span>
+<span class="w">   </span><span class="c">!&lt; @note If there is no value, the *tag_content* string is returned empty, but allocated.</span>
+<span class="w">   </span><span class="k">class</span><span class="p">(</span><span class="n">xml_file</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">self</span><span class="w">    </span><span class="c">!&lt; XML file.</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w">    </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">name</span><span class="w">    </span><span class="c">!&lt; Tag name.</span>
+<span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="p">:),</span><span class="w"> </span><span class="k">allocatable</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">content</span><span class="w"> </span><span class="c">!&lt; Tag content.</span>
+<span class="w">   </span><span class="kt">integer</span><span class="p">(</span><span class="n">I4P</span><span class="p">)</span><span class="w">                  </span><span class="kd">::</span><span class="w"> </span><span class="n">t</span><span class="w">       </span><span class="c">!&lt; Counter.</span>
 
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">allocated</span><span class="p">(</span><span class="n">content</span><span class="p">))</span><span class="w"> </span><span class="k">deallocate</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="p">%</span><span class="n">Nt</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
-<span class="k">    do </span><span class="n">t</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="p">%</span><span class="n">Nt</span>
-<span class="w">      </span><span class="k">call </span><span class="n">self</span><span class="p">%</span><span class="n">tag</span><span class="p">(</span><span class="n">t</span><span class="p">)%</span><span class="n">get_content</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="o">=</span><span class="n">content</span><span class="p">)</span>
-<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">allocated</span><span class="p">(</span><span class="n">content</span><span class="p">))</span><span class="w"> </span><span class="k">exit</span>
-<span class="k">    enddo</span>
-<span class="k">  endif</span>
-<span class="k">  if</span><span class="w"> </span><span class="p">(.</span><span class="nb">not</span><span class="p">.</span><span class="nb">allocated</span><span class="p">(</span><span class="n">content</span><span class="p">))</span><span class="w"> </span><span class="n">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
-<span class="w">  </span><span class="k">endfunction </span><span class="n">content</span>
+<span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">allocated</span><span class="p">(</span><span class="n">content</span><span class="p">))</span><span class="w"> </span><span class="k">deallocate</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+<span class="w">   </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">self</span><span class="p">%</span><span class="n">nt</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">then</span>
+<span class="k">      do </span><span class="n">t</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">self</span><span class="p">%</span><span class="n">nt</span>
+<span class="w">         </span><span class="k">call </span><span class="n">self</span><span class="p">%</span><span class="n">tag</span><span class="p">(</span><span class="n">t</span><span class="p">)%</span><span class="n">get_content</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">content</span><span class="o">=</span><span class="n">content</span><span class="p">)</span>
+<span class="w">         </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">allocated</span><span class="p">(</span><span class="n">content</span><span class="p">))</span><span class="w"> </span><span class="k">exit</span>
+<span class="k">      enddo</span>
+<span class="k">   endif</span>
+<span class="k">   if</span><span class="w"> </span><span class="p">(.</span><span class="nb">not</span><span class="p">.</span><span class="nb">allocated</span><span class="p">(</span><span class="n">content</span><span class="p">))</span><span class="w"> </span><span class="n">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
+<span class="w">   </span><span class="k">endfunction </span><span class="n">content</span>
 </pre></div>
 
     </section>

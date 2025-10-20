@@ -137,7 +137,7 @@
       </a>
       <div id="mods-0" class="collapse">
         <div class="list-group list-group-flush">
-            <a class="list-group-item" href="../module/stringifor_string_t~2.html">stringifor_string_t</a>
+            <a class="list-group-item" href="../module/stringifor_string_t.html">stringifor_string_t</a>
         </div>
       </div>
     </div>
@@ -4643,7 +4643,7 @@ can be.
 <a id="ln-4228" name="ln-4228" href="#ln-4228"></a><span class="w">   </span><span class="c">!&lt; If the closing delimiter is followed by end of record, then we return end of record.</span>
 <a id="ln-4229" name="ln-4229" href="#ln-4229"></a><span class="w">   </span><span class="c">!&lt;</span>
 <a id="ln-4230" name="ln-4230" href="#ln-4230"></a><span class="w">   </span><span class="c">!&lt; @note This does not need a doctest, it being tested by [[string::read_formatted]].</span>
-<a id="ln-4231" name="ln-4231" href="#ln-4231"></a><span class="w">   </span><span class="k">class</span><span class="p">(</span><span class="n">string</span><span class="p">),</span><span class="w">             </span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">dtv</span><span class="w">       </span><span class="c">!&lt; The string.</span>
+<a id="ln-4231" name="ln-4231" href="#ln-4231"></a><span class="w">   </span><span class="k">class</span><span class="p">(</span><span class="n">string</span><span class="p">),</span><span class="w">             </span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">dtv</span><span class="w">       </span><span class="c">!&lt; The string.</span>
 <a id="ln-4232" name="ln-4232" href="#ln-4232"></a><span class="w">   </span><span class="kt">integer</span><span class="p">,</span><span class="w">                   </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">    </span><span class="kd">::</span><span class="w"> </span><span class="n">unit</span><span class="w">      </span><span class="c">!&lt; Logical unit.</span>
 <a id="ln-4233" name="ln-4233" href="#ln-4233"></a><span class="w">   </span><span class="kt">character</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">CK</span><span class="p">,</span><span class="w"> </span><span class="nb">len</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span><span class="w">    </span><span class="kd">::</span><span class="w"> </span><span class="n">delim</span><span class="w">     </span><span class="c">!&lt; String delimiter.</span>
 <a id="ln-4234" name="ln-4234" href="#ln-4234"></a><span class="w">   </span><span class="kt">integer</span><span class="p">,</span><span class="w">                   </span><span class="k">intent</span><span class="p">(</span><span class="n">out</span><span class="p">)</span><span class="w">   </span><span class="kd">::</span><span class="w"> </span><span class="n">iostat</span><span class="w">    </span><span class="c">!&lt; IO status code.</span>
