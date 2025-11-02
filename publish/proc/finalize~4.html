@@ -99,15 +99,15 @@
 
             <li class="list-inline-item" id="source-file">
               <i class="fa fa-code"></i>
-              <a href="../src/foxy_xml_tag.F90"> Source File</a>
+              <a href="../src/foxy_xml_file.f90"> Source File</a>
             </li>
         </ul>
       </div>
       <div class="col">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb justify-content-end mb-0">
-                <li class="breadcrumb-item"><a href='../sourcefile/foxy_xml_tag.f90.html'>foxy_xml_tag.F90</a></li>
-                <li class="breadcrumb-item"><a href='../module/foxy_xml_tag.html'>foxy_xml_tag</a></li>
+                <li class="breadcrumb-item"><a href='../sourcefile/foxy_xml_file.f90.html'>foxy_xml_file.f90</a></li>
+                <li class="breadcrumb-item"><a href='../module/foxy_xml_file.html'>foxy_xml_file</a></li>
             <li class="breadcrumb-item active" aria-current="page">finalize</li>
           </ol>
         </nav>
@@ -161,7 +161,7 @@
     </div>
     
     <div class="col-md-9" id='text'>
-    <h2>private elemental subroutine finalize(tag)  
+    <h2>private  subroutine finalize(self)  
 </h2>
     
 
@@ -180,15 +180,15 @@
     <tbody>
         <tr>
             <td>
-              <span class="anchor" id="variable-tag~11"></span>
-              type(<a href='../type/xml_tag.html'>xml_tag</a>),
+              <span class="anchor" id="variable-self~45"></span>
+              type(<a href='../type/xml_file.html'>xml_file</a>),
             </td>
 <td>intent(inout)</td>
               <td></td>            <td>
               
             </td>
             <td>::</td>
-            <td><strong>tag</strong></td>
+            <td><strong>self</strong></td>
             <td>
                 
             </td>
@@ -210,11 +210,11 @@
     
     <section>
     <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="hl codehilite"><pre><span></span><span class="w">   </span><span class="k">elemental subroutine </span><span class="n">finalize</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span>
+    <div class="hl codehilite"><pre><span></span><span class="w">   </span><span class="k">subroutine </span><span class="n">finalize</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
 <span class="w">   </span><span class="c">!&lt; Free dynamic memory when finalizing.</span>
-<span class="w">   </span><span class="k">type</span><span class="p">(</span><span class="n">xml_tag</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">tag</span><span class="w"> </span><span class="c">!&lt; XML tag.</span>
+<span class="w">   </span><span class="k">type</span><span class="p">(</span><span class="n">xml_file</span><span class="p">),</span><span class="w"> </span><span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span><span class="w"> </span><span class="kd">::</span><span class="w"> </span><span class="n">self</span><span class="w"> </span><span class="c">!&lt; XML file.</span>
 
-<span class="w">   </span><span class="k">call </span><span class="n">tag</span><span class="p">%</span><span class="n">free</span>
+<span class="w">   </span><span class="k">call </span><span class="n">self</span><span class="p">%</span><span class="n">free</span>
 <span class="w">   </span><span class="k">endsubroutine </span><span class="n">finalize</span>
 </pre></div>
 
